@@ -1,0 +1,23 @@
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+padding = { x = 5, y = 5 }
+dynamic_padding = true
+blur = true
+opacity = 0.4
+
+[cursor]
+style = { blinking = "Always" }
+unfocused_hollow = false
+
+[mouse]
+hide_when_typing = true
+
+[font]
+
+size = 11
+
+[font.normal]
+
+family = "JetBrainsMono Nerd Font"

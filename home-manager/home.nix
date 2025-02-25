@@ -36,6 +36,7 @@
     ./modules/waybar.nix
     ./modules/wofi.nix
     ./modules/zsh.nix
+    ./modules/theme.nix
   ];
 
   home.file.".bashrc".text = "

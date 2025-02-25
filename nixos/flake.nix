@@ -16,16 +16,8 @@
         specialArgs = { inherit inputs; };
 
         modules = [
-          ./hosts/laptop/configuration.nix
+          ./configuration.nix
         ];
-      };
-
-      kde-plasma = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
-
-	modules = [
-          ./hosts/kde-plasma/configuration.nix
-	];
       };
     };
   };

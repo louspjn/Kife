@@ -21,7 +21,7 @@
       };
 
       kde-plasma = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; }
+        specialArgs = { inherit inputs; };
 
 	modules = [
           ./hosts/kde-plasma/configuration.nix

@@ -26,5 +26,11 @@
 
         modules = [ ./hosts/openbox/home.nix ];
       };
+
+    homeConfigurations."tux" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        modules = [ ./hosts/plasma/home.nix ];
     };
+  };
 }

@@ -34,7 +34,7 @@
         modules = [
           ./hosts/plasma/configuration.nix
         ];
-      }
+      };
     };
   };
 }

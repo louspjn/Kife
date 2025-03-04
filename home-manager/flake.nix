@@ -16,7 +16,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in {
       tux = {
-        home-manager.lib.homeManagerConfiguration {
+        home-manager.lib.homeManagerConfiguration = {
             inherit pkgs;
 
             modules = [ ./hosts/plasma/home.nix ];

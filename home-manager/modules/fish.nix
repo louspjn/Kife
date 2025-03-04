@@ -6,7 +6,6 @@
       
       set fish_greeting
       
-      echo
       nitch
       zoxide init fish | source
 

@@ -27,6 +27,7 @@
     ./modules/git.nix
     ./modules/neovim.nix
     ./modules/fish.nix
+    ./modules/tmux.nix
   ];
 
   programs.home-manager.enable = true;

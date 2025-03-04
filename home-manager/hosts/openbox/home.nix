@@ -18,7 +18,7 @@
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.fish
     pkgs.tmux
-    pkgs.thunar
+    pkgs.dolphin
     pkgs.plank
   ];
 

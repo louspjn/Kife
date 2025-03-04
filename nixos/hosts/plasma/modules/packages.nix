@@ -11,5 +11,6 @@
     python313
     nodejs
     yarn
+    unzip
   ];
 }

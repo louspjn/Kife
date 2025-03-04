@@ -12,5 +12,7 @@
     python313
     nodejs
     yarn
+    acpi
+    unzip
   ];
 }

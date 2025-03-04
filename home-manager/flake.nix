@@ -15,15 +15,16 @@
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      homeConfigurations."tux" = home-manager.lib.homeManagerConfiguration {
+      Plasma = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
-        # Specify your home configuration modules here, for example,
-        # the path to your home.nix.
-        modules = [ ./home.nix ];
+        modules = [ ./hosts/plasma/home.nix ];
+      };
 
-        # Optionally use extraSpecialArgs
-        # to pass through arguments to home.nix
+      OpenBox = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        modules = [ ./hosts/openbox/home.nix ];
       };
     };
 }

@@ -12,6 +12,5 @@
     python313
     nodejs
     yarn
-    plank
   ];
 }

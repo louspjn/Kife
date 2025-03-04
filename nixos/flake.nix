@@ -12,13 +12,29 @@
   in
   {
     nixosConfigurations = {
-      Jhuan = nixpkgs.lib.nixosSystem {
+      OpenBox = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
 
         modules = [
-          ./configuration.nix
+          ./hosts/openbox/configuration.nix
         ];
       };
+
+      Plasma = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+
+        modules = [
+          ./hosts/plasma/configuration.nix
+        ];
+      };
+
+      default = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+
+        modules = [
+          ./hosts/plasma/configuration.nix
+        ];
+      }
     };
   };
 }

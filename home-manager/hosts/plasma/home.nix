@@ -6,8 +6,6 @@
 
   home.stateVersion = "24.11";
 
-  home.sessionPath = ["~/.config/system/home-manager/"];
-  
   home.packages = [
     pkgs.alacritty
     pkgs.chromium

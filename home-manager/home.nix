@@ -6,11 +6,11 @@
 
   home.stateVersion = "24.11";
 
-  home.sessionPath = ["~/.config/home-manager/"];
+  home.sessionPath = ["~/.config/system/home-manager/"];
   
   home.packages = [
     pkgs.alacritty
-    pkgs.vivaldi
+    pkgs.chromium
     pkgs.bc
     pkgs.git
     pkgs.bat
@@ -19,6 +19,7 @@
     pkgs.nitch
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.fish
+    pkgs.tmux
   ];
 
   imports = [
@@ -27,11 +28,6 @@
     ./modules/neovim.nix
     ./modules/fish.nix
   ];
-
-  home.file.".bashrc".text = "
-    zsh
-    exit
-  ";
 
   programs.home-manager.enable = true;
 }

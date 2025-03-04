@@ -1,9 +1,13 @@
 { config, pkgs, ... }:
 
 {
-  home.file.".config/fish/config.fish".source = "
+  home.file.".config/fish/config.fish".text = "
     if status is-interactive
-      echo nitch
+      
+      set fish_greeting
+      
+      echo
+      nitch
       zoxide init fish | source
 
       # Alias
@@ -16,5 +20,6 @@
       alias l='exa --tree'
       alias lt='exa -all --long'
       alias ll='l --tree'
-  "
+    end
+  ";
 }

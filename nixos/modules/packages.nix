@@ -7,9 +7,11 @@
   environment.systemPackages = with pkgs; [
     neovim
     wget
-    sddm
     alsa-utils
     home-manager
     python313
+    nodejs
+    yarn
+    plank
   ];
 }

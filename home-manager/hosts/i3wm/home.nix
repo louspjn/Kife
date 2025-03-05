@@ -14,7 +14,7 @@
     pkgs.bat
     pkgs.eza
     pkgs.zoxide
-    pkgs.nitch
+    pkgs.fastfetch
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.fish
     pkgs.tmux

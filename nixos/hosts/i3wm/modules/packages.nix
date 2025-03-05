@@ -11,6 +11,9 @@
     python313
     nodejs
     yarn
+    rust
+    acpi
+    alsa-utils
     unzip
 
     dmenu

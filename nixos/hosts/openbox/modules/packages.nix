@@ -12,6 +12,7 @@
     python313
     nodejs
     yarn
+    cargo
     acpi
     unzip
   ];

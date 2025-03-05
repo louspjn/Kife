@@ -17,7 +17,7 @@
     alsa-utils
     unzip
 
-    i3blocks
+    polybar
     nitrogen
     arandr
   ];

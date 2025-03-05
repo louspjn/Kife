@@ -27,6 +27,7 @@
     ./modules/neovim.nix
     ./modules/fish.nix
     ./modules/tmux.nix
+    ./modules/i3wm.nix
   ];
 
   programs.home-manager.enable = true;

@@ -29,6 +29,7 @@
     ./modules/tmux.nix
     ./modules/i3wm.nix
     ./modules/polybar.nix
+    ./modules/rofi.nix
   ];
 
   programs.home-manager.enable = true;

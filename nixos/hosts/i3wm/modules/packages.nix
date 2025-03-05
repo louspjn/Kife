@@ -11,7 +11,8 @@
     python313
     nodejs
     yarn
-    rust
+    cargo
+    rustc
     acpi
     alsa-utils
     unzip

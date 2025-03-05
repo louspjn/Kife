@@ -13,6 +13,7 @@
     nodejs
     yarn
     cargo
+    rustc
     acpi
     unzip
   ];

@@ -10,7 +10,8 @@
     home-manager
     python313
     nodejs
-    rust
+    rustc
+    cargo
     yarn
     unzip
   ];

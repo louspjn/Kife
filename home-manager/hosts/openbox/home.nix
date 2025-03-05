@@ -20,6 +20,7 @@
     pkgs.tmux
     pkgs.dolphin
     pkgs.plank
+    pkgs.picom
   ];
 
   imports = [

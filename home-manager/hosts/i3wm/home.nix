@@ -18,6 +18,7 @@
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.fish
     pkgs.tmux
+    pkgs.picom
   ];
 
   imports = [

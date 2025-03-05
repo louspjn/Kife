@@ -4,8 +4,9 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 [window]
 padding = { x = 5, y = 5 }
 dynamic_padding = true
-blur = true
-opacity = 0.4
+
+[colors.primary]
+background = "#222222"
 
 [cursor]
 style = { blinking = "Always" }

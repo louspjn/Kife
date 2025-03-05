@@ -1,5 +1,6 @@
 # Variables
 set $mod Mod4
+set $gap 2px
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -16,7 +17,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
-exec --no-startup-id nitrogen
+exec /home/tux/.config/system/home-manager/hosts/dotfiles/i3/wallpaper.sh
 
 # PulseAudio
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -147,6 +148,19 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# I3 Gaps
+
+gaps inner $gap
+gaps outer $gap
+
+default_border pixel 2
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #395756 #395756 #395756 #395756   #395756
+client.unfocused        #1C2321 #1C2321 #1C2321 #1C2321   #1C2321
+client.urgent           #EF2917 #EF2917 #EF2917 #EF2917   #EF2917
+
+client.background       #F2F3D9
 # Bar
 
 bar {

@@ -17,7 +17,6 @@
     alsa-utils
     unzip
 
-    dmenu
     i3blocks
     nitrogen
     arandr

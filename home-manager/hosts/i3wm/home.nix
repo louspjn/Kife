@@ -19,6 +19,7 @@
     pkgs.fish
     pkgs.tmux
     pkgs.picom
+    pkgs.rofi
   ];
 
   imports = [

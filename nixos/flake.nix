@@ -15,25 +15,25 @@
       OpenBox = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
 
-        modules = [
-          ./hosts/openbox/configuration.nix
-        ];
+        modules = [ ./hosts/openbox/configuration.nix ];
       };
 
       Plasma = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
 
-        modules = [
-          ./hosts/plasma/configuration.nix
-        ];
+        modules = [ ./hosts/plasma/configuration.nix ];
       };
+
+      I3wm = {
+        specialArgs = { inherit inputs; };
+
+        modules = [ ./hosts/i3wm/configuration.nix ]
+      }
 
       default = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
 
-        modules = [
-          ./hosts/plasma/configuration.nix
-        ];
+        modules = [ ./hosts/plasma/configuration.nix ];
       };
     };
   };

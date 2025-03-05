@@ -1,8 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  networking.hostName = "Jhuan";
+  networking = {
+    hostName = "Jhuan";
 
-  # Enable networking
-  networking.networkmanager.enable = true;
+    networkmanager.enable = true;
+  };
 }

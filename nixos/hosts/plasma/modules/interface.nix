@@ -2,13 +2,17 @@
 
 {
   # Enable kde plasma.
-  services.xserver.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
-  services.desktopManager.plasma6.enable = true;
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "br";
-    variant = "";
+  services = {
+    xserver = {
+      enable = true;
+      displayManager.gdm.enable = true;
+      
+      xkb = {
+        layout = "br";
+        variant = "";
+      };
+    };
+    
+    desktopManager.plasma6.enable = true;
   };
 }

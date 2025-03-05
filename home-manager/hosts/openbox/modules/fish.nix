@@ -6,7 +6,7 @@
       
       set fish_greeting
 
-      nitch
+      fastfetch
       zoxide init fish | source
 
       # Alias

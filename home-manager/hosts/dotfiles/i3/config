@@ -1,0 +1,10 @@
+include ./modules/variables.conf
+include ./modules/autostart.conf
+include ./modules/pulseaudio.conf
+include ./modules/windows.conf
+include ./modules/binds.conf
+include ./modules/modes.conf
+
+bar {
+  status_command i3blocks
+}

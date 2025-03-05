@@ -1,1 +1,1 @@
-nitrogen --set-zoom-fill ~/Pictures/nixos.png
+nitrogen --set-zoom-fill ~/.config/system/home-manager/hosts/dotfiles/wallpaper.jpeg

@@ -25,5 +25,7 @@
     ".config/nvim/lua/plugins/telescope.lua".source = ../../dotfiles/nvim/lua/plugins/telescope.lua;
 
     ".config/nvim/lua/plugins/treesitter.lua".source = ../../dotfiles/nvim/lua/plugins/treesitter.lua;
+    
+    ".config/nvim/lua/plugins/dashboard.lua".source = ../../dotfiles/nvim/lua/plugins/dashboard.lua;
   };
 }

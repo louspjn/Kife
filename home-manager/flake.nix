@@ -36,7 +36,7 @@
       homeConfigurations."I3wm" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
-        modules = [ ./hosts/i3wm/home.nix ]
+        modules = [ ./hosts/i3wm/home.nix ];
       };
     };
 }

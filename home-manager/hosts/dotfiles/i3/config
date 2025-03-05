@@ -44,7 +44,6 @@ bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+space exec --no-startup-id rofi -show drun
-bindsym Mod1+tab exec --no-statup-id rofi -show window
 
 # change focus
 bindsym $mod+h focus left

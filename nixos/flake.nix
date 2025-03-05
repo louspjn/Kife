@@ -27,7 +27,7 @@
       I3wm = {
         specialArgs = { inherit inputs; };
 
-        modules = [ ./hosts/i3wm/configuration.nix ]
+        modules = [ ./hosts/i3wm/configuration.nix ];
       };
 
       default = nixpkgs.lib.nixosSystem {

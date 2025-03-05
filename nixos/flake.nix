@@ -24,7 +24,7 @@
         modules = [ ./hosts/plasma/configuration.nix ];
       };
 
-      I3wm = {
+      I3wm = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
 
         modules = [ ./hosts/i3wm/configuration.nix ];

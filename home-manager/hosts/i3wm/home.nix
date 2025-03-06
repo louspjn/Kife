@@ -19,7 +19,7 @@
     pkgs.fish
     pkgs.tmux
     pkgs.rofi
-    pkgs.dolphin
+    pkgs.kdePackages.dolphin
   ];
 
   imports = [

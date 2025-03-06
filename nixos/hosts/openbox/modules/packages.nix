@@ -17,5 +17,6 @@
     acpi
     unzip
     jdk
+    sqlite
   ];
 }

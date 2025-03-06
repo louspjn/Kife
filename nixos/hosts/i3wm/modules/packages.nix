@@ -21,5 +21,6 @@
     polybar
     nitrogen
     arandr
+    sqlite
   ];
 }

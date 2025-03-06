@@ -15,5 +15,6 @@
     yarn
     unzip
     jdk
+    sqlite
   ];
 }

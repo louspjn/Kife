@@ -16,6 +16,7 @@
     acpi
     alsa-utils
     unzip
+    jdk
 
     polybar
     nitrogen

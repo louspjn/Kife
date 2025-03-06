@@ -14,5 +14,6 @@
     cargo
     yarn
     unzip
+    jdk
   ];
 }

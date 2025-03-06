@@ -16,5 +16,6 @@
     rustc
     acpi
     unzip
+    jdk
   ];
 }

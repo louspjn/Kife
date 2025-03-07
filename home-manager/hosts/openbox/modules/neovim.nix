@@ -27,5 +27,7 @@
     ".config/nvim/lua/plugins/treesitter.lua".source = ../../dotfiles/nvim/lua/plugins/treesitter.lua;
     
     ".config/nvim/lua/plugins/dashboard.lua".source = ../../dotfiles/nvim/lua/plugins/dashboard.lua;
+
+    ".config/nvim/lua/plugins/copilot.lua".source ../../dotfiles/nvim/lua/plugins/copilot.lua;
   };
 }

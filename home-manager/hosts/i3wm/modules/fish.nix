@@ -19,6 +19,9 @@
       alias l='exa --tree'
       alias lt='exa -all --long'
       alias ll='l --tree'
+
+      # Variaveis
+      set -x NIXPKGS_ALLOW_UNFREE 1
     end
   ";
 }

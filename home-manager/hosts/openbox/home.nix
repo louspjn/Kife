@@ -18,9 +18,8 @@
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.fish
     pkgs.tmux
-    pkgs.dolphin
+    pkgs.kdePackages.dolphin
     pkgs.plank
-    pkgs.picom
   ];
 
   imports = [

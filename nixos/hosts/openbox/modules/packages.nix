@@ -18,5 +18,6 @@
     unzip
     jdk
     sqlite
+    vscode
   ];
 }

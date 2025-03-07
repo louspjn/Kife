@@ -17,6 +17,7 @@
     alsa-utils
     unzip
     jdk
+    vscode
 
     polybar
     nitrogen

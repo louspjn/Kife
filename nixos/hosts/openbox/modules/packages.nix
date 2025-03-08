@@ -11,12 +11,10 @@
     home-manager
     python313
     nodejs
-    yarn
     cargo
     rustc
     acpi
     unzip
-    jdk
     sqlite
     vscode
   ];

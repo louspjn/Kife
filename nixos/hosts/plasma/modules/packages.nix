@@ -12,9 +12,7 @@
     nodejs
     rustc
     cargo
-    yarn
     unzip
-    jdk
     sqlite
     vscode
   ];

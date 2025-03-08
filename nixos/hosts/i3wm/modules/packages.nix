@@ -10,13 +10,11 @@
     home-manager
     python313
     nodejs
-    yarn
     cargo
     rustc
     acpi
     alsa-utils
     unzip
-    jdk
     vscode
 
     polybar

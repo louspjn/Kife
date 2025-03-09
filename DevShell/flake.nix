@@ -16,13 +16,19 @@
           pkgs.maven
         ];
 
-        shellHook = []
+        shellHook = ''
+          exec fish
+        '';
       };
 
       Yarn = pkgs.mkShell {
         buildInputs = [
           pkgs.yarn
         ];
+
+        shellHook = ''
+          exec fish
+        '';
       };
     };
   };

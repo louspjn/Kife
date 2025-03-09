@@ -5,5 +5,6 @@
     isNormalUser = true;
     description = "Tux";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.fish;
   };
 }

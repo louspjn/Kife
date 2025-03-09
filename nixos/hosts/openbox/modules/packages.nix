@@ -17,5 +17,6 @@
     unzip
     sqlite
     vscode
+    obsidian
   ];
 }

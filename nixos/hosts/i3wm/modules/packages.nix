@@ -21,5 +21,6 @@
     nitrogen
     arandr
     sqlite
+    obsidian
   ];
 }

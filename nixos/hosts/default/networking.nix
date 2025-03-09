@@ -2,7 +2,7 @@
 
 {
   networking = {
-    hostName = "Jhuan";
+    hostName = "Jhuan's PC";
     
     networkmanager.enable = true;
   };

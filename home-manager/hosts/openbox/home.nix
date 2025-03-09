@@ -4,7 +4,7 @@
   home.username = "tux";
   home.homeDirectory = "/home/tux";
 
-  home.stateVersion = "25.11";
+  home.stateVersion = "25.05";
 
   home.packages = [
     pkgs.alacritty

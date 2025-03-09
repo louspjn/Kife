@@ -1,7 +1,10 @@
+from os import system
 from libqtile import bar, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
+
+system("../i3/wallpaper.sh")
 
 mod = "mod4"
 terminal = guess_terminal()
@@ -41,9 +44,11 @@ keys = [
         desc="Toggle fullscreen on the focused window",
     ),
     Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
-    Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
+    Key(["mod1", "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+
+    Key(["control"], "space", lazy.spawn("rofi -show drun"), desc="Spawn rofi")
 ]
 
 for vt in range(1, 8):
@@ -69,6 +74,7 @@ for i in groups:
                 desc=f"Switch to group {i.name}",
             ),
 
+            # Move window to desktop(number)
             Key(
                 [mod, "shift"],
                 i.name,
@@ -79,7 +85,17 @@ for i in groups:
     )
 
 layouts = [
-    layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
+    layout.Columns(
+        border_focus_stack = ["#d75f5f", "#8f3d3d"],
+
+        margin = 6,
+        
+        # Border
+        border_width = 4,
+        border_focus = "#4A525A",
+        border_normal = "#2C2B3C"
+    ),
+
     layout.Max(),
 ]
 
@@ -92,9 +108,9 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        bottom=bar.Bar(
+        top=bar.Bar(
             [
-                widget.CurrentLayout(),
+                widget.TextBox(" ", name="NixOS Logo"),
                 widget.GroupBox(),
                 widget.Prompt(),
                 widget.WindowName(),
@@ -104,12 +120,16 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
 
-                widget.Systray(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-                widget.QuickExit(),
+                widget.Battery(
+                    format='{char} {percent:2.0%}',
+                    update_interval=60,
+                    charge_char='⚡',
+                    discharge_char='🔋',
+                    full_char='🔌',
+                ),
+
+                widget.Clock(format="%d %a %I:%M %p"),
             ],
             24,
         ),

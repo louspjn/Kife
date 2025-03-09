@@ -21,11 +21,11 @@
   ];
 
   imports = [
-    ./modules/alacritty.nix
-    ./modules/git.nix
-    ./modules/neovim.nix
-    ./modules/fish.nix
-    ./modules/tmux.nix
+    ../default/alacritty.nix
+    ../default/git.nix
+    ../default/neovim.nix
+    ../default/fish.nix
+    ../default/tmux.nix
   ];
 
   programs.home-manager.enable = true;

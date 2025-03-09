@@ -23,14 +23,14 @@
   ];
 
   imports = [
-    ./modules/alacritty.nix
-    ./modules/git.nix
-    ./modules/neovim.nix
-    ./modules/fish.nix
-    ./modules/tmux.nix
+    ../default/alacritty.nix
+    ../default/git.nix
+    ../default/neovim.nix
+    ../default/fish.nix
+    ../default/tmux.nix
+    ../default/rofi.nix
     ./modules/i3wm.nix
     ./modules/polybar.nix
-    ./modules/rofi.nix
   ];
 
   programs.home-manager.enable = true;

@@ -2,7 +2,7 @@
 
 {
   # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  pkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
     neovim

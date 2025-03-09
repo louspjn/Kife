@@ -38,5 +38,11 @@
 
         modules = [ ./hosts/i3wm/home.nix ];
       };
+
+      homeConfigurations."Qtile" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        modules = [ ./hosts/qtile/home.nix ];
+      };
     };
 }

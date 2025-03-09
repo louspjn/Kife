@@ -18,6 +18,8 @@
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.fish
     pkgs.tmux
+    pkgs.rofi
+    pkgs.kdePackages.dolphin
   ];
 
   imports = [
@@ -26,6 +28,9 @@
     ../default/neovim.nix
     ../default/fish.nix
     ../default/tmux.nix
+    ../default/rofi.nix
+    ../default/polybar.nix
+    ./modules/qtile.nix
   ];
 
   programs.home-manager.enable = true;

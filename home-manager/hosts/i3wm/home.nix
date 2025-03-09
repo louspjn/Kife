@@ -4,7 +4,7 @@
   home.username = "tux";
   home.homeDirectory = "/home/tux";
 
-  home.stateVersion = "24.11";
+  home.stateVersion = "25.11";
 
   home.packages = [
     pkgs.alacritty
@@ -29,8 +29,8 @@
     ../default/fish.nix
     ../default/tmux.nix
     ../default/rofi.nix
+    ../default/polybar.nix
     ./modules/i3wm.nix
-    ./modules/polybar.nix
   ];
 
   programs.home-manager.enable = true;

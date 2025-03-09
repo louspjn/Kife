@@ -10,7 +10,7 @@
 
     xkb = {
       layout = "br";
-      variant = "";
+      variant = "abnt2";
     };
   };
 }

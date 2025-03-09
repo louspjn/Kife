@@ -9,7 +9,7 @@
 
     xkb = {
       layout = "br";
-      variant = "";
+      variant = "abnt2";
     };
 
     windowManager.i3.enable = true;

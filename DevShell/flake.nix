@@ -15,6 +15,8 @@
           pkgs.openjdk
           pkgs.maven
         ];
+
+        shellHook = []
       };
 
       Yarn = pkgs.mkShell {

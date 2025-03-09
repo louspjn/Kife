@@ -2,7 +2,7 @@
   description = "Ambientes de desenvolvimento Java e Maven";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
   };
 
   outputs = { self, nixpkgs }: let
@@ -16,7 +16,9 @@
           pkgs.maven
         ];
         
-        shellHook = "exec fish";
+        shellHook = ''
+          exec fish
+        '';
       };
 
       Yarn = pkgs.mkShell {
@@ -24,7 +26,9 @@
           pkgs.yarn
         ];
 
-        shellHook = "exec fish";
+        shellHook = ''
+          exec fish
+        '';
       };
     };
   };

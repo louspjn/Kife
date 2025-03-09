@@ -20,7 +20,6 @@
     pkgs.tmux
     pkgs.rofi
     pkgs.kdePackages.dolphin
-    pkgs.obsidian
   ];
 
   imports = [

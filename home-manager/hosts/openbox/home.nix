@@ -20,7 +20,6 @@
     pkgs.tmux
     pkgs.kdePackages.dolphin
     pkgs.plank
-    pkgs.obsidian
   ];
 
   imports = [

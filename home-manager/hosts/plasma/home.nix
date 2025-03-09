@@ -18,7 +18,6 @@
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.fish
     pkgs.tmux
-    pkgs.obsidian
   ];
 
   imports = [

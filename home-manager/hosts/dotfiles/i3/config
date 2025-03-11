@@ -49,7 +49,8 @@ bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id rofi -show drun
 
 # Change the wallpaper
-bindsym $mod+shift+n exec /home/tux/.config/system/home-manager/hosts/dotfiles/i3/wallpaper.sh
+bindsym $mod+shift+n exec /home/tux/.config/system/home-manager/hosts/dotfiles/i3/wallpaper-nord.sh
+bindsym $mod+shift+s exec /home/tux/.config/system/home-manager/hosts/dotfiles/i3/wallpaper.sh
 
 # change focus
 bindsym $mod+h focus left

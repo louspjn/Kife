@@ -18,6 +18,6 @@
     sqlite
     vscode
     obsidian
-    spectacle
+    kdePackages.spectacle
   ];
 }

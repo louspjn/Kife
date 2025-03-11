@@ -16,7 +16,7 @@
     alsa-utils
     unzip
     vscode
-    spectacle
+    kdePackages.spectacle
 
     polybar
     nitrogen

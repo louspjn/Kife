@@ -13,6 +13,7 @@
       alias cd='z'
       alias cat='bat'
       alias ficg='nvim ~/.config/system-config/home-manager/modules/fish.nix'
+      alias nvf='nix run ~/.config/system/Flakes/nvim/'
       
       # Ls
       alias ls='exa'

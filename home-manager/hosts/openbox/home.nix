@@ -25,7 +25,6 @@
   imports = [
     ../default/alacritty.nix
     ../default/git.nix
-    ../default/neovim.nix
     ../default/fish.nix
     ../default/tmux.nix
   ];

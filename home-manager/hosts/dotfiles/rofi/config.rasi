@@ -1,99 +1,23 @@
-* {
-    font: "JetBrainsMono Nerd Font 10";
-    g-spacing: 10px;
-    g-margin: 0;
-    b-color: #222222;
-    fg-color: #FFFFFFFF;
-    fgp-color: #888888FF;
-    b-radius: 8px;
-    g-padding: 8px;
-    hl-color: #FFFFFFFF;
-    hlt-color: #222222;
-    alt-color: #111111FF;
-    wbg-color: #222222;
-    w-border: 2px solid;
-    w-border-color: #FFFFFFFF;
-    w-padding: 12px;
+configuration {
+    font: "Envy Code R 10";
+    line-margin: 10;
+
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    show-icons:     true;
 }
 
-configuration {
-    modi: "drun";
-    display-drun: "Search:";
-}
+
+@theme "~/.config/rofi/nord.rasi"
 
 listview {
-    columns: 1;
-    lines: 7;
-    fixed-height: true;
-    fixed-columns: true;
-    cycle: false;
-    scrollbar: false;
-    border: 0px solid;
+	lines: 6;
+	columns: 2;
 }
 
 window {
-    width: 450px;
-    border-radius: @b-radius;
-    background-color: @wbg-color;
-    border: @w-border;
-    border-color: @w-border-color;
-    padding: @w-padding;
-}
-
-prompt {
-    text-color: @fg-color;
-}
-
-inputbar {
-    children: ["prompt", "entry"];
-    spacing: @g-spacing;
-}
-
-entry {
-    placeholder: "Search Apps";
-    text-color: @fg-color;
-    placeholder-color: @fgp-color;
-}
-
-mainbox {
-    spacing: @g-spacing;
-    margin: @g-margin;
-    padding: @g-padding;
-    children: ["inputbar", "listview", "message"];
-}
-
-element {
-    spacing: @g-spacing;
-    margin: @g-margin;
-    padding: @g-padding;
-    border: 0px solid;
-    border-radius: @b-radius;
-    border-color: @b-color;
-    background-color: transparent;
-    text-color: @fg-color;
-}
-
-element normal.normal {
-	background-color: transparent;
-	text-color: @fg-color;
-}
-
-element alternate.normal {
-	background-color: transparent;
-	text-color: @fg-color;
-}
-
-element selected.active {
-	background-color: @hl-color;
-	text-color: @hlt-color;
-}
-
-element selected.normal {
-	background-color: @hl-color;
-	text-color: @hlt-color;
-}
-
-message {
-    background-color: red;
-    border: 0px solid;
+	width: 30%;
 }

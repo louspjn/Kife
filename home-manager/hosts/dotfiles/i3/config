@@ -17,6 +17,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id pkill polybar; polybar
 
+exec /home/tux/.config/system/home-manager/hosts/dotfiles/i3/monitors.sh
 exec /home/tux/.config/system/home-manager/hosts/dotfiles/i3/wallpaper-nord.sh
 
 # PulseAudio

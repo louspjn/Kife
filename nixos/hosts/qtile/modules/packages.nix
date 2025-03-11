@@ -16,7 +16,7 @@
     alsa-utils
     unzip
     vscode
-    nh
+    spectacle
 
     polybar
     nitrogen

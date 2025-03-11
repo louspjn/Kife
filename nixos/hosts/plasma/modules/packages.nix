@@ -16,6 +16,6 @@
     sqlite
     vscode
     obsidian
-    nh
+    spectacle
   ];
 }

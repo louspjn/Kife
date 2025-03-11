@@ -17,7 +17,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id pkill polybar; polybar
 
-exec /home/tux/.config/system/home-manager/hosts/dotfiles/i3/wallpaper.sh
+exec /home/tux/.config/system/home-manager/hosts/dotfiles/i3/wallpaper-nord.sh
 
 # PulseAudio
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -47,6 +47,9 @@ bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+space exec --no-startup-id rofi -show drun
+
+# Change the wallpaper
+bindsym $mod+shift+n exec /home/tux/.config/system/home-manager/hosts/dotfiles/i3/wallpaper.sh
 
 # change focus
 bindsym $mod+h focus left

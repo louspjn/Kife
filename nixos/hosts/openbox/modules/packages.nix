@@ -19,5 +19,9 @@
     vscode
     obsidian
     kdePackages.spectacle
+    buildPackages.stdenv
+    gcc
+    pkg-config
+    fontconfig
   ];
 }

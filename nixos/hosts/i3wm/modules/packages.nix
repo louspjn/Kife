@@ -21,11 +21,14 @@
     gcc
     pkg-config
     fontconfig
+    freetype
+    expat
 
     polybar
     nitrogen
     arandr
     sqlite
     obsidian
+    xorg.libX11
   ];
 }

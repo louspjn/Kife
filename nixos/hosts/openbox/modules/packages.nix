@@ -23,5 +23,8 @@
     gcc
     pkg-config
     fontconfig
+    freetype
+    expat
+    xorg.libX11
   ];
 }

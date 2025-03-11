@@ -20,6 +20,7 @@
     pkgs.tmux
     pkgs.kdePackages.dolphin
     pkgs.plank
+    pkgs.kitty
   ];
 
   imports = [

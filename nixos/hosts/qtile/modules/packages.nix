@@ -16,6 +16,7 @@
     alsa-utils
     unzip
     vscode
+    nh
 
     polybar
     nitrogen

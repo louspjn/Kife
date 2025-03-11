@@ -16,5 +16,6 @@
     sqlite
     vscode
     obsidian
+    nh
   ];
 }

@@ -14,9 +14,19 @@
       theme = "startify";
     };
 
+    ui.borders.enable = true;
+
     statusline.lualine.enable = true;
     telescope.enable = true;
     autocomplete.nvim-cmp.enable = true;
+    
+    assistant.copilot = {
+      enable = true;
+
+      cmp.enable = true;
+
+      mappings.panel.open = "<C-c>";
+    };
 
     languages = {
       enableLSP = true;

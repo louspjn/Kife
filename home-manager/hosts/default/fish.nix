@@ -19,10 +19,10 @@
       alias devshell='nix develop --impure'
       
       # Ls
-      alias ls='exa'
-      alias l='exa --tree'
-      alias lt='exa -all --long'
-      alias ll='l --tree'
+      alias ls='exa --icons'
+      alias l='exa --tree --icons'
+      alias lt='exa -all --long --icons'
+      alias ll='l --tree --icons'
 
       # Variaveis
       set -x NIXPKGS_ALLOW_UNFREE 1

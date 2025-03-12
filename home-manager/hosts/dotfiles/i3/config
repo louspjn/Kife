@@ -1,5 +1,6 @@
 # Variables
 set $mod Mod4
+set $terminal kitty
 set $gap 4px
 set $ws1 "1"
 set $ws2 "2"
@@ -37,7 +38,7 @@ tiling_drag modifier titlebar
 # Binds
 
 # start a terminal
-bindsym $mod+b exec alacritty
+bindsym $mod+b exec $terminal
 
 # start dolphin a file manager
 bindsym $mod+e exec dolphin

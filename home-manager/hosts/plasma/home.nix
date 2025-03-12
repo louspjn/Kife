@@ -23,6 +23,7 @@
 
   imports = [
     ../default/alacritty.nix
+    ../default/kitty.nix
     ../default/git.nix
     ../default/fish.nix
     ../default/tmux.nix

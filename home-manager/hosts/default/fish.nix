@@ -13,6 +13,7 @@
       alias cd='z'
       alias cat='bat'
       alias nvim='nix run github:Jhuan-Nycolas/Nvim'
+      alias lvim='nix run ~/Nvim'
       alias hw='home-manager switch --flake'
       alias nw='sudo nixos-rebuild switch --flake'
       alias sysconf='cd ~/.config/system/; nvim'

@@ -3,6 +3,7 @@
 {
   home.packages = [
     pkgs.xfce.thunar
+    pkgs.hyprpaper
   ];
 
   imports = [

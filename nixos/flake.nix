@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    stylix.url = "github:danth/stylix";
   };
 
   outputs = { nixpkgs, ... } @inputs:
@@ -11,19 +12,31 @@
       Plasma = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
 
-        modules = [ ./hosts/plasma/configuration.nix ];
+        modules = [
+          ./hosts/plasma/configuration.nix 
+
+          inputs.stylix.nixosModules.stylix
+        ];
       };
 
       I3wm = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
 
-        modules = [ ./hosts/i3wm/configuration.nix ];
+        modules = [
+          ./hosts/i3wm/configuration.nix  
+
+          inputs.stylix.nixosModules.stylix
+        ];
       };
 
       Jhuan = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
 
-        modules = [ ./hosts/hyprland/configuration.nix ];
+        modules = [
+          ./hosts/hyprland/configuration.nix 
+
+          inputs.stylix.nixosModules.stylix
+        ];
       };
     };
   };

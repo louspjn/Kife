@@ -1,5 +1,5 @@
 let
-  wallpaper = "../../dotfiles/wallpaper-nord.jpg";
+  wallpaper = "~/.config/system/home-manager/hosts/dotfiles/wallpaper-nord.jpg";
 in
 {
   home.file.".config/hypr/hyprpaper.conf".text = ''

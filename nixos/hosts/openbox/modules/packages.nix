@@ -26,5 +26,6 @@
     freetype
     expat
     xorg.libX11
+    vivaldi
   ];
 }

@@ -23,6 +23,7 @@
     fontconfig
     freetype
     expat
+    vivaldi
 
     polybar
     nitrogen

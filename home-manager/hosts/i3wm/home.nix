@@ -8,7 +8,6 @@
 
   home.packages = [
     pkgs.alacritty
-    pkgs.chromium
     pkgs.bc
     pkgs.git
     pkgs.bat

@@ -20,7 +20,7 @@
         modules = [ ./hosts/i3wm/configuration.nix ];
       };
 
-      default = nixpkgs.lib.nixosSystem {
+      Jhuan = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
 
         modules = [ ./hosts/hyprland/configuration.nix ];

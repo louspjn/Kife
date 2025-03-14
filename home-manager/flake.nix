@@ -1,8 +1,7 @@
 {
-  description = "Home Manager configuration of tux";
+  description = "Home Manager configuration flake";
 
   inputs = {
-    # Specify the source of Home Manager and Nixpkgs.
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -18,31 +17,27 @@
       homeConfigurations."tux" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
-        modules = [ ./hosts/plasma/home.nix ];
+        modules = [
+          ./hosts/hyprland/home.nix
+          ./hosts/default/home.nix
+        ];
       };
 
       homeConfigurations."Plasma" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
-        modules = [ ./hosts/plasma/home.nix ];
-      };
-
-      homeConfigurations."OpenBox" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-
-        modules = [ ./hosts/openbox/home.nix ];
+        modules = [
+          ./hosts/default/home.nix
+        ];
       };
 
       homeConfigurations."I3wm" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
-        modules = [ ./hosts/i3wm/home.nix ];
-      };
-
-      homeConfigurations."Qtile" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-
-        modules = [ ./hosts/qtile/home.nix ];
+        modules = [
+          ./hosts/i3wm/home.nix
+          ./hosts/default/home.nix
+        ];
       };
     };
 }

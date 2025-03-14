@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   # Allow unfree packages
@@ -7,25 +7,15 @@
   environment.systemPackages = with pkgs; [
     neovim
     wget
-    alsa-utils
     home-manager
     python313
     nodejs
-    cargo
     rustc
-    acpi
+    cargo
     unzip
     sqlite
-    vscode
     obsidian
-    kdePackages.spectacle
-    buildPackages.stdenv
     gcc
-    pkg-config
-    fontconfig
-    freetype
-    expat
-    xorg.libX11
-    vivaldi
+    nh
   ];
 }

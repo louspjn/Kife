@@ -1,5 +1,3 @@
-{ config, pkgs, ... }:
-
 {
   # Enable I3-wm.
   services.xserver = {

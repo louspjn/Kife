@@ -1,5 +1,3 @@
-{ config, pkgs, ... }:
-
 {
   # Enable kde plasma.
   services = {

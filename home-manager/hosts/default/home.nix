@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.username = "tux";
@@ -19,7 +19,7 @@
     pkgs.tmux
     pkgs.kitty
   ];
-
+  
   imports = [
     ../default/alacritty.nix
     ../default/kitty.nix

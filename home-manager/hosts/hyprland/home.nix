@@ -7,13 +7,13 @@
     pkgs.wofi
     pkgs.hyprlock
     pkgs.wlogout
-    pkgs.hyprpanel
+    pkgs.alsa-utils
   ];
 
   imports = [
     ./modules/hyprland.nix
-    ./modules/hyprpaper.nix
     ./modules/waybar.nix
     ./modules/hyprlock.nix
+    ./modules/wlogout.nix
   ];
 }

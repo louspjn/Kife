@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -11,7 +10,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... } @inputs:
+  outputs = { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -24,9 +23,6 @@
           ./hosts/default/home.nix
         ];
 
-        overlays = [
-          inputs.hyprpanel.overlay
-        ];
       };
 
       homeConfigurations."Plasma" = home-manager.lib.homeManagerConfiguration {

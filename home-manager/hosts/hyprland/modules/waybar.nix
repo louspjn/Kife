@@ -23,8 +23,7 @@
         ];
 
         modules-right = [
-          "hyprland/network"
-          "hyprland/volume"
+          "network"
           "battery"
           "custom/separator"
           "custom/lock"
@@ -38,23 +37,33 @@
 
         "custom/separator" = {
           format = " | ";
+          toltip = false;
         };
 
         "hyprland/window" = {
           format = "{}";
           max-length = 30;
+          toltip = false;
         };
 
         "clock" = {
           type = "clock";
           format = "{:%I:%M %p}";
+          toltip = false;
+        };
+
+        "network" = {
+          format = "{ifname}";
+          format-wifi = "  {essid} ({signalStrength}%) ";
+          format-disconnected = "  Disconnected!";
+          max-length = 50;
         };
 
         "battery" = {
           states = {
             good = 95;
             warning = 30;
-            critical = 20;
+            critical = 8;
           };
 
           format = "{icon} {capacity}%";
@@ -67,7 +76,8 @@
         "custom/lock" = {
           type = "custom";
           format = "  ";
-          command = "hyprlock";
+          on-click = "hyprlock";
+          toltip = false;
         };
       };
     };

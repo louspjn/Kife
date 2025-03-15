@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    stylix.url = "github:danth/stylix";
   };
 
   outputs = { nixpkgs, ... } @inputs:
@@ -14,8 +13,6 @@
 
         modules = [
           ./hosts/plasma/configuration.nix 
-
-          inputs.stylix.nixosModules.stylix
         ];
       };
 
@@ -24,8 +21,6 @@
 
         modules = [
           ./hosts/i3wm/configuration.nix  
-
-          inputs.stylix.nixosModules.stylix
         ];
       };
 
@@ -34,8 +29,6 @@
 
         modules = [
           ./hosts/hyprland/configuration.nix 
-
-          inputs.stylix.nixosModules.stylix
         ];
       };
     };

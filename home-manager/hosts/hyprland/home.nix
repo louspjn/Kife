@@ -10,5 +10,6 @@
   imports = [
     ./modules/hyprland.nix
     ./modules/hyprpaper.nix
+    ./modules/waybar.nix
   ];
 }

@@ -6,32 +6,30 @@ in
 {
   programs.fish = {
     enable = true;
+
+    interactiveShellInit = ''
+     set fish_greeting
+
+     fastfetch
+     zoxide init fish | source
+
+     set -x NIXPKGS_ALLOW_UNFREE 1
+    '';
+
+    shellAliases = {
+      # Other Aliases
+      cd = "z";
+      cat = "${pkgs.bat}/bin/bat";
+      nvim = "nix run github:Jhuan-Nycolas/Nvim";
+      lvim = "nix run ~/Nvim";
+      hw = "nh home switch ${flake}/home-manager";
+      nw = "nh os switch ${flake}/nixos";
+
+      # Ls Aliases
+      ls = "exa --icons";
+      l = "exa --tree --icons";
+      lt = "exa -all --long --icons";
+      ll = "l --tree --icons";
+    };
   };
-
-  home.file.".config/fish/config.fish".text = "
-    if status is-interactive
-      
-      set fish_greeting
-
-      fastfetch
-      zoxide init fish | source
-
-      # Alias
-      alias cd='z'
-      alias cat='${pkgs.bat}/bin/bat'
-      alias nvim='nix run github:Jhuan-Nycolas/Nvim'
-      alias lvim='nix run ~/Nvim'
-      alias hw='nh home switch ${flake}/home-manager'
-      alias nw='nh os switch ${flake}/nixos'
-      
-      # Ls
-      alias ls='exa --icons'
-      alias l='exa --tree --icons'
-      alias lt='exa -all --long --icons'
-      alias ll='l --tree --icons'
-
-      # Variaveis
-      set -x NIXPKGS_ALLOW_UNFREE 1
-    end
-  ";
 }

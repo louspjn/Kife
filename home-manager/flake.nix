@@ -14,7 +14,7 @@
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      homeConfigurations."tux" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."Hypr" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         modules = [

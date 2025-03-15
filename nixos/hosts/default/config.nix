@@ -9,7 +9,6 @@
     ./sound.nix
     ./users.nix
     ./system.nix
-    ./stylix.nix
   ];
 
   system.stateVersion = "25.05";

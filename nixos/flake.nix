@@ -29,7 +29,7 @@
         ];
       };
 
-      Jhuan = nixpkgs.lib.nixosSystem {
+      Hypr = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
 
         modules = [

@@ -7,21 +7,14 @@
   home.stateVersion = "25.05";
 
   home.packages = [
-    pkgs.alacritty
     pkgs.bc
-    pkgs.git
-    pkgs.bat
     pkgs.eza
     pkgs.zoxide
-    pkgs.nitch
+    pkgs.fastfetch
     pkgs.nerd-fonts.jetbrains-mono
-    pkgs.fish
-    pkgs.tmux
-    pkgs.kitty
   ];
-  
+
   imports = [
-    ../default/alacritty.nix
     ../default/kitty.nix
     ../default/git.nix
     ../default/fish.nix

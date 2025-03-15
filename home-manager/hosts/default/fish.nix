@@ -1,18 +1,24 @@
+{ pkgs, ... }:
+
 let
   flake = "~/.config/system";
 in
 {
+  programs.fish = {
+    enable = true;
+  };
+
   home.file.".config/fish/config.fish".text = "
     if status is-interactive
       
       set fish_greeting
 
-      nitch
+      fastfetch
       zoxide init fish | source
 
       # Alias
       alias cd='z'
-      alias cat='bat'
+      alias cat='${pkgs.bat}/bin/bat'
       alias nvim='nix run github:Jhuan-Nycolas/Nvim'
       alias lvim='nix run ~/Nvim'
       alias hw='nh home switch ${flake}/home-manager'

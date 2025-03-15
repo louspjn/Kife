@@ -5,7 +5,6 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    neovim
     wget
     home-manager
     python313
@@ -16,6 +15,5 @@
     sqlite
     obsidian
     gcc
-    nh
   ];
 }

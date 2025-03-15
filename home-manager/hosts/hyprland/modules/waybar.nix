@@ -55,7 +55,7 @@
         "network" = {
           format = "{ifname}";
           format-wifi = "  {essid} ({signalStrength}%) ";
-          format-disconnected = "  Disconnected!";
+          format-disconnected = "  Disconnected! ";
           max-length = 50;
         };
 
@@ -82,6 +82,19 @@
       };
     };
 
-    style = builtins.readFile ./waybarStyle.css;
+    style = ''
+      * {
+        background-color: #3F4551;
+        color: #D8DEE9;
+        border-radius: 15px;
+      }
+
+      #workspaces button:hover {
+        box-shadow: none;
+        text-shadow: none;
+        background: none;
+        transition: none;
+      }
+    '';
   };
 }

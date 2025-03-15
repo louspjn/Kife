@@ -1,5 +1,8 @@
 {
-  programs.firefox.enable = true;
+  programs = {
+    nh.enable = true;
+    neovim.enable = true;
+  };
 
   imports = [
     ./bootloader.nix

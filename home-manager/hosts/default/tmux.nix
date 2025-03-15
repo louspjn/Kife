@@ -1,4 +1,12 @@
+{ pkgs, ... }:
+
 {
+  programs.tmux = {
+    enable = true;
+    plugins = [
+      pkgs.tmuxPlugins.nord 
+    ];
+  };
   home.file.".tmux.conf".text = ''
     run-shell "~/.config/system/home-manager/hosts/dotfiles/.tmux/themes/nord-tmux/nord.tmux"
 

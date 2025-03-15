@@ -1,9 +1,8 @@
-{ pkgs, inputs, ... }:
-
 {
   services = {
     xserver = {
       enable = true;
+
       displayManager.gdm = {
         enable = true;
         wayland = true;
@@ -16,13 +15,7 @@
     };
   };
 
-  programs = {
-    hyprland.enable = true;
-    waybar.enable = true;
-    kitty.enable = true;
-
-    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
-  };
+  programs.hyprland.enable = true;
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 }

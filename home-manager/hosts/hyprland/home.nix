@@ -14,6 +14,6 @@
     ./modules/hyprland.nix
     ./modules/waybar.nix
     ./modules/hyprlock.nix
-    ./modules/wlogout.nix
+    # ./modules/wlogout.nix
   ];
 }

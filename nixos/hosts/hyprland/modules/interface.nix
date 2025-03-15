@@ -1,5 +1,6 @@
+{ pkgs, inputs, ... }:
+
 {
-  # Enable kde plasma.
   services = {
     xserver = {
       enable = true;
@@ -18,6 +19,9 @@
   programs = {
     hyprland.enable = true;
     waybar.enable = true;
+    kitty.enable = true;
+
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";

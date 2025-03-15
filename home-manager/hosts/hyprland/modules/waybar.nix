@@ -7,9 +7,10 @@
         position = "top";
         
         margin-top = 10;
+        margin-left = 12;
+        margin-right = 12;
 
         height = 20;
-        width = 1340;
 
         modules-left = [
           "hyprland/workspaces"
@@ -23,12 +24,14 @@
 
         modules-right = [
           "hyprland/network"
-          "battery"
           "hyprland/volume"
+          "battery"
+          "custom/separator"
           "custom/lock"
         ];
 
         "hyprland/workspaces" = {
+          all-outputs = true;
           type = "workspaces";
           format = "{name}";
         };
@@ -48,18 +51,27 @@
         };
 
         "battery" = {
-          type = "battery";
-          format = "{capacity}% {icon} | ";
+          states = {
+            good = 95;
+            warning = 30;
+            critical = 20;
+          };
+
+          format = "{icon} {capacity}%";
+          format-charging = " {capacity}%";
+          format-plugged = " {capacity}%";
+          format-alt = "{time} {icon}";
+          format-icons = ["󰂎" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
         };
 
         "custom/lock" = {
           type = "custom";
-          format = "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path d='M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z'/></svg> ";
-          command = "swaylock";
+          format = "  ";
+          command = "hyprlock";
         };
       };
     };
 
-    style = builtins.readFile ../../dotfiles/waybar/style.css;
+    style = builtins.readFile ./waybarStyle.css;
   };
 }

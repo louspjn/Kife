@@ -149,6 +149,8 @@
     bind = $mainMod SHIFT, S, movetoworkspace, special:magic
     bind = $mainMod, mouse_down, workspace, e+1
     bind = $mainMod, mouse_up, workspace, e-
+    bind = $mainMod, M, exec, wlogout
+    bind = $mainMod, L, exec, hyprlock
 
     bindm = $mainMod, mouse:272, movewindow
     bindm = $mainMod, mouse:273, resizewindow

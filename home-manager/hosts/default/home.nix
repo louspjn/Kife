@@ -10,15 +10,16 @@
     pkgs.bc
     pkgs.eza
     pkgs.zoxide
-    pkgs.fastfetch
     pkgs.nerd-fonts.jetbrains-mono
   ];
 
   imports = [
-    ../default/kitty.nix
-    ../default/git.nix
-    ../default/fish.nix
-    ../default/tmux.nix
+    ./kitty.nix
+    ./git.nix
+    ./fish.nix
+    ./tmux.nix
+    ./fastfetch.nix
+    ./firefox.nix
   ];
 
   programs.home-manager.enable = true;

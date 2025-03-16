@@ -46,6 +46,8 @@
       # white
       color7   #E5E9F0
       color15  #ECEFF4
+
+      cursor_shape block
     '';
 
     font = {
@@ -59,8 +61,6 @@
 
       window_padding_width = 6;
       background_opacity = 0.9;
-
-      cursor_beam_thickness = 6.0;
     };
   };
 }

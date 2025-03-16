@@ -4,7 +4,7 @@
 
     settings = {
       logo = {
-        #source = "~/.config/system/home-manager/hosts/images/NixOS-Fastfetch.png";
+        source = "~/.config/system/home-manager/hosts/images/NixOS-Fastfetch.png";
 
         width = 30;
         height = 12;
@@ -13,23 +13,81 @@
         size = {
           binaryPrefix = "si";
         };
-        color = "blue";
-        separator = "  ";
+        separator = "    ";
       };
       modules = [
         {
-          type = "datetime";
-          key = "Date";
-          format = "{1}-{3}-{11}";
+          type = "custom";
+          format = "┌─────────────────Sofware Info──────────────────┐";
         }
+        
         {
-          type = "datetime";
-          key = "Time";
-          format = "{14}:{17}:{20}";
+          type = "os";
+          key = "  ";
         }
-        "break"
-        "player"
-        "media"
+
+        {
+          type = "command";
+          text = "whoami";
+          format = "{1} - Jhuan";
+          key = "  ";
+        }
+
+        {
+          type = "wm";
+          key = "  ";
+        }
+
+        {
+          type = "shell";
+          key = "  ";
+        }
+
+        {
+          type = "terminal";
+          key = "  ";
+        }
+
+        {
+          type = "terminalfont";
+          key = "  ";
+        }
+
+        {
+          type = "packages";
+          key = "  ";
+        }
+
+        {
+          type = "custom";
+          format = "├─────────────────Hardware Info─────────────────┤";
+        }
+
+        {
+          type = "battery";
+          key = "  ";
+        }
+
+        {
+          type = "cpu";
+          key = "  ";
+        }
+
+        {
+          type = "physicalmemory";
+          key = "  ";
+        }
+
+        {
+          type = "custom";
+          format = "└───────────────────────────────────────────────┘";
+        }
+
+        {
+          type = "colors";
+          paddingLeft = 16;
+          symbol = "circle";
+        }
       ];
     };
   };

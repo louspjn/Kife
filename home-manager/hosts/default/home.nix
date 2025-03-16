@@ -20,6 +20,7 @@
     ./tmux.nix
     ./fastfetch.nix
     ./firefox.nix
+    ./lf.nix
   ];
 
   programs.home-manager.enable = true;

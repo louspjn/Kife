@@ -24,6 +24,7 @@ in
       lvim = "nix run ~/Nvim";
       hw = "nh home switch ${flake}/home-manager";
       nw = "nh os switch ${flake}/nixos";
+      c = "clear";
 
       # Ls Aliases
       ls = "exa --icons";

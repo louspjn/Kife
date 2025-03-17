@@ -21,6 +21,8 @@
     ./fastfetch.nix
     ./firefox.nix
     ./lf.nix
+
+    ../options/ulauncher.nix
   ];
 
   programs.home-manager.enable = true;

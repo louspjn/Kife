@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  wallpaper = "~/.config/system/home-manager/hosts/images/wallpaper-nord.jpg";
+  wallpaper = "~/setup/home-manager/hosts/images/wallpaper-nord.jpg";
 
   hyprpaper = pkgs.pkgs.writeShellScriptBin "setWallpaper" ''
     echo "
@@ -15,12 +15,12 @@ in
   wayland.windowManager.hyprland.settings = {
     "$terminal" = "kitty";
     "$fileManager" = "thunar";
-    "$menu" = "wofi --show drun";
+    "$menu" = "ulauncher";
     "$mod" = "SUPER";
     "$browser" = "firefox";
     "$bar" = "waybar";
     "$wallpaperSetter" = "hyprpaper";
-    "$locker" = "hyprlock";
+    "$locker" = "swaylock";
     "$logoutApp" = "wlogout";
 
     exec = [

@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  flake = "~/.config/system";
+  flake = "~/setup/";
 in
 {
   programs.fish = {

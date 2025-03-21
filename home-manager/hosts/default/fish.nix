@@ -25,6 +25,7 @@ in
       hw = "nh home switch ${flake}/home-manager";
       nw = "nh os switch ${flake}/nixos";
       c = "clear";
+      testwifi = "nmcli | grep 192.168.100.122; sleep 1; clear; testwifi";
 
       # Ls Aliases
       ls = "exa --icons";

@@ -39,7 +39,7 @@ in
 
       border_size = 2;
 
-      "col.active_border" = "rgba(33ccffee)";
+      "col.active_border" = "rgba(0099bbee)";
       "col.inactive_border" = "rgba(595959aa)";
 
       resize_on_border = false;

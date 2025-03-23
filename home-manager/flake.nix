@@ -19,7 +19,7 @@
         inherit pkgs;
 
         modules = [
-          ./hosts/hyprland/home.nix
+          ./hosts/wayland/hyprland/home.nix
           ./hosts/default/home.nix
         ];
 
@@ -38,7 +38,7 @@
 
         modules = [
           ./hosts/default/home.nix
-          ./hosts/qtile/home.nix
+          ./hosts/wayland/qtile/home.nix
         ];
       };
     };

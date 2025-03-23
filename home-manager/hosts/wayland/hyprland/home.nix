@@ -11,7 +11,7 @@
 
   imports = [
     ./modules/hyprland.nix
-    ./modules/waybar.nix
-    ./modules/ulauncher.nix
+    ../default/waybar.nix
+    ../default/ulauncher.nix
   ];
 }

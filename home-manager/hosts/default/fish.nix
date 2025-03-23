@@ -10,7 +10,7 @@ in
     interactiveShellInit = ''
      set fish_greeting
 
-     fastfetch
+     # fastfetch
      zoxide init fish | source
 
      set -x NIXPKGS_ALLOW_UNFREE 1

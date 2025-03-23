@@ -1,0 +1,6 @@
+{
+  imports =
+    [
+      ../default/config.nix
+    ];
+}

@@ -12,6 +12,7 @@
     ./sound.nix
     ./users.nix
     ./system.nix
+    ../../hardware-configuration.nix
   ];
 
   system.stateVersion = "25.05";

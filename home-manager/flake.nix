@@ -32,5 +32,14 @@
           ./hosts/default/home.nix
         ];
       };
+
+      homeConfigurations."Qtile" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        modules = [
+          ./hosts/default/home.nix
+          ./hosts/qtile/home.nix
+        ];
+      };
     };
 }

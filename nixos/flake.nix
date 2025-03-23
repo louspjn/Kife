@@ -17,7 +17,17 @@
         specialArgs = { inherit inputs; };
 
         modules = [
-          ./hosts/plasma/configuration.nix 
+          ./hosts/plasma/config.nix 
+          ./hosts/default/config.nix
+        ];
+      };
+
+      Qtile = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+
+        modules = [
+          ./hosts/qtile/config.nix 
+          ./hosts/default/config.nix
         ];
       };
 
@@ -25,7 +35,8 @@
         specialArgs = { inherit inputs; };
 
         modules = [
-          ./hosts/hyprland/configuration.nix 
+          ./hosts/hyprland/config.nix 
+          ./hosts/default/config.nix
         ];
       };
     };

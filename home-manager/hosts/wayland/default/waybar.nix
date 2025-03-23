@@ -36,7 +36,7 @@
         };
 
         "custom/separator" = {
-          format = " | ";
+          format = "  |  ";
           toltip = false;
         };
 
@@ -54,8 +54,8 @@
 
         "network" = {
           format = "{ifname}";
-          format-wifi = "  {essid} ({signalStrength}%) ";
-          format-disconnected = "  Disconnected! ";
+          format-wifi = "    {essid} ({signalStrength}%) ";
+          format-disconnected = "    Disconnected! ";
           max-length = 50;
         };
 
@@ -67,8 +67,8 @@
           };
 
           format = "{icon} {capacity}%";
-          format-charging = " {capacity}%";
-          format-plugged = " {capacity}%";
+          format-charging = "   {capacity}%";
+          format-plugged = "   {capacity}%";
           format-alt = "{time} {icon}";
           format-icons = ["󰂎" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
         };

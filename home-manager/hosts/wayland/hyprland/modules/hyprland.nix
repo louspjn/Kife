@@ -140,6 +140,7 @@ in
 
     bind = [
       "$mod, B, exec, $terminal"
+      "$mod, Return, exec, $terminal"
       "$mod, Q, killactive,"
       "$mod+Shift, M, exit,"
       "$mod, E, exec, $fileManager"

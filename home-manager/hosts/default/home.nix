@@ -21,7 +21,6 @@
     ./fastfetch.nix
     ./firefox.nix
     ./lf.nix
-    # ./helix.nix
 
     ../options/ulauncher.nix
   ];

@@ -10,6 +10,7 @@
     pkgs.bc
     pkgs.eza
     pkgs.zoxide
+    pkgs.blightmud
     pkgs.nerd-fonts.jetbrains-mono
   ];
 

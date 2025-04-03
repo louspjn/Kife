@@ -10,6 +10,7 @@
         Cpp.path = "~/Dev/Cpp";
         Python.path = "~/Dev/Python/";
         Rust.path = "~/Dev/Rust/";
+        Reop.path = "~/Reop/";
       };
     };
   };

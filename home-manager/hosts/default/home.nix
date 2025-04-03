@@ -11,6 +11,9 @@
     pkgs.eza
     pkgs.zoxide
     pkgs.blightmud
+    pkgs.irssi
+    pkgs.weechat
+    pkgs.w3m
     pkgs.nerd-fonts.jetbrains-mono
   ];
 

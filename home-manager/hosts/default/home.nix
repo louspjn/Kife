@@ -17,6 +17,8 @@
     pkgs.nerd-fonts.jetbrains-mono
   ];
 
+  nixpkgs.overlays = [ (import ../../../sourcecodes/Reop/overlay.nix) ];
+
   imports = [
     ./kitty.nix
     ./git.nix

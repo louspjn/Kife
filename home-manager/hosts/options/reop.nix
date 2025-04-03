@@ -24,13 +24,13 @@ in
                 };
 
                 projects = mkOption {
-                  type = types.submodule {
-                    option.path = mkOption {
+                  type = types.attrsOf (types.submodule {
+                    options.path = mkOption {
                       type = types.str;
                       default = "";
                       description = "Path for the project";
                     };
-                  };
+                  });
 
                   default = {};
                 };
@@ -48,7 +48,7 @@ in
 
   config = mkIf (config.reop.enable) {
     home.packages = [
-      (pkgs.callPackage ../../../sourcecodes/Reop/overlay.nix {})
+      pkgs.reop
     ];
 
     home.file.".config/reop/config.json".text = "${builtins.toJSON config.reop.settings}";

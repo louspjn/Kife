@@ -9,7 +9,7 @@
   nixpkgs.overlays = [ 
     (import ../../../Overlays/Reop/overlay.nix)
 
-    (import ../../../Overlays/Alacritty-smooth-cursor/overlay.nix)
+    # (import ../../../Overlays/Alacritty-smooth-cursor/overlay.nix)
   ];
 
   home.packages = [
@@ -20,7 +20,7 @@
     pkgs.irssi
     pkgs.weechat
     pkgs.w3m
-    pkgs.alacritty
+    # pkgs.alacritty
     pkgs.nerd-fonts.jetbrains-mono
   ];
 

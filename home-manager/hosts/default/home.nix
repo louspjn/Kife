@@ -33,6 +33,7 @@
     ./firefox.nix
     ./lf.nix
     ./reop.nix
+    ./helix.nix
 
     ../options/reop.nix
     ../options/ulauncher.nix

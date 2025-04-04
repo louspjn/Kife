@@ -6,6 +6,12 @@
 
   home.stateVersion = "25.05";
 
+  nixpkgs.overlays = [ 
+    (import ../../../Overlays/Reop/overlay.nix)
+
+    (import ../../../Overlays/Alacritty-smooth-cursor/overlay.nix)
+  ];
+
   home.packages = [
     pkgs.bc
     pkgs.eza
@@ -14,11 +20,8 @@
     pkgs.irssi
     pkgs.weechat
     pkgs.w3m
+    pkgs.alacritty
     pkgs.nerd-fonts.jetbrains-mono
-  ];
-
-  nixpkgs.overlays = [ 
-    (import ../../../Overlays/Reop/overlay.nix)
   ];
 
   imports = [

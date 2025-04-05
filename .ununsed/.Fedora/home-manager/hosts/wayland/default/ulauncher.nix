@@ -1,3 +1,0 @@
-{
-  ulauncher.enable = true;
-}

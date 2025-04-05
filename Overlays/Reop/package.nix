@@ -11,7 +11,7 @@ stdenv.mkDerivation {
     owner = "Jhuan-Nycolas";
     repo = "Reop";
     rev = "main";
-    sha256 = "sha256-mE6GixRx8czb/669luXX/i5p0dO4DMsVTiXWiSXelpA=";
+    sha256 = "1s5ikck1ibggg78qfpcbamjnj548jdnhykdk4d02s6pckbz47d2m";
   };
 
   buildInputs = [python3];

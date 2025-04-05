@@ -1,3 +1,3 @@
 self: super: {
-  reop = super.callPackage ./reop.nix {};
+  reop = super.callPackage ./package.nix {};
 }

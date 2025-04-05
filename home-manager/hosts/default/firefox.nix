@@ -3,21 +3,24 @@
     enable = true;
 
     profiles.jhuan = {
-      bookmarks = [
-        {
-          name = "Youtube";
-          tags = ["tube" "youtube" "videos"];
-          keyword = "youtube";
-          url = "https://youtube.com";
-        }
+      bookmarks = {
+        force = true;
+        settings = [
+          {
+            name = "Youtube";
+            tags = ["tube" "youtube" "videos"];
+            keyword = "youtube";
+            url = "https://youtube.com";
+          }
 
-        {
-          name = "GitHub";
-          tags = ["code" "coding" "projects" "repos"];
-          keyword = "git";
-          url = "https://github.com";
-        }
-      ];
+          {
+            name = "GitHub";
+            tags = ["code" "coding" "projects" "repos"];
+            keyword = "git";
+            url = "https://github.com";
+          }
+        ];
+      };
 
       search.engines = {
         "Nix Packages" = {

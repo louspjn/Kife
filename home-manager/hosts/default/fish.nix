@@ -1,19 +1,16 @@
-{ pkgs, ... }:
-
-let
+{pkgs, ...}: let
   flake = "~/setup";
-in
-{
+in {
   programs.fish = {
     enable = true;
 
     interactiveShellInit = ''
-     set fish_greeting
+      set fish_greeting
 
-     # fastfetch
-     zoxide init fish | source
+      # fastfetch
+      zoxide init fish | source
 
-     set -x NIXPKGS_ALLOW_UNFREE 1
+      set -x NIXPKGS_ALLOW_UNFREE 1
     '';
 
     shellAliases = {

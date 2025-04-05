@@ -7,7 +7,7 @@
         enable = true;
         wayland = true;
       };
-      
+
       xkb = {
         layout = "br";
         variant = "abnt2";

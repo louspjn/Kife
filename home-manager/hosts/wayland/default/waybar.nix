@@ -5,7 +5,7 @@
     settings = {
       defaultBar = {
         position = "top";
-        
+
         margin-top = 10;
         margin-left = 12;
         margin-right = 12;

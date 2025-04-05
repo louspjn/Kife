@@ -20,7 +20,7 @@
           type = "custom";
           format = "┌─────────────────Sofware Info──────────────────┐";
         }
-        
+
         {
           type = "os";
           key = "  ";

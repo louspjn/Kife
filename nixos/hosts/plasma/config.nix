@@ -1,6 +1,5 @@
 {
-  imports =
-    [
-      ../default/config.nix
-    ];
+  imports = [
+    ../default/config.nix
+  ];
 }

@@ -1,9 +1,11 @@
-{ pkgs, lib, config, ... }:
-
-let
-  inherit (lib) mkOption mkIf types;
-in
 {
+  pkgs,
+  lib,
+  config,
+  ...
+}: let
+  inherit (lib) mkOption mkIf types;
+in {
   options = {
     ulauncher = mkOption {
       type = types.submodule {
@@ -12,7 +14,7 @@ in
             type = types.bool;
             default = false;
             description = "Enable Ulauncher";
-          }; 
+          };
 
           settings = mkOption {
             type = types.submodule {

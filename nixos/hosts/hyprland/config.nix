@@ -1,7 +1,6 @@
 {
-  imports =
-    [
-      ./modules/interface.nix
-      ./modules/cursor.nix
-    ];
+  imports = [
+    ./modules/interface.nix
+    ./modules/cursor.nix
+  ];
 }

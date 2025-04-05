@@ -1,5 +1,8 @@
-{ stdenv, fetchFromGitHub, python3 }:
-
+{
+  stdenv,
+  fetchFromGitHub,
+  python3,
+}:
 stdenv.mkDerivation {
   pname = "reop";
   version = "1.0";
@@ -11,7 +14,7 @@ stdenv.mkDerivation {
     sha256 = "sha256-mE6GixRx8czb/669luXX/i5p0dO4DMsVTiXWiSXelpA=";
   };
 
-  buildInputs = [ python3 ];
+  buildInputs = [python3];
 
   installPhase = ''
     mkdir -p $out/bin

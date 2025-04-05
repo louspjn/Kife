@@ -1,12 +1,10 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   home.username = "tux";
   home.homeDirectory = "/home/tux";
 
   home.stateVersion = "25.05";
 
-  nixpkgs.overlays = [ 
+  nixpkgs.overlays = [
     (import ../../../Overlays/Reop/overlay.nix)
   ];
 

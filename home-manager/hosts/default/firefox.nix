@@ -6,14 +6,14 @@
       bookmarks = [
         {
           name = "Youtube";
-          tags = [ "tube" "youtube" "videos" ];
+          tags = ["tube" "youtube" "videos"];
           keyword = "youtube";
           url = "https://youtube.com";
         }
 
         {
           name = "GitHub";
-          tags = [ "code" "coding" "projects" "repos" ];
+          tags = ["code" "coding" "projects" "repos"];
           keyword = "git";
           url = "https://github.com";
         }
@@ -21,16 +21,27 @@
 
       search.engines = {
         "Nix Packages" = {
-          urls = [{
-            template = "https://search.nixos.org/packages";
-            params = [
-              { name = "type"; value = "packages"; }
-              { name = "query"; value = "{searchTerms}"; }
-              { name = "channel"; value = "unstable"; }
-            ];
-          }];
+          urls = [
+            {
+              template = "https://search.nixos.org/packages";
+              params = [
+                {
+                  name = "type";
+                  value = "packages";
+                }
+                {
+                  name = "query";
+                  value = "{searchTerms}";
+                }
+                {
+                  name = "channel";
+                  value = "unstable";
+                }
+              ];
+            }
+          ];
 
-          definedAliases = [ "@nixpkgs" "@npkgs" "@np" ];
+          definedAliases = ["@nixpkgs" "@npkgs" "@np"];
         };
       };
 

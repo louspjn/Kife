@@ -10,32 +10,31 @@
     };
   };
 
-  outputs = { nixpkgs, ... } @inputs:
-  {
+  outputs = {nixpkgs, ...} @ inputs: {
     nixosConfigurations = {
       Plasma = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = {inherit inputs;};
 
         modules = [
-          ./hosts/plasma/config.nix 
+          ./hosts/plasma/config.nix
           ./hosts/default/config.nix
         ];
       };
 
       Qtile = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = {inherit inputs;};
 
         modules = [
-          ./hosts/qtile/config.nix 
+          ./hosts/qtile/config.nix
           ./hosts/default/config.nix
         ];
       };
 
       Hypr = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = {inherit inputs;};
 
         modules = [
-          ./hosts/hyprland/config.nix 
+          ./hosts/hyprland/config.nix
           ./hosts/default/config.nix
         ];
       };

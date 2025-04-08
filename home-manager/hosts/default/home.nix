@@ -4,10 +4,6 @@
 
   home.stateVersion = "25.05";
 
-  nixpkgs.overlays = [
-    (import ../../../Overlays/Reop/overlay.nix)
-  ];
-
   home.packages = [
     pkgs.bc
     pkgs.eza
@@ -28,7 +24,6 @@
     ./firefox.nix
     ./reop.nix
 
-    ../options/reop.nix
     ../options/ulauncher.nix
   ];
 

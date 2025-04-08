@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    reop.url = "../Apps/Reop/";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -13,6 +14,7 @@
   outputs = {
     nixpkgs,
     home-manager,
+    reop,
     ...
   }: let
     system = "x86_64-linux";
@@ -24,6 +26,7 @@
       modules = [
         ./hosts/wayland/hyprland/home.nix
         ./hosts/default/home.nix
+        reop.homeManagerModules.reop
       ];
     };
 

@@ -79,7 +79,7 @@ in {
 
   config = mkIf (config.reop.enable) {
     home.packages = [
-      pkgs.reop
+      (pkgs.callPackage ../default.nix {})
     ];
 
     home.file.".config/reop/config.json".text = "${builtins.toJSON config.reop.settings}";

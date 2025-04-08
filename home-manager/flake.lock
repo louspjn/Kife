@@ -20,6 +20,24 @@
         "type": "github"
       }
     },
+    "home-manager_2": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1744138333,
+        "narHash": "sha256-l0Vjq1EZoYTfWImVmwsvMEuIdasrBRRCoNTV0rNtYi0=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "760eed59594f2f258db0d66b7ca4a5138681fd97",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1743583204,
@@ -36,10 +54,58 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1743827369,
+        "narHash": "sha256-rpqepOZ8Eo1zg+KJeWoq1HAOgoMCDloqv5r2EAa9TSA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "42a1c966be226125b48c384171c44c651c236c22",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1744152863,
+        "narHash": "sha256-UcbKP2GUZxcMQwzfb88xou17GBxpwwZu1EMjLRZGwh8=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f4e5e7ad39ef108856ec7442e62fe26f5ff70479",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "reop": {
+      "inputs": {
+        "home-manager": "home-manager_2",
+        "nixpkgs": "nixpkgs_3"
+      },
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-e8McpO0hoRWi71S9QMtqj+Tfc6r8Y8Hs+acBjr9JnZw=",
+        "path": "/nix/store/78d4w05abp9xskf0157v95dgzmwd0ivh-source/Apps/Reop",
+        "type": "path"
+      },
+      "original": {
+        "path": "/nix/store/78d4w05abp9xskf0157v95dgzmwd0ivh-source/Apps/Reop",
+        "type": "path"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "reop": "reop"
       }
     }
   },

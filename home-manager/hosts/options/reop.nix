@@ -25,12 +25,41 @@ in {
                   description = "Editor to open project";
                 };
 
+                shell = mkOption {
+                  type = types.str;
+                  default = "bash";
+                  description = "Default Shell interpreter";
+                };
+
                 projects = mkOption {
                   type = types.attrsOf (types.submodule {
-                    options.path = mkOption {
-                      type = types.str;
-                      default = "";
-                      description = "Path for the project";
+                    options = {
+                      nixShell = mkOption {
+                        type = types.submodule {
+                          options = {
+                            path = mkOption {
+                              type = types.str;
+                              default = "";
+                              description = "Path for the Nix DevShell";
+                            };
+
+                            host = mkOption {
+                              type = types.str;
+                              default = "";
+                              description = "Host or Configuration of Nix DevShell";
+                            };
+                          };
+                        };
+
+                        default = {};
+                        description = "Nix DevShell";
+                      };
+
+                      path = mkOption {
+                        type = types.str;
+                        default = "";
+                        description = "Path for the project";
+                      };
                     };
                   });
 

@@ -5,7 +5,7 @@
 }:
 stdenv.mkDerivation {
   pname = "reop";
-  version = "1.0";
+  version = "1.1";
 
   src = fetchFromGitHub {
     owner = "Jhuan-Nycolas";

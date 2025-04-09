@@ -91,14 +91,17 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-e8McpO0hoRWi71S9QMtqj+Tfc6r8Y8Hs+acBjr9JnZw=",
-        "path": "/nix/store/78d4w05abp9xskf0157v95dgzmwd0ivh-source/Apps/Reop",
-        "type": "path"
+        "lastModified": 1744157176,
+        "narHash": "sha256-CjucqtMdDQDkePUkH9isGgj0SrxK156ipQH8e5CWwik=",
+        "owner": "Jhuan-Nycolas",
+        "repo": "Reop",
+        "rev": "4db24556a8b7620ce52d672f5db6a5099ad41dfd",
+        "type": "github"
       },
       "original": {
-        "path": "/nix/store/78d4w05abp9xskf0157v95dgzmwd0ivh-source/Apps/Reop",
-        "type": "path"
+        "owner": "Jhuan-Nycolas",
+        "repo": "Reop",
+        "type": "github"
       }
     },
     "root": {

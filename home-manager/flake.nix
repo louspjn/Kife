@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    reop.url = "../Apps/Reop/";
+    reop.url = "github:Jhuan-Nycolas/Reop";
 
     home-manager = {
       url = "github:nix-community/home-manager";

@@ -32,4 +32,8 @@ in {
       ll = "l --tree --icons";
     };
   };
+
+  home.packages = [
+    pkgs.eza
+  ];
 }

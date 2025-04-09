@@ -6,7 +6,6 @@
 
   home.packages = [
     pkgs.bc
-    pkgs.eza
     pkgs.zoxide
     pkgs.blightmud
     pkgs.irssi
@@ -18,7 +17,8 @@
   imports = [
     ./kitty.nix
     ./git.nix
-    ./fish.nix
+    # ./fish.nix
+    ./nushell.nix
     ./tmux.nix
     ./fastfetch.nix
     ./firefox.nix

@@ -21,12 +21,11 @@
         ];
       };
 
-      Qtile = nixpkgs.lib.nixosSystem {
+      server = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
 
         modules = [
-          ./hosts/qtile/config.nix
-          ./hosts/default/config.nix
+          ./hosts/server/config.nix
         ];
       };
 

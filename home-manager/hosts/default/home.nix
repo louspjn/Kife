@@ -15,14 +15,18 @@
   ];
 
   imports = [
-    ./kitty.nix
-    ./git.nix
-    # ./fish.nix
-    ./nushell.nix
-    ./tmux.nix
-    ./fastfetch.nix
-    ./firefox.nix
-    ./reop.nix
+    ./gph-apps/firefox.nix
+    ./gph-apps/kitty.nix
+
+    ./shells/nushell/nushell.nix
+    # ./shells/fish/fish.nix
+
+    ./terminal-ultilities/fastfetch.nix
+    ./terminal-ultilities/git.nix
+    # ./terminal-ultilities/helix.nix
+    ./terminal-ultilities/lf.nix
+    ./terminal-ultilities/reop.nix
+    ./terminal-ultilities/tmux.nix
 
     ../options/ulauncher.nix
   ];

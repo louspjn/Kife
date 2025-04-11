@@ -7,6 +7,8 @@
         layout = "br";
         variant = "abnt2";
       };
+
+      windowManager.dwm.enable = true;
     };
   };
 }

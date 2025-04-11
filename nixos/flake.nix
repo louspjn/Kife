@@ -21,11 +21,12 @@
         ];
       };
 
-      server = nixpkgs.lib.nixosSystem {
+      Dwm = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
 
         modules = [
-          ./hosts/server/config.nix
+          ./hosts/dwm/config.nix
+          ./hosts/default/config.nix
         ];
       };
 

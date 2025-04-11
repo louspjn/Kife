@@ -1,5 +1,5 @@
 {
   imports = [
-    ../default/config.nix
+    ./modules/interface.nix
   ];
 }

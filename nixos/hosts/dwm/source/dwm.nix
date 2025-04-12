@@ -27,6 +27,6 @@ stdenv.mkDerivation {
     homepage = "https://dwm.suckless.org/";
     license = lib.licenses.mit;
     maintainers = with stdenv.lib.maintainers; [];
-    platforms = stdenv.lib.platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

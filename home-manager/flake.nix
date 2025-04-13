@@ -35,6 +35,7 @@
 
       modules = [
         ./hosts/default/home.nix
+        reop.homeManagerModules.reop
       ];
     };
 
@@ -44,6 +45,7 @@
       modules = [
         ./hosts/default/home.nix
         ./hosts/xorg/dwm/home.nix
+        reop.homeManagerModules.reop
       ];
     };
   };

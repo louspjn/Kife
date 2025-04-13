@@ -27,9 +27,8 @@
     ./terminal-ultilities/lf.nix
     ./terminal-ultilities/reop.nix
     ./terminal-ultilities/tmux.nix
+    ./terminal-ultilities/nh.nix
 
     ../options/ulauncher.nix
   ];
-
-  programs.home-manager.enable = true;
 }

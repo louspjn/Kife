@@ -21,15 +21,6 @@
         ];
       };
 
-      Dwm = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
-
-        modules = [
-          ./hosts/dwm/config.nix
-          ./hosts/default/config.nix
-        ];
-      };
-
       Hypr = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
 

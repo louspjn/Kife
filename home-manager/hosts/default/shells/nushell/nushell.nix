@@ -43,7 +43,7 @@ in {
       };
 
       extraConfig = ''
-        source ~/setup/home-manager/hosts/default/shells/nushell/nord.nu
+        source ~/setup/home-manager/hosts/default/shells/nushell/theme.nu
       '';
     };
   };

@@ -12,5 +12,12 @@
     unzip
     sqlite
     obsidian
+
+    upower
+    bluez
+    libnotify
+    brightnessctl
+    lm_sensors
+    pulseaudio
   ];
 }

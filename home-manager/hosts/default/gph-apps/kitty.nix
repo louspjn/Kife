@@ -3,51 +3,86 @@
     enable = true;
 
     extraConfig = ''
-      # Nord Colorscheme for Kitty
-      # Based on:
-      # - https://gist.github.com/marcusramberg/64010234c95a93d953e8c79fdaf94192
-      # - https://github.com/arcticicestudio/nord-hyper
+      # vim:ft=kitty
 
-      foreground            #D8DEE9
-      background            #2E3440
-      selection_foreground  #000000
-      selection_background  #FFFACD
-      url_color             #0087BD
-      cursor                #e3e3e3
+      ## name:     Catppuccin Kitty Macchiato
+      ## author:   Catppuccin Org
+      ## license:  MIT
+      ## upstream: https://github.com/catppuccin/kitty/blob/main/themes/macchiato.conf
+      ## blurb:    Soothing pastel theme for the high-spirited!
+
+
+
+      # The basic colors
+      foreground              #cad3f5
+      background              #24273a
+      selection_foreground    #24273a
+      selection_background    #f4dbd6
+
+      # Cursor colors
+      cursor                  #f4dbd6
+      cursor_text_color       #24273a
+
+      # URL underline color when hovering with mouse
+      url_color               #f4dbd6
+
+      # Kitty window border colors
+      active_border_color     #b7bdf8
+      inactive_border_color   #6e738d
+      bell_border_color       #eed49f
+
+      # OS Window titlebar colors
+      wayland_titlebar_color system
+      macos_titlebar_color system
+
+      # Tab bar colors
+      active_tab_foreground   #181926
+      active_tab_background   #c6a0f6
+      inactive_tab_foreground #cad3f5
+      inactive_tab_background #1e2030
+      tab_bar_background      #181926
+
+      # Colors for marks (marked text in the terminal)
+      mark1_foreground #24273a
+      mark1_background #b7bdf8
+      mark2_foreground #24273a
+      mark2_background #c6a0f6
+      mark3_foreground #24273a
+      mark3_background #7dc4e4
+
+      # The 16 terminal colors
 
       # black
-      color0   #3B4252
-      color8   #4C566A
+      color0 #494d64
+      color8 #5b6078
 
       # red
-      color1   #BF616A
-      color9   #BF616A
+      color1 #ed8796
+      color9 #ed8796
 
       # green
-      color2   #A3BE8C
-      color10  #A3BE8C
+      color2  #a6da95
+      color10 #a6da95
 
       # yellow
-      color3   #EBCB8B
-      color11  #EBCB8B
+      color3  #eed49f
+      color11 #eed49f
 
       # blue
-      color4  #81A1C1
-      color12 #81A1C1
+      color4  #8aadf4
+      color12 #8aadf4
 
       # magenta
-      color5   #B48EAD
-      color13  #B48EAD
+      color5  #f5bde6
+      color13 #f5bde6
 
       # cyan
-      color6   #88C0D0
-      color14  #8FBCBB
+      color6  #8bd5ca
+      color14 #8bd5ca
 
       # white
-      color7   #E5E9F0
-      color15  #ECEFF4
-
-      cursor_shape block
+      color7  #b8c0e0
+      color15 #a5adcb
     '';
 
     font = {

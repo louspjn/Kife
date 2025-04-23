@@ -24,7 +24,7 @@
       inherit pkgs;
 
       modules = [
-        ./hosts/wayland/hyprland/home.nix
+        ./hosts/hyprland/home.nix
         ./hosts/default/home.nix
         reop.homeManagerModules.reop
       ];
@@ -35,16 +35,6 @@
 
       modules = [
         ./hosts/default/home.nix
-        reop.homeManagerModules.reop
-      ];
-    };
-
-    homeConfigurations."Dwm" = home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
-
-      modules = [
-        ./hosts/default/home.nix
-        ./hosts/xorg/dwm/home.nix
         reop.homeManagerModules.reop
       ];
     };

@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  wallpaper = "~/setup/home-manager/hosts/images/wallpapers/nix-black.png";
+  wallpaper = "~/setup/home-manager/hosts/images/wallpapers/invasion.png";
 
   setwallpaper =
     pkgs.writeShellScriptBin "setWallpaper"

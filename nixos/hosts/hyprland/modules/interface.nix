@@ -1,12 +1,16 @@
-{
+{pkgs, ...}: {
   services = {
-    xserver = {
+    displayManager.sddm = {
       enable = true;
 
-      displayManager.gdm = {
-        enable = true;
-        wayland = true;
-      };
+      package = pkgs.kdePackages.sddm;
+
+      extraPackages = [pkgs.sddm-astronaut];
+      theme = "${pkgs.sddm-astronaut}/share/sddm/themes/sddm-astronaut-theme";
+    };
+
+    xserver = {
+      enable = true;
 
       xkb = {
         layout = "br";

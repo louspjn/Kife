@@ -16,7 +16,7 @@ in {
     "$terminal" = "kitty";
     "$menu" = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/window.sh";
     "$mod" = "SUPER";
-    "$browser" = "firefox";
+    "$browser" = "zen";
 
     exec = [
       "${setwallpaper}/bin/setWallpaper"

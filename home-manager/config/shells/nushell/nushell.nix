@@ -20,7 +20,7 @@ in {
         # Other Aliases
         cd = "z";
         cat = "${pkgs.bat}/bin/bat";
-        nvim = "nix run github:Jhuan-Nycolas/Nvim";
+        nvim = "nix run github:haskex/nvim";
         lvim = "nix run ~/Nvim";
         hw = "nh home switch ${flake}/home-manager";
         nw = "nh os switch ${flake}/nixos";
@@ -38,7 +38,7 @@ in {
         edit_mode = "vi";
         table.mode = "rounded";
 
-        buffer_editor = "nix run github:Jhuan-Nycolas/Nvim";
+        buffer_editor = "nix run github:haskex/Nvim";
         show_banner = false;
       };
 

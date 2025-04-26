@@ -1,5 +1,4 @@
 {
-  # Bootloader.
   boot.loader = {
     grub.enable = true;
     grub.devices = ["nodev"];

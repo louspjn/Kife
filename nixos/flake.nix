@@ -12,21 +12,11 @@
 
   outputs = {nixpkgs, ...} @ inputs: {
     nixosConfigurations = {
-      Plasma = nixpkgs.lib.nixosSystem {
+      "Jhuan" = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
 
         modules = [
-          ./hosts/plasma/config.nix
-          ./hosts/default/config.nix
-        ];
-      };
-
-      Hypr = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
-
-        modules = [
-          ./hosts/hyprland/config.nix
-          ./hosts/default/config.nix
+          ./config/config.nix
         ];
       };
     };

@@ -1,7 +1,7 @@
 {pkgs, ...}: {
-  users.users.tux = {
+  users.users.haskex = {
     isNormalUser = true;
-    description = "Tux";
+    description = "Me";
     extraGroups = ["networkmanager" "wheel"];
     shell = pkgs.nushell;
   };

@@ -1,6 +1,6 @@
 {pkgs, ...}: {
-  home.username = "tux";
-  home.homeDirectory = "/home/tux";
+  home.username = "haskex";
+  home.homeDirectory = "/home/haskex";
 
   home.stateVersion = "25.05";
 
@@ -11,22 +11,29 @@
     };
   };
 
-  home.packages = [
-    pkgs.bc
-    pkgs.zoxide
-    pkgs.blightmud
-    pkgs.irssi
-    pkgs.weechat
-    pkgs.w3m
-    pkgs.nerd-fonts.jetbrains-mono
-    pkgs.vscode
-    pkgs.rofi
+  home.packages = with pkgs; [
+    bc
+    zoxide
+    blightmud
+    irssi
+    weechat
+    w3m
+    nerd-fonts.jetbrains-mono
+    vscode
+    rofi
+    nitch
+
+    xfce.thunar
+    hyprpaper
+    hyprlock
+    wlogout
+    alsa-utils
   ];
 
   imports = [
-    ./gph-apps/firefox.nix
     ./gph-apps/kitty.nix
     ./gph-apps/rofi.nix
+    ./gph-apps/zenBrowser.nix
 
     ./shells/nushell/nushell.nix
 
@@ -36,5 +43,8 @@
     ./terminal-ultilities/reop.nix
     ./terminal-ultilities/tmux.nix
     ./terminal-ultilities/nh.nix
+
+    ./hyprland/hyprland.nix
+    ./hyprland/waybar.nix
   ];
 }

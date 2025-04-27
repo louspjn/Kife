@@ -31,9 +31,9 @@
   ];
 
   imports = [
-    ./gph-apps/kitty.nix
-    ./gph-apps/rofi.nix
-    ./gph-apps/zenBrowser.nix
+    ./programs/kitty.nix
+    ./programs/rofi.nix
+    ./programs/zenBrowser.nix
 
     ./shells/nushell/nushell.nix
 

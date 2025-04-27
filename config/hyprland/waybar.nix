@@ -146,7 +146,7 @@
         };
 
         "custom/cpuinfo" = {
-          exec = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/cpu-temp.sh";
+          exec = "~/setup/config/hyprland/scripts/waybar/cpu-temp.sh";
           return-type = "json";
           format = "{}";
           interval = 5;
@@ -179,7 +179,7 @@
         "custom/distro" = {
           format = " ";
           tooltip = false;
-          on-click = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/window.sh";
+          on-click = "~/setup/config/hyprland/scripts/waybar/window.sh";
         };
 
         idle_inhibitor = {
@@ -228,10 +228,10 @@
         };
 
         "custom/wifi" = {
-          exec = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/wifi-status.sh";
+          exec = "~/setup/config/hyprland/scripts/waybar/wifi-status.sh";
           return-type = "json";
           format = "{}";
-          on-click = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/wifi-menu.sh";
+          on-click = "~/setup/config/hyprland/scripts/waybar/wifi-menu.sh";
           on-click-right = "kitty --title '󰤨  Network Manager TUI' bash -c nmtui";
           interval = 1;
           min-length = 1;
@@ -250,7 +250,7 @@
           tooltip-format-enumerate-connected = "{device_alias}";
           tooltip-format-enumerate-connected-battery = ":: {device_alias}: 󱊣 {device_battery_percentage}%";
 
-          on-click = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/bluetooth-menu.sh";
+          on-click = "~/setup/config/hyprland/scripts/waybar/bluetooth-menu.sh";
           on-click-right = "kitty --title '󰂯  Bluetooth TUI' bash -c bluetui";
           interval = 1;
           min-length = 1;
@@ -258,10 +258,10 @@
         };
 
         "custom/update" = {
-          exec = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/system-update.sh";
+          exec = "~/setup/config/hyprland/scripts/waybar/system-update.sh";
           return-type = "json";
           format = "{}";
-          on-click = "hyprctl dispatch exec '~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/system-update.sh up'";
+          on-click = "hyprctl dispatch exec '~/setup/config/hyprland/scripts/waybar/system-update.sh up'";
           interval = 30;
           min-length = 1;
           max-length = 1;
@@ -297,9 +297,9 @@
           };
 
           tooltip-format = "Device: {desc}";
-          on-click = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/volume-control.sh -o m";
-          on-scroll-up = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/volume-control.sh -o i";
-          on-scroll-down = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/volume-control.sh -o d";
+          on-click = "~/setup/config/hyprland/scripts/waybar/volume-control.sh -o m";
+          on-scroll-up = "~/setup/config/hyprland/scripts/waybar/volume-control.sh -o i";
+          on-scroll-down = "~/setup/config/hyprland/scripts/waybar/volume-control.sh -o d";
           min-length = 6;
           max-length = 6;
         };
@@ -308,8 +308,8 @@
           format = "{icon} {percent}%";
           format-icons = ["" "" "" "" "" "" "" "" ""];
           tooltip = false;
-          on-scroll-up = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/brightness-control.sh -o i";
-          on-scroll-down = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/brightness-control.sh -o d";
+          on-scroll-up = "~/setup/config/hyprland/scripts/waybar/brightness-control.sh -o i";
+          on-scroll-down = "~/setup/config/hyprland/scripts/waybar/brightness-control.sh -o d";
           min-length = 6;
           max-length = 6;
         };
@@ -334,7 +334,7 @@
         "custom/power" = {
           format = " ";
           tooltip = false;
-          on-click = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/power-menu.sh";
+          on-click = "~/setup/config/hyprland/scripts/waybar/power-menu.sh";
         };
 
         "custom/paddw" = {

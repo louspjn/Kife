@@ -14,4 +14,15 @@
     lm_sensors
     pulseaudio
   ];
+
+  programs = {
+    nh.enable = true;
+
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+    };
+
+    hyprland.enable = true;
+  };
 }

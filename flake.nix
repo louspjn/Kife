@@ -1,9 +1,10 @@
 {
-  description = "Home Manager configuration flake";
+  description = "Setup configuration flake";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    reop.url = "github:Jhuan-Nycolas/Reop";
+
+    reop.url = "github:haskex/reop";
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
@@ -14,6 +15,11 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    rose-pine-hyprcursor = {
+      url = "github:ndom91/rose-pine-hyprcursor";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -22,7 +28,7 @@
     reop,
     zen-browser,
     ...
-  }: let
+  } @ inputs: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
   in {
@@ -34,6 +40,16 @@
         reop.homeManagerModules.reop
         zen-browser.homeModules.beta
       ];
+    };
+
+    nixosConfigurations = {
+      "Jhuan" = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+
+        modules = [
+          ./config/config.nix
+        ];
+      };
     };
   };
 }

@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  wallpaper = "~/setup/home-manager/hosts/images/wallpapers/invasion.png";
+  wallpaper = "~/setup/config/images/wallpapers/invasion.png";
 
   setwallpaper =
     pkgs.writeShellScriptBin "setWallpaper"
@@ -14,7 +14,7 @@ in {
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
     "$terminal" = "kitty";
-    "$menu" = "~/setup/home-manager/hosts/hyprland/modules/scripts/waybar/window.sh";
+    "$menu" = "~/setup/config/hyprland/scripts/waybar/window.sh";
     "$mod" = "SUPER";
     "$browser" = "zen";
 

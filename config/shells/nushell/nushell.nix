@@ -1,6 +1,4 @@
-{pkgs, ...}: let
-  flake = "~/setup";
-in {
+{pkgs, ...}: {
   programs = {
     oh-my-posh = {
       enable = true;
@@ -22,8 +20,8 @@ in {
         cat = "${pkgs.bat}/bin/bat";
         nvim = "nix run github:haskex/nvim";
         lvim = "nix run ~/Nvim";
-        hw = "nh home switch ${flake}/home-manager";
-        nw = "nh os switch ${flake}/nixos";
+        hw = "nh home switch";
+        nw = "nh os switch";
         c = "clear";
 
         icon = "grid -i -s '  '";
@@ -43,7 +41,7 @@ in {
       };
 
       extraConfig = ''
-        source ~/setup/home-manager/hosts/default/shells/nushell/theme.nu
+        source ~/setup/config/shells/nushell/theme.nu
       '';
     };
   };

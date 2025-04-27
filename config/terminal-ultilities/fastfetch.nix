@@ -4,7 +4,7 @@
 
     settings = {
       logo = {
-        source = "~/setup/home-manager/hosts/images/NixOS-Fastfetch.png";
+        source = "~/setup/config/images/NixOS-Fastfetch.png";
 
         width = 30;
         height = 12;

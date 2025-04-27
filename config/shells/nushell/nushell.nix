@@ -18,10 +18,6 @@
         # Other Aliases
         cd = "z";
         cat = "${pkgs.bat}/bin/bat";
-        nvim = "nix run github:haskex/nvim";
-        lvim = "nix run ~/Nvim";
-        hw = "nh home switch";
-        nw = "nh os switch";
         c = "clear";
 
         icon = "grid -i -s '  '";

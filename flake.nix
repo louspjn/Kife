@@ -20,6 +20,8 @@
       url = "github:ndom91/rose-pine-hyprcursor";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nvf.url = "github:notashelf/nvf";
   };
 
   outputs = {
@@ -27,6 +29,7 @@
     home-manager,
     reop,
     zen-browser,
+    nvf,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -39,6 +42,7 @@
         ./config/home.nix
         reop.homeManagerModules.reop
         zen-browser.homeModules.beta
+        nvf.homeManagerModules.default
       ];
     };
 

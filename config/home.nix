@@ -37,12 +37,13 @@
 
     ./shells/nushell/nushell.nix
 
-    ./terminal-ultilities/fastfetch.nix
-    ./terminal-ultilities/git.nix
-    ./terminal-ultilities/yazi.nix
-    ./terminal-ultilities/reop.nix
-    ./terminal-ultilities/tmux.nix
-    ./terminal-ultilities/nh.nix
+    ./terminal/fastfetch.nix
+    ./terminal/git.nix
+    ./terminal/yazi.nix
+    ./terminal/reop.nix
+    ./terminal/tmux.nix
+    ./terminal/nh.nix
+    ./terminal/neovim.nix
 
     ./hyprland/hyprland.nix
     ./hyprland/waybar.nix

@@ -25,9 +25,16 @@
           surround.enable = true;
         };
 
-        presence = {
-          neocord = {
+        terminal = {
+          toggleterm = {
             enable = true;
+            mappings = {
+              open = "<space>j";
+            };
+
+            setupOpts = {
+              direction = "float";
+            };
           };
         };
 
@@ -118,6 +125,14 @@
             action = ":";
             silent = false;
             desc = "Space keybind to run a neovim comand";
+          }
+
+          {
+            key = "<space>je";
+            mode = ["t"];
+            action = "<C-\\><C-n>";
+            silent = true;
+            desc = "Leave Terminal";
           }
 
           {

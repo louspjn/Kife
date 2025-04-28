@@ -138,7 +138,7 @@
           {
             key = "<space>e";
             mode = ["n"];
-            action = ":Neotree toggle<CR>";
+            action = ":Neotree toggle float<CR>";
             silent = true;
             desc = "Open Neo-Tree";
           }

@@ -19,14 +19,11 @@
     weechat
     w3m
     nerd-fonts.jetbrains-mono
-    vscode
     rofi
     nitch
 
-    xfce.thunar
     hyprpaper
     hyprlock
-    wlogout
     alsa-utils
   ];
 
@@ -46,6 +43,5 @@
     ./terminal/neovim.nix
 
     ./hyprland/hyprland.nix
-    ./hyprland/waybar.nix
   ];
 }

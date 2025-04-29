@@ -14,9 +14,9 @@ in {
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
     "$terminal" = "kitty";
-    "$menu" = "~/setup/config/hyprland/scripts/waybar/window.sh";
     "$mod" = "SUPER";
     "$browser" = "zen";
+    "$bar" = "";
 
     exec = [
       "${setwallpaper}/bin/setWallpaper"
@@ -27,6 +27,32 @@ in {
       "eDP-1, preferred, 1920x0, 1"
       "HDMI-A-1, 1920x1080, 0x0, 1"
     ];
+
+    bind =
+      [
+        "$mod, Return, exec, $terminal"
+        "$mod, Q, killactive,"
+        "$mod+Shift, M, exit,"
+        "$mod, V, togglefloating,"
+        "$mod, Space, exec, $menu"
+        "$mod, P, pseudo,"
+        "$mod, C, exec, $browser"
+        "$mod, L, movefocus, l"
+        "$mod, H, movefocus, r"
+        "$mod, K, movefocus, u"
+        "$mod, J, movefocus, d"
+      ]
+      ++ (
+        builtins.concatLists (builtins.genList (
+            i: let
+              ws = i + 1;
+            in [
+              "$mod, code:1${toString i}, workspace, ${toString ws}"
+              "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+            ]
+          )
+          9)
+      );
 
     general = {
       gaps_in = 5;
@@ -132,39 +158,6 @@ in {
       name = "epic-mouse-v1";
       sensitivity = -0.5;
     };
-
-    bind =
-      [
-        "$mod, B, exec, $terminal"
-        "$mod, Return, exec, $terminal"
-        "$mod, Q, killactive,"
-        "$mod+Shift, M, exit,"
-        "$mod, V, togglefloating,"
-        "$mod, Space, exec, $menu"
-        "$mod, P, pseudo,"
-        "$mod, J, togglesplit,"
-        "$mod, C, exec, $browser"
-        "$mod, left, movefocus, l"
-        "$mod, right, movefocus, r"
-        "$mod, up, movefocus, u"
-        "$mod, down, movefocus, d"
-        "$mod, S, togglespecialworkspace, magic"
-        "$mod SHIFT, S, movetoworkspace, special:magic"
-        "$mod, mouse_down, workspace, e+1"
-        "$mod, mouse_up, workspace, e-"
-        "$mod, Space, exec, $menu"
-      ]
-      ++ (
-        builtins.concatLists (builtins.genList (
-            i: let
-              ws = i + 1;
-            in [
-              "$mod, code:1${toString i}, workspace, ${toString ws}"
-              "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
-            ]
-          )
-          9)
-      );
 
     bindm = [
       "$mod, mouse:272, movewindow"

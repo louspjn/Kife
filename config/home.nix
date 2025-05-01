@@ -29,6 +29,7 @@
 
   imports = [
     ./programs/kitty.nix
+    # ./programs/ghostty.nix
     ./programs/rofi.nix
     ./programs/zenBrowser.nix
 

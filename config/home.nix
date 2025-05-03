@@ -25,13 +25,11 @@ in {
 
   imports = [
     ./programs/kitty.nix
-    # ./programs/ghostty.nix
     ./programs/rofi.nix
     ./programs/zenBrowser.nix
 
     ./shells/nushell/nushell.nix
 
-    ./terminal/fastfetch.nix
     ./terminal/git.nix
     ./terminal/yazi.nix
     ./terminal/reop.nix

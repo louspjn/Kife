@@ -37,7 +37,7 @@
       };
 
       extraConfig = ''
-        source ~/nan/config/shells/nushell/theme.nu
+        $env.NH_FLAKE = "/home/haskex/nan"
         nitch
       '';
     };

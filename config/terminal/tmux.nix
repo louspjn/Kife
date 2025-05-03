@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   programs.tmux = {
     enable = true;
     prefix = "C-s";
@@ -33,9 +31,6 @@
       set -ag status-right "#{E:@catppuccin_status_session}"
       set -ag status-right "#{E:@catppuccin_status_uptime}"
       set -agF status-right "#{E:@catppuccin_status_battery}"
-
-      set -g @catppuccin_flavor "macchiato"
-      set -g @catppuccin_window_status_style "rounded"
     '';
   };
 }

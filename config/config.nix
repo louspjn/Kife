@@ -1,6 +1,5 @@
 {
   imports = [
-    # ./gnome/gnome.nix
     ./system/bootloader.nix
     ./system/packages.nix
     ./system/wireless.nix

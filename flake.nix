@@ -1,10 +1,43 @@
 {
-  description = "Setup configuration flake";
+  description = "Not a Number Configuration";
+
+  outputs = inputs: let
+    system = "x86_64-linux";
+    pkgs = inputs.nixpkgs.legacyPackages.${system};
+    nixos = inputs.nixpkgs.lib.nixosSystem;
+
+    homeManager = inputs.home-manager.lib.homeManagerConfiguration;
+  in {
+    homeConfigurations.haskex = homeManager {
+      inherit pkgs;
+
+      modules = [
+        ./config/home.nix
+
+        inputs.reop.homeManagerModules.reop
+        inputs.zen-browser.homeModules.beta
+        inputs.nvf.homeManagerModules.default
+        inputs.stylix.homeManagerModules.stylix
+      ];
+    };
+
+    nixosConfigurations.NaN = nixos {
+      specialArgs = {inherit inputs;};
+
+      modules = [
+        ./config/config.nix
+      ];
+    };
+  };
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     reop.url = "github:haskex/reop";
+
+    nvf.url = "github:notashelf/nvf";
+
+    stylix.url = "github:danth/stylix";
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
@@ -19,41 +52,6 @@
     rose-pine-hyprcursor = {
       url = "github:ndom91/rose-pine-hyprcursor";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    nvf.url = "github:notashelf/nvf";
-  };
-
-  outputs = {
-    nixpkgs,
-    home-manager,
-    reop,
-    zen-browser,
-    nvf,
-    ...
-  } @ inputs: let
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
-  in {
-    homeConfigurations."haskex" = home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
-
-      modules = [
-        ./config/home.nix
-        reop.homeManagerModules.reop
-        zen-browser.homeModules.beta
-        nvf.homeManagerModules.default
-      ];
-    };
-
-    nixosConfigurations = {
-      "Jhuan" = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
-
-        modules = [
-          ./config/config.nix
-        ];
-      };
     };
   };
 }

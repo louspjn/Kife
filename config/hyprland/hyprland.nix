@@ -1,9 +1,9 @@
 let
-  wallpaper = "~/setup/config/images/wallpapers/nixoslogo.png";
+  wallpaper = "~/nan/config/images/wallpapers/nixoslogo.png";
 in {
   imports = [./waybar.nix];
 
-  xdg.configFile.".config/hypr".text = ''
+  xdg.configFile."hypr/hyprpaper.conf".text = ''
     preload = ${wallpaper}
     wallpaper = , ${wallpaper}
   '';
@@ -57,9 +57,6 @@ in {
 
         border_size = 2;
 
-        "col.active_border" = "rgba(779bbf99)";
-        "col.inactive_border" = "rgba(a5adcb99)";
-
         resize_on_border = false;
 
         allow_tearing = false;
@@ -77,7 +74,6 @@ in {
           enabled = true;
           range = 4;
           render_power = 3;
-          color = "rgba(1a1a1aee)";
         };
 
         blur = {

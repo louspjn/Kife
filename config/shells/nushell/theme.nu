@@ -164,3 +164,4 @@ $env.config.explore = {
     },
     selected_cell: { bg: $theme.blue fg: $theme.base },
 }
+$env.NH_FLAKE = "/home/haskex/nan/"

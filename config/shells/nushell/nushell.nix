@@ -32,12 +32,13 @@
         edit_mode = "vi";
         table.mode = "rounded";
 
-        buffer_editor = "nix run github:haskex/Nvim";
+        buffer_editor = "nvim";
         show_banner = false;
       };
 
       extraConfig = ''
-        source ~/setup/config/shells/nushell/theme.nu
+        source ~/nan/config/shells/nushell/theme.nu
+        nitch
       '';
     };
   };

@@ -1,6 +1,6 @@
 {
   networking = {
-    hostName = "Jhuan";
+    hostName = "NaN";
 
     networkmanager.enable = true;
   };

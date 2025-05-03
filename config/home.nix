@@ -1,8 +1,11 @@
-{pkgs, ...}: {
-  home.username = "haskex";
-  home.homeDirectory = "/home/haskex";
-
-  home.stateVersion = "25.05";
+{pkgs, ...}: let
+  usernm = "haskex";
+in {
+  home = {
+    username = usernm;
+    homeDirectory = "/home/${usernm}";
+    stateVersion = "25.05";
+  };
 
   nixpkgs = {
     config = {
@@ -12,16 +15,9 @@
   };
 
   home.packages = with pkgs; [
-    bc
     zoxide
-    blightmud
-    irssi
-    weechat
-    w3m
-    nerd-fonts.jetbrains-mono
     rofi
     nitch
-
     hyprpaper
     hyprlock
     alsa-utils
@@ -44,5 +40,7 @@
     ./terminal/neovim.nix
 
     ./hyprland/hyprland.nix
+
+    ./ui/stylix.nix
   ];
 }

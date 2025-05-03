@@ -23,7 +23,7 @@
       opener = {
         edit = [
           {
-            run = "nix run github:haskex/Nvim -- \"$@\"";
+            run = "nNvim -- \"$@\"";
             desc = "$EDITOR";
             block = true;
           }

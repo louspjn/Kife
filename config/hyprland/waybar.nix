@@ -9,9 +9,25 @@
 
         height = 30;
 
-        modules-left = ["hyprland/window"];
+        modules-left = ["custom/logo" "hyprland/window"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = [];
+        modules-right = ["clock" "custom/lock"];
+
+        "custom/logo" = {
+          format = " ";
+        };
+
+        "hyprland/workspaces" = {
+          format = "{icon}";
+          format-icons = {
+            active = " ";
+            default = " ";
+          };
+          persistent-workspaces = {
+            "1" = ["eDP-1"];
+            "*" = [2 3 4 5 6];
+          };
+        };
       };
     };
   };

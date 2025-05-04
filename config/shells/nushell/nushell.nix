@@ -20,7 +20,10 @@
         cat = "${pkgs.bat}/bin/bat";
         c = "clear";
 
-        icon = "grid -i -s '  '";
+        home = "nh home";
+        nixos = "nh os";
+        nixpkgs = "nh search";
+        nixgbc = "nh clean";
 
         # Ls Aliases
         l = "ls **/*";

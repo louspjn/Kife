@@ -33,11 +33,10 @@ in {
           "$mod, Space, exec, $menu"
           "$mod, P, pseudo,"
           "$mod, C, exec, $browser"
-          "$mod, L, movefocus, l"
-          "$mod, H, movefocus, r"
-          "$mod, K, movefocus, u"
+          "$mod, H, movefocus, l"
+          "$mod, L, movefocus, r"
           "$mod, J, movefocus, d"
-          "$mod, R, exec, pkill $bar; pkill hyprpaper; $bar & hyprpaper"
+          "$mod, K, movefocus, u"
         ]
         ++ (
           builtins.concatLists (builtins.genList (
@@ -53,9 +52,9 @@ in {
 
       general = {
         gaps_in = 5;
-        gaps_out = 15;
+        gaps_out = 20;
 
-        border_size = 2;
+        border_size = 0;
 
         resize_on_border = false;
 
@@ -67,8 +66,8 @@ in {
       decoration = {
         rounding = 8;
 
-        active_opacity = 1.0;
-        inactive_opacity = 1.0;
+        active_opacity = 0.8;
+        inactive_opacity = 0.9;
 
         shadow = {
           enabled = true;
@@ -78,8 +77,8 @@ in {
 
         blur = {
           enabled = true;
-          size = 6;
-          passes = 1;
+          size = 9;
+          passes = 2;
 
           vibrancy = 0.2604;
         };
@@ -117,7 +116,7 @@ in {
       };
 
       dwindle = {
-        pseudotile = true;
+        pseudotile = false;
         preserve_split = true;
       };
 

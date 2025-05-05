@@ -5,7 +5,7 @@
       cursor_trail = 4;
       cursor_trail_start_threshold = 0;
 
-      window_padding_width = 6;
+      window_padding_width = 10;
       background_opacity = lib.mkDefault 0.9;
     };
   };

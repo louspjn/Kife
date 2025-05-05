@@ -24,19 +24,37 @@ in {
         "HDMI-A-1, 1920x1080, 0x0, 1"
       ];
 
+      binde = [
+        "CTRL, H, moveactive, -20 0"
+        "CTRL, J, moveactive, 0 20"
+        "CTRL, K, moveactive, 0 -20"
+        "CTRL, L, moveactive, 20 0"
+
+        "ALT, H, resizeactive, -20 0"
+        "ALT, J, resizeactive, 0 20"
+        "ALT, K, resizeactive, 0 -20"
+        "ALT, L, resizeactive, 20 0"
+      ];
+
       bind =
         [
           "$mod, Return, exec, $terminal"
-          "$mod, Q, killactive,"
-          "$mod+Shift, M, exit,"
-          "$mod, V, togglefloating,"
-          "$mod, Space, exec, $menu"
-          "$mod, P, pseudo,"
           "$mod, C, exec, $browser"
+          "$mod, Space, exec, $menu"
+          "$mod, Q, killactive,"
+
+          "$mod, V, togglefloating,"
+          "$mod, P, pseudo,"
+
           "$mod, H, movefocus, l"
-          "$mod, L, movefocus, r"
           "$mod, J, movefocus, d"
           "$mod, K, movefocus, u"
+          "$mod, L, movefocus, r"
+
+          "$mod Shift, H, swapwindow, l"
+          "$mod Shift, J, swapwindow, d"
+          "$mod Shift, K, swapwindow, u"
+          "$mod Shift, L, swapwindow, r"
         ]
         ++ (
           builtins.concatLists (builtins.genList (
@@ -51,7 +69,7 @@ in {
         );
 
       general = {
-        gaps_in = 5;
+        gaps_in = 10;
         gaps_out = 20;
 
         border_size = 0;

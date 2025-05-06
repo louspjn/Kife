@@ -7,20 +7,16 @@ in {
     stateVersion = "25.05";
   };
 
-  nixpkgs = {
-    config = {
-      allowUnfree = true;
-      allowUnfreePredicate = _: true;
-    };
-  };
-
   home.packages = with pkgs; [
     zoxide
     rofi
-    nitch
     hyprpaper
     hyprlock
     alsa-utils
+    nitch
+
+    nautilus
+    loupe
   ];
 
   imports = [
@@ -40,5 +36,6 @@ in {
     ./hyprland/hyprland.nix
 
     ./ui/stylix.nix
+    ./nix/nixpkgs.nix
   ];
 }

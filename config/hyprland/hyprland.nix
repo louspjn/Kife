@@ -16,6 +16,7 @@ in {
       "$mod" = "SUPER";
       "$browser" = "zen";
       "$bar" = "waybar";
+      "$explorer" = "nautilus";
 
       exec = "pkill $bar; pkill hyprpaper; $bar & hyprpaper";
 
@@ -40,6 +41,7 @@ in {
         [
           "$mod, Return, exec, $terminal"
           "$mod, C, exec, $browser"
+          "$mod, E, exec, $explorer"
           "$mod, Space, exec, $menu"
           "$mod, Q, killactive,"
 

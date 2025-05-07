@@ -1,7 +1,10 @@
 {
-  nixpkgs.config = {
-    allowUnfree = true;
-    android_sdk.accept_license = true;
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
+      android_sdk.accept_license = true;
+      allowUnfreePredicate = _: true;
+    };
   };
 
   nix = {

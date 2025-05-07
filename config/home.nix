@@ -7,35 +7,27 @@ in {
     stateVersion = "25.05";
   };
 
+  nixpkgs = {
+    config.allowUnfree = true;
+    overlays = [
+      (self: super: {
+        nitch = super.callPackage ./assets/pkgs/nitch/package.nix {};
+      })
+    ];
+  };
+
   home.packages = with pkgs; [
     zoxide
-    rofi
-    hyprpaper
-    hyprlock
     alsa-utils
     nitch
-
     nautilus
     loupe
   ];
 
   imports = [
-    ./programs/kitty.nix
-    ./programs/rofi.nix
-    ./programs/zenBrowser.nix
-
-    ./shells/nushell/nushell.nix
-
-    ./terminal/git.nix
-    ./terminal/yazi.nix
-    ./terminal/reop.nix
-    ./terminal/tmux.nix
-    ./terminal/nh.nix
-    ./terminal/neovim.nix
-
-    ./hyprland/hyprland.nix
-
-    ./ui/stylix.nix
-    ./nix/nixpkgs.nix
+    ./programs
+    ./terminal
+    ./hyprland
+    ./ui
   ];
 }

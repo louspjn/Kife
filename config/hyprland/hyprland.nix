@@ -1,13 +1,4 @@
-let
-  wallpaper = "~/nan/config/images/wallpapers/nixoslogo.png";
-in {
-  imports = [./waybar.nix];
-
-  xdg.configFile."hypr/hyprpaper.conf".text = ''
-    preload = ${wallpaper}
-    wallpaper = , ${wallpaper}
-  '';
-
+{
   wayland.windowManager.hyprland = {
     enable = true;
 
@@ -17,8 +8,9 @@ in {
       "$browser" = "zen";
       "$bar" = "waybar";
       "$explorer" = "nautilus";
+      "$menu" = "albert";
 
-      exec = "pkill $bar; pkill hyprpaper; $bar & hyprpaper";
+      exec = "pkill $bar; pkill hyprpaper; pkill $menu; $bar & hyprpaper & $menu";
 
       monitor = [
         "eDP-1, preferred, 1920x0, 1"
@@ -42,7 +34,7 @@ in {
           "$mod, Return, exec, $terminal"
           "$mod, C, exec, $browser"
           "$mod, E, exec, $explorer"
-          "$mod, Space, exec, $menu"
+          "$mod, Space, exec, $menu show"
           "$mod, Q, killactive,"
 
           "$mod, V, togglefloating,"

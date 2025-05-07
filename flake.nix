@@ -1,32 +1,30 @@
 {
-  description = "Not a Number Configuration";
+  description = "NotANumber Configuration";
 
   outputs = inputs: let
     system = "x86_64-linux";
     pkgs = inputs.nixpkgs.legacyPackages.${system};
-    nixos = inputs.nixpkgs.lib.nixosSystem;
 
+    nixosSystem = inputs.nixpkgs.lib.nixosSystem;
     homeManager = inputs.home-manager.lib.homeManagerConfiguration;
   in {
     homeConfigurations.haskex = homeManager {
+      extraSpecialArgs = {inherit inputs;};
       inherit pkgs;
 
       modules = [
-        ./config/home.nix
-
-        inputs.reop.homeManagerModules.reop
-        inputs.zen-browser.homeModules.beta
-        inputs.nvf.homeManagerModules.default
-        inputs.stylix.homeManagerModules.stylix
+        ./home
       ];
     };
 
-    nixosConfigurations.NaN = nixos {
+    nixosConfigurations.NaN = nixosSystem {
       specialArgs = {inherit inputs;};
 
       modules = [
-        ./config/config.nix
+        ./system
       ];
+
+      system.stateVersion = "25.05";
     };
   };
 
@@ -34,9 +32,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     reop.url = "github:haskex/reop";
-
     nvf.url = "github:notashelf/nvf";
-
     stylix.url = "github:danth/stylix";
 
     zen-browser = {

@@ -9,11 +9,8 @@ in {
 
   nixpkgs = {
     config.allowUnfree = true;
-    overlays = [
-      (self: super: {
-        nitch = super.callPackage ./assets/pkgs/nitch/package.nix {};
-      })
-    ];
+
+    overlays = [(import ../pkgs/pkgs.nix)];
   };
 
   home.packages = with pkgs; [

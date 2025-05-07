@@ -9,6 +9,7 @@
       "$bar" = "waybar";
       "$explorer" = "nautilus";
       "$menu" = "albert";
+      "$locker" = "hyprlock";
 
       exec = "pkill $bar; pkill hyprpaper; pkill $menu; $bar & hyprpaper & $menu";
 
@@ -35,6 +36,7 @@
           "$mod, C, exec, $browser"
           "$mod, E, exec, $explorer"
           "$mod, Space, exec, $menu show"
+          "$mod, T, exec, $locker"
           "$mod, Q, killactive,"
 
           "$mod, V, togglefloating,"

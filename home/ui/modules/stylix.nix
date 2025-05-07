@@ -5,6 +5,8 @@
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
 
+    image = ../../../assets/images/wallpapers/forest.png;
+
     fonts = {
       monospace = {
         package = pkgs.nerd-fonts.jetbrains-mono;

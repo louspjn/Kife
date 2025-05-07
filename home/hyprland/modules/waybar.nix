@@ -16,6 +16,7 @@
 
         "custom/logo" = {
           format = " ";
+          on-click = "hyprlock";
         };
 
         "hyprland/workspaces" = {

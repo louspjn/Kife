@@ -1,4 +1,4 @@
-<span align="center"><img src="./assets/readme/saturno.png" width="200px"></span>
+<p align="center"><img src="./assets/readme/saturno.png" width="200px"></p>
 
 <h1 align="center">NaN - NotANumber</h1>
 

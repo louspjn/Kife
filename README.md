@@ -2,4 +2,4 @@
 
 # NaN - NotANumber
 
-<img src="./assets/readme/Rice.png">
+<img src="./assets/readme/Rice.png" style="text-align:center;">

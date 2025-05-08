@@ -1,5 +1,3 @@
-<img src="./assets/readme/saturno.png">
+<img src="./assets/readme/saturno.png" width="300px">
 
 # NaN - NotANumber
-
-<hr>

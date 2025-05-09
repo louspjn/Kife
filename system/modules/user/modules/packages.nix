@@ -6,7 +6,7 @@
       enable = true;
 
       paths = [
-        ../../../../extraPackages
+        ../../../../parts/extraPackages
       ];
     };
 
@@ -17,6 +17,7 @@
       nitch
       nautilus
       loupe
+      blueman
     ];
   };
 

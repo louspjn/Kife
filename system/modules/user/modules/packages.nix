@@ -1,19 +1,24 @@
 {pkgs, ...}: {
-  environment.systemPackages = with pkgs; [
-    wget
-    home-manager
-    nodejs
-    unzip
-    sqlite
-    obsidian
+  np = {
+    defaultPackages = true;
 
-    upower
-    bluez
-    libnotify
-    brightnessctl
-    lm_sensors
-    pulseaudio
-  ];
+    overlays = {
+      enable = true;
+
+      paths = [
+        ../../../../extraPackages
+      ];
+    };
+
+    packages = with pkgs; [
+      obsidian
+      zoxide
+      alsa-utils
+      nitch
+      nautilus
+      loupe
+    ];
+  };
 
   programs = {
     nh.enable = true;

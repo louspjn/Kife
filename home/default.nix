@@ -1,4 +1,4 @@
-{pkgs, ...}: let
+let
   usernm = "haskex";
 in {
   home = {
@@ -6,20 +6,6 @@ in {
     homeDirectory = "/home/${usernm}";
     stateVersion = "25.05";
   };
-
-  nixpkgs = {
-    config.allowUnfree = true;
-
-    overlays = [(import ../pkgs/pkgs.nix)];
-  };
-
-  home.packages = with pkgs; [
-    zoxide
-    alsa-utils
-    nitch
-    nautilus
-    loupe
-  ];
 
   imports = [
     ./programs

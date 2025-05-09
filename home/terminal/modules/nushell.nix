@@ -20,10 +20,9 @@
         cat = "${pkgs.bat}/bin/bat";
         c = "clear";
 
-        home = "nh home";
         nixos = "nh os";
-        nixpkgs = "nh search";
-        nixgbc = "nh clean";
+        nps = "nh search";
+        ncn = "nh clean";
 
         # Ls Aliases
         l = "ls **/*";

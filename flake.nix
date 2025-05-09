@@ -2,26 +2,15 @@
   description = "NotANumber Configuration";
 
   outputs = inputs: let
-    system = "x86_64-linux";
-    pkgs = inputs.nixpkgs.legacyPackages.${system};
-
     nixosSystem = inputs.nixpkgs.lib.nixosSystem;
-    homeManager = inputs.home-manager.lib.homeManagerConfiguration;
   in {
-    homeConfigurations.haskex = homeManager {
-      extraSpecialArgs = {inherit inputs;};
-      inherit pkgs;
-
-      modules = [
-        ./home
-      ];
-    };
-
     nixosConfigurations.NaN = nixosSystem {
       specialArgs = {inherit inputs;};
 
       modules = [
+        ./lib
         ./system
+        inputs.home-manager.nixosModules.home-manager
       ];
 
       system.stateVersion = "25.05";
@@ -30,24 +19,11 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
     reop.url = "github:haskex/reop";
     nvf.url = "github:notashelf/nvf";
     stylix.url = "github:danth/stylix";
-
-    zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    rose-pine-hyprcursor = {
-      url = "github:ndom91/rose-pine-hyprcursor";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    home-manager.url = "github:nix-community/home-manager";
+    rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
   };
 }

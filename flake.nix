@@ -1,21 +1,14 @@
 {
   description = "NotANumber Configuration";
 
-  outputs = inputs: let
-    nixosSystem = inputs.nixpkgs.lib.nixosSystem;
-  in
+  outputs = inputs:
     inputs.flake-parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux"];
 
-      flake.nixosConfigurations.NaN = nixosSystem {
-        specialArgs = {inherit inputs;};
-
-        modules = [
-          ./system
-          ./parts
+      flake = {
+        imports = [
+          (import ./hosts {inherit inputs;})
         ];
-
-        system.stateVersion = "25.05";
       };
     };
 

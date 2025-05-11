@@ -27,14 +27,5 @@
     ];
   };
 
-  programs = {
-    nh.enable = true;
-
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-    };
-
-    hyprland.enable = true;
-  };
+  programs.hyprland.enable = true;
 }

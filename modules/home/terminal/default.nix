@@ -1,5 +1,6 @@
 {
   imports = [
+    ./apps
     ./shells
     ./emulators
   ];

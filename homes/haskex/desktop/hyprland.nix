@@ -19,7 +19,7 @@
         "pkill $bar; pkill $menu; $bar & $menu"
 
         ''
-          waypaper --folder ${pkgs.myWallpapers}/share/images --random
+          waypaper --folder ${pkgs.myWallpapers}/share/images --restore
         ''
       ];
 

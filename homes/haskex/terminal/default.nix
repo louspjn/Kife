@@ -1,6 +1,10 @@
 {
   imports = [
-    ./emulators
     ./apps
   ];
+
+  terminal.emulators.kitty = {
+    enable = true;
+    useDefaultConfig = true;
+  };
 }

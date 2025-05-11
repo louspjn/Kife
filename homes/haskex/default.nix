@@ -1,4 +1,4 @@
-{
+{inputs, ...}: {
   home = {
     username = "haskex";
     homeDirectory = "/home/haskex";
@@ -9,5 +9,7 @@
     ./terminal
     ./desktop
     ./browsers
+
+    inputs.self.homeManagerModules.all
   ];
 }

@@ -7,7 +7,7 @@
 
       flake = {
         imports = [
-          (import ./hosts {inherit inputs;})
+          (import ./parts {inherit inputs;})
         ];
       };
     };

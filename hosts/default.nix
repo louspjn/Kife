@@ -2,7 +2,7 @@
   nixosSystem = inputs.nixpkgs.lib.nixosSystem;
 
   overlays = ../overlays;
-  options = ../modules/options;
+  options = ../modules/extra;
 
   homes.haskex = ../homes/haskex;
 in {

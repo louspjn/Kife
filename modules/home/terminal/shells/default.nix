@@ -50,7 +50,7 @@ in {
         show_banner = false;
       };
 
-      extraConfig = "$env.NH_FLAKE = ${cfg.nushell.nhFlake};" + cfg.nushell.extraConfig;
+      extraConfig = "$env.NH_FLAKE = '${cfg.nushell.nhFlake}';" + cfg.nushell.extraConfig;
     };
   };
 }

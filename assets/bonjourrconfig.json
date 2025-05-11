@@ -7,8 +7,8 @@
   "lang": "en",
   "dark": "system",
   "favicon": "",
-  "tabtitle": "",
-  "greeting": "",
+  "tabtitle": "Not a Number",
+  "greeting": "Haskex",
   "pagegap": 1,
   "pagewidth": 1600,
   "time": true,
@@ -72,7 +72,7 @@
     "geolocation": "approximate"
   },
   "notes": {
-    "on": true,
+    "on": false,
     "width": 40,
     "opacity": 0.1,
     "align": "left"

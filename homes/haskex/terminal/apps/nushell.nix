@@ -1,4 +1,4 @@
-{pkgs,...}: {
+{pkgs, ...}: {
   programs = {
     oh-my-posh = {
       enable = true;
@@ -22,7 +22,7 @@
       cat = "${pkgs.bat}/bin/bat";
       c = "clear";
 
-      nixos = "nh os";
+      nixos = "nh os -u";
       nps = "nh search";
       ncn = "nh clean";
 

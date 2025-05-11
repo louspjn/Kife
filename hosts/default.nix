@@ -7,7 +7,7 @@
   homes.haskex = ../homes/haskex;
 in {
   nixosConfigurations = {
-    NaN = nixosSystem {
+    Earth = nixosSystem {
       specialArgs = {
         inherit
           inputs
@@ -17,7 +17,7 @@ in {
       };
 
       modules = [
-        ./NaN
+        ./Earth
         options
       ];
 

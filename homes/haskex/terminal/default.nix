@@ -21,6 +21,8 @@
         nps = "nh search";
         ncn = "nh clean";
 
+        recorder = "${pkgs.wf-recorder}/bin/wf-recorder";
+
         l = "ls **/*";
 
         cd = "z";

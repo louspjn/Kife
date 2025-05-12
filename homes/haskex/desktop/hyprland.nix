@@ -53,6 +53,8 @@
           "$mod, V, togglefloating,"
           "$mod, P, pseudo,"
 
+          "$mod SHIFT, S, exec, ${pkgs.grim}/bin/grim -g (${pkgs.slurp}/bin/slurp)"
+
           "$mod, H, movefocus, l"
           "$mod, J, movefocus, d"
           "$mod, K, movefocus, u"

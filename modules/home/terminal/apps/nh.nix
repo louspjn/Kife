@@ -8,7 +8,7 @@
   cfg = config.terminal.apps.nh;
 in {
   options.terminal.apps.nh = {
-    enable = mkEnableOption "Enable Git";
+    enable = mkEnableOption "Enable nh";
 
     flake = mkOption {
       type = types.str;

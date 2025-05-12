@@ -24,6 +24,7 @@
       blueman
       waypaper
       swww
+      mpv
     ];
   };
 

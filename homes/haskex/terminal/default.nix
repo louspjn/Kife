@@ -50,7 +50,7 @@
 
       nh = {
         enable = true;
-        flake = "/home/haskex/nan";
+        flake = "/home/haskex/Paradox";
       };
     };
   };

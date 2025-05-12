@@ -1,8 +1,17 @@
-{stdenvNoCC, ...}:
+{
+  stdenvNoCC,
+  fetchFromGitHub,
+  ...
+}:
 stdenvNoCC.mkDerivation {
-  name = "myWallpapers";
+  name = "wallpapers";
 
-  src = ./images;
+  src = fetchFromGitHub {
+    owner = "haskex";
+    repo = "Wallpapers";
+    rev = "main";
+    hash = "sha256-T3f3qYN7PnXfXpRCih4AIKhV1YfL/YQH24N9dUn5ABc=";
+  };
 
   dontConfigure = true;
   dontBuild = true;

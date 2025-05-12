@@ -1,5 +1,5 @@
 {
-  description = "NotANumber Configuration";
+  description = "Paradox Configuration";
 
   outputs = inputs:
     inputs.flake-parts.lib.mkFlake {inherit inputs;} {

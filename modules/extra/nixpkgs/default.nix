@@ -1,4 +1,9 @@
-{lib, config, pkgs, ...}: let
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}: let
   inherit (lib) mkIf mkMerge mkOption types mkEnableOption;
 in {
   options.np = {

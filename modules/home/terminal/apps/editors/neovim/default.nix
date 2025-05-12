@@ -27,7 +27,7 @@ in {
       nvf = {
         enable = mkIf (nvf.enable) true;
 
-        settings = mkIf (nvf.useDefaultConfig) ((import ./config.nix) + nvf.settings);
+        settings = nvf.settings;
       };
 
       neovim = {

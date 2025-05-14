@@ -6,7 +6,7 @@
   };
 
   imports = [
-    ./terminal
+    ./terminal.nix
     ./desktop
     ./browsers
 

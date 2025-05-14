@@ -1,7 +1,13 @@
-{
+{inputs, ...}: {
   imports = [
-    ./apps
-    ./shells
-    ./emulators
+    ./nushell.nix
+    ./kitty.nix
+    ./tmux.nix
+    ./yazi.nix
+    ./neovim.nix
+    ./git.nix
+    ./nh.nix
+
+    inputs.nvf.homeManagerModules.default
   ];
 }

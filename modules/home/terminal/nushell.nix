@@ -3,20 +3,14 @@
   config,
   ...
 }: let
-  inherit (lib) mkIf mkOption types mkEnableOption;
+  inherit (lib) mkIf mkMerge mkOption types mkEnableOption;
 
   cfg = config.terminal.shells.nushell;
 in {
   options.terminal.shells.nushell = {
-    enable = mkEnableOption {
-      default = false;
-      description = "Whether to use nushell";
-    };
+    enable = mkEnableOption "nushell";
 
-    useDefaultConfig = mkEnableOption {
-      default = false;
-      description = "Use default kitty config";
-    };
+    useDefaultConfig = mkEnableOption "default config";
 
     aliases = mkOption {
       type = types.attrsOf types.str;
@@ -31,7 +25,7 @@ in {
     };
 
     oh-my-posh = {
-      enable = mkEnableOption "Use oh-my-posh for theme prompt";
+      enable = mkEnableOption "oh-my-posh for theme prompt";
 
       theme = mkOption {
         type = types.str;
@@ -41,7 +35,7 @@ in {
     };
 
     zoxide = {
-      enable = mkEnableOption "Use zoxide";
+      enable = mkEnableOption "zoxide";
     };
   };
 
@@ -59,7 +53,7 @@ in {
         show_banner = false;
       };
 
-      extraConfig = cfg.extraConfig;
+      extraConfig = cfg.extraConfig + ";nitch;";
     };
 
     programs = {

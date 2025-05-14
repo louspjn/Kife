@@ -5,9 +5,9 @@
 }: let
   inherit (lib) mkIf mkEnableOption mkOption types;
 
-  cfg = config.terminal.apps.nh;
+  cfg = config.terminal.nh;
 in {
-  options.terminal.apps.nh = {
+  options.terminal.nh = {
     enable = mkEnableOption "Enable nh";
 
     flake = mkOption {

@@ -6,6 +6,39 @@
 }: let
   inherit (lib) mkIf mkEnableOption mkOption types;
 
+  waybarCss = ''
+    * {
+      border: none;
+      border-radius: 0;
+
+      padding: 2px 3px;
+
+      font-weight: 600;
+    }
+
+    window#waybar {
+      border-radius: 100px;
+    }
+
+    #workspaces button {
+      border-radius: 6px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    #clock {
+      margin: 0px 8px;
+    }
+
+    #custom-logo {
+      margin-left: 10px;
+    }
+
+    #battery {
+      margin-right: 10px;
+    }
+  '';
+
   cfg = config.desktop.windowManagers;
 in {
   options.desktop.windowManagers = {
@@ -37,6 +70,12 @@ in {
         default = import ./configs/waybar.nix;
         description = "Waybar Configuration";
       };
+
+      style = mkOption {
+        type = types.str;
+        default = waybarCss;
+        description = "Waybar Css";
+      };
     };
 
     wallpaper = {
@@ -63,6 +102,7 @@ in {
       waybar = {
         enable = cfg.statusbar.waybar.enable;
         settings = cfg.statusbar.waybar.settings;
+        style = cfg.statusbar.waybar.style;
       };
     };
 

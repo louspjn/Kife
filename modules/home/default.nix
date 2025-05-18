@@ -1,6 +1,6 @@
 {
   imports = [
     ./terminal
-    ./desktop/hyprland.nix
+    ./desktop
   ];
 }

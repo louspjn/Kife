@@ -7,7 +7,7 @@
 
   imports = [
     ./terminal.nix
-    ./desktop
+    ./desktop.nix
     ./browsers
 
     inputs.self.homeModules.all

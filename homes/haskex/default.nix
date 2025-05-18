@@ -10,6 +10,6 @@
     ./desktop
     ./browsers
 
-    inputs.self.homeManagerModules.all
+    inputs.self.homeModules.all
   ];
 }

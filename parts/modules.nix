@@ -1,7 +1,7 @@
 let
   modules = ../modules;
 in {
-  homeManagerModules = let
+  homeModules = let
     hmModules = modules + /home;
   in {
     all = import hmModules;

@@ -1,21 +1,25 @@
 {
   lib,
+  pkgs,
   config,
   ...
 }: let
-  inherit (lib) mkIf mkMerge mkOption types mkEnableOption;
+  inherit (lib) mkOption types mkEnableOption;
 
   cfg = config.terminal.shells.nushell;
 in {
   options.terminal.shells.nushell = {
     enable = mkEnableOption "nushell";
 
-    useDefaultConfig = mkEnableOption "default config";
+    settings = mkOption {
+      type = types.attrsOf types.anything;
+      default = import ./configs/nushell/settings.nix;
+    };
 
     aliases = mkOption {
       type = types.attrsOf types.str;
       description = "Shell aliases";
-      default = {};
+      default = import ./configs/nushell/aliases.nix {inherit pkgs;};
     };
 
     extraConfig = mkOption {
@@ -45,13 +49,7 @@ in {
 
       shellAliases = cfg.aliases;
 
-      settings = mkIf (cfg.useDefaultConfig) {
-        edit_mode = "vi";
-        table.mode = "rounded";
-
-        buffer_editor = "nvim";
-        show_banner = false;
-      };
+      settings = cfg.settings;
 
       extraConfig = cfg.extraConfig + ";nitch;";
     };

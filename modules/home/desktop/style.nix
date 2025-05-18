@@ -1,7 +1,6 @@
 {
   lib,
   config,
-  inputs,
   pkgs,
   ...
 }: let
@@ -34,10 +33,6 @@ in {
   };
 
   config = mkIf (cfg.enable) {
-    imports = [
-      inputs.stylix.homeModules.stylix
-    ];
-
     stylix = cfg.stylix;
     gtk.iconTheme = cfg.iconTheme;
   };

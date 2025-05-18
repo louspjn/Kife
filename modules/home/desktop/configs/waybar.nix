@@ -68,38 +68,38 @@
         "󰁹"
       ];
     };
+
+    style = ''
+      * {
+        border: none;
+        border-radius: 0;
+
+        padding: 2px 3px;
+
+        font-weight: 600;
+      }
+
+      window#waybar {
+        border-radius: 100px;
+      }
+
+      #workspaces button {
+        border-radius: 6px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      #clock {
+        margin: 0px 8px;
+      }
+
+      #custom-logo {
+        margin-left: 10px;
+      }
+
+      #battery {
+        margin-right: 10px;
+      }
+    '';
   };
-
-  style = ''
-    * {
-      border: none;
-      border-radius: 0;
-
-      padding: 2px 3px;
-
-      font-weight: 600;
-    }
-
-    window#waybar {
-      border-radius: 100px;
-    }
-
-    #workspaces button {
-      border-radius: 6px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    #clock {
-      margin: 0px 8px;
-    }
-
-    #custom-logo {
-      margin-left: 10px;
-    }
-
-    #battery {
-      margin-right: 10px;
-    }
-  '';
 }

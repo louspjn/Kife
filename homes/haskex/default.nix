@@ -8,7 +8,6 @@
   imports = [
     ./terminal.nix
     ./desktop.nix
-    ./browsers
 
     inputs.self.homeModules.all
   ];

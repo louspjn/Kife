@@ -18,7 +18,6 @@
       obsidian
       zoxide
       alsa-utils
-      nitch
       nautilus
       loupe
       blueman

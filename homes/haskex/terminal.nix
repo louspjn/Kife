@@ -16,6 +16,8 @@
 
     git.enable = true;
 
+    fetch.microfetch.enable = true;
+
     editors.neovim = {
       enable = true;
 

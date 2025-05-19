@@ -7,6 +7,7 @@
     ./neovim.nix
     ./git.nix
     ./nh.nix
+    ./fetch.nix
 
     inputs.nvf.homeManagerModules.default
   ];

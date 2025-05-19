@@ -7,6 +7,13 @@
   inherit (lib) mkOption types mkEnableOption;
 
   cfg = config.terminal.shells.nushell;
+
+  fetch =
+    if (config.terminal.fetch.nitch.enable)
+    then "nitch"
+    else if (config.terminal.fetch.microfetch.enable)
+    then "microfetch"
+    else "";
 in {
   options.terminal.shells.nushell = {
     enable = mkEnableOption "nushell";
@@ -51,7 +58,7 @@ in {
 
       settings = cfg.settings;
 
-      extraConfig = cfg.extraConfig + ";nitch;";
+      extraConfig = cfg.extraConfig + ";${fetch};";
     };
 
     programs = {

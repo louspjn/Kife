@@ -1,6 +1,6 @@
 {
   networking = {
-    hostName = "Earth";
+    hostName = "Atom";
 
     networkmanager.enable = true;
   };

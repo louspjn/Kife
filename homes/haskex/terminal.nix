@@ -11,7 +11,7 @@
 
     nh = {
       enable = true;
-      flake = "/home/haskex/Paradox";
+      flake = "/home/haskex/Quantum";
     };
 
     git.enable = true;

@@ -21,9 +21,8 @@
       nautilus
       loupe
       blueman
-      waypaper
-      swww
       mpv
+      cava
     ];
   };
 

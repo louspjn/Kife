@@ -1,11 +1,13 @@
-let
-  modules = ../modules;
-in {
-  homeModules = let
-    hmModules = modules + /home;
+{
+  flake = let
+    modules = ../modules;
   in {
-    all = import hmModules;
+    homeModules = let
+      hmModules = modules + /home;
+    in {
+      all = import hmModules;
 
-    terminal = import hmModules + /terminal;
+      terminal = import hmModules + /terminal;
+    };
   };
 }

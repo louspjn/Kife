@@ -1,7 +1,9 @@
 {inputs, ...}: {
   imports = [
-    (import ../hosts {inherit inputs;})
-
     ./modules.nix
+  ];
+
+  flake.imports = [
+    (import ../hosts {inherit inputs;})
   ];
 }

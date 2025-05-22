@@ -11,7 +11,7 @@
     modules-right = ["network" "clock" "battery"];
 
     "custom/logo" = {
-      format = " ";
+      format = "󰹻 ";
       on-click = "hyprlock";
     };
 

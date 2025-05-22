@@ -5,11 +5,9 @@
     inputs.flake-parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux"];
 
-      flake = {
-        imports = [
-          (import ./parts {inherit inputs;})
-        ];
-      };
+      imports = [
+        (import ./parts {inherit inputs;})
+      ];
     };
 
   inputs = {
@@ -18,7 +16,7 @@
 
     reop.url = "github:haskex/reop";
     nvf.url = "github:notashelf/nvf";
-    stylix.url = "github:danth/stylix";
+    stylix.url = "github:danth/stylix/release-25.05";
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";

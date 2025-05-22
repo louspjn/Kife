@@ -9,5 +9,7 @@
 
   l = "ls **/*";
 
+  matrix = "${pkgs.cmatrix}/bin/cmatrix -C blue -m";
+
   cd = "z";
 }

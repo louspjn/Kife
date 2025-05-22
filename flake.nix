@@ -1,5 +1,5 @@
 {
-  description = "Paradox Configuration";
+  description = "Quantum Configuration";
 
   outputs = inputs:
     inputs.flake-parts.lib.mkFlake {inherit inputs;} {

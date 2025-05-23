@@ -15,8 +15,10 @@
   home-manager = {
     users.haskex = homes.haskex;
 
-    extraSpecialArgs = {
-      inherit pkgs inputs;
+    extraSpecialArgs = let
+      args = [pkgs inputs];
+    in {
+      inherit args;
     };
   };
 }

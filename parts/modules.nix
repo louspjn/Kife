@@ -8,6 +8,13 @@
       all = import hmModules;
 
       terminal = import hmModules + /terminal;
+      desktop = import hmModules + /desktop;
+    };
+
+    nixosModules = let
+      osModules = modules + /nixos;
+    in {
+      all = import osModules;
     };
   };
 }

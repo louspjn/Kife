@@ -2,7 +2,6 @@
   nixosSystem = inputs.nixpkgs.lib.nixosSystem;
 
   overlays = ../overlays;
-  options = ../modules/extra;
 
   homes.haskex = ../homes/haskex;
 in {
@@ -17,8 +16,11 @@ in {
       };
 
       modules = [
+        inputs.self.nixosModules.all
+      ];
+
+      imports = [
         ./Atom
-        options
       ];
 
       system.stateVersion = "25.05";

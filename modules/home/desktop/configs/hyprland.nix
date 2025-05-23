@@ -10,7 +10,7 @@
     "pkill $bar; pkill $menu; $bar & $menu"
 
     ''
-      waypaper --folder ${pkgs.wallpapers}/share/images --restore
+      waypaper --folder ~/Quantum/assets/wallpapers --restore
     ''
   ];
 

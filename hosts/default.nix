@@ -16,11 +16,9 @@ in {
       };
 
       modules = [
-        inputs.self.nixosModules.all
-      ];
-
-      imports = [
         ./Atom
+
+        inputs.self.nixosModules.all
       ];
 
       system.stateVersion = "25.05";

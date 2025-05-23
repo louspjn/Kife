@@ -15,6 +15,8 @@
       osModules = modules + /nixos;
     in {
       all = import osModules;
+
+      nixpkgs = import osModules + /nixpkgs;
     };
   };
 }

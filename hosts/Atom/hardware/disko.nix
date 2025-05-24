@@ -17,6 +17,12 @@
               };
             };
 
+            swap = {
+              size = "5G";
+              type = "8200";
+              content.type = "swap";
+            };
+
             root = {
               size = "100%";
               content = {

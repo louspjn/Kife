@@ -1,7 +1,6 @@
 {inputs, ...}: {
   imports = [
     ./hardware.nix
-    ./disko.nix
     ./sound.nix
     ./wireless.nix
 

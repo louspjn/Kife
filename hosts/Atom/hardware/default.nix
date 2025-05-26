@@ -4,6 +4,6 @@
     ./sound.nix
     ./wireless.nix
 
-    inputs.disko.nixosModules.disko
+    # inputs.disko.nixosModules.disko
   ];
 }

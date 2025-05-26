@@ -1,26 +1,27 @@
 {
   "about": {
-    "browser": "online",
+    "browser": "firefox",
     "version": "20.4.2"
   },
   "showall": false,
   "lang": "en",
   "dark": "system",
   "favicon": "",
-  "tabtitle": "Not a Number",
+  "tabtitle": "Quantum | Physics",
   "greeting": "Haskex",
   "pagegap": 1,
   "pagewidth": 1600,
   "time": true,
   "main": true,
   "dateformat": "auto",
-  "background_blur": 18,
+  "background_blur": 0,
   "background_bright": 0.59,
   "background_type": "local",
-  "quicklinks": true,
+  "quicklinks": false,
+  "syncbookmarks": null,
   "textShadow": 0.2,
   "announcements": "major",
-  "review": 1,
+  "review": 4,
   "css": "",
   "hide": {
     "greetings": false
@@ -40,8 +41,8 @@
     "synced": []
   },
   "clock": {
-    "ampm": false,
     "size": 1.375,
+    "ampm": false,
     "analog": false,
     "seconds": false,
     "timezone": "auto",
@@ -59,8 +60,8 @@
   "unsplash": {
     "every": "hour",
     "collection": "",
-    "lastCollec": "day",
-    "time": 1746662175815
+    "lastCollec": "night",
+    "time": 1748299892653
   },
   "weather": {
     "city": "poço-fundo",
@@ -73,6 +74,7 @@
   },
   "notes": {
     "on": false,
+    "text": "## Edit this note!\n\n[ ] With markdown titles, lists, and checkboxes\n\n[ ] Learn more on https://bonjourr.fr/docs/overview",
     "width": 40,
     "opacity": 0.1,
     "align": "left"
@@ -91,7 +93,7 @@
     "author": false,
     "type": "user",
     "frequency": "day",
-    "last": 1746662267372,
+    "last": 1748299881512,
     "userlist": "Jhuan Nycolas, I use NixOS btw"
   },
   "font": {
@@ -117,12 +119,6 @@
           ],
           [
             "main"
-          ],
-          [
-            "notes"
-          ],
-          [
-            "quicklinks"
           ]
         ]
       }

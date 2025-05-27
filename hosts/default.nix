@@ -23,5 +23,14 @@ in {
 
       system.stateVersion = "25.05";
     };
+
+    minimal = nixosSystem {
+      modules = [
+        ./minimal/config.nix
+        ./minimal/hardware.nix
+      ];
+
+      system.stateVersion = "25.05";
+    };
   };
 }

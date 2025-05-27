@@ -2,11 +2,14 @@
   config,
   lib,
   modulesPath,
+  inputs,
   ...
 }: {
-  modules = [
+  imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
     ./disko.nix
+
+    inputs.disko.nixosModules.disko
   ];
 
   boot = {

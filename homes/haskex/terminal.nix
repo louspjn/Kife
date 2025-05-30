@@ -10,7 +10,7 @@
     };
 
     nh = {
-      enable = false;
+      enable = true;
       flake = "/home/haskex/Quantum";
     };
 

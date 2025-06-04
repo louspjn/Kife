@@ -9,6 +9,7 @@
     };
 
     browsers.zen.enable = true;
+    browser.opera.enable = true;
 
     style.enable = true;
   };

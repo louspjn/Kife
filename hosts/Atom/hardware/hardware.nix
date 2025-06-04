@@ -4,7 +4,9 @@
   modulesPath,
   inputs,
   ...
-}: {
+}: let
+  redistributableFirmware = config.hardware.enableRedistributableFirmware;
+in {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
     ./disko.nix
@@ -22,7 +24,10 @@
     extraModulePackages = [];
   };
 
-  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  hardware = {
+    cpu.intel.updateMicrocode = lib.mkDefault redistributableFirmware;
+    graphics.enable = true;
+  };
 
   networking.useDHCP = lib.mkDefault true;
 

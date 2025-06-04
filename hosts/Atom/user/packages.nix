@@ -23,12 +23,8 @@
       blueman
       mpv
       cava
-      lutris
     ];
   };
 
-  programs = {
-    hyprland.enable = true;
-    steam.enable = true;
-  };
+  programs.hyprland.enable = true;
 }

@@ -8,7 +8,7 @@
       wallpaper.waypaper.enable = true;
     };
 
-    browsers.vivaldi.enable = true;
+    browsers.zen.enable = true;
 
     style.enable = true;
   };

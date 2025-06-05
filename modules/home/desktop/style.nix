@@ -2,7 +2,6 @@
   lib,
   pkgs,
   config,
-  inputs,
   ...
 }: let
   inherit (lib) mkIf mkEnableOption mkOption types;
@@ -34,10 +33,6 @@ in {
   };
 
   config = mkIf (cfg.enable) {
-    imports = [
-      inputs.stylix.homeModules.stylix
-    ];
-
     stylix = cfg.stylix;
     gtk.iconTheme = cfg.iconTheme;
   };

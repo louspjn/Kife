@@ -1,6 +1,8 @@
-{
+{inputs, ...}: {
   imports = [
     ./zen.nix
-    ./opera.nix
+    ./vivaldi.nix
+
+    inputs.zen-browser.homeModules.beta
   ];
 }

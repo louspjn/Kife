@@ -8,8 +8,7 @@
       wallpaper.waypaper.enable = true;
     };
 
-    browsers.zen.enable = true;
-    browser.opera.enable = true;
+    browsers.vivaldi.enable = true;
 
     style.enable = true;
   };

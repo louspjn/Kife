@@ -1,7 +1,6 @@
 {
   lib,
   config,
-  inputs,
   ...
 }: let
   inherit (lib) mkIf mkEnableOption;
@@ -13,10 +12,6 @@ in {
   };
 
   config = mkIf (cfg.enable) {
-    imports = [
-      inputs.zen-browser.homeModules.beta
-    ];
-
     programs.zen-browser = {
       enable = true;
     };

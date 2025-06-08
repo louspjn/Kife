@@ -19,7 +19,6 @@
   imports = [
     ./terminal.nix
     ./desktop.nix
-    ./helix.nix
 
     inputs.self.homeModules.all
   ];

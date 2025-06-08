@@ -12,7 +12,12 @@ in {
 
     settings = mkOption {
       type = types.attrsOf types.anything;
-      default = import ./configs/kitty.nix;
+      default = {
+        cursor_trail = 4;
+        cursor_trail_start_threshold = 0;
+
+        window_padding_width = 10;
+      };
       description = "Kitty Configuration";
     };
   };

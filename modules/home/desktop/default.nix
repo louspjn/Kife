@@ -2,7 +2,8 @@
   imports = [
     ./browsers
     ./windowManagers.nix
-    ./style.nix
+    ./stylix.nix
+    ./discord.nix
 
     inputs.stylix.homeModules.stylix
   ];

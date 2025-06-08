@@ -15,14 +15,8 @@
     };
 
     packages = with pkgs; [
-      obsidian
-      zoxide
       alsa-utils
-      nautilus
-      loupe
       blueman
-      mpv
-      cava
     ];
   };
 

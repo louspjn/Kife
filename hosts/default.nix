@@ -6,7 +6,7 @@
   homes.haskex = ../homes/haskex;
 in {
   nixosConfigurations = {
-    Atom = nixosSystem {
+    Husk = nixosSystem {
       specialArgs = {
         inherit
           inputs
@@ -16,7 +16,7 @@ in {
       };
 
       modules = [
-        ./Atom
+        ./Husk
 
         inputs.self.nixosModules.all
       ];

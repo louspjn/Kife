@@ -9,7 +9,8 @@
     };
 
     browsers.zen.enable = true;
+    discord.enable = true;
 
-    style.enable = true;
+    stylix.enable = true;
   };
 }

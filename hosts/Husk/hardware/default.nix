@@ -3,7 +3,8 @@
     ./hardware.nix
     ./sound.nix
     ./wireless.nix
+    ./disko.nix
 
-    # inputs.disko.nixosModules.disko
+    inputs.disko.nixosModules.disko
   ];
 }

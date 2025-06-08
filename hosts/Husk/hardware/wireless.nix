@@ -1,6 +1,6 @@
 {
   networking = {
-    hostName = "Atom";
+    hostName = "Husk";
 
     networkmanager.enable = true;
   };

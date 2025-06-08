@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   "$terminal" = "kitty";
   "$mod" = "SUPER";
   "$browser" = "zen";
@@ -36,6 +40,7 @@
       "$mod, Return, exec, $terminal"
       "$mod, C, exec, $browser"
       "$mod, E, exec, $explorer"
+      "$mod, D, exec, discord"
       "$mod, Space, exec, $menu show"
       "$mod, B, exec, waypaper"
       "$mod, T, exec, $locker"
@@ -44,7 +49,7 @@
       "$mod, V, togglefloating,"
       "$mod, P, pseudo,"
 
-      "$mod SHIFT, S, exec, ${pkgs.grim}/bin/grim -g (${pkgs.slurp}/bin/slurp)"
+      "$mod SHIFT, S, exec, ${inputs.hyprscripts.packages.${pkgs.system}.grimblast}"
 
       "$mod, H, movefocus, l"
       "$mod, J, movefocus, d"

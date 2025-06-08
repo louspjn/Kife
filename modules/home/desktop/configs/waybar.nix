@@ -22,17 +22,16 @@
         default = " ";
       };
       persistent-workspaces = {
-        "1" = ["eDP-1"];
-        "*" = [2 3 4 5 6];
+        "*" = [1 2 3 4 5 6];
       };
     };
 
     "network" = {
-      format-wifi = " ";
+      format-wifi = "  {essid} ({signalStrength}%)";
       format-disconnected = " ";
 
-      tooltip-format-wifi = "{essid} ({signalStrength}%)  ";
-      tooltip-format-disconnected = "Disconnected  ";
+      tooltip-format-wifi = "  Connected";
+      tooltip-format-disconnected = "  Disconnected";
     };
 
     "clock" = {

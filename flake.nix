@@ -1,5 +1,5 @@
 {
-  description = "Quantum Configuration";
+  description = "Haskex Configuration";
 
   outputs = inputs:
     inputs.flake-parts.lib.mkFlake {inherit inputs;} {
@@ -15,14 +15,12 @@
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
+    hyprscripts.url = "github:hyprwm/contrib";
 
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixos-cli.url = "github:nix-community/nixos-cli";
 
-    disko = {
-      url = "github:nix-community/disko";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    disko.url = "github:nix-community/disko";
 
     nvf = {
       url = "github:notashelf/nvf";

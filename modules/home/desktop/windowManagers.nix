@@ -1,7 +1,8 @@
 {
-  lib,
   config,
+  inputs,
   pkgs,
+  lib,
   ...
 }: let
   inherit (lib) mkIf mkEnableOption mkOption types;
@@ -47,7 +48,7 @@ in {
 
       settings = mkOption {
         type = types.attrsOf types.anything;
-        default = import ./configs/hyprland.nix {inherit pkgs;};
+        default = import ./configs/hyprland.nix {inherit pkgs inputs;};
         description = "Hyprland Configuration";
       };
     };

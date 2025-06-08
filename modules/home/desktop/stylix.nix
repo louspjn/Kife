@@ -24,6 +24,7 @@
 
     targets = {
       nvf.enable = false;
+      helix.enable = false;
     };
   };
 in {

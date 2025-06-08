@@ -18,8 +18,6 @@
 
     fetch.microfetch.enable = true;
 
-    editors.helix.enable = true;
-
     multiplexers.tmux.enable = true;
 
     file-managers.yazi.enable = true;

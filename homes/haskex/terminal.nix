@@ -18,18 +18,10 @@
 
     fetch.microfetch.enable = true;
 
-    editors.neovim = {
-      enable = false;
+    editors.helix.enable = true;
 
-      nvf.enable = false;
-    };
+    multiplexers.tmux.enable = true;
 
-    multiplexers.tmux = {
-      enable = true;
-    };
-
-    file-managers.yazi = {
-      enable = true;
-    };
+    file-managers.yazi.enable = true;
   };
 }

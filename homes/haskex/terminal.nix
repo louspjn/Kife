@@ -19,9 +19,9 @@
     fetch.microfetch.enable = true;
 
     editors.neovim = {
-      enable = true;
+      enable = false;
 
-      nvf.enable = true;
+      nvf.enable = false;
     };
 
     multiplexers.tmux = {

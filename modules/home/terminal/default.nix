@@ -5,6 +5,7 @@
     ./tmux.nix
     ./yazi.nix
     ./neovim.nix
+    ./alacritty.nix
     ./git.nix
     ./nh.nix
     ./fetch.nix

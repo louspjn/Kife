@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: {
-  "$terminal" = "kitty";
+  "$terminal" = "alacritty";
   "$mod" = "SUPER";
   "$browser" = "zen";
   "$bar" = "waybar";

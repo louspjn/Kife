@@ -1,5 +1,5 @@
 {
-  manager = {
+  mgr  = {
     linemode = "size";
     sort_by = "natural";
     mouse_events = [];
@@ -7,8 +7,8 @@
 
   preview = {
     wrap = "yes";
-    max_width = 1800;
-    max_height = 1800;
+    max_width = 3600;
+    max_height = 3600;
   };
 
   input = {

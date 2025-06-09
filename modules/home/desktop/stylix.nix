@@ -39,7 +39,7 @@ in {
 
     theme = mkOption {
       type = types.str;
-      default = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
+      default = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-soft.yaml";
       description = "Base16 Scheme";
     };
 
@@ -52,13 +52,13 @@ in {
     iconTheme = {
       name = mkOption {
         type = types.str;
-        default = "Papirus";
+        default = "gruvbox-dark-icons-gtk";
         description = "Icon Theme name";
       };
 
       package = mkOption {
         type = types.package;
-        default = pkgs.papirus-icon-theme;
+        default = pkgs.gruvbox-dark-icons-gtk;
         description = "Icon Theme Package";
       };
     };

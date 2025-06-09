@@ -2,6 +2,7 @@
   imports = [
     ./nushell.nix
     ./kitty.nix
+    ./zellij.nix
     ./tmux.nix
     ./yazi.nix
     ./neovim.nix

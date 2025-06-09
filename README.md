@@ -2,4 +2,4 @@
 
 <h1 align="center">Haskex Configuration</h1>
 
-<img src="./assets/readme/Rice.png">
+<img src="./assets/readme/Rice.png" width="300px">

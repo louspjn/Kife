@@ -13,7 +13,7 @@ in {
 
     settings = mkOption {
       type = types.attrsOf types.anything;
-      default = {};
+        default = import ./configs/zellij.nix;
       description = "Zellij Configuration";
     };
   };

@@ -10,7 +10,7 @@
 
   hs = "hx";
   zj = "zellij";
-  code = "zellij";
+  code = "hx";
   cat = "${pkgs.bat}/bin/bat";
   read = "cat";
 

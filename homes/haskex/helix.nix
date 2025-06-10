@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   programs.helix = {
     enable = true;
 
@@ -11,7 +11,50 @@
         line-number = "relative";
         continue-comments = false;
         color-modes = true;
+
+        lsp.enable = true;
+
+        shell = ["nu" "-c"];
+      };
+
+      file-picker = {
+        hidden = false;
       };
     };
+
+    languages = {
+      language-server = {
+        rust-analyzer = {
+          command = "rust-analyzer";
+        };
+        nil = {
+          command = "nil";
+        };
+      };
+
+      languages = [
+        {
+          name = "rust";
+          language-server = "rust-analyzer";
+          formatter = {
+            command = "rustfmt";
+          };
+        }
+        {
+          name = "nix";
+          language-server = "nil";
+          formatter = {
+            command = "alejandra";
+          };
+        }
+      ];
+    };
   };
+
+  home.packages = with pkgs; [
+    rust-analyzer
+    nil
+    rustfmt
+    alejandra
+  ];
 }

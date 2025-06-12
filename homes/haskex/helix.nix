@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{
   programs.helix = {
     enable = true;
 
@@ -19,6 +19,12 @@
 
       file-picker = {
         hidden = false;
+      };
+
+      keys = {
+        normal = {
+          "-" = ":";
+        };
       };
     };
 

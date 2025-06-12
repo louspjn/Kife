@@ -27,11 +27,11 @@
     };
 
     "network" = {
-      format-wifi = "  {essid} ({signalStrength}%)";
-      format-disconnected = " ";
+      format-wifi = "  Yeah, You're Connected ({signalStrength}%)";
+      format-disconnected = " You aren't Connected";
 
-      tooltip-format-wifi = "  Connected";
-      tooltip-format-disconnected = "  Disconnected";
+      tooltip-format-wifi = "  {ssid}";
+      tooltip-format-disconnected = "  What are you doing here?";
     };
 
     "clock" = {

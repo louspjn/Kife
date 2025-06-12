@@ -50,11 +50,4 @@
       ];
     };
   };
-
-  home.packages = with pkgs; [
-    rust-analyzer
-    nil
-    rustfmt
-    alejandra
-  ];
 }

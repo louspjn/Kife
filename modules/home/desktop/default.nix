@@ -1,9 +1,10 @@
 {inputs, ...}: {
   imports = [
     ./browsers
+    ./menus/rofi.nix
     ./windowManagers.nix
     ./stylix.nix
-    ./discord.nix
+    ./apps.nix
 
     inputs.stylix.homeModules.stylix
   ];

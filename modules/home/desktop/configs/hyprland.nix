@@ -1,8 +1,4 @@
 {
-  inputs,
-  pkgs,
-  ...
-}: {
   "$terminal" = "kitty";
   "$mod" = "SUPER";
   "$browser" = "zen";
@@ -11,7 +7,7 @@
   "$locker" = "hyprlock";
 
   exec = [
-    "pkill $bar; pkill $menu; $bar & $menu"
+    "pkill $bar; pkill $menu; $bar"
 
     ''
       waypaper --folder ~/Quantum/assets/wallpapers --restore
@@ -45,11 +41,10 @@
       "$mod, B, exec, waypaper"
       "$mod, T, exec, $locker"
       "$mod, Q, killactive,"
+      "$mod, Space, exec, rofi -show drun"
 
       "$mod, V, togglefloating,"
       "$mod, P, pseudo,"
-
-      "$mod SHIFT, S, exec, ${inputs.hyprscripts.packages.${pkgs.system}.grimblast}"
 
       "$mod, H, movefocus, l"
       "$mod, J, movefocus, d"

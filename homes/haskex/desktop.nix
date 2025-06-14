@@ -9,8 +9,14 @@
     };
 
     browsers.zen.enable = true;
-    discord.enable = true;
 
     stylix.enable = true;
+
+    apps = {
+      discord = true;
+      spotify = true;
+    };
+
+    menus.rofi.enable = true;
   };
 }

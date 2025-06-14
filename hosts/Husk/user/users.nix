@@ -18,5 +18,7 @@
     extraSpecialArgs = {
       inherit pkgs inputs;
     };
+
+    backupFileExtension = "backup";
   };
 }

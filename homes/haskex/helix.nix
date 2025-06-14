@@ -16,16 +16,6 @@
 
         shell = ["nu" "-c"];
       };
-
-      file-picker = {
-        hidden = false;
-      };
-
-      keys = {
-        normal = {
-          "-" = ":";
-        };
-      };
     };
 
     languages = {

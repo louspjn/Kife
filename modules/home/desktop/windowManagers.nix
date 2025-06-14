@@ -48,7 +48,7 @@ in {
 
       settings = mkOption {
         type = types.attrsOf types.anything;
-        default = import ./configs/hyprland.nix {inherit pkgs inputs;};
+        default = import ./configs/hyprland.nix;
         description = "Hyprland Configuration";
       };
     };

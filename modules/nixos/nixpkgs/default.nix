@@ -58,8 +58,6 @@ in {
           pkgs.sqlite
           pkgs.home-manager
           pkgs.wget
-          pkgs.rust-analyzer
-          pkgs.rustfmt     
           pkgs.nil
           pkgs.alejandra
         ];

@@ -4,7 +4,7 @@
   config,
   ...
 }: let
-  inherit (lib) mkIf mkEnableOption;
+  inherit (lib) mkIf mkMerge mkEnableOption;
 
   cfg = config.desktop.apps;
 in {
@@ -15,8 +15,9 @@ in {
   };
 
   config = {
-    home.packages =
-      mkIf (cfg.discord) [pkgs.discord] //
-      mkIf (cfg.spotify) [pkgs.spotify];
+    home.packages = mkMerge [
+      (mkIf (cfg.discord) [pkgs.discord])
+      (mkIf (cfg.spotify) [pkgs.spotify])
+    ];
   };
 }

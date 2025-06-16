@@ -26,6 +26,10 @@
         nil = {
           command = "nil";
         };
+
+        haskell = {
+          command = "haskell-language-server";
+        };
       };
 
       languages = [

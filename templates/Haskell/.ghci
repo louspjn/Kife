@@ -1,0 +1,3 @@
+:def cls \_ -> return "putStr \"\\ESC[2J\\ESC[H\""
+
+:set prompt "\ESC[1;32mλ \ESC[0m "

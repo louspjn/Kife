@@ -11,7 +11,7 @@
 
     nh = {
       enable = true;
-      flake = "/home/haskex/Haskex";
+      flake = "/home/lousp/LouspOS";
     };
 
     git.enable = true;

@@ -12,7 +12,7 @@
     };
 
     nixosModules = let
-      osModules = modules + /nixos;
+      osModules = modules + /system;
     in {
       all = import osModules;
 

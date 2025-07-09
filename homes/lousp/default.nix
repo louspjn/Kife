@@ -4,8 +4,8 @@
   ...
 }: {
   home = {
-    username = "haskex";
-    homeDirectory = "/home/haskex";
+    username = "lousp";
+    homeDirectory = "/home/lousp";
     stateVersion = "25.11";
 
     packages = with pkgs; [

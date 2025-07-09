@@ -1,5 +1,5 @@
 {
-  description = "Haskex Configuration";
+  description = "LouspOS Configuration";
 
   outputs = inputs:
     inputs.flake-parts.lib.mkFlake {inherit inputs;} {

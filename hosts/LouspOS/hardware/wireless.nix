@@ -1,6 +1,6 @@
 {
   networking = {
-    hostName = "Husk";
+    hostName = "LouspOS";
 
     networkmanager.enable = true;
   };

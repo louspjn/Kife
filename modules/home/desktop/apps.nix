@@ -12,12 +12,15 @@ in {
     discord = mkEnableOption "Discord";
 
     spotify = mkEnableOption "Spotify";
+
+    vscode = mkEnableOption "Visual Studio Code";
   };
 
   config = {
     home.packages = mkMerge [
       (mkIf (cfg.discord) [pkgs.discord])
       (mkIf (cfg.spotify) [pkgs.spotify])
+      (mkIf (cfg.vscode) [pkgs.vscode])
     ];
   };
 }

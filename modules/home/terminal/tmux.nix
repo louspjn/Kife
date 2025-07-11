@@ -13,7 +13,7 @@ in {
 
     plugins = mkOption {
       type = types.listOf types.package;
-      default = [pkgs.tmuxPlugins.catppuccin];
+      default = [pkgs.tmuxPlugins.gruvbox];
       description = "Tmux plugins";
     };
 

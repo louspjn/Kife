@@ -18,7 +18,7 @@
 
     fetch.microfetch.enable = true;
 
-    multiplexers.zellij.enable = true;
+    multiplexers.tmux.enable = true;
 
     file-managers.yazi.enable = true;
   };

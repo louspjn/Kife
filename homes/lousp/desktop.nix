@@ -15,7 +15,6 @@
     apps = {
       discord = true;
       spotify = true;
-      vscode = true;
     };
 
     menus.rofi.enable = true;

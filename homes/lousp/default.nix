@@ -13,6 +13,7 @@
       cava
       nautilus
       loupe
+      devenv
     ];
   };
 

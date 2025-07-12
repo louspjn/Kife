@@ -13,8 +13,15 @@
     stylix.enable = true;
 
     apps = {
-      discord = true;
-      spotify = true;
+      discord = {
+        enable = true;
+        equibop = true;
+      };
+      
+      spotify = {
+        enable = true;
+        spicetify = true;
+      };
     };
 
     menus.rofi.enable = true;

@@ -9,9 +9,15 @@
   cfg = config.desktop.apps;
 in {
   options.desktop.apps = {
-    discord = mkEnableOption "Discord";
+    discord = {
+      enable = mkEnableOption "Discord";
+      equibop = mkEnableOption "Equibop Client";
+    };
 
-    spotify = mkEnableOption "Spotify";
+    spotify = {
+      enable = mkEnableOption "Spotify";
+      spicetify = mkEnableOption "Spicetify CLI";
+    };
 
     vscode = mkEnableOption "Visual Studio Code";
   };

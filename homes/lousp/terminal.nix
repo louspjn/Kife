@@ -16,6 +16,8 @@
 
     git.enable = true;
 
+    editors.emacs.enable = true;
+
     fetch.microfetch.enable = true;
 
     multiplexers.tmux.enable = true;

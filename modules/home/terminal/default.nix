@@ -5,7 +5,7 @@
     ./zellij.nix
     ./tmux.nix
     ./yazi.nix
-    ./neovim.nix
+    ./editors.nix
     ./alacritty.nix
     ./git.nix
     ./nh.nix

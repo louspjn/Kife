@@ -9,13 +9,12 @@
         isDefault = true;
 
         settings = {
-          "browser.startup.homepage" = "https://google.com";
-          "browser.search.defaultenginename" = "Google";
+          "browser.search.defaultenginename" = "google";
         };
 
         search = {
           force = true;
-          default = "Google";
+          default = "google";
 
           engines = {
             "Nix Packages" = {
@@ -34,7 +33,7 @@
               urls = [{
                 template = "https://mynixos.com/search";
                 params = [
-                  { name = "q"; value = "{search}"; }
+                  { name = "q"; value = "{searchTerms}"; }
                 ];
               }];
 

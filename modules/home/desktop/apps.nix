@@ -14,10 +14,7 @@ in {
       equibop = mkEnableOption "Equibop Client";
     };
 
-    spotify = {
-      enable = mkEnableOption "Spotify";
-      spicetify = mkEnableOption "Spicetify CLI";
-    };
+    spotify = mkEnableOption "Spotify";
 
     vscode = mkEnableOption "Visual Studio Code";
   };
@@ -25,11 +22,10 @@ in {
   config = {
     home.packages = mkMerge [
       (mkIf (cfg.discord.enable) [pkgs.discord])
-      (mkIf (cfg.spotify.enable) [pkgs.spotify])
+      (mkIf (cfg.spotify) [pkgs.spotify])
       (mkIf (cfg.vscode) [pkgs.vscode])
 
       (mkIf (cfg.discord.enable && cfg.discord.equibop) [pkgs.equibop])
-      (mkIf (cfg.spotify.enable && cfg.spotify.spicetify) [pkgs.spotify pkgs.spicetify-cli])
     ];
   };
 }

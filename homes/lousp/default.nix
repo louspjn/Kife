@@ -23,5 +23,6 @@
     ./helix.nix
 
     inputs.self.homeModules.all
+    inputs.spicetify.homeManagerModules.default
   ];
 }

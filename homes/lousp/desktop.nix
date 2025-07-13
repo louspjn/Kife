@@ -1,4 +1,4 @@
-{
+{inputs, pkgs, ...}: {
   desktop = {
     windowManagers = {
       hyprland.enable = true;
@@ -17,13 +17,14 @@
         enable = true;
         equibop = true;
       };
-      
-      spotify = {
-        enable = true;
-        spicetify = true;
-      };
     };
 
     menus.rofi.enable = true;
+  };
+
+  programs.spicetify = let
+    spotifyPkgs = inputs.spicetify.legacyPackages.${pkgs.system};
+  in {
+    enable = true;
   };
 }

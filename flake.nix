@@ -18,7 +18,7 @@
     hyprscripts.url = "github:hyprwm/contrib";
 
     flake-parts.url = "github:hercules-ci/flake-parts";
-    nixos-cli.url = "github:nix-community/nixos-cli";
+    spicetify.url = "github:Gerg-L/spicetify-nix";
 
     disko.url = "github:nix-community/disko";
 

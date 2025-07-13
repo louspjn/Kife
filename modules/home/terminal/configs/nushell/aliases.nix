@@ -14,5 +14,7 @@
   cat = "${pkgs.bat}/bin/bat";
   read = "cat";
 
-  matrix = "${pkgs.cmatrix}/bin/cmatrix -C blue -m";
+  pipes = "~/LouspOS/homes/lousp/scripts/pipes";
+
+  matrix = "${pkgs.cmatrix}/bin/cmatrix -C green -m";
 }

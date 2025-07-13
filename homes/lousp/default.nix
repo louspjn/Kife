@@ -21,6 +21,7 @@
     ./terminal.nix
     ./desktop.nix
     ./helix.nix
+    ./firefox.nix
 
     inputs.self.homeModules.all
     inputs.spicetify.homeManagerModules.default

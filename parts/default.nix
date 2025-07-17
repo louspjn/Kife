@@ -1,10 +1,7 @@
-{inputs, ...}: {
+{inputs, ...}: let
+  
+in {
   imports = [
-    ./modules.nix
-  ];
-
-  flake.imports = [
-    (import ../hosts {inherit inputs;})
-    ./templates.nix
+    ./flake.nix
   ];
 }

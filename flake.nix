@@ -2,11 +2,11 @@
   description = "LouspOS Configuration";
 
   outputs = inputs:
-    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+    inputs.parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux"];
 
       imports = [
-        (import ./parts {inherit inputs;})
+        ./parts
       ];
     };
 
@@ -15,17 +15,12 @@
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
-    hyprscripts.url = "github:hyprwm/contrib";
 
-    flake-parts.url = "github:hercules-ci/flake-parts";
+    parts.url = "github:hercules-ci/flake-parts";
     spicetify.url = "github:Gerg-L/spicetify-nix";
 
     disko.url = "github:nix-community/disko";
-
-    nvf = {
-      url = "github:notashelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nvf = "github:notashelf/nvf";
 
     stylix = {
       url = "github:danth/stylix";

@@ -1,10 +1,16 @@
-{inputs, ...}: let
-  nixosSystem = inputs.nixpkgs.lib.nixosSystem;
+{inputs, global, ...}: {
+  global.hosts = {
+    LouspOS = global.mkNixos {
+      version = "25.05";
+      args = { inherit global; };
+      path = ./LouspOS;
 
-  overlays = ../overlays;
+      extraModules = [
+        inputs.self.nixosModules.default
+      ];
+    };
+  };
 
-  homes.lousp = ../homes/lousp;
-in {
   nixosConfigurations = {
     LouspOS = nixosSystem {
       specialArgs = {
@@ -17,8 +23,7 @@ in {
 
       modules = [
         ./LouspOS
-
-        inputs.self.nixosModules.all
+        inputs.self.nixosModules.default
       ];
 
       system.stateVersion = "25.05";

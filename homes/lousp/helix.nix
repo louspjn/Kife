@@ -30,15 +30,16 @@
         haskell = {
           command = "haskell-language-server";
         };
+
+        clangd = {
+          command = "clangd";
+        };
       };
 
       languages = [
         {
           name = "rust";
           language-server = "rust-analyzer";
-          formatter = {
-            command = "rustfmt";
-          };
         }
         {
           name = "nix";
@@ -46,6 +47,14 @@
           formatter = {
             command = "alejandra";
           };
+        }
+        {
+          name = "c";
+          language-server = "clangd";
+        }
+        {
+          name = "haskell";
+          language-server = "haskell";
         }
       ];
     };

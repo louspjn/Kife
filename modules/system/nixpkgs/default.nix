@@ -60,6 +60,8 @@ in {
           pkgs.wget
           pkgs.nil
           pkgs.alejandra
+          pkgs.rust-analyzer
+          pkgs.clang-tools
         ];
     })
 

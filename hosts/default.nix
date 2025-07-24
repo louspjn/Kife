@@ -1,5 +1,22 @@
 {inputs, global, ...}: {
-  global.hosts = {
+  nixosConfigurations = {
+    # LouspOS = nixosSystem {
+    #   specialArgs = {
+    #     inherit
+    #       inputs
+    #       overlays
+    #       homes
+    #       ;
+    #   };
+
+    #   modules = [
+    #     ./LouspOS
+    #     inputs.self.nixosModules.default
+    #   ];
+
+    #   system.stateVersion = "25.05";
+    # };
+
     LouspOS = global.mkNixos {
       version = "25.05";
       args = { inherit global; };
@@ -8,25 +25,6 @@
       extraModules = [
         inputs.self.nixosModules.default
       ];
-    };
-  };
-
-  nixosConfigurations = {
-    LouspOS = nixosSystem {
-      specialArgs = {
-        inherit
-          inputs
-          overlays
-          homes
-          ;
-      };
-
-      modules = [
-        ./LouspOS
-        inputs.self.nixosModules.default
-      ];
-
-      system.stateVersion = "25.05";
     };
   };
 }

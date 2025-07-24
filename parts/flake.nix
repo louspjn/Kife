@@ -1,9 +1,9 @@
-{inputs, ...}: {
+{inputs, global, ...}: {
   flake = {
     inherit inputs;
 
     imports = [
-      ../hosts
+      (import ../hosts {inherit inputs global;})
     ];
 
     homeModules.default = ../modules/home;

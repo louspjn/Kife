@@ -5,4 +5,6 @@
 
     # inputs.nixos-cli.nixosModules.nixos-cli
   ];
+
+  services.flatpak.enable = true;
 }

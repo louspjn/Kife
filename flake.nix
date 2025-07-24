@@ -20,7 +20,7 @@
     spicetify.url = "github:Gerg-L/spicetify-nix";
 
     disko.url = "github:nix-community/disko";
-    nvf = "github:notashelf/nvf";
+    nvf.url = "github:notashelf/nvf";
 
     stylix = {
       url = "github:danth/stylix";

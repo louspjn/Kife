@@ -1,19 +1,23 @@
-{inputs, lib, ...}: let
+{ inputs, ... }:
+let
   global = {
-    mkNixos = {
-      version ? "25.05",
-      args ? null,
-      path,
-      extraModules ? [],
-      ...
-    }:  lib.nixosSystem {
-      specialArgs = args;
-      modules = [path] // extraModules;
-      system.stateVersion = version;
-    };
+    mkNixos =
+      {
+        version ? "25.05",
+        args ? null,
+        path,
+        extraModules ? [ ],
+        ...
+      }:
+      inputs.nixpkgs.lib.nixosSystem {
+        specialArgs = args;
+        modules = [ path ] ++ extraModules;
+        system.stateVersion = version;
+      };
   };
-in {
+in
+{
   imports = [
-    (import ./flake.nix {inherit inputs global;})
+    (import ./flake.nix { inherit inputs global; })
   ];
 }

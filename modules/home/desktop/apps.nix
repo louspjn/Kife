@@ -21,7 +21,7 @@ in {
 
   config = {
     home.packages = mkMerge [
-      (mkIf (cfg.discord.enable) [pkgs.discord])
+      (mkIf (cfg.discord.enable && !cfg.discord.equibop) [pkgs.discord])
       (mkIf (cfg.spotify) [pkgs.spotify])
       (mkIf (cfg.vscode) [pkgs.vscode])
 

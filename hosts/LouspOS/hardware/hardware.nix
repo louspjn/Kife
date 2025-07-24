@@ -2,26 +2,48 @@
   config,
   lib,
   modulesPath,
-  inputs,
   ...
-}: let
+}:
+let
   redistributableFirmware = config.hardware.enableRedistributableFirmware;
-in {
+  part = "/dev/disk/by-partlabel/";
+in
+{
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
-    ./disko.nix
+  ];
 
-    inputs.disko.nixosModules.disko
+  fileSystems = {
+    "/boot" = {
+      device = part + "disk-main-boot";
+      fsType = "vfat";
+    };
+
+    "/" = {
+      device = part + "disk-main-root";
+      fsType = "ext4";
+    };
+  };
+
+  swapDevices = [
+    {
+      device = part + "disk-main-swap";
+    }
   ];
 
   boot = {
     initrd = {
-      availableKernelModules = ["ahci" "xhci_pci" "nvme" "usbhid" "usb_storage" "sd_mod"];
-      kernelModules = [];
+      availableKernelModules = [
+        "ahci"
+        "xhci_pci"
+        "nvme"
+        "usbhid"
+        "usb_storage"
+        "sd_mod"
+      ];
     };
 
-    kernelModules = ["kvm-intel"];
-    extraModulePackages = [];
+    kernelModules = [ "kvm-intel" ];
   };
 
   hardware = {

@@ -1,7 +1,7 @@
 {
   "$terminal" = "kitty";
   "$mod" = "SUPER";
-  "$browser" = "zen";
+  "$browser" = "firefox";
   "$bar" = "waybar";
   "$explorer" = "nautilus";
   "$locker" = "hyprlock";
@@ -10,7 +10,7 @@
     "pkill $bar; pkill $menu; $bar"
 
     ''
-      waypaper --folder ~/Quantum/assets/wallpapers --restore
+      waypaper --folder ~/LouspOS/assets/wallpapers --restore
     ''
   ];
 
@@ -36,7 +36,7 @@
       "$mod, Return, exec, $terminal"
       "$mod, C, exec, $browser"
       "$mod, E, exec, $explorer"
-      "$mod, D, exec, discord"
+      "$mod, D, exec, equibop"
       "$mod, Space, exec, $menu show"
       "$mod, B, exec, waypaper"
       "$mod, T, exec, $locker"

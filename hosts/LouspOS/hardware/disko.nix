@@ -1,14 +1,12 @@
-{disk ? "/dev/nvme0n1", ...}: let
-  part = "/dev/disk/by-partlabel/";
-in {
+{
   disko.devices.disk.main = {
     type = "disk";
-    device = disk;
+    device = "/dev/nvme0n1";
     content = {
       type = "gpt";
 
       partitions = {
-        ESP = {
+        boot = {
           size = "512M";
           type = "EF00";
           content = {
@@ -35,22 +33,4 @@ in {
       };
     };
   };
-
-  fileSystems = {
-    "/boot" = {
-      device = part + "disk-main-ESP";
-      fsType = "vfat";
-    };
-
-    "/" = {
-      device = part + "disk-main-root";
-      fsType = "ext4";
-    };
-  };
-
-  swapDevices = [
-    {
-      device = part + "disk-main-swap";
-    }
-  ];
 }

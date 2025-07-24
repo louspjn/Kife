@@ -14,12 +14,11 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
+    rpc.url = "github:ndom91/rose-pine-hyprcursor";
 
     parts.url = "github:hercules-ci/flake-parts";
     spicetify.url = "github:Gerg-L/spicetify-nix";
 
-    disko.url = "github:nix-community/disko";
     nvf.url = "github:notashelf/nvf";
 
     stylix = {

@@ -5,9 +5,12 @@
 }: {
   environment = {
     systemPackages = [
-      inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+      inputs.rpc.packages.${pkgs.system}.default
     ];
 
-    sessionVariables.NIXOS_OZONE_WL = "1";
+    sessionVariables = {
+      NIXOS_OZONE_WL = "1";
+      NIXPKGS_ALLOW_UNFREE = "1";
+    };
   };
 }

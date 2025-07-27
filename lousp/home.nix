@@ -19,6 +19,9 @@
       waypaper
       nh
       niriswitcher
+      dmenu
+
+      (import ./coffee { inherit pkgs; })
     ];
   };
 
@@ -26,29 +29,12 @@
 
   imports = [
     ./firefox.nix
-    ./waybar.nix
     ./helix.nix
     ./terminal.nix
-    ./niri.nix
   ];
 
   programs = {
     spicetify.enable = true;
-
-    wofi = {
-      enable = true;
-    };
-
-    kitty = {
-      enable = true;
-
-      settings = {
-        cursor_trail = 4;
-        cursor_trail_start_threshold = 0;
-
-        window_padding_width = 10;
-      };
-    };
 
     git = {
       enable = true;

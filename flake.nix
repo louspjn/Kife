@@ -21,7 +21,6 @@
           modules = [
             inputs.spicetify.homeManagerModules.default
             inputs.stylix.homeModules.stylix
-            inputs.niriwm.homeModules.niri
           
             ./lousp/home.nix
           ];
@@ -40,8 +39,6 @@
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    niriwm.url = "github:sodiboo/niri-flake";
 
     hm = {
       url = "github:nix-community/home-manager";

@@ -1,6 +1,5 @@
 {
   pkgs,
-  inputs,
   ...
 }:
 let
@@ -33,6 +32,7 @@ in
       clang-tools
       rust-analyzer
       alejandra
+      gcc
       nil
 
       pulseaudio
@@ -46,14 +46,8 @@ in
       home-manager
       blueman
       alsa-utils
-
-      niri
-
-      inputs.rpc.packages.${pkgs.system}.default
     ];
   };
-
-  programs.niri.enable = true;
 
   boot.loader = {
     grub = {
@@ -83,7 +77,7 @@ in
   };
 
   console = {
-    font = "Lat2-Terminus16";
+    font = "monospace";
     useXkbConfig = true;
   };
 
@@ -94,6 +88,16 @@ in
       xkb = {
         layout = "br";
         variant = "abnt2";
+      };
+
+      windowManager = {
+        i3.enable = true;
+        dwm = {
+          enable = true;
+          package = pkgs.dwm.overrideAttrs {
+            src = ./soupwm;
+          };
+        };
       };
     };
 

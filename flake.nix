@@ -1,38 +1,49 @@
 {
   description = "LouspOS Configuration";
 
-  outputs = inputs:
-    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+  outputs = { nixpkgs, hm, parts, ... }@inputs:
+    parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux"];
 
-      imports = [
-        (import ./parts {inherit inputs;})
-      ];
+      flake = {
+        nixosConfigurations.LouspOS = nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs;};
+          system = "x86_64-linux";
+          
+          modules = [
+            ./config.nix
+          ];
+        };
+
+        homeConfigurations.lousp = hm.lib.homeManagerConfiguration {
+          pkgs = import nixpkgs {system = "x86_64-linux";};
+
+          modules = [
+            inputs.spicetify.homeManagerModules.default
+            inputs.stylix.homeModules.stylix
+            inputs.niriwm.homeModules.niri
+          
+            ./lousp/home.nix
+          ];
+        };
+      };
     };
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
-    hyprscripts.url = "github:hyprwm/contrib";
-
-    flake-parts.url = "github:hercules-ci/flake-parts";
     spicetify.url = "github:Gerg-L/spicetify-nix";
-
-    disko.url = "github:nix-community/disko";
-
-    nvf = {
-      url = "github:notashelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    rpc.url = "github:ndom91/rose-pine-hyprcursor";
+    parts.url = "github:hercules-ci/flake-parts";
 
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    home-manager = {
+    niriwm.url = "github:sodiboo/niri-flake";
+
+    hm = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };

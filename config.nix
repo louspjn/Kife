@@ -1,0 +1,125 @@
+{
+  pkgs,
+  inputs,
+  ...
+}:
+let
+  locale = "pt_BR.UTF-8";
+in
+{
+  imports = [
+    ./hardware.nix
+  ];
+
+  users.users.lousp = {
+    isNormalUser = true;
+    hashedPassword = "$6$B8TcNHoEr3/vwaoT$jbmb4VotLlY8VAie4SX6xonEQxW9DPi0BQTjcNVNOW0F21qlB0xgVwx7I1rGTtQqOYAeSD/A9G0Gjd4VLAlEQ1";
+    description = "Jhuan Nycolas";
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+    shell = pkgs.nushell;
+  };
+
+  environment = {
+    sessionVariables = {
+      NH_FLAKE = "/home/lousp/LouspOS";
+      NIXPKGS_ALLOW_UNFREE = "1";
+      NIXOS_OZONE_WL = "1";
+    };
+
+    systemPackages = with pkgs; [
+      clang-tools
+      rust-analyzer
+      alejandra
+      nil
+
+      pulseaudio
+      libnotify
+      bluez
+
+      sqlite
+      unzip
+      wget
+
+      home-manager
+      blueman
+      alsa-utils
+
+      niri
+
+      inputs.rpc.packages.${pkgs.system}.default
+    ];
+  };
+
+  programs.niri.enable = true;
+
+  boot.loader = {
+    grub = {
+      enable = true;
+      devices = [ "nodev" ];
+      efiSupport = true;
+    };
+
+    efi.canTouchEfiVariables = true;
+  };
+
+  time.timeZone = "America/Sao_Paulo";
+  i18n = {
+    defaultLocale = "${locale}";
+
+    extraLocaleSettings = {
+      LC_ADDRESS = "${locale}";
+      LC_IDENTIFICATION = "${locale}";
+      LC_MEASUREMENT = "${locale}";
+      LC_MONETARY = "${locale}";
+      LC_NAME = "${locale}";
+      LC_NUMERIC = "${locale}";
+      LC_PAPER = "${locale}";
+      LC_TELEPHONE = "${locale}";
+      LC_TIME = "${locale}";
+    };
+  };
+
+  console = {
+    font = "Lat2-Terminus16";
+    useXkbConfig = true;
+  };
+
+  services = {
+    xserver = {
+      enable = true;
+
+      xkb = {
+        layout = "br";
+        variant = "abnt2";
+      };
+    };
+
+    displayManager.sddm = {
+      enable = true;
+      package = pkgs.kdePackages.sddm;
+      theme = "${pkgs.sddm-astronaut}/share/sddm/themes/sddm-astronaut-theme";
+    };
+
+    pipewire = {
+      enable = true;
+      pulse.enable = true;
+    };
+  };
+
+  networking = {
+    hostName = "LouspOS";
+    networkmanager.enable = true;
+  };
+
+  nixpkgs.config = {
+    allowUnfree = true;
+    allowUnfreePredicate = _: true;
+  };
+
+  nix.settings.experimental-features = "nix-command flakes";
+
+  system.stateVersion = "25.11";
+}

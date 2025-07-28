@@ -15,13 +15,30 @@
       loupe
       equibop
       microfetch
-      swww
-      waypaper
       nh
-      niriswitcher
       dmenu
 
-      (import ./coffee { inherit pkgs; })
+      (st.overrideAttrs (old: {
+        src = ./coffee;
+        patches = [
+          (pkgs.fetchpatch {
+            url = "https://st.suckless.org/patches/gruvbox/st-gruvbox-dark-0.8.5.diff";
+            hash = "sha256-W1qMGJRcfvmLp9hXzISIGo6XAk/Q88oaYoMD6kAEdks=";
+          })
+          (pkgs.fetchpatch {
+            url = "https://st.suckless.org/patches/ligatures/0.9.2/st-ligatures-20241226-0.9.2.diff";
+            hash = "sha256-LC4KOVY7rE9wqLi0ta++cLMj8WZkDByl2UMa7z2X5tQ=";
+          })
+          (pkgs.fetchpatch {
+            url = "https://st.suckless.org/patches/boxdraw/st-boxdraw_v2-0.8.5.diff";
+            hash = "sha256-BGRSYG/Otiq8jwaNiRxaXqPY0rinE9BTtWj5cQAYEIE=";
+          })
+        ];
+
+        buildInputs = (old.buildInputs or []) ++ [
+          pkgs.harfbuzz
+        ];
+      }))
     ];
   };
 

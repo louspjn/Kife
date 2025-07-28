@@ -5,7 +5,6 @@ VERSION = 0.9.2
 
 # paths
 PREFIX = /usr/local
-MANPREFIX = $(PREFIX)/share/man
 
 X11INC = /usr/X11R6/include
 X11LIB = /usr/X11R6/lib

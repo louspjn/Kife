@@ -9,16 +9,11 @@
     stateVersion = "25.11";
 
     packages = with pkgs; [
-      mpv
-      cava
-      nautilus
-      loupe
       equibop
       microfetch
       swww
       waypaper
       nh
-      niriswitcher
     ];
   };
 
@@ -26,10 +21,10 @@
 
   imports = [
     ./firefox.nix
-    ./waybar.nix
+    ./hyprpanel.nix
     ./helix.nix
     ./terminal.nix
-    ./niri.nix
+    ./hyprland.nix
   ];
 
   programs = {
@@ -60,10 +55,6 @@
         init.defaultBranch = "main";
       };
     };
-  };
-
-  services.dunst = {
-    enable = true;
   };
 
   stylix = {

@@ -8,17 +8,16 @@
         position = "top";
 
         height = 30;
-        margin = "14px 14px 0px 14px";
 
-        modules-left = ["custom/logo" "niri/window"];
-        modules-center = ["niri/workspaces"];
+        modules-left = ["custom/logo" "hyprland/window"];
+        modules-center = ["hyprland/workspaces"];
         modules-right = ["network" "clock" "battery"];
 
         "custom/logo" = {
           format = " ";
         };
 
-        "niri/workspaces" = {
+        "hyprland/workspaces" = {
           format = "{icon}";
           format-icons = {
             active = " ";
@@ -84,7 +83,7 @@
       }
 
       window#waybar {
-        border-radius: 100px;
+        background-color: rgba(40, 40, 40, 0.8)
       }
 
       #workspaces button {

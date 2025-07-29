@@ -47,13 +47,11 @@ in
       blueman
       alsa-utils
 
-      niri
-
       inputs.rpc.packages.${pkgs.system}.default
     ];
   };
 
-  programs.niri.enable = true;
+  programs.hyprland.enable = true;
 
   boot.loader = {
     grub = {
@@ -99,7 +97,12 @@ in
 
     displayManager.sddm = {
       enable = true;
-      package = pkgs.kdePackages.sddm;
+      package = pkgs.kdePackages.sddm.overrideAttrs (old: {
+        buildInputs = (old.buildInputs) ++ [
+          pkgs.qt6.qtmultimedia
+        ];
+      });
+
       theme = "${pkgs.sddm-astronaut}/share/sddm/themes/sddm-astronaut-theme";
     };
 

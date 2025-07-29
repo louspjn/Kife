@@ -5,9 +5,6 @@
       enable = true;
 
       shellAliases = {
-        nixos = "nh os";
-        nps = "nh search";
-
         recorder = "${pkgs.wf-recorder}/bin/wf-recorder";
         print = "${pkgs.grim}/bin/grim -g (${pkgs.slurp}/bin/slurp)";
 
@@ -17,13 +14,16 @@
         cat = "${pkgs.bat}/bin/bat";
 
         matrix = "${pkgs.cmatrix}/bin/cmatrix -C green -m";
+        pipes = "${pkgs.pipes}/bin/pipes";
+        bonsai = "${pkgs.cbonsai}/bin/cbonsai -lip";
+        cava = "${pkgs.cava}/bin/cava";
       };
 
       settings = {
         edit_mode = "vi";
         table.mode = "rounded";
 
-        buffer_editor = "nvim";
+        buffer_editor = "hx";
         show_banner = false;
       };
 
@@ -71,6 +71,7 @@
         };
       };
     };
+
     tmux = {
       enable = true;
 

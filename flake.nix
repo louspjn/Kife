@@ -21,7 +21,6 @@
           modules = [
             inputs.spicetify.homeManagerModules.default
             inputs.stylix.homeModules.stylix
-            inputs.niriwm.homeModules.niri
           
             ./lousp/home.nix
           ];
@@ -34,6 +33,7 @@
 
     spicetify.url = "github:Gerg-L/spicetify-nix";
     rpc.url = "github:ndom91/rose-pine-hyprcursor";
+
     parts.url = "github:hercules-ci/flake-parts";
 
     stylix = {
@@ -41,7 +41,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    niriwm.url = "github:sodiboo/niri-flake";
+    hyprland.url = "github:hyprwm/Hyprland";
+    hypr-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
+
 
     hm = {
       url = "github:nix-community/home-manager";

@@ -1,8 +1,4 @@
-{
-  pkgs,
-  ...
-}:
-{
+{pkgs, ...}: {
   home = {
     username = "lousp";
     homeDirectory = "/home/lousp";
@@ -21,8 +17,7 @@
 
   imports = [
     ./firefox.nix
-    ./hyprpanel.nix
-    ./helix.nix
+    ./neovim.nix
     ./terminal.nix
     ./hyprland.nix
   ];
@@ -78,7 +73,7 @@
 
     targets = {
       helix.enable = false;
-      firefox.profileNames = [ "default" ];
+      firefox.profileNames = ["default"];
     };
   };
 

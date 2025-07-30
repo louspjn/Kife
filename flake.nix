@@ -1,7 +1,12 @@
 {
   description = "LouspOS Configuration";
 
-  outputs = { nixpkgs, hm, parts, ... }@inputs:
+  outputs = {
+    nixpkgs,
+    hm,
+    parts,
+    ...
+  } @ inputs:
     parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux"];
 
@@ -9,7 +14,7 @@
         nixosConfigurations.LouspOS = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           system = "x86_64-linux";
-          
+
           modules = [
             ./config.nix
           ];
@@ -18,12 +23,16 @@
         homeConfigurations.lousp = hm.lib.homeManagerConfiguration {
           pkgs = import nixpkgs {system = "x86_64-linux";};
 
-          modules = [
-            inputs.spicetify.homeManagerModules.default
-            inputs.stylix.homeModules.stylix
-          
-            ./lousp/home.nix
-          ];
+          modules =
+            (with inputs; [
+              spicetify.homeManagerModules.default
+              stylix.homeModules.stylix
+              hyprland.homeManagerModules.default
+              nvf.homeManagerModules.default
+            ])
+            ++ [
+              ./lousp/home.nix
+            ];
         };
       };
     };
@@ -33,6 +42,7 @@
 
     spicetify.url = "github:Gerg-L/spicetify-nix";
     rpc.url = "github:ndom91/rose-pine-hyprcursor";
+    nvf.url = "github:notashelf/nvf";
 
     parts.url = "github:hercules-ci/flake-parts";
 
@@ -41,12 +51,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.url = "github:hyprwm/Hyprland?submodules=1";
     hypr-plugins = {
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
-
 
     hm = {
       url = "github:nix-community/home-manager";

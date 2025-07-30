@@ -3,12 +3,10 @@
   lib,
   modulesPath,
   ...
-}:
-let
+}: let
   updateMicrocode = config.hardware.enableRedistributableFirmware;
   part = "/dev/disk/by-partlabel/";
-in
-{
+in {
   imports = [(modulesPath + "/installer/scan/not-detected.nix")];
 
   fileSystems = {
@@ -37,12 +35,13 @@ in
       ];
     };
 
-    kernelModules = [ "kvm-intel" ];
+    kernelModules = ["kvm-intel"];
   };
 
   hardware = {
     cpu.intel.updateMicrocode = lib.mkDefault updateMicrocode;
     graphics.enable = true;
+    bluetooth.enable = true;
   };
 
   networking.useDHCP = lib.mkDefault true;

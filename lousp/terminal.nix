@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   programs = {
     nushell = {
       enable = true;
@@ -47,7 +46,7 @@
         mgr = {
           linemode = "size";
           sort_by = "natural";
-          mouse_events = [ ];
+          mouse_events = [];
         };
 
         preview = {

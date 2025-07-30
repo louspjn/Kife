@@ -18,12 +18,17 @@
 
           engines = {
             "My NixOS" = {
-              urls = [{
-                template = "https://mynixos.com/search";
-                params = [
-                  { name = "q"; value = "{searchTerms}"; }
-                ];
-              }];
+              urls = [
+                {
+                  template = "https://mynixos.com/search";
+                  params = [
+                    {
+                      name = "q";
+                      value = "{searchTerms}";
+                    }
+                  ];
+                }
+              ];
 
               definedAliases = ["@mn"];
             };

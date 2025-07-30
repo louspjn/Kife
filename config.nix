@@ -2,11 +2,9 @@
   pkgs,
   inputs,
   ...
-}:
-let
+}: let
   locale = "pt_BR.UTF-8";
-in
-{
+in {
   imports = [
     ./hardware.nix
   ];
@@ -30,16 +28,8 @@ in
     };
 
     systemPackages = with pkgs; [
-      clang-tools
-      rust-analyzer
-      alejandra
-      nil
-
-      pulseaudio
       libnotify
-      bluez
 
-      sqlite
       unzip
       wget
 
@@ -56,7 +46,7 @@ in
   boot.loader = {
     grub = {
       enable = true;
-      devices = [ "nodev" ];
+      devices = ["nodev"];
       efiSupport = true;
     };
 
@@ -98,9 +88,11 @@ in
     displayManager.sddm = {
       enable = true;
       package = pkgs.kdePackages.sddm.overrideAttrs (old: {
-        buildInputs = (old.buildInputs) ++ [
-          pkgs.qt6.qtmultimedia
-        ];
+        buildInputs =
+          (old.buildInputs)
+          ++ [
+            pkgs.qt6.qtmultimedia
+          ];
       });
 
       theme = "${pkgs.sddm-astronaut}/share/sddm/themes/sddm-astronaut-theme";

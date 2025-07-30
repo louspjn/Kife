@@ -3,19 +3,7 @@
     enable = true;
 
     settings = {
-      "$terminal" = "kitty";
-      "$mod" = "SUPER";
-      "$browser" = "firefox";
-      "$bar" = "hyprpanel";
-      "$locker" = "hyprlock";
-
-      exec = [
-        "pkill $bar; $bar"
-
-        ''
-          waypaper --folder ~/LouspOS/assets/wallpapers --restore
-        ''
-      ];
+      exec = ["waypaper --folder ~/LouspOS/assets/wallpapers --restore"];
 
       monitor = [
         "eDP-1, preferred, 1920x0, 1"
@@ -34,42 +22,38 @@
         "ALT, L, resizeactive, 20 0"
       ];
 
-      bind = [
-        "$mod, Return, exec, $terminal"
-        "$mod, C, exec, $browser"
-        "$mod, E, exec, $explorer"
-        "$mod, D, exec, equibop"
-        "$mod, Space, exec, $menu show"
-        "$mod, B, exec, waypaper"
-        "$mod, T, exec, $locker"
-        "$mod, Q, killactive,"
-        "$mod, Space, exec, wofi --show drun"
+      bind =
+        [
+          "SUPER, Return, exec, kitty"
+          "SUPER, C, exec, firefox"
+          "SUPER, D, exec, equibop"
+          "SUPER, B, exec, waypaper"
+          "SUPER, Q, killactive,"
+          "SUPER, Space, exec, wofi --show drun"
 
-        "$mod, V, togglefloating,"
-        "$mod, P, pseudo,"
+          "SUPER, F, togglefloating,"
 
-        "$mod, H, movefocus, l"
-        "$mod, J, movefocus, d"
-        "$mod, K, movefocus, u"
-        "$mod, L, movefocus, r"
+          "SUPER, H, movefocus, l"
+          "SUPER, J, movefocus, d"
+          "SUPER, K, movefocus, u"
+          "SUPER, L, movefocus, r"
 
-        "$mod Shift, H, swapwindow, l"
-        "$mod Shift, J, swapwindow, d"
-        "$mod Shift, K, swapwindow, u"
-        "$mod Shift, L, swapwindow, r"
-      ]
-      ++ (builtins.concatLists (
-        builtins.genList (
-          i:
-          let
-            ws = i + 1;
-          in
-          [
-            "$mod, code:1${toString i}, workspace, ${toString ws}"
-            "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
-          ]
-        ) 9
-      ));
+          "SUPER Shift, H, swapwindow, l"
+          "SUPER Shift, J, swapwindow, d"
+          "SUPER Shift, K, swapwindow, u"
+          "SUPER Shift, L, swapwindow, r"
+        ]
+        ++ (builtins.concatLists (
+          builtins.genList (
+            i: let
+              ws = i + 1;
+            in [
+              "SUPER, code:1${toString i}, workspace, ${toString ws}"
+              "SUPER SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+            ]
+          )
+          9
+        ));
 
       general = {
         gaps_in = 10;
@@ -173,8 +157,8 @@
       };
 
       bindm = [
-        "$mod, mouse:272, movewindow"
-        "$mod, mouse:273, resizewindow"
+        "SUPER, mouse:272, movewindow"
+        "SUPER, mouse:273, resizewindow"
       ];
 
       bindel = [
@@ -184,13 +168,6 @@
         ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
         ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
         ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
-      ];
-
-      bindl = [
-        ", XF86AudioNext, exec, playerctl next"
-        ", XF86AudioPause, exec, playerctl play-pause"
-        ", XF86AudioPlay, exec, playerctl play-pause"
-        ", XF86AudioPrev, exec, playerctl previous"
       ];
 
       windowrulev2 = [

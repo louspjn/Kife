@@ -31,6 +31,8 @@
           "SUPER, Q, killactive,"
           "SUPER, Space, exec, wofi --show drun"
 
+          "SUPER, T, togglegroup"
+          "SUPER, P, pseudo,"
           "SUPER, F, togglefloating,"
 
           "SUPER, H, movefocus, l"
@@ -73,12 +75,6 @@
 
         active_opacity = 0.9;
         inactive_opacity = 0.9;
-
-        shadow = {
-          enabled = true;
-          range = 8;
-          render_power = 3;
-        };
 
         blur = {
           enabled = true;

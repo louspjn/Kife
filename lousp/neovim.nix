@@ -2,14 +2,13 @@
   programs.nvf = {
     enable = true;
 
-    defaultEditor = true;
-
     settings = {
       vim = {
         theme = {
           enable = true;
 
           name = "gruvbox";
+          style = "dark";
           transparent = true;
         };
 
@@ -39,10 +38,6 @@
               direction = "float";
             };
           };
-        };
-
-        ui = {
-          borders.enable = true;
         };
 
         statusline.lualine.enable = true;
@@ -113,7 +108,7 @@
           }
 
           {
-            key = "<space><space>";
+            key = "<space>f";
             mode = ["n"];
             action = ":Telescope find_files<CR>";
             silent = true;

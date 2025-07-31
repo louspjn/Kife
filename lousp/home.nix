@@ -10,6 +10,7 @@
       swww
       waypaper
       nh
+      xfce.thunar
     ];
   };
 
@@ -72,7 +73,7 @@
     };
 
     targets = {
-      helix.enable = false;
+      nvf.enable = false;
       firefox.profileNames = ["default"];
     };
   };

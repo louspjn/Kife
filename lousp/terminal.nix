@@ -22,7 +22,7 @@
         edit_mode = "vi";
         table.mode = "rounded";
 
-        buffer_editor = "hx";
+        buffer_editor = "nvim";
         show_banner = false;
       };
 
@@ -62,7 +62,7 @@
         opener = {
           edit = [
             {
-              run = "hx -- \"$@\"";
+              run = "nvim -- \"$@\"";
               desc = "$EDITOR";
               block = true;
             }
@@ -95,7 +95,7 @@
         bind w choose-window
 
         # Status bar
-        set -g status-position top
+        set -g status-position bottom
         set -g status-right-length 100
         set -g status-left-length 100
         set -g status-left ""

@@ -16,14 +16,6 @@
         lsp.enable = true;
 
         shell = ["nu" "-c"];
-
-        statusline = {
-          mode = {
-            normal = "NORMAL";
-            insert = "INSERT";
-            select = "SELECT";
-          };
-        };
       };
     };
 
@@ -45,7 +37,6 @@
         {
           name = "rust";
           language-server = "rust-analyzer";
-          formatter.command = "rustfmt";
         }
         {
           name = "nix";

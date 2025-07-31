@@ -22,7 +22,7 @@
         edit_mode = "vi";
         table.mode = "rounded";
 
-        buffer_editor = "nvim";
+        buffer_editor = "hx";
         show_banner = false;
       };
 
@@ -62,7 +62,7 @@
         opener = {
           edit = [
             {
-              run = "nvim -- \"$@\"";
+              run = "hx -- \"$@\"";
               desc = "$EDITOR";
               block = true;
             }

@@ -13,7 +13,6 @@
       xfce.thunar
 
       rust-analyzer
-      rustfmt
       nil
       alejandra
       clang-tools
@@ -79,7 +78,7 @@
     };
 
     targets = {
-      nvf.enable = false;
+      helix.enable = false;
       firefox.profileNames = ["default"];
     };
   };

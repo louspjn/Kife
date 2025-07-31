@@ -11,6 +11,12 @@
       waypaper
       nh
       xfce.thunar
+
+      rust-analyzer
+      rustfmt
+      nil
+      alejandra
+      clang-tools
     ];
   };
 
@@ -18,7 +24,7 @@
 
   imports = [
     ./firefox.nix
-    ./neovim.nix
+    ./helix.nix
     ./terminal.nix
     ./hyprland.nix
   ];

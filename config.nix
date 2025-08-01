@@ -36,6 +36,7 @@ in {
       home-manager
       blueman
       alsa-utils
+      pavucontrol
 
       inputs.rpc.packages.${pkgs.system}.default
     ];

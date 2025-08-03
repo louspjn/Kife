@@ -1,9 +1,13 @@
-{
+{pkgs, ...}: {
   wayland.windowManager.hyprland = {
     enable = true;
+    package = pkgs.hyprland;
 
     settings = {
-      exec = ["waypaper --folder ~/LouspOS/assets/wallpapers --restore"];
+      exec = [
+        "waypaper --folder ~/LouspOS/assets/wallpapers --restore"
+        "pkill waybar; waybar"
+      ];
 
       monitor = [
         "eDP-1, preferred, 1920x0, 1"
@@ -24,7 +28,7 @@
 
       bind =
         [
-          "SUPER, Return, exec, kitty"
+          "SUPER, Return, exec, alacritty"
           "SUPER, C, exec, firefox"
           "SUPER, D, exec, equibop"
           "SUPER, B, exec, waypaper"
@@ -170,6 +174,8 @@
         "suppressevent maximize, class:.*"
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
       ];
+
+      layerrule = "blur,waybar";
 
       env = "HYPRCURSOR_THEME,rose-pine-hyprcursor";
     };

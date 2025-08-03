@@ -12,6 +12,11 @@
       nh
       xfce.thunar
 
+      cargo
+      rustc
+      gcc
+      entr
+
       rust-analyzer
       nil
       alejandra
@@ -26,6 +31,7 @@
     ./helix.nix
     ./terminal.nix
     ./hyprland.nix
+    ./waybar.nix
   ];
 
   programs = {
@@ -35,14 +41,27 @@
       enable = true;
     };
 
-    kitty = {
+    alacritty = {
       enable = true;
 
       settings = {
-        cursor_trail = 4;
-        cursor_trail_start_threshold = 0;
+        window = {
+          padding = {
+            x = 14;
+            y = 14;
+          };
 
-        window_padding_width = 10;
+          dynamic_padding = true;
+        };
+
+        cursor = {
+          style.blinking = "always";
+          unfocused_hollow = false;
+        };
+
+        mouse.hide_when_typing = true;
+
+        font.size = 11;
       };
     };
 

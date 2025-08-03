@@ -12,6 +12,15 @@
 
         cat = "${pkgs.bat}/bin/bat";
 
+        gd = "git add";
+        gc = "git commit -m ";
+        gp = "git push";
+        gb = "git branch";
+        gck = "git checkout";
+
+        nhs = "nh home switch";
+        nos = "nh os switch";
+
         matrix = "${pkgs.cmatrix}/bin/cmatrix -C green -m";
         pipes = "${pkgs.pipes}/bin/pipes";
         bonsai = "${pkgs.cbonsai}/bin/cbonsai -lip";
@@ -26,13 +35,40 @@
         show_banner = false;
       };
 
-      extraConfig = "microfetch";
+      extraConfig = "microfetch; use /nix/store/168d696s1j21ik2g2ak0x7mni0qz6ldp-starship-nushell-config.nu";
     };
 
-    oh-my-posh = {
+    starship = {
       enable = true;
       enableNushellIntegration = true;
-      useTheme = "robbyrussell";
+
+      settings = {
+        add_newline = false;
+        scan_timeout = 10;
+
+        format = "$directory$rust$git_branch$git_status\n$character";
+
+        rust = {
+          symbol = "";
+          format = "via [$symbol $version]($style)";
+          version_format = "v$raw";
+          style = "bold red";
+          detect_extensions = ["rs"];
+          detect_files = ["Cargo.toml"];
+        };
+
+        git_branch = {
+          symbol = "";
+          style = "bold purple";
+        };
+
+        git_status.disabled = false;
+
+        character = {
+          success_symbol = "[➜](bold light_green)";
+          error_symbol = "[✗](bold red)";
+        };
+      };
     };
 
     zoxide = {
@@ -102,5 +138,7 @@
         set -g @tmux-gruvbox 'dark'
       '';
     };
+
+    fzf.enable = true;
   };
 }

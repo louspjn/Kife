@@ -35,15 +35,6 @@
             ];
         };
       };
-
-      perSystem = {pkgs, ...}: {
-        devShells = {
-          rust = pkgs.mkShell {
-            packages = with pkgs; [ rustc cargo gcc entr ];
-            shellHook = "clear; nu";
-          };
-        };
-      };
     };
 
   inputs = {

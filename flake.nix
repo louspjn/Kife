@@ -1,5 +1,5 @@
 {
-  description = "LouspOS Configuration";
+  description = "SagittariusOS Configuration";
 
   outputs = {
     nixpkgs,
@@ -11,7 +11,7 @@
       systems = ["x86_64-linux"];
 
       flake = {
-        nixosConfigurations.LouspOS = nixpkgs.lib.nixosSystem {
+        nixosConfigurations.SagittariusOS = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           system = "x86_64-linux";
 

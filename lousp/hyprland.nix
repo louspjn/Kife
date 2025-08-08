@@ -5,7 +5,7 @@
 
     settings = {
       exec = [
-        "waypaper --folder ~/LouspOS/assets/wallpapers --restore"
+        "waypaper --folder ~/SagittariusOS/assets/wallpapers --restore"
         "pkill waybar; waybar"
       ];
 

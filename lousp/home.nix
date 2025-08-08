@@ -12,15 +12,10 @@
       nh
       xfce.thunar
 
-      cargo
-      rustc
       gcc
-      entr
-
       rust-analyzer
       nil
       alejandra
-      clang-tools
     ];
   };
 

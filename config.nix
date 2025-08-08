@@ -22,7 +22,7 @@ in {
 
   environment = {
     sessionVariables = {
-      NH_FLAKE = "/home/lousp/LouspOS";
+      NH_FLAKE = "/home/lousp/SagittariusOS";
       NIXPKGS_ALLOW_UNFREE = "1";
       NIXOS_OZONE_WL = "1";
     };
@@ -106,7 +106,7 @@ in {
   };
 
   networking = {
-    hostName = "LouspOS";
+    hostName = "SagittariusOS";
     networkmanager.enable = true;
   };
 
@@ -117,5 +117,5 @@ in {
 
   nix.settings.experimental-features = "nix-command flakes";
 
-  system.stateVersion = "25.11";
+  system.stateVersion = "25.05";
 }

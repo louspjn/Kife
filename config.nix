@@ -1,9 +1,15 @@
 {
   pkgs,
-  inputs,
   ...
 }: let
   locale = "pt_BR.UTF-8";
+
+  catppuccin-sddm = pkgs.catppuccin-sddm.override {
+    flavor = "macchiato";
+    font = "Noto Sans";
+    fontSize = "9";
+    background = ./assets/wallpapers/solarsystem.jpg;
+  };
 in {
   imports = [
     ./hardware.nix
@@ -25,6 +31,7 @@ in {
       NH_FLAKE = "/home/lousp/SagittariusOS";
       NIXPKGS_ALLOW_UNFREE = "1";
       NIXOS_OZONE_WL = "1";
+      EDITOR = "hx";
     };
 
     systemPackages = with pkgs; [
@@ -37,8 +44,6 @@ in {
       blueman
       alsa-utils
       pavucontrol
-
-      inputs.rpc.packages.${pkgs.system}.default
     ];
   };
 
@@ -96,7 +101,7 @@ in {
           ];
       });
 
-      theme = "${pkgs.sddm-astronaut}/share/sddm/themes/sddm-astronaut-theme";
+      theme = "${catppuccin-sddm}/share/sddm/themes/catppuccin-macchiato";
     };
 
     pipewire = {

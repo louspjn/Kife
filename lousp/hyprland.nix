@@ -1,4 +1,19 @@
-{pkgs, ...}: {
+{config, pkgs, ...}: let
+  workspacelimit = 9;
+  workspacebinds = (builtins.concatLists
+    (builtins.genList (
+      i: let ws = i + 1; in [
+          "SUPER, code:1${toString i}, workspace, ${toString ws}"
+          "SUPER SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+        ]
+      ) workspacelimit
+    ));
+
+  grimblast = "${pkgs.grimblast}/bin/grimblast";
+
+  print = pkgs.writeShellScriptBin "print"
+    "${grimblast} copysave area ~/Images/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png";
+in {
   wayland.windowManager.hyprland = {
     enable = true;
     package = pkgs.hyprland;
@@ -26,16 +41,12 @@
         "ALT, L, resizeactive, 20 0"
       ];
 
-      bind =
-        [
+      bind = [
           "SUPER, Return, exec, alacritty"
-          "SUPER, C, exec, firefox"
-          "SUPER, D, exec, equibop"
           "SUPER, B, exec, waypaper"
-          "SUPER, Q, killactive,"
+          "SUPER, Q, killactive"
           "SUPER, Space, exec, wofi --show drun"
 
-          "SUPER, T, togglegroup"
           "SUPER, P, pseudo,"
           "SUPER, F, togglefloating,"
 
@@ -48,18 +59,9 @@
           "SUPER Shift, J, swapwindow, d"
           "SUPER Shift, K, swapwindow, u"
           "SUPER Shift, L, swapwindow, r"
-        ]
-        ++ (builtins.concatLists (
-          builtins.genList (
-            i: let
-              ws = i + 1;
-            in [
-              "SUPER, code:1${toString i}, workspace, ${toString ws}"
-              "SUPER SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
-            ]
-          )
-          9
-        ));
+
+          ", Print, exec, ${print}/bin/print"
+      ] ++ workspacebinds;
 
       general = {
         gaps_in = 10;
@@ -161,23 +163,14 @@
         "SUPER, mouse:273, resizewindow"
       ];
 
-      bindel = [
-        ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
-        ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-        ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-        ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-        ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
-        ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
+      windowrule = [
+        "float, title:Waypaper"
       ];
 
-      windowrulev2 = [
-        "suppressevent maximize, class:.*"
-        "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+      env = [
+        "HYPRCURSOR_THEME, ${config.stylix.cursor.name}"
+        "HYPRCURSOR_SIZE, ${builtins.toString config.stylix.cursor.size}"
       ];
-
-      layerrule = "blur,waybar";
-
-      env = "HYPRCURSOR_THEME,rose-pine-hyprcursor";
     };
   };
 }

@@ -10,7 +10,9 @@
       swww
       waypaper
       nh
-      xfce.thunar
+
+      nautilus
+      loupe
 
       gcc
       rust-analyzer
@@ -75,7 +77,8 @@
   stylix = {
     enable = true;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-soft.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
+    
     polarity = "dark";
 
     fonts = {
@@ -91,14 +94,24 @@
       };
     };
 
+    icons = {
+      enable = true;
+      dark = "Papirus-Dark";
+      package = pkgs.catppuccin-papirus-folders.override {
+        flavor = "macchiato";
+        accent = "blue";
+      };
+    };
+
+    cursor = {
+      name = "Bibata-Modern-Classic";
+      package = pkgs.bibata-cursors;
+      size = 10;
+    };
+
     targets = {
       helix.enable = false;
       firefox.profileNames = ["default"];
     };
-  };
-
-  gtk.iconTheme = {
-    name = "gruvbox-dark-icons-gtk";
-    package = pkgs.gruvbox-dark-icons-gtk;
   };
 }

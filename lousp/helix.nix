@@ -5,7 +5,7 @@
     defaultEditor = true;
 
     settings = {
-      theme = "gruvbox_dark_soft";
+      theme = "catppuccin_macchiato";
 
       editor = {
         line-number = "relative";

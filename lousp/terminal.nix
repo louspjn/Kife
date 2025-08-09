@@ -5,12 +5,11 @@
 
       shellAliases = {
         recorder = "${pkgs.wf-recorder}/bin/wf-recorder";
-        print = "${pkgs.grim}/bin/grim -g (${pkgs.slurp}/bin/slurp)";
 
         l = "ls **/*";
         cd = "z";
 
-        cat = "${pkgs.bat}/bin/bat";
+        cat = "${pkgs.bat}/bin/bat --theme-dark base16";
 
         gd = "git add";
         gc = "git commit -m ";
@@ -20,6 +19,7 @@
 
         nhs = "nh home switch";
         nos = "nh os switch";
+        nosu = "nh os switch -u";
 
         matrix = "${pkgs.cmatrix}/bin/cmatrix -C green -m";
         pipes = "${pkgs.pipes}/bin/pipes";
@@ -35,7 +35,7 @@
         show_banner = false;
       };
 
-      extraConfig = "microfetch; use /nix/store/168d696s1j21ik2g2ak0x7mni0qz6ldp-starship-nushell-config.nu";
+      extraConfig = "microfetch";
     };
 
     starship = {
@@ -107,38 +107,15 @@
       };
     };
 
-    tmux = {
+    zellij = {
       enable = true;
-
-      plugins = [
-        pkgs.tmuxPlugins.gruvbox
-      ];
-
-      prefix = "C-s";
-      keyMode = "vi";
-
-      extraConfig = ''
-        # Pane keybindings
-        bind | split-window -h
-        bind - split-window -v
-
-        bind h select-pane -L
-        bind j select-pane -D
-        bind k select-pane -U
-        bind l select-pane -R
-
-        bind c new-window
-        bind w choose-window
-
-        # Status bar
-        set -g status-position bottom
-        set -g status-right-length 100
-        set -g status-left-length 100
-        set -g status-left ""
-        set -g @tmux-gruvbox 'dark'
-      '';
-    };
-
-    fzf.enable = true;
+      settings = {
+        status-bar = {
+          enabled = true;
+          position = "bottom";
+          height = 1;
+        };
+      };
+   };
   };
 }

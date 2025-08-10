@@ -13,7 +13,6 @@
 
       nautilus
       loupe
-      flatpak
 
       zed-editor
       gcc

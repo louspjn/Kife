@@ -13,9 +13,12 @@
 
       nautilus
       loupe
+      flatpak
 
+      zed-editor
       gcc
       rust-analyzer
+      typescript-language-server
       nil
       alejandra
     ];
@@ -77,7 +80,7 @@
   stylix = {
     enable = true;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-soft.yaml";
     
     polarity = "dark";
 
@@ -97,11 +100,8 @@
     icons = {
       enable = true;
       dark = "Papirus-Dark";
-      package = pkgs.catppuccin-papirus-folders.override {
-        flavor = "macchiato";
-        accent = "blue";
-      };
-    };
+      package = pkgs.papirus-icon-theme;
+   };
 
     cursor = {
       name = "Bibata-Modern-Classic";

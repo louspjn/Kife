@@ -3,13 +3,6 @@
   ...
 }: let
   locale = "pt_BR.UTF-8";
-
-  catppuccin-sddm = pkgs.catppuccin-sddm.override {
-    flavor = "macchiato";
-    font = "Noto Sans";
-    fontSize = "9";
-    background = ./assets/wallpapers/solarsystem.jpg;
-  };
 in {
   imports = [
     ./hardware.nix
@@ -65,15 +58,6 @@ in {
     consoleLogLevel = 0;
     initrd.verbose = false;
     kernelParams = [ "quiet" "splash" ];
-
-    plymouth = {
-      enable = true;
-      
-      theme = "loader_2";
-      themePackages = [
-        pkgs.adi1090x-plymouth-themes
-      ];
-    };
   };
 
   time.timeZone = "America/Sao_Paulo";
@@ -118,7 +102,7 @@ in {
           ];
       });
 
-      theme = "${catppuccin-sddm}/share/sddm/themes/catppuccin-macchiato";
+      theme = "${pkgs.sddm-astronaut}/share/sddm/themes/sddm-astronaut-theme";
     };
 
     pipewire = {

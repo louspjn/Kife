@@ -5,7 +5,7 @@
     defaultEditor = true;
 
     settings = {
-      theme = "catppuccin_macchiato";
+      theme = "gruvbox_dark_soft";
 
       editor = {
         line-number = "relative";
@@ -17,37 +17,6 @@
 
         shell = ["nu" "-c"];
       };
-    };
-
-    languages = {
-      language-server = {
-        rust-analyzer = {
-          command = "rust-analyzer";
-        };
-        nil = {
-          command = "nil";
-        };
-
-        clangd = {
-          command = "clangd";
-        };
-      };
-
-      languages = [
-        {
-          name = "rust";
-          language-server = "rust-analyzer";
-        }
-        {
-          name = "nix";
-          language-server = "nil";
-          formatter.command = "alejandra";
-        }
-        {
-          name = "c";
-          language-server = "clangd";
-        }
-      ];
     };
   };
 }

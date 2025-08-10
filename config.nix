@@ -49,14 +49,31 @@ in {
 
   programs.hyprland.enable = true;
 
-  boot.loader = {
-    grub = {
-      enable = true;
-      devices = ["nodev"];
-      efiSupport = true;
+  boot = {
+    loader = {
+      grub = {
+        enable = true;
+        devices = ["nodev"];
+        efiSupport = true;
+        timeoutStyle = "hidden";
+        splashImage = ./assets/wallpapers/solarsystem.jpg;
+      };
+
+      efi.canTouchEfiVariables = true;
     };
 
-    efi.canTouchEfiVariables = true;
+    consoleLogLevel = 0;
+    initrd.verbose = false;
+    kernelParams = [ "quiet" "splash" ];
+
+    plymouth = {
+      enable = true;
+      
+      theme = "loader_2";
+      themePackages = [
+        pkgs.adi1090x-plymouth-themes
+      ];
+    };
   };
 
   time.timeZone = "America/Sao_Paulo";

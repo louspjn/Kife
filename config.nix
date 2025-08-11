@@ -21,7 +21,7 @@ in {
       NH_FLAKE = "/home/lousp/SagittariusOS";
       NIXPKGS_ALLOW_UNFREE = "1";
       NIXOS_OZONE_WL = "1";
-      EDITOR = "zeditor";
+      EDITOR = "hx";
     };
 
     systemPackages = with pkgs; [

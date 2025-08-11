@@ -14,7 +14,7 @@
       nautilus
       loupe
 
-      # zed-editor
+      zed-editor
       gcc
       rust-analyzer
       typescript-language-server

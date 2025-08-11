@@ -29,7 +29,7 @@
               }
             ];
 
-            definedAliases = [ "@mn" ];
+            definedAliases = ["@mn"];
           };
         };
       };

@@ -13,7 +13,6 @@
       nautilus
       loupe
 
-      zed-editor
       gcc
       rust-analyzer
       typescript-language-server
@@ -25,7 +24,7 @@
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-    ./firefox.nix
+    # ./firefox.nix
     ./helix.nix
     ./terminal.nix
     ./hyprland.nix

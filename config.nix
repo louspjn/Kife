@@ -1,9 +1,11 @@
 {
   pkgs,
   ...
-}: let
+}:
+let
   locale = "pt_BR.UTF-8";
-in {
+in
+{
   imports = [
     ./hardware.nix
   ];
@@ -46,7 +48,7 @@ in {
     loader = {
       grub = {
         enable = true;
-        devices = ["nodev"];
+        devices = [ "nodev" ];
         efiSupport = true;
         timeoutStyle = "hidden";
         splashImage = ./assets/wallpapers/solarsystem.jpg;
@@ -57,7 +59,10 @@ in {
 
     consoleLogLevel = 0;
     initrd.verbose = false;
-    kernelParams = [ "quiet" "splash" ];
+    kernelParams = [
+      "quiet"
+      "splash"
+    ];
   };
 
   time.timeZone = "America/Sao_Paulo";
@@ -84,7 +89,7 @@ in {
 
   services = {
     flatpak.enable = true;
-    
+
     xserver = {
       enable = true;
 
@@ -97,11 +102,9 @@ in {
     displayManager.sddm = {
       enable = true;
       package = pkgs.kdePackages.sddm.overrideAttrs (old: {
-        buildInputs =
-          (old.buildInputs)
-          ++ [
-            pkgs.qt6.qtmultimedia
-          ];
+        buildInputs = (old.buildInputs) ++ [
+          pkgs.qt6.qtmultimedia
+        ];
       });
 
       theme = "${pkgs.sddm-astronaut}/share/sddm/themes/sddm-astronaut-theme";

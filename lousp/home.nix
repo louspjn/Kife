@@ -6,7 +6,7 @@
     stateVersion = "25.11";
 
     packages = with pkgs; [
-      equibop
+      discord
       microfetch
       swww
       waypaper

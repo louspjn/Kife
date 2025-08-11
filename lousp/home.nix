@@ -5,7 +5,6 @@
     stateVersion = "25.11";
 
     packages = with pkgs; [
-      discord
       microfetch
       swww
       waypaper

@@ -27,8 +27,6 @@
             (with inputs; [
               spicetify.homeManagerModules.default
               stylix.homeModules.stylix
-              hyprland.homeManagerModules.default
-              nvf.homeManagerModules.default
             ])
             ++ [
               ./lousp/home.nix
@@ -41,20 +39,12 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     spicetify.url = "github:Gerg-L/spicetify-nix";
-    rpc.url = "github:ndom91/rose-pine-hyprcursor";
-    nvf.url = "github:notashelf/nvf";
 
     parts.url = "github:hercules-ci/flake-parts";
 
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    hyprland.url = "github:hyprwm/Hyprland?submodules=1";
-    hypr-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
     };
 
     hm = {

@@ -45,7 +45,6 @@ in {
         enable = true;
         devices = ["nodev"];
         efiSupport = true;
-        timeoutStyle = "hidden";
         splashImage = ./assets/wallpapers/solarsystem.jpg;
       };
 

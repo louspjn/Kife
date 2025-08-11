@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   home = {
     username = "lousp";
     homeDirectory = "/home/lousp";
@@ -80,7 +81,7 @@
     enable = true;
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-soft.yaml";
-    
+
     polarity = "dark";
 
     fonts = {
@@ -100,7 +101,7 @@
       enable = true;
       dark = "Papirus-Dark";
       package = pkgs.papirus-icon-theme;
-   };
+    };
 
     cursor = {
       name = "Bibata-Modern-Classic";
@@ -110,7 +111,7 @@
 
     targets = {
       helix.enable = false;
-      firefox.profileNames = ["default"];
+      firefox.profileNames = [ "default" ];
     };
   };
 }

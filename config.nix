@@ -83,6 +83,8 @@ in {
   };
 
   services = {
+    flatpak.enable = true;
+    
     xserver = {
       enable = true;
 

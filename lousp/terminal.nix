@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   programs = {
     nushell = {
       enable = true;
@@ -53,8 +54,8 @@
           format = "via [$symbol $version]($style)";
           version_format = "v$raw";
           style = "bold red";
-          detect_extensions = ["rs"];
-          detect_files = ["Cargo.toml"];
+          detect_extensions = [ "rs" ];
+          detect_files = [ "Cargo.toml" ];
         };
 
         git_branch = {
@@ -82,7 +83,7 @@
         mgr = {
           linemode = "size";
           sort_by = "natural";
-          mouse_events = [];
+          mouse_events = [ ];
         };
 
         preview = {
@@ -116,6 +117,6 @@
           height = 1;
         };
       };
-   };
+    };
   };
 }

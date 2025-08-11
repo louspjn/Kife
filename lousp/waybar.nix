@@ -9,9 +9,16 @@
 
         height = 30;
 
-        modules-left = ["custom/logo" "hyprland/window"];
-        modules-center = ["hyprland/workspaces"];
-        modules-right = ["network" "clock" "battery"];
+        modules-left = [
+          "custom/logo"
+          "hyprland/window"
+        ];
+        modules-center = [ "hyprland/workspaces" ];
+        modules-right = [
+          "network"
+          "clock"
+          "battery"
+        ];
 
         "custom/logo" = {
           format = " ";
@@ -24,7 +31,14 @@
             default = " ";
           };
           persistent-workspaces = {
-            "*" = [1 2 3 4 5 6];
+            "*" = [
+              1
+              2
+              3
+              4
+              5
+              6
+            ];
           };
         };
 

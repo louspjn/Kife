@@ -1,18 +1,19 @@
 {
   description = "SagittariusOS Configuration";
 
-  outputs = {
-    nixpkgs,
-    hm,
-    parts,
-    ...
-  } @ inputs:
-    parts.lib.mkFlake {inherit inputs;} {
-      systems = ["x86_64-linux"];
+  outputs =
+    {
+      nixpkgs,
+      hm,
+      parts,
+      ...
+    }@inputs:
+    parts.lib.mkFlake { inherit inputs; } {
+      systems = [ "x86_64-linux" ];
 
       flake = {
         nixosConfigurations.SagittariusOS = nixpkgs.lib.nixosSystem {
-          specialArgs = {inherit inputs;};
+          specialArgs = { inherit inputs; };
           system = "x86_64-linux";
 
           modules = [
@@ -21,7 +22,7 @@
         };
 
         homeConfigurations.lousp = hm.lib.homeManagerConfiguration {
-          pkgs = import nixpkgs {system = "x86_64-linux";};
+          pkgs = import nixpkgs { system = "x86_64-linux"; };
 
           modules =
             (with inputs; [

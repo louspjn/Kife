@@ -15,7 +15,10 @@
 
         lsp.enable = true;
 
-        shell = ["nu" "-c"];
+        shell = [
+          "nu"
+          "-c"
+        ];
       };
     };
   };

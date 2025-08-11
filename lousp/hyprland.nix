@@ -1,19 +1,26 @@
-{config, pkgs, ...}: let
+{ config, pkgs, ... }:
+let
   workspacelimit = 9;
-  workspacebinds = (builtins.concatLists
-    (builtins.genList (
-      i: let ws = i + 1; in [
+  workspacebinds = (
+    builtins.concatLists (
+      builtins.genList (
+        i:
+        let
+          ws = i + 1;
+        in
+        [
           "SUPER, code:1${toString i}, workspace, ${toString ws}"
           "SUPER SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
         ]
       ) workspacelimit
-    ));
+    )
+  );
 
   grimblast = "${pkgs.grimblast}/bin/grimblast";
 
-  print = pkgs.writeShellScriptBin "print"
-    "${grimblast} copysave area ~/Images/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png";
-in {
+  print = pkgs.writeShellScriptBin "print" "${grimblast} copysave area ~/Images/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png";
+in
+{
   wayland.windowManager.hyprland = {
     enable = true;
     package = pkgs.hyprland;
@@ -42,26 +49,27 @@ in {
       ];
 
       bind = [
-          "SUPER, Return, exec, alacritty"
-          "SUPER, B, exec, waypaper"
-          "SUPER, Q, killactive"
-          "SUPER, Space, exec, wofi --show drun"
+        "SUPER, Return, exec, alacritty"
+        "SUPER, B, exec, waypaper"
+        "SUPER, Q, killactive"
+        "SUPER, Space, exec, wofi --show drun"
 
-          "SUPER, P, pseudo,"
-          "SUPER, F, togglefloating,"
+        "SUPER, P, pseudo,"
+        "SUPER, F, togglefloating,"
 
-          "SUPER, H, movefocus, l"
-          "SUPER, J, movefocus, d"
-          "SUPER, K, movefocus, u"
-          "SUPER, L, movefocus, r"
+        "SUPER, H, movefocus, l"
+        "SUPER, J, movefocus, d"
+        "SUPER, K, movefocus, u"
+        "SUPER, L, movefocus, r"
 
-          "SUPER Shift, H, swapwindow, l"
-          "SUPER Shift, J, swapwindow, d"
-          "SUPER Shift, K, swapwindow, u"
-          "SUPER Shift, L, swapwindow, r"
+        "SUPER Shift, H, swapwindow, l"
+        "SUPER Shift, J, swapwindow, d"
+        "SUPER Shift, K, swapwindow, u"
+        "SUPER Shift, L, swapwindow, r"
 
-          ", Print, exec, ${print}/bin/print"
-      ] ++ workspacebinds;
+        ", Print, exec, ${print}/bin/print"
+      ]
+      ++ workspacebinds;
 
       general = {
         gaps_in = 10;

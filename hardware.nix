@@ -3,13 +3,11 @@
   lib,
   modulesPath,
   ...
-}:
-let
+}: let
   updateMicrocode = config.hardware.enableRedistributableFirmware;
   part = "/dev/disk/by-partlabel/";
-in
-{
-  imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
+in {
+  imports = [(modulesPath + "/installer/scan/not-detected.nix")];
 
   fileSystems = {
     "/boot" = {
@@ -23,7 +21,7 @@ in
     };
   };
 
-  swapDevices = [ { device = part + "disk-main-swap"; } ];
+  swapDevices = [{device = part + "disk-main-swap";}];
 
   boot = {
     initrd = {
@@ -37,7 +35,7 @@ in
       ];
     };
 
-    kernelModules = [ "kvm-intel" ];
+    kernelModules = ["kvm-intel"];
   };
 
   hardware = {

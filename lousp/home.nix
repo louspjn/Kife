@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   home = {
     username = "lousp";
     homeDirectory = "/home/lousp";
@@ -111,7 +110,7 @@
 
     targets = {
       helix.enable = false;
-      firefox.profileNames = [ "default" ];
+      firefox.profileNames = ["default"];
     };
   };
 }

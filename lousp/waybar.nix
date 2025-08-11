@@ -13,7 +13,7 @@
           "custom/logo"
           "hyprland/window"
         ];
-        modules-center = [ "hyprland/workspaces" ];
+        modules-center = ["hyprland/workspaces"];
         modules-right = [
           "network"
           "clock"

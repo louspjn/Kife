@@ -7,14 +7,26 @@
     parts,
     ...
   } @ inputs:
+    let
+      lib = nixpkgs.lib // {
+        mkNixos = import ./lib;
+      };
+    in
     parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux"];
-
+      
       flake = {
-        nixosConfigurations.SagittariusOS = nixpkgs.lib.nixosSystem {
-          specialArgs = {inherit inputs;};
-          system = "x86_64-linux";
+        # nixosConfigurations.SagittariusOS = nixpkgs.lib.nixosSystem {
+        #   specialArgs = {inherit inputs;};
+        #   system = "x86_64-linux";
 
+        #   modules = [
+        #     ./config.nix
+        #   ];
+        # };
+
+        nixosConfigurations.SagittariusOS = lib.mkNixos {
+          name = "SagittariusOS";
           modules = [
             ./config.nix
           ];

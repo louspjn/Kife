@@ -1,6 +1,5 @@
-{ pkgs, ... }:
-{
-  imports = [ ./hardware.nix ];
+{pkgs, ...}: {
+  imports = [./hardware.nix];
 
   environment = {
     sessionVariables = {
@@ -29,7 +28,7 @@
     loader = {
       grub = {
         enable = true;
-        devices = [ "nodev" ];
+        devices = ["nodev"];
         efiSupport = true;
         splashImage = ../../assets/wallpapers/solarsystem.jpg;
       };
@@ -53,9 +52,11 @@
     displayManager.sddm = {
       enable = true;
       package = pkgs.kdePackages.sddm.overrideAttrs (old: {
-        buildInputs = (old.buildInputs) ++ [
-          pkgs.qt6.qtmultimedia
-        ];
+        buildInputs =
+          (old.buildInputs)
+          ++ [
+            pkgs.qt6.qtmultimedia
+          ];
       });
 
       theme = "${pkgs.sddm-astronaut}/share/sddm/themes/sddm-astronaut-theme";

@@ -1,75 +1,41 @@
 {pkgs, ...}: {
-  imports = [./hardware.nix];
-
-  environment = {
-    sessionVariables = {
-      NH_FLAKE = "/home/lousp/SagittariusOS";
-      NIXPKGS_ALLOW_UNFREE = "1";
-      NIXOS_OZONE_WL = "1";
-      EDITOR = "hx";
-    };
-
-    systemPackages = with pkgs; [
-      libnotify
-
-      unzip
-      wget
-
-      home-manager
-      blueman
-      alsa-utils
-      pavucontrol
-    ];
+  env = {
+    NH_FLAKE = "/home/lousp/SagittariusOS";
+    NIXPKGS_ALLOW_UNFREE = "1";
+    NIXOS_OZONE_WL = "1";
+    EDITOR = "hx";
   };
 
-  programs.hyprland.enable = true;
+  packages = with pkgs; [
+    libnotify
 
-  boot = {
-    loader = {
-      grub = {
-        enable = true;
-        devices = ["nodev"];
-        efiSupport = true;
-        splashImage = ../../assets/wallpapers/solarsystem.jpg;
-      };
+    unzip
+    wget
 
-      efi.canTouchEfiVariables = true;
-    };
+    home-manager
+    blueman
+    alsa-utils
+    pavucontrol
+  ];
 
-    consoleLogLevel = 0;
-    initrd.verbose = false;
-    kernelParams = [
-      "quiet"
-      "splash"
-    ];
-  };
+  services.flatpak.enable = true;
 
-  console.font = "Lat2-Terminus16";
-
-  services = {
-    flatpak.enable = true;
-
+  desktop = {
+    windowManager.hyprland.enable = true;
     displayManager.sddm = {
       enable = true;
-      package = pkgs.kdePackages.sddm.overrideAttrs (old: {
-        buildInputs =
-          (old.buildInputs)
-          ++ [
-            pkgs.qt6.qtmultimedia
-          ];
-      });
-
       theme = "${pkgs.sddm-astronaut}/share/sddm/themes/sddm-astronaut-theme";
-    };
-
-    pipewire = {
-      enable = true;
-      pulse.enable = true;
     };
   };
 
-  nixpkgs.config = {
-    allowUnfree = true;
-    allowUnfreePredicate = _: true;
+  bootloader.grub = {
+    enable = true;
+    efiSupport = true;
+    background = ../../assets/wallpapers/solarsystem.jpg;
+  };
+
+  sound.pipewire = {
+    enable = true;
+    pulse.enable = true;
   };
 }

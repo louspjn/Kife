@@ -13,9 +13,14 @@ hm.lib.homeManagerConfiguration {
   modules =
     modules
     ++ [
-      (import ./home.nix {
-        inherit name;
-      })
+      {
+        home = {
+          username = name;
+          homeDirectory = "/home/${name}";
+          stateVersion = "25.11";
+        };
+      }
+
       ../homes/${name}/home.nix
     ];
 }

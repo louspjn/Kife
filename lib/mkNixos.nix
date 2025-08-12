@@ -40,5 +40,6 @@ in
           })
 
           ../hosts/${name}/config.nix
+          ../hosts/${name}/hardware.nix
         ];
     }

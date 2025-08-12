@@ -1,0 +1,73 @@
+{pkgs, ...}: {
+  environment = {
+    sessionVariables = {
+      NH_FLAKE = "/home/lousp/SagittariusOS";
+      NIXPKGS_ALLOW_UNFREE = "1";
+      NIXOS_OZONE_WL = "1";
+      EDITOR = "hx";
+    };
+
+    systemPackages = with pkgs; [
+      libnotify
+
+      unzip
+      wget
+
+      home-manager
+      blueman
+      alsa-utils
+      pavucontrol
+    ];
+  };
+
+  programs.hyprland.enable = true;
+
+  boot = {
+    loader = {
+      grub = {
+        enable = true;
+        devices = ["nodev"];
+        efiSupport = true;
+        splashImage = ../../assets/wallpapers/solarsystem.jpg;
+      };
+
+      efi.canTouchEfiVariables = true;
+    };
+
+    consoleLogLevel = 0;
+    initrd.verbose = false;
+    kernelParams = [
+      "quiet"
+      "splash"
+    ];
+  };
+
+  console.font = "Lat2-Terminus16";
+
+  services = {
+    flatpak.enable = true;
+
+    displayManager.sddm = {
+      enable = true;
+      package = pkgs.kdePackages.sddm.overrideAttrs (old: {
+        buildInputs =
+          (old.buildInputs)
+          ++ [
+            pkgs.qt6.qtmultimedia
+          ];
+      });
+
+      theme = "${pkgs.sddm-astronaut}/share/sddm/themes/sddm-astronaut-theme";
+    };
+
+    pipewire = {
+      enable = true;
+      pulse.enable = true;
+    };
+  };
+
+  nixpkgs.config = {
+    allowUnfree = true;
+    allowUnfreePredicate = _: true;
+  };
+}

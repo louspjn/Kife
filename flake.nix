@@ -4,6 +4,7 @@
   outputs = {
     nixpkgs,
     parts,
+    self,
     hm,
     ...
   } @ inputs: let
@@ -21,12 +22,13 @@
       systems = ["x86_64-linux"];
 
       imports = [
-        (import ./parts/hosts.nix {
+        (import ./parts.nix {
           inherit
             nixpkgs
-            hm
-            lib
             inputs
+            self
+            lib
+            hm
             ;
         })
       ];

@@ -1,12 +1,16 @@
 {
   nixpkgs,
   inputs,
+  self,
   lib,
   hm,
 }: {
   flake = {
     nixosConfigurations.SagittariusOS = lib.mkNixos {
       name = "SagittariusOS";
+      modules = [
+        self.nixosModules.default
+      ];
     };
 
     homeConfigurations.lousp = lib.mkHome {
@@ -16,5 +20,7 @@
         stylix.homeModules.stylix
       ];
     };
+
+    nixosModules.default = ./modules/system;
   };
 }

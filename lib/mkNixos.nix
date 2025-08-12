@@ -29,40 +29,16 @@ in
 lib.nixosSystem {
   inherit system;
   modules = modules ++ [
-    {
-      users.users.${user.name} = {
-        isNormalUser = !user.root;
-        hashedPassword = user.password;
-        description = user.description;
-        shell = user.shell;
-        extraGroups = [
-          "networkmanager"
-          wheel
-        ]
-        ++ user.groups or [ ];
-      };
+    (import ./configuration.nix {
+      inherit
+        name
+        user
+        keyboard
+        locale
+        wheel
+        ;
+    })
 
-      time.timeZone = "America/Sao_Paulo";
-      i18n.defaultLocale = locale;
-
-      services.xserver = {
-        enable = true;
-
-        xkb = {
-          layout = keyboard.layout;
-          variant = keyboard.variant;
-        };
-      };
-
-      console.useXkbConfig = true;
-
-      networking = {
-        hostName = name;
-        networkmanager.enable = true;
-      };
-
-      nix.settings.experimental-features = "nix-command flakes";
-      system.stateVersion = "25.05";
-    }
+    ../hosts/${name}/config.nix
   ];
 }

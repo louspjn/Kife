@@ -31,7 +31,7 @@
         enable = true;
         devices = [ "nodev" ];
         efiSupport = true;
-        splashImage = ./assets/wallpapers/solarsystem.jpg;
+        splashImage = ../../assets/wallpapers/solarsystem.jpg;
       };
 
       efi.canTouchEfiVariables = true;

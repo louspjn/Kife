@@ -9,7 +9,11 @@
   } @ inputs:
     let
       lib = nixpkgs.lib // {
-        mkNixos = import ./lib;
+        mkNixos = import ./lib/mkNixos.nix {
+          lib = nixpkgs.lib;
+          inherit inputs;
+          pkgs = nixpkgs.legacyPackages."x86_64-linux";
+        };
       };
     in
     parts.lib.mkFlake {inherit inputs;} {
@@ -27,9 +31,6 @@
 
         nixosConfigurations.SagittariusOS = lib.mkNixos {
           name = "SagittariusOS";
-          modules = [
-            ./config.nix
-          ];
         };
 
         homeConfigurations.lousp = hm.lib.homeManagerConfiguration {

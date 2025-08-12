@@ -19,7 +19,6 @@
   );
 
   grimblast = "${pkgs.grimblast}/bin/grimblast";
-
   print = pkgs.writeShellScriptBin "print" "${grimblast} copysave area ~/Images/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png";
 in {
   wayland.windowManager.hyprland = {
@@ -52,6 +51,7 @@ in {
       bind =
         [
           "SUPER, Return, exec, alacritty"
+          "SUPER, E, exec, nautilus"
           "SUPER, B, exec, waypaper"
           "SUPER, Q, killactive"
           "SUPER, Space, exec, wofi --show drun"

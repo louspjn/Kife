@@ -13,6 +13,9 @@ hm.lib.homeManagerConfiguration {
   modules =
     modules
     ++ [
+      (import ./home.nix {
+        inherit name;
+      })
       ../homes/${name}/home.nix
     ];
 }

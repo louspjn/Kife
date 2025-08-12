@@ -1,30 +1,23 @@
 {pkgs, ...}: {
-  home = {
-    username = "lousp";
-    homeDirectory = "/home/lousp";
-    stateVersion = "25.11";
+  home.packages = with pkgs; [
+    microfetch
+    swww
+    waypaper
+    nh
 
-    packages = with pkgs; [
-      microfetch
-      swww
-      waypaper
-      nh
+    nautilus
+    loupe
 
-      nautilus
-      loupe
-
-      gcc
-      rust-analyzer
-      typescript-language-server
-      nil
-      alejandra
-    ];
-  };
+    gcc
+    rust-analyzer
+    typescript-language-server
+    nil
+    alejandra
+  ];
 
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-    # ./firefox.nix
     ./helix.nix
     ./terminal.nix
     ./hyprland.nix

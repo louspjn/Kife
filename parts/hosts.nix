@@ -1,7 +1,7 @@
 {
+  nixpkgs,
   inputs,
   lib,
-  nixpkgs,
   hm,
 }: {
   flake = {

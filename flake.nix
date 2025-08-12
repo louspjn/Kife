@@ -8,23 +8,33 @@
     ...
   } @ inputs: let
     pkgs = nixpkgs.legacyPackages."x86_64-linux";
-    lib = import ./lib {inherit nixpkgs inputs pkgs hm;};
+    lib = import ./lib {
+      inherit
+        nixpkgs
+        inputs
+        pkgs
+        hm
+        ;
+    };
   in
     parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux"];
 
       imports = [
         (import ./parts/hosts.nix {
-          inherit nixpkgs hm lib inputs;
+          inherit
+            nixpkgs
+            hm
+            lib
+            inputs
+            ;
         })
       ];
     };
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
     spicetify.url = "github:Gerg-L/spicetify-nix";
-
     parts.url = "github:hercules-ci/flake-parts";
 
     stylix = {

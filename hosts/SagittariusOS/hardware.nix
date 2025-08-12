@@ -1,7 +1,7 @@
 {
+  modulesPath,
   config,
   lib,
-  modulesPath,
   ...
 }: let
   updateMicrocode = config.hardware.enableRedistributableFirmware;

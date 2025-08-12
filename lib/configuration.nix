@@ -1,9 +1,9 @@
 {
-  name,
-  user,
   keyboard,
   locale,
   wheel,
+  user,
+  name,
 }: {
   users.users.${user.name} = {
     isNormalUser = !user.root;

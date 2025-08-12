@@ -1,8 +1,8 @@
 {
-  pkgs,
   nixpkgs,
-  hm,
   inputs,
+  pkgs,
+  hm,
 }:
 nixpkgs.lib
 // {

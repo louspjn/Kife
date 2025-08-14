@@ -49,9 +49,10 @@ in {
       };
     };
 
-    sound.pipewire = {
-      enable = mkEnableOption "Enable Pipewire as sound service";
-      pulse.enable = mkEnableOption "Enable pulse suport for pipewire";
+    sound.pipewire = mkOption {
+      type = types.attrsOf types.anything;
+      description = "Option for the pipewire module";
+      default = {};
     };
   };
 
@@ -64,8 +65,8 @@ in {
     services =
       {
         displayManager = config.desktop.displayManager;
-      }
-      // config.sound;
+        pipewire = config.sound.pipewire;
+      };
 
     boot = {
       loader.grub = {

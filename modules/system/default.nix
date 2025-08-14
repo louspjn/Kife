@@ -24,7 +24,11 @@ in {
     };
 
     desktop = {
-      windowManager.hyprland.enable = mkEnableOption "Enable hyprland as Window Manager";
+      windowManager = mkOption {
+        type = types.attrsOf types.anything;
+        description = "Window Manager to use";
+        default = {};
+      };
 
       displayManager = mkOption {
         type = types.attrsOf types.anything;
@@ -62,11 +66,10 @@ in {
       systemPackages = config.packages;
     };
 
-    services =
-      {
-        displayManager = config.desktop.displayManager;
-        pipewire = config.sound.pipewire;
-      };
+    services = {
+      displayManager = config.desktop.displayManager;
+      pipewire = config.sound.pipewire;
+    };
 
     boot = {
       loader.grub = {
@@ -83,5 +86,7 @@ in {
         "splash"
       ];
     };
+
+    programs = config.desktop.windowManager;
   };
 }

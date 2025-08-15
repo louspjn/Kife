@@ -11,6 +11,7 @@
     gcc
     rust-analyzer
     typescript-language-server
+    lazygit
     nil
     alejandra
   ];

@@ -9,11 +9,6 @@ in
     name,
     system ? "x86_64-linux",
     modules ? [],
-    locale ? "pt_BR.UTF-8",
-    keyboard ? {
-      layout = "br";
-      variant = "abnt2";
-    },
     user ? {
       name = "lousp";
       shell = pkgs.nushell;
@@ -21,20 +16,24 @@ in
       password = password;
       description = "Jhuan Nycolas";
     },
+    profile ? "desktop",
+    variables ? {}
   }: let
     wheel = lib.mkIf (!user.root) "wheel";
   in
     lib.nixosSystem {
       inherit system;
+      specialArgs = {
+        inherit variables;
+      };
+      
       modules =
         modules
         ++ [
-          (import ./configuration.nix {
+          (import ./${profile}.nix {
             inherit
               name
               user
-              keyboard
-              locale
               wheel
               ;
           })

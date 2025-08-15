@@ -1,6 +1,4 @@
 {
-  keyboard,
-  locale,
   wheel,
   user,
   name,
@@ -19,14 +17,14 @@
   };
 
   time.timeZone = "America/Sao_Paulo";
-  i18n.defaultLocale = locale;
+  i18n.defaultLocale = "pt_BR.UTF-8";
 
   services.xserver = {
     enable = true;
 
     xkb = {
-      layout = keyboard.layout;
-      variant = keyboard.variant;
+      layout = "br";
+      variant = "abnt2";
     };
   };
 

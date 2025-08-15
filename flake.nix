@@ -22,7 +22,7 @@
       systems = ["x86_64-linux"];
 
       imports = [
-        (import ./parts.nix {
+        (import ./hosts.nix {
           inherit
             nixpkgs
             inputs

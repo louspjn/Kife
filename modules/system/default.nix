@@ -26,7 +26,13 @@ in {
     desktop = {
       windowManager = mkOption {
         type = types.attrsOf types.anything;
-        description = "Window Manager to use";
+        description = "Window Managers Configuration";
+        default = {};
+      };
+
+      desktopManager = mkOption {
+        type = types.attrsOf types.anything;
+        description = "Desktop Managers Configuration";
         default = {};
       };
 
@@ -68,6 +74,7 @@ in {
 
     services = {
       displayManager = config.desktop.displayManager;
+      desktopManager = config.desktop.desktopManager;
       pipewire = config.sound.pipewire;
     };
 

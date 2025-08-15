@@ -17,7 +17,7 @@ in
       description = "Jhuan Nycolas";
     },
     profile ? "desktop",
-    variables ? {}
+    variables ? {},
   }: let
     wheel = lib.mkIf (!user.root) "wheel";
   in
@@ -26,7 +26,7 @@ in
       specialArgs = {
         inherit variables;
       };
-      
+
       modules =
         modules
         ++ [

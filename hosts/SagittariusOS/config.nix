@@ -1,5 +1,8 @@
-{variables, pkgs, ...}:
 {
+  variables,
+  pkgs,
+  ...
+}: {
   env = {
     NH_FLAKE = "/home/lousp/SagittariusOS";
     NIXPKGS_ALLOW_UNFREE = "1";

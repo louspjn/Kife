@@ -11,7 +11,6 @@
         name = "SagittariusOS";
         variables = {
           assets = {
-            sddm = ./assets/sddm;
             wallpapers = ./assets/wallpapers;
           };
         };

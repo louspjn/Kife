@@ -51,7 +51,7 @@ in {
       };
 
       efiSupport = mkEnableOption "Enable grub as bootloader";
-      
+
       background = mkOption {
         type = types.path or null;
         description = "Background file to use in grub";

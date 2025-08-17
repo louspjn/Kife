@@ -9,11 +9,10 @@
     loupe
 
     gcc
-    rust-analyzer
     typescript-language-server
-    lazygit
     nil
     alejandra
+    rustup
   ];
 
   nixpkgs.config.allowUnfree = true;

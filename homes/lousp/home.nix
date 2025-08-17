@@ -36,9 +36,9 @@
 
       settings = {
         window = {
-          padding = {
-            x = 14;
-            y = 14;
+          padding = let v = 14; in {
+            x = v;
+            y = v;
           };
 
           dynamic_padding = true;

@@ -11,7 +11,7 @@ in {
 
   fileSystems = {
     "/boot" = {
-      device = part + "disk-main-ESP";
+      device = part + "disk-main-boot";
       fsType = "vfat";
     };
 

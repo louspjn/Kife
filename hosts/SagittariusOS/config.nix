@@ -32,14 +32,29 @@
 
   desktop = {
     windowManager.hyprland.enable = true;
-    desktopManager.gnome.enable = true;
-    displayManager.gdm.enable = true;
+    displayManager.sddm = {
+      enable = true;
+      theme = "${pkgs.sddm-astronaut}/share/sddm/theme";
+    };
   };
 
-  bootloader.grub = {
-    enable = true;
-    efiSupport = true;
-    background = builtins.toPath "${variables.assets.wallpapers}/solarsystem.jpg";
+  boot = {
+    loader = {
+      grub = {
+        enable = true;
+        efiSupport = true;
+        devices = ["nodev"];
+        efiInstallAsRemovable = true;
+        splashImage = builtins.toPath "${variables.assets.wallpapers}/solarsystem.jpg";
+      };
+    };
+
+    consoleLogLevel = 0;
+    initrd.verbose = false;
+    kernelParams = [
+      "quiet"
+      "splash"
+    ];
   };
 
   sound.pipewire = {

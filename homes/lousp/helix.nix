@@ -1,6 +1,6 @@
 {
   programs.helix = {
-    enable = true;
+    enable = false;
 
     settings = {
       theme = "gruvbox_dark_soft";

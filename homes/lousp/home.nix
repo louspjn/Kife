@@ -9,19 +9,20 @@
     loupe
 
     gcc
-    typescript-language-server
-    nil
-    alejandra
-    rustup
+    cargo
+    cargo-watch
+
+    neovim
   ];
 
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-    ./helix.nix
     ./terminal.nix
     ./hyprland.nix
     ./waybar.nix
+    ./firefox.nix
+    ./helix.nix
   ];
 
   programs = {
@@ -70,7 +71,7 @@
   stylix = {
     enable = true;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-soft.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark.yaml";
 
     polarity = "dark";
 

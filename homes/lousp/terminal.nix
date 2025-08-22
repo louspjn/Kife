@@ -16,6 +16,8 @@
         gp = "git push";
         gb = "git branch";
         gck = "git checkout";
+        gm = "git merge";
+        gs = "git status";
 
         nhs = "nh home switch";
         nos = "nh os switch";
@@ -31,7 +33,7 @@
         edit_mode = "vi";
         table.mode = "rounded";
 
-        buffer_editor = "hx";
+        buffer_editor = "nvim";
         show_banner = false;
       };
 
@@ -98,7 +100,7 @@
         opener = {
           edit = [
             {
-              run = "hx -- \"$@\"";
+              run = "nvim -- \"$@\"";
               desc = "$EDITOR";
               block = true;
             }

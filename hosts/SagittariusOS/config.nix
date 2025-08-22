@@ -7,7 +7,7 @@
     NH_FLAKE = "/home/lousp/SagittariusOS";
     NIXPKGS_ALLOW_UNFREE = "1";
     NIXOS_OZONE_WL = "1";
-    EDITOR = "hx";
+    EDITOR = "nvim";
   };
 
   packages = with pkgs; [

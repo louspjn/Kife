@@ -3,23 +3,60 @@
   pkgs,
   ...
 }: let
-  workspacelimit = 9;
-  workspacebinds = (
-    builtins.concatLists (
-      builtins.genList (
-        i: let
-          ws = i + 1;
-        in [
-          "SUPER, code:1${toString i}, workspace, ${toString ws}"
-          "SUPER SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
-        ]
-      )
-      workspacelimit
-    )
+  workspaceBinds = num:
+  builtins.concatLists (
+    builtins.genList (
+      wsnumber: let
+        ws = wsnumber + 1;
+      in [
+        "SUPER, code:1${toString wsnumber}, workspace, ${toString ws}"
+        "SUPER Shift, code:1${toString wsnumber}, movetoworkspace, ${toString ws}"
+      ]
+    ) num
   );
 
+  generateBindsFromList = {
+    mod,
+    cmd,
+    opts
+  }: {
+    builtins.genList (
+      index: let
+        list = builtins.elemAt opts index;
+      in ["${mod}, ${builtins.elemAt list 0}, ${cmd}, ${builtins.elemAt list 1}"]
+    ) builtins.length opts
+  };
+
+  resizeactive = opts: generateBindsFromList {
+    mod = "ALT";
+    cmd = "resizeactive";
+    opts = opts;
+  };
+  
+  swapwindow = opts: generateBindsFromList {
+    mod = "SUPER";
+    cmd = "swapwindow";
+    opts = opts;
+  };
+
+  exec = opts: generateBindsFromList {
+    mod = "SUPER";
+    cmd = "exec";
+    opts = opts;
+  };
+
+  movefocus = opts: generateBindsFromList {
+    mod = "SUPER Shift";
+    cmd = "movefocus";
+    opts = opts;
+  };
+
+  vimbinds = opts: {
+    
+  };
+
   grimblast = "${pkgs.grimblast}/bin/grimblast";
-  print = pkgs.writeShellScriptBin "print" "${grimblast} copysave area ~/Images/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png";
+  print = pkgs.writeShellScriptBin "print" "mkdir ~/Images/Screenshots/; ${grimblast} copysave area ~/Images/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png";
 in {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -36,42 +73,42 @@ in {
         "HDMI-A-1, 1920x1080, 0x0, 1"
       ];
 
-      binde = [
-        "CTRL, H, moveactive, -20 0"
-        "CTRL, J, moveactive, 0 20"
-        "CTRL, K, moveactive, 0 -20"
-        "CTRL, L, moveactive, 20 0"
-
-        "ALT, H, resizeactive, -20 0"
-        "ALT, J, resizeactive, 0 20"
-        "ALT, K, resizeactive, 0 -20"
-        "ALT, L, resizeactive, 20 0"
+      binde = resizeactive [
+        ["H" "-20 0"]
+        ["J" "0 20"]
+        ["K" "0 -20"]
+        ["L" "20 0"]
       ];
 
-      bind =
-        [
-          "SUPER, Return, exec, alacritty"
-          "SUPER, E, exec, nautilus"
-          "SUPER, B, exec, waypaper"
-          "SUPER, Q, killactive"
-          "SUPER, Space, exec, wofi --show drun"
+      bind = builtins.concatLists [
+  
+      ];
 
-          "SUPER, P, pseudo,"
-          "SUPER, F, togglefloating,"
+      bind = [
+        "SUPER, Q, killactive"
+        "SUPER, P, pseudo,"
+        "SUPER, F, togglefloating,"
+        ", Print, exec, ${print}/bin/print"
 
-          "SUPER, H, movefocus, l"
-          "SUPER, J, movefocus, d"
-          "SUPER, K, movefocus, u"
-          "SUPER, L, movefocus, r"
-
-          "SUPER Shift, H, swapwindow, l"
-          "SUPER Shift, J, swapwindow, d"
-          "SUPER Shift, K, swapwindow, u"
-          "SUPER Shift, L, swapwindow, r"
-
-          ", Print, exec, ${print}/bin/print"
-        ]
-        ++ workspacebinds;
+      ] ++ exec [
+          ["Return" "alacritty"]
+          ["E" "nautilus"]
+          ["B" "waypaper"]
+          ["Space" "wofi --show drun"]
+        ] ++
+        movefocus [
+          ["H" "l"]
+          ["J" "d"]
+          ["K" "u"]
+          ["L" "r"]
+        ] ++
+        swapwindow [
+          ["H" "l"]
+          ["J" "d"]
+          ["K" "u"]
+          ["L" "r"]
+        ] ++
+        workspaceBinds 9;
 
       general = {
         gaps_in = 10;

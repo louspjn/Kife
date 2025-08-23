@@ -11,6 +11,13 @@
     gcc
     cargo
     cargo-watch
+    nodejs
+    
+    rust-analyzer
+    typescript-language-server
+    nil
+    alejandra
+    rustfmt
 
     neovim
   ];

@@ -3,30 +3,39 @@
     nushell = {
       enable = true;
 
-      shellAliases = {
-        recorder = "${pkgs.wf-recorder}/bin/wf-recorder";
+      shellAliases = let
+        wf-recorder = "${pkgs.wf-recorder}/bin/wf-recorder";
+        eza = "${pkgs.eza}/bin/eza";
+        bat = "${pkgs.bat}/bin/bat";
+        cmatrix = "${pkgs.cmatrix}/bin/cmatrix";
+        pipes = "${pkgs.pipes}/bin/pipes";
+        cbonsai = "${pkgs.cbonsai}/bin/cbonsai";
+        cava = "${pkgs.cava}/bin/cava";
+      in {
+        recorder = wf-recorder;
 
-        l = "ls **/*";
         cd = "z";
+        ls = "${eza} --icons --git";
+        l = " ${eza} --tree --icons --git";
 
-        cat = "${pkgs.bat}/bin/bat --theme-dark base16";
+        cat = "${bat} --theme-dark base16";
 
         gd = "git add";
-        gc = "git commit -m ";
         gp = "git push";
-        gb = "git branch";
-        gck = "git checkout";
         gm = "git merge";
+        gb = "git branch";
         gs = "git status";
+        gck = "git checkout";
+        gc = "git commit -m ";
 
-        nhs = "nh home switch";
         nos = "nh os switch";
+        nhs = "nh home switch";
         nosu = "nh os switch -u";
 
-        matrix = "${pkgs.cmatrix}/bin/cmatrix -C green -m";
-        pipes = "${pkgs.pipes}/bin/pipes";
-        bonsai = "${pkgs.cbonsai}/bin/cbonsai -lip";
-        cava = "${pkgs.cava}/bin/cava";
+        matrix = "${cmatrix} -C green -m";
+        pipes = pipes;
+        bonsai = "${cbonsai} -lip";
+        cava = cava;
       };
 
       settings = {
@@ -48,7 +57,7 @@
         add_newline = false;
         scan_timeout = 10;
 
-        format = "$directory$rust$git_branch$git_status\n$character";
+        format = "$directory$rust $git_branch$git_status\n$character";
 
         rust = {
           symbol = "";

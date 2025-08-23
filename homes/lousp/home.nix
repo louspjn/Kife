@@ -1,8 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     microfetch
-    swww
-    waypaper
     nh
 
     nautilus
@@ -20,6 +18,10 @@
     rustfmt
 
     neovim
+
+    swww
+    waypaper
+    wl-clipboard
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -30,6 +32,7 @@
     ./waybar.nix
     ./firefox.nix
     ./helix.nix
+    # ./neovim.nix
   ];
 
   programs = {

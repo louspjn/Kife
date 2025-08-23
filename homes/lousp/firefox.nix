@@ -16,20 +16,38 @@
           force = true;
           default = "google";
 
-          engines."My NixOS" = {
-            urls = [
-              {
-                template = "https://mynixos.com/search";
-                params = [
-                  {
-                    name = "q";
-                    value = "{searchTerms}";
-                  }
-                ];
-              }
-            ];
+          engines = {
+            "My NixOS" = {
+              urls = [
+                {
+                  template = "https://mynixos.com/search";
+                  params = [
+                    {
+                      name = "q";
+                      value = "{searchTerms}";
+                    }
+                  ];
+                }
+              ];
 
-            definedAliases = ["@mn"];
+              definedAliases = ["@mn"];
+            };
+
+            "Noogle" = {
+              urls = [
+                {
+                  template = "https://noogle.dev/q";
+                  params = [
+                    {
+                      name = "term";
+                      value = "{searchTerms}";
+                    }
+                  ];
+                }
+              ];
+
+              definedAliases = ["@ng"];
+            };
           };
         };
       };

@@ -25,6 +25,7 @@
       modules = with inputs; [
         spicetify.homeManagerModules.default
         stylix.homeModules.stylix
+        # nvf.homeManagerModules.default
       ];
     };
 

@@ -19,13 +19,9 @@
     mod,
     cmd,
     opts
-  }: {
-    builtins.genList (
-      index: let
-        list = builtins.elemAt opts index;
-      in ["${mod}, ${builtins.elemAt list 0}, ${cmd}, ${builtins.elemAt list 1}"]
-    ) builtins.length opts
-  };
+  }: map (bind:
+      "${mod}, ${builtins.elemAt bind 0}, ${cmd}, ${builtins.elemAt bind 1}"
+  ) opts;
 
   resizeactive = opts: generateBindsFromList {
     mod = "ALT";
@@ -34,7 +30,7 @@
   };
   
   swapwindow = opts: generateBindsFromList {
-    mod = "SUPER";
+    mod = "SUPER Shift";
     cmd = "swapwindow";
     opts = opts;
   };
@@ -46,13 +42,9 @@
   };
 
   movefocus = opts: generateBindsFromList {
-    mod = "SUPER Shift";
+    mod = "SUPER";
     cmd = "movefocus";
     opts = opts;
-  };
-
-  vimbinds = opts: {
-    
   };
 
   grimblast = "${pkgs.grimblast}/bin/grimblast";
@@ -81,34 +73,32 @@ in {
       ];
 
       bind = builtins.concatLists [
-  
-      ];
-
-      bind = [
-        "SUPER, Q, killactive"
-        "SUPER, P, pseudo,"
-        "SUPER, F, togglefloating,"
-        ", Print, exec, ${print}/bin/print"
-
-      ] ++ exec [
+        [
+          "SUPER, Q, killactive"
+          "SUPER, P, pseudo,"
+          "SUPER, F, togglefloating,"
+          ", Print, exec, ${print}/bin/print"
+        ]
+        (exec [
           ["Return" "alacritty"]
           ["E" "nautilus"]
           ["B" "waypaper"]
           ["Space" "wofi --show drun"]
-        ] ++
-        movefocus [
+        ])
+        (movefocus [
           ["H" "l"]
           ["J" "d"]
           ["K" "u"]
           ["L" "r"]
-        ] ++
-        swapwindow [
+        ])
+        (swapwindow [
           ["H" "l"]
           ["J" "d"]
           ["K" "u"]
           ["L" "r"]
-        ] ++
-        workspaceBinds 9;
+        ])
+        (workspaceBinds 9)
+      ];
 
       general = {
         gaps_in = 10;
@@ -143,29 +133,18 @@ in {
 
         bezier = [
           "easeOutQuint,0.23,1,0.32,1"
-          "easeInOutCubic,0.65,0.05,0.36,1"
           "linear,0,0,1,1"
-          "almostLinear,0.5,0.5,0.75,1.0"
-          "quick,0.15,0,0.1,1"
+          "smoothElastic, 1, -0.3, 0.3, 1.5"
         ];
 
         animation = [
-          "global, 1, 10, default"
-          "border, 1, 5.39, easeOutQuint"
-          "windows, 1, 4.79, easeOutQuint"
-          "windowsIn, 1, 4.1, easeOutQuint, popin 87%"
-          "windowsOut, 1, 1.49, linear, popin 87%"
-          "fadeIn, 1, 1.73, almostLinear"
-          "fadeOut, 1, 1.46, almostLinear"
-          "fade, 1, 3.03, quick"
-          "layers, 1, 3.81, easeOutQuint"
-          "layersIn, 1, 4, easeOutQuint, fade"
-          "layersOut, 1, 1.5, linear, fade"
-          "fadeLayersIn, 1, 1.79, almostLinear"
-          "fadeLayersOut, 1, 1.39, almostLinear"
-          "workspaces, 1, 1.94, almostLinear, fade"
-          "workspacesIn, 1, 1.21, almostLinear, fade"
-          "workspacesOut, 1, 1.94, almostLinear, fade"
+          "windows, 1, 1.38, easeOutQuint"
+          "windowsIn, 1, 3.1, easeOutQuint, gnomed"
+          "windowsOut, 1, 1.49, easeOutQuint, gnomed"
+          "layersIn, 1, 4, easeOutQuint, gnomed"
+          "layersOut, 1, 1.5, linear, gnomed"
+          "workspacesIn, 1, 3, smoothElastic, slide"
+          "workspacesOut, 1, 3, smoothElastic, slide"
         ];
       };
 

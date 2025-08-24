@@ -1,6 +1,33 @@
 let
   theme = builtins.fromJSON (builtins.readFile ./palette.json);
 in {
+  services.hypridle = {
+    enable = true;
+    settings = {
+      general = {
+        after_sleep_cmd = "hyprctl dispatch dpms on";
+        ignore_dbus_inhibit = false;
+        lock_cmd = "hyprlock";
+      };
+
+      listener = [
+        {
+          timeout = 160;
+          on-timeout = "notify-send \"System\" \"Are you okay? I'll lock your screen in 20 seconds\"";
+        }
+        {
+          timeout = 180;
+          on-timeout = "hyprlock";
+        }
+        {
+          timeout = 300;
+          on-timeout = "hyprctl dispatch dpms off";
+          on-resume = "hyprctl dispatch dpms on";
+        }
+      ];
+    };
+  };
+
   programs.hyprlock = {
     enable = true;
 

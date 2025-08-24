@@ -13,7 +13,7 @@
     lua
     haskellPackages.ghc
     haskellPackages.stack
-    
+
     rust-analyzer
     typescript-language-server
     nil
@@ -38,6 +38,7 @@
     ./firefox.nix
     ./helix.nix
     ./starship.nix
+    ./hyprlock.nix
     # ./neovim.nix
   ];
 
@@ -53,7 +54,9 @@
 
       settings = {
         window = {
-          padding = let v = 14; in {
+          padding = let
+            v = 14;
+          in {
             x = v;
             y = v;
           };
@@ -118,6 +121,7 @@
 
     targets = {
       helix.enable = false;
+      hyprlock.enable = false;
       firefox.profileNames = ["default"];
     };
   };

@@ -7,7 +7,7 @@
 }: {
   flake = {
     nixosConfigurations = {
-      SagittariusOS = lib.mkNixos {
+      Aio = lib.mkNixos {
         name = "Aio";
         variables = {
           assets = {

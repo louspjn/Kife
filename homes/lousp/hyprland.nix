@@ -4,48 +4,55 @@
   ...
 }: let
   workspaceBinds = num:
-  builtins.concatLists (
-    builtins.genList (
-      wsnumber: let
-        ws = wsnumber + 1;
-      in [
-        "SUPER, code:1${toString wsnumber}, workspace, ${toString ws}"
-        "SUPER Shift, code:1${toString wsnumber}, movetoworkspace, ${toString ws}"
-      ]
-    ) num
-  );
+    builtins.concatLists (
+      builtins.genList (
+        wsnumber: let
+          ws = wsnumber + 1;
+        in [
+          "SUPER, code:1${toString wsnumber}, workspace, ${toString ws}"
+          "SUPER Shift, code:1${toString wsnumber}, movetoworkspace, ${toString ws}"
+        ]
+      )
+      num
+    );
 
   generateBindsFromList = {
     mod,
     cmd,
-    opts
-  }: map (bind:
-      "${mod}, ${builtins.elemAt bind 0}, ${cmd}, ${builtins.elemAt bind 1}"
-  ) opts;
+    opts,
+  }:
+    map (
+      bind: "${mod}, ${builtins.elemAt bind 0}, ${cmd}, ${builtins.elemAt bind 1}"
+    )
+    opts;
 
-  resizeactive = opts: generateBindsFromList {
-    mod = "ALT";
-    cmd = "resizeactive";
-    opts = opts;
-  };
-  
-  swapwindow = opts: generateBindsFromList {
-    mod = "SUPER Shift";
-    cmd = "swapwindow";
-    opts = opts;
-  };
+  resizeactive = opts:
+    generateBindsFromList {
+      mod = "ALT";
+      cmd = "resizeactive";
+      opts = opts;
+    };
 
-  exec = opts: generateBindsFromList {
-    mod = "SUPER";
-    cmd = "exec";
-    opts = opts;
-  };
+  swapwindow = opts:
+    generateBindsFromList {
+      mod = "SUPER Shift";
+      cmd = "swapwindow";
+      opts = opts;
+    };
 
-  movefocus = opts: generateBindsFromList {
-    mod = "SUPER";
-    cmd = "movefocus";
-    opts = opts;
-  };
+  exec = opts:
+    generateBindsFromList {
+      mod = "SUPER";
+      cmd = "exec";
+      opts = opts;
+    };
+
+  movefocus = opts:
+    generateBindsFromList {
+      mod = "SUPER";
+      cmd = "movefocus";
+      opts = opts;
+    };
 
   grimblast = "${pkgs.grimblast}/bin/grimblast";
   print = pkgs.writeShellScriptBin "print" "mkdir ~/Images/Screenshots/; ${grimblast} copysave area ~/Images/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png";
@@ -84,6 +91,7 @@ in {
           ["E" "nautilus"]
           ["B" "waypaper"]
           ["Space" "wofi --show drun"]
+          ["T" "hyprlock"]
         ])
         (movefocus [
           ["H" "l"]

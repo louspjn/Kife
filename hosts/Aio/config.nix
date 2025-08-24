@@ -22,6 +22,8 @@
     pavucontrol
   ];
 
+  security.pam.services.hyprlock = {};
+
   services.flatpak.enable = true;
   xdg.portal = {
     enable = true;

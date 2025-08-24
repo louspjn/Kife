@@ -37,6 +37,7 @@
     ./waybar.nix
     ./firefox.nix
     ./helix.nix
+    ./starship.nix
     # ./neovim.nix
   ];
 

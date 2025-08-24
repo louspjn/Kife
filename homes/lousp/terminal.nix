@@ -49,39 +49,6 @@
       extraConfig = "microfetch";
     };
 
-    starship = {
-      enable = true;
-      enableNushellIntegration = true;
-
-      settings = {
-        add_newline = false;
-        scan_timeout = 10;
-
-        format = "$directory$rust $git_branch$git_status\n$character";
-
-        rust = {
-          symbol = "";
-          format = "via [$symbol $version]($style)";
-          version_format = "v$raw";
-          style = "bold red";
-          detect_extensions = ["rs"];
-          detect_files = ["Cargo.toml"];
-        };
-
-        git_branch = {
-          symbol = "";
-          style = "bold purple";
-        };
-
-        git_status.disabled = false;
-
-        character = {
-          success_symbol = "[➜](bold light_green)";
-          error_symbol = "[✗](bold red)";
-        };
-      };
-    };
-
     zoxide = {
       enable = true;
       enableNushellIntegration = true;

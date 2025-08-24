@@ -10,12 +10,17 @@
     cargo
     cargo-watch
     nodejs
+    lua
+    haskellPackages.ghc
+    haskellPackages.stack
     
     rust-analyzer
     typescript-language-server
     nil
     alejandra
     rustfmt
+    lua-language-server
+    haskellPackages.haskell-language-server
 
     neovim
 

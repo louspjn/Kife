@@ -56,7 +56,7 @@ in {
 
     settings = {
       exec = [
-        "waypaper --folder ~/SagittariusOS/assets/wallpapers --restore"
+        "waypaper --folder ~/Alix/assets/wallpapers --restore"
         "pkill waybar; waybar"
       ];
 

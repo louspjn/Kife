@@ -88,7 +88,7 @@ in {
           ", Print, exec, ${print}/bin/print"
         ]
         (exec [
-          ["Return" "alacritty"]
+          ["Return" "alacritty; kitty"]
           ["E" "nautilus"]
           ["B" "waypaper"]
           ["Space" "wofi --show drun"]

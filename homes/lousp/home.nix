@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    microfetch
     nh
 
     nautilus
@@ -39,7 +38,6 @@
     ./helix.nix
     ./starship.nix
     ./hypr
-    # ./neovim.nix
   ];
 
   programs = {

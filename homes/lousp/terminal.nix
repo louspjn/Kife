@@ -46,12 +46,85 @@
         show_banner = false;
       };
 
-      extraConfig = "microfetch";
+      extraConfig = "fastfetch";
     };
 
     zoxide = {
       enable = true;
       enableNushellIntegration = true;
+    };
+
+    fastfetch = {
+      enable = true;
+
+      settings = {
+        logo = {
+          source = "~/Alix/assets/imgs/Nix.png";
+          width = 22;
+          height = 10;
+          padding.left = 1;
+        };
+
+        modules = [
+          {
+            type = "custom";
+            text = "echo";
+          }
+          {
+            type = "os";
+            key = " ";
+          }
+          {
+            type = "kernel";
+            key = " ";
+          }
+          {
+            type = "shell";
+            key = " ";
+          }
+          {
+            type = "wm";
+            key = " ";
+          }
+          {
+            type = "memory";
+            key = " ";
+          }
+          {
+            type = "disk";
+            key = "󱥎 ";
+          }
+          {
+            type = "command";
+            key = " ";
+            text = "hyprctl splash";
+          }
+          {
+            type = "colors";
+            key = " ";
+            symbol = "circle";
+          }
+        ];
+
+        display = {
+          separator = "  ";
+          color.keys = "blue";
+
+          key = {
+            width = 6;
+            type = "string";
+          };
+
+          percent = {
+            type = 9;
+            color = {
+              green = "yellow";
+              yellow = "yellow";
+              red = "yellow";
+            };
+          };
+        };
+      };
     };
 
     yazi = {

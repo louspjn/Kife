@@ -19,6 +19,7 @@
     nil
     alejandra
     rustfmt
+    eslint
     lua-language-server
     haskellPackages.haskell-language-server
 
@@ -33,18 +34,15 @@
 
   imports = [
     ./terminal.nix
-    ./hyprland.nix
     ./waybar.nix
     ./firefox.nix
     ./helix.nix
     ./starship.nix
-    ./hyprlock.nix
+    ./hypr
     # ./neovim.nix
   ];
 
   programs = {
-    spicetify.enable = true;
-
     wofi = {
       enable = true;
     };

@@ -50,11 +50,21 @@ in {
       label = [
         {
           monitor = "";
-          position = "0, 80";
+          position = "0, 130";
 
           text = "cmd[update:10000] echo \"<span foreground='##${theme.base05}'>$(date +%H:%M)</span>\"";
 
           font_size = 80;
+          font_family = "JetBrainsMono Nerd Font";
+        }
+
+        {
+          monitor = "";
+          position = "0, 10";
+
+          text = "cmd[] echo \"<span foreground='##${theme.base05}'>$(hyprctl splash)</span>\"";
+
+          font_size = 14;
           font_family = "JetBrainsMono Nerd Font";
         }
       ];
@@ -62,7 +72,7 @@ in {
       input-field = [
         {
           size = "300, 50";
-          position = "0, -80";
+          position = "0, -100";
 
           monitor = "";
 

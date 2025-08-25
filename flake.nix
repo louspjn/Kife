@@ -36,9 +36,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    spicetify.url = "github:Gerg-L/spicetify-nix";
     parts.url = "github:hercules-ci/flake-parts";
-    # nvf.url = "github:notashelf/nvf";
 
     stylix = {
       url = "github:danth/stylix";

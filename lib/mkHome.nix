@@ -6,9 +6,12 @@
 }: {
   name,
   modules ? [],
+  args ? {}
 }:
 hm.lib.homeManagerConfiguration {
   inherit pkgs;
+
+  extraSpecialArgs = args;
 
   modules =
     modules

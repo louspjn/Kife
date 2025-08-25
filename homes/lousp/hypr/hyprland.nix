@@ -54,12 +54,13 @@
       opts = opts;
     };
 
+  dir = "~/Images/Screenshots/";
+  screenshotname = "$(date +%Y-%m-%d_%H-%M-%S).png";
   grimblast = "${pkgs.grimblast}/bin/grimblast";
-  print = pkgs.writeShellScriptBin "print" "mkdir ~/Images/Screenshots/; ${grimblast} copysave area ~/Images/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png";
+  print = pkgs.writeShellScriptBin "print" "mkdir ${dir}; ${grimblast} copysave area ${dir}${screenshotname}";
 in {
   wayland.windowManager.hyprland = {
     enable = true;
-    package = pkgs.hyprland;
 
     settings = {
       exec = [
@@ -121,11 +122,13 @@ in {
         layout = "dwindle";
       };
 
-      decoration = {
+      decoration = let
+        opacity = 0.8;
+      in {
         rounding = 8;
 
-        active_opacity = 0.9;
-        inactive_opacity = 0.9;
+        active_opacity = opacity;
+        inactive_opacity = opacity;
 
         blur = {
           enabled = true;
@@ -199,11 +202,14 @@ in {
 
       windowrule = [
         "float, title:Waypaper"
+        "float, title:Bluetooth Devices"
       ];
 
-      env = [
-        "HYPRCURSOR_THEME, ${config.stylix.cursor.name}"
-        "HYPRCURSOR_SIZE, ${builtins.toString config.stylix.cursor.size}"
+      env = let
+        cursor = config.stylix.cursor;
+      in [
+        "HYPRCURSOR_THEME, ${cursor.name}"
+        "HYPRCURSOR_SIZE, ${builtins.toString cursor.size}"
       ];
     };
   };

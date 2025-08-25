@@ -60,8 +60,10 @@
       settings = {
         logo = {
           source = "~/Alix/assets/imgs/Nix.png";
-          width = 22;
+          # width = 22;
+          width = 30;
           height = 10;
+          # height = 10;
           padding.left = 1;
         };
 

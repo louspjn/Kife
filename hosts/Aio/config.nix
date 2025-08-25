@@ -24,7 +24,11 @@
 
   security.pam.services.hyprlock = {};
 
-  services.flatpak.enable = true;
+  services = {
+    flatpak.enable = true;
+    upower.enable = true;
+  };
+
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [

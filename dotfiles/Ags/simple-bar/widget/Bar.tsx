@@ -25,12 +25,18 @@ function Battery() {
   const percent = createBinding(
     battery,
     "percentage",
-  )((p) => `${p}%`)
+  )((p) => `${Math.floor(p * 100)}%`)
 
   return (
     <box>
       <label label={percent} />
     </box>
+  )
+}
+
+function QuickActions() {
+  return (
+    <image file="/home/lousp/Alix/assets/showcase/lockscreen.png" pixelSize={200} />
   )
 }
 
@@ -50,8 +56,15 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
         <box $type="start">
         </box>
         <box $type="end">
-          <Clock />
-          <Battery />
+          <menubutton class="optionsmenu">
+            <box>
+              <Clock />
+              <Battery />
+            </box>
+            <popover>
+              <QuickActions />
+            </popover>
+          </menubutton>
         </box>
       </centerbox>
     </window>

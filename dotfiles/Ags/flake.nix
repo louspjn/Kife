@@ -39,7 +39,6 @@
         pkgs.libadwaita
         pkgs.libsoup_3
         pkgs.nushell
-        pkgs.upower
       ];
   in {
     packages.${system} = {

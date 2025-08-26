@@ -54,10 +54,7 @@
       opts = opts;
     };
 
-  dir = "~/Images/Screenshots/";
-  screenshotname = "$(date +%Y-%m-%d_%H-%M-%S).png";
-  grimblast = "${pkgs.grimblast}/bin/grimblast";
-  print = pkgs.writeShellScriptBin "print" "mkdir ${dir}; ${grimblast} copysave area ${dir}${screenshotname}";
+  print = pkgs.writeShellScriptBin "print" "mkdir ~/Images/Screenshots; ${pkgs.grimblast}/bin/grimblast copysave area ~/Images/Screenshots/$(date +%Y-%m-%d_%H-%M-%S)";
 in {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -65,8 +62,8 @@ in {
     settings = {
       exec = [
         "waypaper --folder ~/Yalix/assets/wallpapers --restore"
-        "pkill waybar; waybar"
-        "pkill yanot; yanot"
+      ] ++ map (cmd: "pkill ${cmd}; ${cmd}") [
+        "waybar"
       ];
 
       monitor = [

@@ -24,9 +24,6 @@
       modules = with inputs; [
         stylix.homeModules.stylix
       ];
-      selfPackages = with self.packages.x86_64-linux; [
-        yanot
-      ];
     };
 
     nixosModules.default = ./modules/system;

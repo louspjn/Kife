@@ -64,7 +64,7 @@ in {
 
     settings = {
       exec = [
-        "waypaper --folder ~/Alix/assets/wallpapers --restore"
+        "waypaper --folder ~/Yalix/assets/wallpapers --restore"
         "pkill waybar; waybar"
       ];
 

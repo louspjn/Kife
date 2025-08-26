@@ -59,7 +59,7 @@
 
       settings = {
         logo = {
-          source = "~/Alix/assets/imgs/Nix.png";
+          source = "~/Yalix/assets/imgs/Nix.png";
           width = 24;
           height = 10;
           padding.left = 1;

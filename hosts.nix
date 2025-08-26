@@ -1,9 +1,8 @@
 {
-  nixpkgs,
   inputs,
   self,
   lib,
-  hm,
+  ...
 }: {
   flake = {
     nixosConfigurations = {
@@ -24,6 +23,9 @@
       name = "lousp";
       modules = with inputs; [
         stylix.homeModules.stylix
+      ];
+      selfPackages = with self.packages.x86_64-linux; [
+        yanot
       ];
     };
 

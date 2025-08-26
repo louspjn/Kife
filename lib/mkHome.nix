@@ -6,7 +6,8 @@
 }: {
   name,
   modules ? [],
-  args ? {}
+  args ? {},
+  selfPackages ? []
 }:
 hm.lib.homeManagerConfiguration {
   inherit pkgs;
@@ -21,6 +22,8 @@ hm.lib.homeManagerConfiguration {
           username = name;
           homeDirectory = "/home/${name}";
           stateVersion = "25.11";
+
+          packages = selfPackages;
         };
       }
 

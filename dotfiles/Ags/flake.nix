@@ -42,9 +42,9 @@
       ];
   in {
     packages.${system} = {
-      statusbar = pkgs.stdenv.mkDerivation {
-        name = "statusbar";
-        src = ./statusbar/.;
+      notifications = pkgs.stdenv.mkDerivation {
+        name = "notifications";
+        src = ./notifications/.;
 
         nativeBuildInputs = with pkgs; [
           wrapGAppsHook
@@ -68,7 +68,7 @@
           mkdir -p $out/bin
           mkdir -p $out/share
           cp -r * $out/share
-          ags bundle ${entry} $out/bin/statusbar -d "SRC='$out/share'"
+          ags bundle ${entry} $out/bin/notifications -d "SRC='$out/share'"
 
           runHook postInstall
         '';

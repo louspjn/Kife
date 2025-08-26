@@ -66,6 +66,7 @@ in {
       exec = [
         "waypaper --folder ~/Yalix/assets/wallpapers --restore"
         "pkill waybar; waybar"
+        "pkill yanot; yanot"
       ];
 
       monitor = [

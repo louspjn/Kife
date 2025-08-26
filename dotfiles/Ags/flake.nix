@@ -52,7 +52,15 @@
           ags.packages.${system}.default
         ];
 
-        buildInputs = extraPackages ++ [pkgs.gjs];
+        buildInputs = [
+          pkgs.libadwaita
+          pkgs.libsoup_3
+          pkgs.gjs
+        ] ++ (with ags.packages.${system}; [
+          io
+          astal4
+          notifd
+        ]);
 
         installPhase = ''
           runHook preInstall

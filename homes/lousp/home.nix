@@ -3,6 +3,7 @@
     nh
 
     nautilus
+    discord
     loupe
 
     gcc

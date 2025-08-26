@@ -13,16 +13,11 @@ in {
       listener = [
         {
           timeout = 160;
-          on-timeout = "notify-send \"System\" \"Are you okay? I'll lock your screen in 20 seconds\"";
+          on-timeout = "notify-send $(users) \"I'll lock your screen in 20 seconds\" -i system -a System";
         }
         {
           timeout = 180;
           on-timeout = "hyprlock";
-        }
-        {
-          timeout = 300;
-          on-timeout = "hyprctl dispatch dpms off";
-          on-resume = "hyprctl dispatch dpms on";
         }
       ];
     };

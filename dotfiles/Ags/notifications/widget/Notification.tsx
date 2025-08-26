@@ -4,6 +4,7 @@ import Adw from "gi://Adw"
 import GLib from "gi://GLib"
 import AstalNotifd from "gi://AstalNotifd"
 import Pango from "gi://Pango"
+import {timeout} from "ags/time"
 
 function isIcon(icon?: string | null) {
   const iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default()!)
@@ -112,6 +113,7 @@ export default function Notification({ notification: n }: NotificationProps) {
           </box>
         )}
       </box>
+      {timeout(8000, () => n.dismiss())}
     </Adw.Clamp>
   )
 }

@@ -133,7 +133,7 @@ in {
           size = 5;
           passes = 2;
 
-          vibrancy = 0.2604;
+          vibrancy = 0.5208;
         };
       };
 
@@ -143,7 +143,7 @@ in {
         bezier = [
           "easeOutQuint,0.23,1,0.32,1"
           "linear,0,0,1,1"
-          "smoothElastic, 1, -0.3, 0.3, 1.5"
+          "smoothElastic, 1, -0.3, 0.3, 1.2"
         ];
 
         animation = [

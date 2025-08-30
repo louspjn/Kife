@@ -1,0 +1,75 @@
+[
+  {
+    "battery": {
+      "format": "{capacity}% {icon}",
+      "format-alt": "{time} {icon}",
+      "format-charging": "{capacity}% 󰂄",
+      "format-icons": [
+        "󰁻",
+        "󰁼",
+        "󰁾",
+        "󰂀",
+        "󰂂",
+        "󰁹"
+      ],
+      "format-plugged": "{capacity}% 󰂄",
+      "interval": 30,
+      "states": {
+        "critical": 5,
+        "good": 75,
+        "warning": 10
+      }
+    },
+    "clock": {
+      "calendar": {
+        "format": {
+          "today": "<span><b>{}</b></span>"
+        }
+      },
+      "format": "{:%I:%M %p}",
+      "interval": 5,
+      "tooltip-format": "<tt>{calendar}</tt>"
+    },
+    "custom/logo": {
+      "format": " "
+    },
+    "height": 30,
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "active": " ",
+        "default": " "
+      },
+      "persistent-workspaces": {
+        "*": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    "layer": "top",
+    "modules-center": [
+      "hyprland/workspaces"
+    ],
+    "modules-left": [
+      "custom/logo",
+      "hyprland/window"
+    ],
+    "modules-right": [
+      "network",
+      "clock",
+      "battery"
+    ],
+    "network": {
+      "format-disconnected": " You aren't Connected",
+      "format-wifi": "  You're Connected ({signalStrength}%)",
+      "tooltip-format-disconnected": "  What are you doing here?",
+      "tooltip-format-wifi": "  {ssid}"
+    },
+    "position": "top"
+  }
+]

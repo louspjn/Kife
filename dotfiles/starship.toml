@@ -1,0 +1,84 @@
+add_newline = false
+format = "$directory$nix_shell$rust$lua$haskell$nodejs$git_branch$git_status\n$character"
+palette = "base16"
+scan_timeout = 10
+
+[character]
+error_symbol = "[λ](bold red)"
+success_symbol = "[λ](bold green)"
+
+[git_branch]
+style = "bold red"
+symbol = ""
+
+[git_status]
+disabled = false
+
+[haskell]
+disabled = false
+format = "via [󰲒 $version](bold purple)"
+
+[lua]
+format = "via [󰢱 $version](bold blue) "
+
+[nix_shell]
+disabled = false
+format = "via [ $name](bold blue) "
+impure_msg = ""
+pure_msg = ""
+unknown_msg = ""
+
+[nodejs]
+format = "via [󰎙 $version](bold green) "
+
+[palettes.base16]
+base00 = "#282828"
+base01 = "#3c3836"
+base02 = "#504945"
+base03 = "#665c54"
+base04 = "#928374"
+base05 = "#ebdbb2"
+base06 = "#fbf1c7"
+base07 = "#f9f5d7"
+base08 = "#cc241d"
+base09 = "#d65d0e"
+base0A = "#d79921"
+base0B = "#98971a"
+base0C = "#689d6a"
+base0D = "#458588"
+base0E = "#b16286"
+base0F = "#9d0006"
+base10 = "#282828"
+base11 = "#282828"
+base12 = "#cc241d"
+base13 = "#d79921"
+base14 = "#98971a"
+base15 = "#689d6a"
+base16 = "#458588"
+base17 = "#b16286"
+black = "#282828"
+blue = "#458588"
+bright-black = "#665c54"
+bright-blue = "#458588"
+bright-cyan = "#689d6a"
+bright-green = "#98971a"
+bright-magenta = "#b16286"
+bright-purple = "#b16286"
+bright-red = "#cc241d"
+bright-white = "#f9f5d7"
+bright-yellow = "#d79921"
+brown = "#9d0006"
+cyan = "#689d6a"
+green = "#98971a"
+magenta = "#b16286"
+orange = "#d65d0e"
+purple = "#b16286"
+red = "#cc241d"
+white = "#ebdbb2"
+yellow = "#d79921"
+
+[rust]
+detect_extensions = ["rs"]
+detect_files = ["Cargo.toml"]
+format = "via [ $version](bold orange) "
+version_format = "v$raw"

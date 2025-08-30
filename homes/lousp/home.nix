@@ -22,6 +22,7 @@
     eslint
     lua-language-server
     haskellPackages.haskell-language-server
+    grimblast
 
     neovim
 
@@ -38,7 +39,6 @@
     ./firefox.nix
     ./helix.nix
     ./starship.nix
-    ./hypr
   ];
 
   programs = {

@@ -29,19 +29,29 @@
     swww
     waypaper
     wl-clipboard
+
+    bat
+    cava
+    cbonsai
+    cmatrix
+    eza
+    less
+    pipes
+    wf-recorder
   ];
 
   nixpkgs.config.allowUnfree = true;
 
   imports = [
     ./terminal.nix
-    ./waybar.nix
     ./firefox.nix
     ./helix.nix
-    ./starship.nix
   ];
 
   programs = {
+    starship.enable = true;
+    waybar.enable = true;
+
     wofi = {
       enable = true;
     };
@@ -72,15 +82,7 @@
       };
     };
 
-    kitty = {
-      enable = true;
-      settings = {
-        cursor_trail = 4;
-        cursor_trail_start_threshold = 0;
-
-        window_padding_width = 10;
-      };
-    };
+    kitty.enable = true;
 
     git = {
       enable = true;

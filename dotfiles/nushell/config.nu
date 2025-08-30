@@ -55,22 +55,22 @@ def --env yy [...args] {
 
 use /nix/store/g548qr1axcxl37f0x90vz52g5ly8j69n-starship-nushell-config.nu
 
-alias "bonsai" = /nix/store/d0gdxnl2rjdv8kpbk0b8bh78zmv6ibd5-cbonsai-1.4.2/bin/cbonsai -lip
-alias "cat" = /nix/store/mwg9cw21x0vxj4vlj18kzxdh542a8wml-bat-0.25.0/bin/bat --theme-dark base16
-alias "cava" = /nix/store/0xf33gfj5i8ajr3shhz92z0grrmw6m59-cava-0.10.4/bin/cava
-alias "cd" = z
-alias "gb" = git branch
-alias "gc" = git commit -m 
-alias "gck" = git checkout
-alias "gd" = git add
-alias "gm" = git merge
-alias "gp" = git push
-alias "gs" = git status
-alias "l" =  /nix/store/n4aac68x6njws1m93zn6wki8nn8h6i1s-eza-0.23.0/bin/eza --tree --icons --git
-alias "ls" = /nix/store/n4aac68x6njws1m93zn6wki8nn8h6i1s-eza-0.23.0/bin/eza --icons --git
-alias "matrix" = /nix/store/qwidc11anhrj2a0kpdqkxyk3pbjvz3g4-cmatrix-2.0/bin/cmatrix -C green -m
-alias "nhs" = nh home switch
-alias "nos" = nh os switch
-alias "nosu" = nh os switch -u
-alias "pipes" = /nix/store/xkipjf0lmc6cknfdncqm2r6dgsz6448w-pipes-1.3.0/bin/pipes
-alias "recorder" = /nix/store/wkhg23hl7h1raags2s88ml6sihswvh0v-wf-recorder-0.5.0/bin/wf-recorder
+alias bonsai = cbonsai -lip
+alias cat = bat --theme-dark base16
+alias cava = cava
+alias cd = z
+alias gb = git branch
+alias gc = git commit -m 
+alias gck = git checkout
+alias gd = git add
+alias gm = git merge
+alias gp = git push
+alias gs = git status
+alias l =  eza --tree --icons --git
+alias ls = eza --icons --git
+alias matrix = cmatrix -C green -m
+alias nhs = nh home switch
+alias nos = nh os switch
+alias nosu = nh os switch -u
+alias pipes = pipes
+alias recorder = wf-recorder

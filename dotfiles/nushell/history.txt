@@ -4,3 +4,10 @@ ls
 clear
 yy
 clear
+git add .
+gc "Home Manager: You was usefull for me, but, I like lua"
+gp
+clear
+nhs
+yy
+clear

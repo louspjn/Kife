@@ -31,6 +31,12 @@ unknown_msg = ""
 [nodejs]
 format = "via [󰎙 $version](bold green) "
 
+[rust]
+detect_extensions = ["rs"]
+detect_files = ["Cargo.toml"]
+format = "via [ $version](bold orange) "
+version_format = "v$raw"
+
 [palettes.base16]
 base00 = "#282828"
 base01 = "#3c3836"
@@ -76,9 +82,3 @@ purple = "#b16286"
 red = "#cc241d"
 white = "#ebdbb2"
 yellow = "#d79921"
-
-[rust]
-detect_extensions = ["rs"]
-detect_files = ["Cargo.toml"]
-format = "via [ $version](bold orange) "
-version_format = "v$raw"

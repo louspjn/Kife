@@ -1,12 +1,5 @@
 {
   programs = {
-    nushell.enable = true;
-
-    zoxide = {
-      enable = true;
-      enableNushellIntegration = true;
-    };
-
     fastfetch = {
       enable = true;
 

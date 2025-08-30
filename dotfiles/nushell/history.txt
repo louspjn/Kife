@@ -11,3 +11,192 @@ clear
 nhs
 yy
 clear
+gd .
+gc "Oh, I forgot the nix configurations....."
+gp
+clear
+poweroff
+kitty --help
+kitty --start-as=minimized
+clear
+yy
+clear
+ls
+clear
+nhs
+ls
+exa
+eza
+nhs -b backup
+nhs
+home-manager switch --flake ~/Yalix
+yy
+clear
+home-manager switch --flake ~/Yalix
+yy
+ckear
+clear
+home-manager switch --flake ~/Yalix
+cear
+clear
+ls
+clear
+ls
+clear
+lua ./kitty.conf
+clear
+lua kitty.lua
+ls
+clear
+yy
+clear
+lua kitty.lua
+ls
+clear
+yy
+lua kitty.lua
+clear
+yy
+clear
+lua kitty.lua
+yy
+clear
+lua kitty.lua
+yy
+lua kitty.lua
+yy
+lua kitty.lua
+ls
+cat kitty.conf
+clear
+yy
+clear
+lua kitty.lua
+cat kitty.conf
+clear
+cat kitty.conf
+cat kitty.lua
+echo $HYPRLAND_INSTANCE_SIGNATURE<\n>
+echo $env.HYPRLAND_INSTANCE_SIGNATURE
+$env.HYPRLAND_INSTANCE_SIGNATURE
+cd hypr
+clear
+ls
+clear
+lua hypr.lua
+echo $env.HYPRLAND_INSTANCE_SIGNATURE
+echo $HYPRLAND_INSTANCE_SIGNATURE<\n>
+ls /tmp/hypr/$env.HYPRLAND_INSTANCE_SIGNATURE
+ps -e | grep Hyprland<\n>
+ps | where name =~ 'Hyprland'<\n>
+ls /tmp/hypr<\n>
+clear
+ls /tmp/
+clear
+$env.HYPRLAND_INSTANCE_SIGNATURE
+$env.HYPRLAND_CMD
+$env.XDG_RUNTIME_DIR
+ls $env.XDG_RUNTIME_DIR/$env.HYPRLAND_INSTANCE_SIGNATURE
+ls $env.XDG_RUNTIME_DIR /$env.HYPRLAND_INSTANCE_SIGNATURE
+ls $env.XDG_RUNTIME_DIR / $env.HYPRLAND_INSTANCE_SIGNATURE
+ls /run/user/1000/hypr/4e242d086e20b32951fdc0ebcbfb4d41b5be8dcc_1756559000_1956684605/
+ls /run/user/1000/hypr/4e242d086e20b32951fdc0ebcbfb4d41b5be8dcc_1756559000_1956684605/ -a
+clear
+$env.XDG_RUNTIME_DIR
+lua hypr.lua
+ls -a /run/user/1000/hypr/4e242d086e20b32951fdc0ebcbfb4d41b5be8dcc_1756559000_1956684605/
+clear
+nix shell nixpkgs
+luarocks
+luarocks install socket.unix
+luarocks install socket.unix --local
+luarocks config local_by_default true
+luarocks install socket.unix
+luarocks install socket
+clear
+luarocks install luv
+cmake
+make
+clear
+exit
+nix shell nixpkgs#luarocks
+nix shell nixpkgs#luarocks nixpkgs#cmake
+clear
+luarocks install luv
+cmake
+gcc
+exit
+clear
+lua hypr.lua
+clear
+lua hypr.lua
+luv
+clear
+exit
+nix shell nixpkgs#luaPackages.luv
+lua hypr.lua
+which lua<\n>
+clear
+cd ..
+clear
+exi
+tyy
+yy
+clear
+s
+nhs
+clear
+cd hypr
+ls
+clear
+lua hypr.lua
+cat ~/Yalix/
+cat ~/Yalix/homes/lousp/home.nix
+clear
+lua hypr.lua
+clear
+lua --v
+lua -v
+clear
+ls
+clear
+luac
+luac hypr.lua 
+çs
+ls
+./luac.out
+yy
+clear
+ls
+lua luac.out
+luac luac.out
+ls
+lua luac.out
+clear
+ls
+chmox +x ./luac.out
+chmod +x ./luac.out
+./luac.out
+clear
+yy
+clear
+yy
+clear
+lua hypr.lua
+clear
+java
+lua hypr.lua
+java
+clear
+lua hypr.lua
+alsamixer
+ckear
+clear
+yy
+clear
+yy
+clear
+pkill Discord
+jetbrains
+clear
+cd Yalix

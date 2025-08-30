@@ -14,6 +14,8 @@
     haskellPackages.ghc
     haskellPackages.stack
 
+    luaPackages.luv
+
     rust-analyzer
     typescript-language-server
     nil
@@ -25,6 +27,8 @@
     grimblast
 
     neovim
+    zoxide
+    starship
 
     swww
     waypaper
@@ -38,6 +42,12 @@
     less
     pipes
     wf-recorder
+
+    waybar
+    kitty
+    wofi
+
+    nerd-fonts.jetbrains-mono
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -49,13 +59,6 @@
   ];
 
   programs = {
-    starship.enable = true;
-    waybar.enable = true;
-
-    wofi = {
-      enable = true;
-    };
-
     alacritty = {
       enable = false;
 
@@ -82,8 +85,6 @@
       };
     };
 
-    kitty.enable = true;
-
     git = {
       enable = true;
 
@@ -96,42 +97,17 @@
     };
   };
 
-  stylix = {
-    enable = true;
-
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark.yaml";
-
-    polarity = "dark";
-
-    fonts = {
-      monospace = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
-        name = "JetBrains Mono Nerd Font";
-      };
-
-      sizes = {
-        terminal = 11;
-        desktop = 10;
-        applications = 11;
-      };
-    };
-
-    icons = {
+  gtk = {
+    iconTheme = {
       enable = true;
       dark = "Papirus-Dark";
       package = pkgs.papirus-icon-theme;
     };
 
-    cursor = {
+    cursorTheme = {
       name = "Bibata-Modern-Classic";
       package = pkgs.bibata-cursors;
       size = 10;
-    };
-
-    targets = {
-      helix.enable = false;
-      hyprlock.enable = false;
-      firefox.profileNames = ["default"];
     };
   };
 }

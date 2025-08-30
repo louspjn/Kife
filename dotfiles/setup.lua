@@ -12,7 +12,7 @@ local dotfiles = {
   "kitty"
 }
 
-function alreadylinked(path)
+local function alreadylinked(path)
     local result = os.execute("ls " .. path)
     return result
 end

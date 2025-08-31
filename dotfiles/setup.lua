@@ -9,7 +9,9 @@ local dotfiles = {
   "nvim",
   "waybar",
   "starship.toml",
-  "kitty"
+  "kitty",
+  "matugen",
+  "waypaper"
 }
 
 local function alreadylinked(path)

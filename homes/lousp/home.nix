@@ -33,6 +33,11 @@
     swww
     waypaper
     wl-clipboard
+    matugen
+
+    papirus-icon-theme
+    bibata-cursors
+    nerd-fonts.jetbrains-mono
 
     bat
     cava
@@ -46,8 +51,6 @@
     waybar
     kitty
     wofi
-
-    nerd-fonts.jetbrains-mono
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -94,20 +97,6 @@
         credential.helper = "store";
         init.defaultBranch = "main";
       };
-    };
-  };
-
-  gtk = {
-    iconTheme = {
-      enable = true;
-      dark = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme;
-    };
-
-    cursorTheme = {
-      name = "Bibata-Modern-Classic";
-      package = pkgs.bibata-cursors;
-      size = 10;
     };
   };
 }

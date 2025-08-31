@@ -9,7 +9,7 @@ local config = {
   cursor_trail_start_threshold = 0,
   window_padding_width = 10,
 
-  include = "/nix/store/cwm5836754v2pggq3k1y0ip3mj4ijx6v-base16-gruvbox-dark.conf"
+  include = "./colors.conf"
 }
 
 local function kitty(settings)

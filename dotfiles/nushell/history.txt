@@ -200,3 +200,144 @@ pkill Discord
 jetbrains
 clear
 cd Yalix
+gd .
+gc "Why I'm still using NixOS? Let's go to Arch Linux"
+gp
+clar
+clear
+cd down
+./binary-output.bin
+clear
+chmod +x ./binary-output.bin
+./binary-output.bin
+yy
+clear
+cat ~/Yalix/dotfiles/hypr/hyprland.lua
+grimblast copysave area ~/Images/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png
+clear
+ls
+yy
+clear
+cd dotfiles
+ls
+./setup.lua
+nhs
+matugen
+matugen image
+matugen image ~/Yalix/assets/wallpapers/thumb-1920-1382925.png
+cd waybar
+cd dotfiles
+ls
+cd waybar
+ls
+clear
+clear
+cd waybar
+ls
+clear
+waybar
+wybar
+waybar
+clear
+waybar
+clear
+cat colors.css
+waybar
+clear
+waybar
+clear
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+waybar]
+waybar
+clear
+waybar
+cler
+clear
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+waybar
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+waybar &
+&
+waybar | job background
+job
+job spawn waybar
+job spawn
+job spawn waybar
+job spawn {waybar}
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+job spawn {waybar}
+pkill waybar
+job spawn {waybar}
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+sleep 1sec
+waybar
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+job spawn {waybar}
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+job list
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+clear
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+clear
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+clear
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+clear
+lua kitty.lua
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+yy
+clear
+ls
+clear
+ls
+clear
+alsamixewr
+alsamixer
+clear
+nmtui
+clear
+ls
+clear
+echo hi hi
+clear
+ls
+clear
+home-manager generations
+cd /nix/store/wr9jby4d10cm4r7a05ax0yq6fnj6ymkr-home-manager-generation
+ls
+yy
+clear
+cd
+clear
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+clear
+yy
+clear
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+clear
+ls
+clear
+waypaper
+yy
+./setup.lua
+clear
+nhs
+clear
+nhs
+clear
+nhs
+clear
+nhs
+clear
+nhs
+clear
+ls
+clear
+rm -r ~/.cache/fontconfig<\n>
+clear
+yy
+clear
+cd Yalix
+clear
+nhs
+clear

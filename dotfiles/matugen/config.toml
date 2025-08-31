@@ -1,0 +1,17 @@
+[config.wallpaper]
+command = "swww"
+arguments = ["img", "--transition-type", "center", "--trasition-step", "15", "--transition-fps", "60"]
+set = true
+
+[templates.waybar]
+input_path = "~/.config/matugen/templates/colors.css"
+output_path = "~/.config/waybar/colors.css"
+post_hook = "sh -c 'pkill waybar; waybar &'"
+
+[templates.kitty]
+input_path = "~/.config/matugen/templates/kitty.conf"
+output_path = "~/.config/kitty/colors.conf"
+
+[templates.hyprland]
+input_path = "~/.config/matugen/templates/hyprland.conf"
+output_path = "~/.config/hypr/hyprland/colors.conf"

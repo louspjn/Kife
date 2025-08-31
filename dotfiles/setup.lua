@@ -11,19 +11,23 @@ local dotfiles = {
   "starship.toml",
   "kitty",
   "matugen",
-  "waypaper"
+  "waypaper",
+  "alacritty",
+  "ghostty"
 }
 
 local function alreadylinked(path)
-    local result = os.execute("ls " .. path)
+    local result = os.execute("ls " .. path .. " > /dev/null 2>&1")
     return result
 end
+
+os.execute("ls .")
 
 for _, dotfile in ipairs(dotfiles) do
   if alreadylinked("~/.config/" .. dotfile) then
     print("-> ~/Yalix/dotfiles/" .. dotfile .. " is already linked.")
   else
-    os.execute("ln -sf ~/Yalix/dotfiles/" .. dotfile .. " ~/.config/" .. dotfile)
     print("-> Linking ~/Yalix/dotfiles/" .. dotfile .. " Configuration to ~/.config/" .. dotfile)
+    os.execute("ln -sf ~/Yalix/dotfiles/" .. dotfile .. " ~/.config/" .. dotfile .. " > /dev/null 2>&1")
   end
 end

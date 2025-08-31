@@ -33,17 +33,26 @@ window#waybar {
   border-bottom: 2px solid @primary;
 }
 
-#workspaces button {
+#workspaces {
+  background-color: @surface_container_high;
   border-radius: 6px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  background-color: @surface_container;
+}
+
+#workspaces button {
+  background-color: transparent;
   color: @on_surface;
   padding: 0 6px;
 }
 
+#workspaces button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  background: @surface_container;
+  border-radius: 5px;
+}
+
 #workspaces button.focused {
-  background-color: @primary;
+  background-color: transparent;
   color: @on_primary;
 }
 

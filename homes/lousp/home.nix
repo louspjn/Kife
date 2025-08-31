@@ -5,6 +5,8 @@
     nautilus
     discord
     loupe
+    hyprlock
+    hypridle
 
     gcc
     cargo
@@ -15,6 +17,7 @@
     haskellPackages.stack
 
     luaPackages.luv
+    pywalfox-native
 
     rust-analyzer
     typescript-language-server
@@ -47,9 +50,12 @@
     less
     pipes
     wf-recorder
+    btop
 
     waybar
     kitty
+    # alacritty
+    # ghostty
     wofi
   ];
 
@@ -58,36 +64,9 @@
   imports = [
     ./terminal.nix
     ./firefox.nix
-    ./helix.nix
   ];
 
   programs = {
-    alacritty = {
-      enable = false;
-
-      settings = {
-        window = {
-          padding = let
-            v = 14;
-          in {
-            x = v;
-            y = v;
-          };
-
-          dynamic_padding = true;
-        };
-
-        cursor = {
-          style.blinking = "always";
-          unfocused_hollow = false;
-        };
-
-        mouse.hide_when_typing = true;
-
-        font.size = 11;
-      };
-    };
-
     git = {
       enable = true;
 

@@ -341,3 +341,203 @@ cd Yalix
 clear
 nhs
 clear
+gd .
+gc "Uh? idk"
+gp
+clear
+yy
+./setup.lua
+clear
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+matugen image 
+waypaper --help
+waypaper --random
+yy
+nhs
+yy
+clear
+nhs
+pywalfox
+pywalfox install
+cd ~/.mozilla
+ls
+cd extensions/
+çs
+ls
+cd ..
+cd firefox
+ls
+cat profiles.ini
+clear
+yy
+clear
+yy
+kitty --help
+clear
+yy
+./setup.lua
+clear
+cat ~/Yalix/homes/lousp/home.nix
+clear
+yy
+./setup.lua
+clear
+yy
+./setup.lua
+yy
+./setup.lua
+clear
+ls
+clear
+yy
+nhs
+ghostty
+clear
+ls
+yy
+clear
+ls
+clear
+btop
+cler
+clear
+./setup.lua
+yy
+./setup.lua
+yy
+clear
+ls
+clear
+yy
+clear
+ls
+clear
+yy
+matugen image 
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+yy
+clear
+ls
+clear
+ls
+clear
+cava
+clear
+alsamixer
+clear
+yy
+nhs
+btop
+clear
+yy
+nhs
+60 - 4
+cler
+clear
+yy
+nhs
+clear
+ls
+ssasasas
+ghostty
+ckear
+clear
+yy
+clear
+nhs
+pkill Discord
+discord
+clear
+ls
+clear
+ghostty
+clear
+yy
+vencord
+discord --help
+clear
+yy
+clear
+pkill Discord
+yy
+hyprlock
+clear
+yy
+clear
+nhs
+alsamixer
+clear
+yy
+clear
+nhs
+clear
+yy
+nivm
+nvim
+vim
+clear
+yy
+nvim
+clear
+nix shell nixpkgs#python
+python
+nvim
+clear
+exit
+nix shell nixpkgs#python3
+clear
+ls
+rm -rf ./pywal/
+clear
+hyprctl reload
+clear
+git clone https://github.com/NvChad/pywal
+clear
+pkill waybar; waybar
+l
+sls
+clear
+l
+nvim
+clear
+ls
+python ./pywal/chadwal.py
+pip
+pipes
+cpipes
+pipes
+pipes --help
+waybar
+clear
+nix shell nixpkgs#pip3
+pip
+pipx
+pipx install watchdog
+pipx ensurepath
+python ./pywal/chadwal.py
+yy
+watchdog
+watch
+pipx watchdog
+pipx uninstall watchdog
+exit
+nix shell nixpkgs#pipx
+clear
+exit
+nix shell nixpkgs#python3
+exit
+waybar
+pip
+pip install watchdog
+pip install watchdog --local
+pip install watchdog
+exit
+nix shell nixpkgs#python3 nixpkgs#python312Packages.pip
+exit
+waybar
+python ./pywal/chadwal.py
+waybar
+yy
+gd .
+yy
+clear

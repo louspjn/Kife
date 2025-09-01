@@ -1,0 +1,552 @@
+link
+yazi
+zoxide init nushell | save -f ~/.zoxide.nu
+cd
+clear
+ls
+yy
+clear
+gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
+nix run nixpkgs#gsettings -- set org.gnome.desktop.interface color-scheme "prefer-dark"
+clear
+nhs
+clear
+exit
+clear
+pkill waybar
+waybar
+yy
+clear
+yy
+clear
+yy
+clear
+exit
+zellij
+clear
+qs -p .
+pkill waybar
+nvim
+yy
+:w
+clear
+lw
+clear
+swww
+swww img
+swww img ~/Yalix/assets/wallpapers/mountains-2.jpg --help
+swww img ~/Yalix/assets/wallpapers/mountains-2.jpg --transition-type wipe
+swww img ~/Yalix/assets/wallpapers/mountains.jpg --transition-type wipe
+swww img ~/Yalix/assets/wallpapers/3.png --transition-type wipe
+swww img ~/Yalix/assets/wallpapers/leaves-3.jpg --transition-type wave
+swww img ~/Yalix/assets/wallpapers/mountains-2.jpg --help
+swww img ~/Yalix/assets/wallpapers/leaves-3.jpg --transition-type simple
+swww img ~/Yalix/assets/wallpapers/3.jpg --transition-type simple
+swww img ~/Yalix/assets/wallpapers/3.png --transition-type simple
+yy
+clear
+cd
+clear
+yy
+s
+ls
+clear
+ls
+l
+q
+clear
+ls
+clear
+q
+clear
+ls
+q
+clear
+ls
+q
+clear
+ls
+clear
+q
+clear
+ls
+q
+clear
+ls
+q
+ls
+clear
+q
+clear
+cd lua
+cd ..
+cd rust
+ls
+cd ..
+ls
+cd devps
+cd haskell
+ls
+q
+cd haskell
+cd lua
+cd rust
+cd ts
+clear
+yy
+nhs
+yy
+pip
+python
+clear
+python
+pip
+cleat
+clear
+yy
+nhs
+pi
+pip
+pip install watchdog
+clear
+yy
+clear
+nhs
+yy
+clear
+nhs
+yy
+clear
+nhs
+python
+clear
+ls
+cls
+lcsl
+clear
+yy
+clear
+nvim
+ls
+python pywal/chadwal.py
+watchdog
+clear
+yy
+./chadwal.py
+clear
+yy
+nvim
+yy
+exit
+nix run nixpkgs#tmux
+clear
+yy
+ls
+cd
+clear
+ls
+yy
+clear
+yy
+ckear
+clear
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+clear
+yy
+clear
+nvim
+yy
+watchgod 
+clear
+nhs
+watchdog
+^watch 
+watchmedo 
+clear
+ls
+clear
+yy
+clear
+yy
+clear
+git clone https://github.com/NvChad/pywal
+ls
+git clone https://github.com/NvChad/pywal --depth 1
+clear
+yy
+clear
+ls
+python chadwal.py
+clear
+ls
+yy
+python chadwal.py
+yy
+waypaper --restore
+python ./nvim/pywal/chadwal.py
+clear
+nvim ./nvim/pywal/chadwal.py
+ls ~/.config/matugen
+l ~/.config/matugen
+cd ~/.config/matugen
+l
+cat templates/nvim.lua
+wl-copy (/run/current-system/sw/bin/cat templates/nvim.lua)
+waypaper --restore
+nvim
+yy
+clear
+nvim
+clear
+nvim
+clear
+~/.local/share/nvim/lazy/base46/lua/base46/themes/chadwal.lua<\n>
+cat ~/.local/share/nvim/lazy/base46/lua/base46/themes/chadwal.lua<\n>
+clear
+nvim
+yy
+clear
+nvim
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+yy
+clear
+nvim
+clear
+yy
+matugen image ~/Yalix/assets/wallpapers/berries.jpg
+matugen image ~/Yalix/assets/wallpapers/3.png
+pkill -SIGUSR1 nvim
+killall -SIGUSR1 nvim
+killall -SIGUSR1 nvim 2>/dev/null
+ps | where name == "nvim" | get pid | each { kill -s SIGUSR1 $it }
+Yalix on main [✘!?] <\n>λ : ps | where name == "nvim" | get pid | each { kill -s SIGUSR1 $it }<\n>Error: nu::parser::parse_mismatch<\n><\n>  × Parse mismatch during operation.<\n>   ╭─[entry #19:1:54]<\n> 1 │ ps | where name == "nvim" | get pid | each { kill -s SIGUSR1 $it }<\n>   ·                                                      ───┬───<\n>   ·                                                         ╰── expected int<\n>   ╰────<\n><\n><\n>Yalix on main [✘!?] <\n>λ : <\n><\n><\n><\n><\n>]]]]]
+clar
+clear
+ps | where name == "nvim" | get pid | each { kill -s SIGUSR1 ($it | str to-int) }
+ps | where name == "nvim" | get pid | each { kill SIGUSR1 $it }
+ps | where name == "nvim" | get pid | kill SIGUSR1
+ps | where name == "nvim" | get pid | into int | kill SIGUSR1
+ps | where name == "nvim" | get pid | each { ^kill -SIGUSR1 $it }
+ps | where name == "nvim" | get pid | each { ^kill -SIGUSR1 it }
+ps | where name == "nvim" | get pid | each { ^kill -SIGUSR1 $(it) }
+pkill -SIGUSR1 nvim
+clear
+ls
+clear
+nvim
+clear
+nvim
+clear
+nivm
+nvim
+clear
+yy
+clear
+nvim
+nvim --remote
+nvim --help
+nvim --remote ":print hi"
+clearnvim --remote ":print hi"
+clear
+nvim --help
+nvim -s
+nvim -S
+nvim --remote-server
+nvim --remote-":hi"
+clear
+nvim --remote-send "<C-\><C-N>:n filename<CR>"
+nvim --remote-send ":print hi"
+nvim --server ~/.cache/nvim/server.pipe --remote file.txt
+nvim --server ~/.cache/nvim/server.pipe --remote "a"
+nvim --server ~/.cache/nvim/server.pipe "a"
+nvim --remote-send "a"
+nvim --server ~/.cache/nvim/server.pipe --remote-send "a"
+nvim --server ~/.cache/nvim/server.pipe --remote-send "hello world"
+nvim --server ~/.cache/nvim/server.pipe --remote-send "<Backspace>"
+nvim --server ~/.cache/nvim/server.pipe --remote-send ":print hi"
+nvim --server ~/.cache/nvim/server.pipe --remote-send "<esc>"
+nvim --server ~/.cache/nvim/server.pipe --remote-send ":print hi"
+nvim --server ~/.cache/nvim/server.pipe --remote-send "<CR>"
+nvim --server ~/.cache/nvim/server.pipe --remote-send ":print("hi")<CR>"
+nvim --server ~/.cache/nvim/server.pipe --remote-send ":print "hi"<CR>"
+nvim --server ~/.cache/nvim/server.pipe --remote-send ":source<CR>"
+clear
+nvim --server ~/.cache/nvim/server.pipe --remote-send ""
+nvim idk.lua
+ckear
+clear
+lua idk.lua
+clear
+yy
+clear
+nvim --listen ~/.cache/nvim/server.pipe
+lua idk.lua
+clear
+clear
+nvim --listen ~/.cache/nvim/server.pipe
+clear
+lua idk.lua
+nvim --server ~/.cache/nvim/server.pipe --remote-ui
+nvim --listen ~/.cache/nvim/server.pipe
+clear
+clear
+ls
+clear
+nvim --server 192.168.1.1 --remote-ui
+nvim --listen 192.168.1.1
+nvim --server localhost:2000 --remote-ui
+nvim --listen localhost:2000
+clear
+ls
+clear
+exit
+nvim --server localhost:2000 --remote-ui
+nvim --listen localhost:2000
+clear
+nvim --listen localhost:2001
+cldzf
+clear
+nvim --server localhost:2000 --remote-ui
+nvim --listen localhost:2000
+nvim --listen localhost:200
+nvim --server localhost:2000 --remote-ui
+nvim --server localhost:2001 --remote-ui
+nvim --listen localhost:2001
+nvim --listen localhost:2002
+clear
+nvim --remote
+clear
+nvim --server localhost:2000 --remote-ui
+nvim --listen localhost:2000
+clear
+nvim --server localhost:2000 --remote-send ":cd ~/Yalix/homes/lousp/dotfiles<CR>"
+nvim --server localhost:2000 --remote-send "<space>e"
+clear
+lua idk.lua
+clear
+exit
+nvim --server localhost:2000 --remote-ui
+nvim --server localhost:2000 --remote-ui
+nvim --server localhost:2000 --remote-ui
+clear
+nvim --server localhost:2000 --remote-ui
+nvim idk.lua
+while true {nvim --listen localhost:2000}
+yy
+nvim --listen localhost:2000 --servername main
+nvim --server localhost:2000 --remote-ui
+nvim --listen localhost:2000
+clear
+nvim --listen localhost:2000
+nvim --server localhost:2000 --remote-ui
+clear
+users
+clear
+ls
+dls
+dl
+sldsld
+sld
+sd
+sld
+clear
+nvim --server localhost:2000 --remote-send ':lua require("base46").load_all_highlights()<CR>'
+nvim --listen localhost:2000
+clear
+clkear
+clear
+ls
+clsls
+ldsldslds
+ldsdlsdls
+dlsdls
+lds
+dlsdlsdls
+dls
+ldsld
+slds
+ld
+slds
+dls
+lds
+ldslds
+dlsdlsdlsds
+clear
+nvim
+clear
+vim
+yy
+clear
+vim
+clear
+yy
+cçear
+clear
+yy
+clear
+ls
+clear
+nvim server.lua
+clear
+lua server.lua
+yy
+nvim server.lua
+clear
+try {nvim --listen localhost:2000} catch {echo no}
+try {nvim --listen localhost:2000 >> /dev/null} catch {echo no}
+try {nvim --listen localhost:2000 >> /dev/null} catch {nvim}
+try {nvim --listen localhost:2000} catch {nvim}
+try {nvim --listen localhost:2000} exceot {nvim}
+try {nvim --listen localhost:2000} except {nvim}
+try {nvim --listen localhost:2000} catch {nvim}
+try {nvim --listen localhost:2000} catch {;nvim}
+try {nvim --listen localhost:2000} catch {sleep 1sec; nvim}
+try {nvim --listen localhost:2000} catch {sleep 1; nvim}
+try {nvim --listen localhost:2000} catch {sleep 1se; nvim}
+try {nvim --listen localhost:2000} catch {sleep 1sec; nvim}
+try {nvim --listen localhost:2000} catch {sleep 0.1sec; nvim}
+try {nvim --listen localhost:2000} catch {sleep 0.0000001sec; nvim}
+nu -c "try {nvim --listen localhost:2000} catch {sleep 0.0000001sec; nvim}"
+bash
+lua server.lua
+yy
+clear
+yy
+clear
+yy
+clear
+yy
+clçear
+clear
+vim
+clear
+ee
+clear
+lua server.lua
+exit
+clear
+lua server.lua
+clear
+yy
+clear
+lua server.lua
+clear
+yy
+lua server.lua
+yy
+clear
+yy
+lua server.lua
+clear
+yy
+clear
+yy
+nvim server.lua
+lua server.lua
+nvim server.lua
+lua server.lua
+clear
+nvim server.lua
+clear
+lua server.lua
+clear
+nvim server.lua
+lua server.lua
+clear
+yy
+lua server.lua
+nvim server.lua
+cler
+cear
+clear
+lua server.lua
+clear
+ls
+yy
+cleaa
+clear
+yy
+clear
+yy
+clear
+yy
+chmod +x ./test.hs
+./test.hs
+clear
+yy
+./test.hs
+runghci
+runghc
+clear
+yy
+./test.hs
+yy
+./test.hs
+yy
+./test.hs I love Shebangs
+ln -sf ./test.hs ~/.local/bin/haskellscipt
+haskellscript
+ln -sf ~/test.hs ~/.local/bin/haskellscipt
+cat ~/.local/bin/haskellscipt
+haskellscript
+haskellscript a
+link
+?
+clear
+haskellscript a
+haskellscript
+haskellscipt
+haskellscipt I love shebangs
+alsamixer
+clear
+ls
+clear
+chmod +x ./bash.sh
+clear
+bash.sh Jhuan
+clear
+./bash.sh
+./bash.sh Lousp
+./bash.sh Jhuan
+clear
+exit
+clear
+./bash.sh Jhuan
+./bash.sh
+clear
+./bash.sh Lousp
+./bash.sh Jhuan
+clear
+./bash.sh
+clear
+./bash.sh
+clear
+read
+read --help
+clear
+bash
+clear
+./bash.sh
+matrix
+clear
+matrix
+clear
+clear; fastfetch
+clear
+exit
+yy
+clear
+yy
+clear
+nhs
+yy
+clear
+nhs
+yy
+clear
+ls
+yy
+:q
+yy
+cleat
+clear

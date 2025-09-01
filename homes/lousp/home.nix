@@ -6,7 +6,6 @@
     discord
     loupe
     hyprlock
-    hypridle
 
     gcc
     cargo
@@ -15,6 +14,9 @@
     lua
     haskellPackages.ghc
     haskellPackages.stack
+    (python3.withPackages (ps: with ps; [
+      watchdog
+    ]))
 
     luaPackages.luv
     pywalfox-native
@@ -32,14 +34,17 @@
     neovim
     zoxide
     starship
+    fastfetch
+    yazi
+    zellij
 
     swww
     waypaper
     wl-clipboard
     matugen
 
-    papirus-icon-theme
     bibata-cursors
+    papirus-icon-theme
     nerd-fonts.jetbrains-mono
 
     bat
@@ -54,28 +59,35 @@
 
     waybar
     kitty
+    rofi
     # alacritty
     # ghostty
-    wofi
   ];
 
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-    ./terminal.nix
     ./firefox.nix
   ];
 
-  programs = {
-    git = {
-      enable = true;
-
-      userName = "louspjn";
-      userEmail = "nycojn@gmail.com";
-      extraConfig = {
-        credential.helper = "store";
-        init.defaultBranch = "main";
+  dconf = {
+    enable = true;
+    settings = {
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
       };
+    };
+  };
+
+  services.hypridle.enable = true;
+  programs.git = {
+    enable = true;
+
+    userName = "louspjn";
+    userEmail = "nycojn@gmail.com";
+    extraConfig = {
+      credential.helper = "store";
+      init.defaultBranch = "main";
     };
   };
 }

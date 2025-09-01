@@ -22,6 +22,8 @@
     pavucontrol
   ];
 
+  environment.localBinInPath = true;
+
   security.pam.services.hyprlock = {};
 
   services = {

@@ -1,0 +1,17 @@
+[input]
+cursor_blink = true
+
+[mgr]
+linemode = "size"
+mouse_events = []
+sort_by = "natural"
+
+[[opener.edit]]
+block = true
+desc = "$EDITOR"
+run = "nvim -- \"$@\""
+
+[preview]
+max_height = 3600
+max_width = 3600
+wrap = "yes"

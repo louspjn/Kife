@@ -1,0 +1,68 @@
+{
+  "display": {
+    "color": {
+      "keys": "blue"
+    },
+    "key": {
+      "type": "string",
+      "width": 6
+    },
+    "percent": {
+      "color": {
+        "green": "yellow",
+        "red": "yellow",
+        "yellow": "yellow"
+      },
+      "type": 9
+    },
+    "separator": "  "
+  },
+  "logo": {
+    "height": 10,
+    "padding": {
+      "left": 1
+    },
+    "source": "~/Yalix/assets/imgs/Nix.txt",
+    "width": 24
+  },
+  "modules": [
+    {
+      "text": "echo",
+      "type": "custom"
+    },
+    {
+      "key": " ",
+      "type": "os"
+    },
+    {
+      "key": " ",
+      "type": "kernel"
+    },
+    {
+      "key": " ",
+      "type": "shell"
+    },
+    {
+      "key": " ",
+      "type": "wm"
+    },
+    {
+      "key": " ",
+      "type": "memory"
+    },
+    {
+      "key": "󱥎 ",
+      "type": "disk"
+    },
+    {
+      "key": " ",
+      "text": "hyprctl splash",
+      "type": "command"
+    },
+    {
+      "key": " ",
+      "symbol": "circle",
+      "type": "colors"
+    }
+  ]
+}

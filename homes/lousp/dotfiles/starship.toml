@@ -1,0 +1,48 @@
+palette = 'colors'
+
+[palettes.colors]
+color1 = '#a8d292'
+color2 = '#163808'
+color3 = '#c3c8bb'
+color4 = '#1d211a'
+color5 = '#163808'
+color6 = '#11140f'
+color7 = '#11140f'
+color8 = '#a8d292'
+color9 = '#a0cfd0'
+
+format = "$directory$nix_shell$rust$lua$haskell$nodejs$git_branch$git_status\n$character"
+
+[character]
+error_symbol = "[λ](bold red)"
+success_symbol = "[λ](bold color1)"
+
+[git_branch]
+style = "bold red"
+symbol = ""
+
+[git_status]
+disabled = false
+
+[haskell]
+disabled = false
+format = "via [󰲒 $version](bold purple)"
+
+[lua]
+format = "via [󰢱 $version](bold blue) "
+
+[nix_shell]
+disabled = false
+format = "via [ $name](bold blue) "
+impure_msg = ""
+pure_msg = ""
+unknown_msg = ""
+
+[nodejs]
+format = "via [󰎙 $version](bold green) "
+
+[rust]
+detect_extensions = ["rs"]
+detect_files = ["Cargo.toml"]
+format = "via [ $version](bold orange) "
+version_format = "v$raw"

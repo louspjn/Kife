@@ -9,12 +9,12 @@
         isDefault = true;
 
         settings = {
-          "browser.search.defaultenginename" = "google";
+          "browser.search.defaultenginename" = "DuckDuckGo";
         };
 
         search = {
           force = true;
-          default = "google";
+          default = "ddg";
 
           engines = {
             "My NixOS" = {
@@ -31,6 +31,22 @@
               ];
 
               definedAliases = ["@mn"];
+            };
+
+            "Youtube" = {
+              urls = [
+                {
+                  template = "https://youtube.com/results";
+                  params = [
+                    {
+                      name = "search_query";
+                      value = "{searchTerms}";
+                    }
+                  ];
+                }
+              ];
+
+              definedAliases = ["@yt"];
             };
 
             "Noogle" = {

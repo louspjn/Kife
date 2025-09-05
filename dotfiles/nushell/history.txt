@@ -27,3 +27,9 @@ i python-screeninfo
 i waypaper
 clear
 yy
+gd .
+gc "Adding matugen config as backup"
+gp
+yy
+clear
+yy

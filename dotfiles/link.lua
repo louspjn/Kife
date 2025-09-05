@@ -1,6 +1,6 @@
 #! /usr/bin/env lua
 
-local dotfiles_dir = os.getenv("HOME") .. "/Linux/dotfiles"
+local dotfiles_dir = os.getenv("HOME") .. "/System/dotfiles"
 local config_dir = os.getenv("HOME") .. "/.config"
 
 local dotfiles = {}

@@ -7,3 +7,13 @@ ls
 clear
 yy
 clear
+gd .
+gc "Arch Linux (btw)"
+dp
+gp
+nvim .git/config
+gp
+cd ..
+rm -rf ~/.config/nushell/; ./link.lua
+clear
+yy

@@ -1,552 +1,281 @@
-link
-yazi
-zoxide init nushell | save -f ~/.zoxide.nu
-cd
+cd tmux
+tmux source
+tmux source ~/.config/tmux/tmux.conf
+clear
+tmux source ~/.config/tmux/tmux.conf
+exit
+tmux source ~/.config/tmux/tmux.conf
+clear
+λλλλλλλλλλλλλλλλλλλλλλλλλλλλλλλλλλλλλλ
+I LOVE C!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+clang
+btop
+clear
+reboot
+nmtui
+clear
+y
+clear
+yt
+clear
+git clone https://github.com/rvaiya/keyd<\n>cd keyd<\n>make && sudo make install<\n>sudo systemctl enable --now keyd
+git clone https://github.com/rvaiya/keyd<\n>cd keyd
+git clone https://github.com/rvaiya/keyd --depth 1<\n>cd keyd
+ls
+make
+nix shell nixpkgs#make nixpkgs#clang
+nix shell nixpkgs#gnumake nixpkgs#clang
+exit
+t
+exit
+poweroff
+nmtui
+cd keyd/
+çs
+ls
+clear
+git clone --depth https://codeberg.org/dwl/dwl
+git clone --depth 1 https://codeberg.org/dwl/dwl
+cd dwl
+l
+sclea
 clear
 ls
-yy
+clang
 clear
-gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
-nix run nixpkgs#gsettings -- set org.gnome.desktop.interface color-scheme "prefer-dark"
+gcc
+ls
 clear
-nhs
-clear
-exit
-clear
-pkill waybar
-waybar
-yy
-clear
-yy
-clear
-yy
-clear
-exit
-zellij
-clear
-qs -p .
-pkill waybar
 nvim
-yy
-:w
 clear
-lw
-clear
-swww
-swww img
-swww img ~/Yalix/assets/wallpapers/mountains-2.jpg --help
-swww img ~/Yalix/assets/wallpapers/mountains-2.jpg --transition-type wipe
-swww img ~/Yalix/assets/wallpapers/mountains.jpg --transition-type wipe
-swww img ~/Yalix/assets/wallpapers/3.png --transition-type wipe
-swww img ~/Yalix/assets/wallpapers/leaves-3.jpg --transition-type wave
-swww img ~/Yalix/assets/wallpapers/mountains-2.jpg --help
-swww img ~/Yalix/assets/wallpapers/leaves-3.jpg --transition-type simple
-swww img ~/Yalix/assets/wallpapers/3.jpg --transition-type simple
-swww img ~/Yalix/assets/wallpapers/3.png --transition-type simple
-yy
-clear
-cd
-clear
-yy
-s
-ls
-clear
+make
 ls
 l
-q
 clear
 ls
-clear
-q
+cd bin
+ls
+./keyd
+ls
+./keyd-application-mapper
 clear
 ls
-q
-clear
-ls
-q
-clear
-ls
-clear
-q
-clear
-ls
-q
-clear
-ls
-q
-ls
-clear
-q
-clear
-cd lua
-cd ..
-cd rust
-ls
+nmtui
+nvim
 cd ..
 ls
-cd devps
-cd haskell
-ls
-q
-cd haskell
-cd lua
-cd rust
-cd ts
 clear
-yy
-nhs
-yy
-pip
-python
-clear
-python
-pip
-cleat
-clear
-yy
-nhs
-pi
-pip
-pip install watchdog
-clear
-yy
-clear
-nhs
-yy
-clear
-nhs
-yy
-clear
-nhs
-python
-clear
-ls
-cls
-lcsl
-clear
-yy
-clear
-nvim
-ls
-python pywal/chadwal.py
-watchdog
-clear
-yy
-./chadwal.py
-clear
-yy
-nvim
-yy
 exit
-nix run nixpkgs#tmux
 clear
-yy
+exit
+nix shell nixpkgs#gnumake nixpkgs#clang
+exit
+t
+clear
+cd tmux
+exit
+nvim
+exit
+t
+clear
+t a
+t l
+t --help
+t attach
+exit
+t
+exit
+t new
+t new TmuxConf
+t new "TmuxConf"
+t new TmuxConf
+cleaar
+exit
+t new -s TmuxConf
+clear
+t new -s TmuxConf -c ~/Yalix/homes/lousp/dotfiles/tmux
+git clone --depth 1 https://github.com/tmux-plugins/tpm ./.tmux/plugins/tpm
+cd .tmux
 ls
-cd
-clear
+cd plugins/tpm/
 ls
+rm -rf .git
+cd ..
+clear
+cd ..
+ln -sf ./.tmux/ ~/
+ls ~
+ls ~/.tmux
+ls ~/.tmux/
+ls
+cd 
 yy
 clear
-yy
-ckear
-clear
-matugen image ~/Yalix/assets/wallpapers/berries.jpg
-clear
-yy
-clear
-nvim
-yy
-watchgod 
-clear
-nhs
-watchdog
-^watch 
-watchmedo 
-clear
+cd tmux
 ls
 clear
-yy
+ln -sf ~/Yalix/homes/lousp/dotfiles/tmux/
+ln -sf ~/Yalix/homes/lousp/dotfiles/tmux/.tmux/ ~/.tmux
 clear
-yy
-clear
-git clone https://github.com/NvChad/pywal
-ls
-git clone https://github.com/NvChad/pywal --depth 1
-clear
-yy
-clear
-ls
-python chadwal.py
-clear
-ls
-yy
-python chadwal.py
-yy
-waypaper --restore
-python ./nvim/pywal/chadwal.py
-clear
-nvim ./nvim/pywal/chadwal.py
-ls ~/.config/matugen
-l ~/.config/matugen
-cd ~/.config/matugen
-l
-cat templates/nvim.lua
-wl-copy (/run/current-system/sw/bin/cat templates/nvim.lua)
-waypaper --restore
-nvim
-yy
-clear
-nvim
-clear
-nvim
-clear
-~/.local/share/nvim/lazy/base46/lua/base46/themes/chadwal.lua<\n>
-cat ~/.local/share/nvim/lazy/base46/lua/base46/themes/chadwal.lua<\n>
-clear
-nvim
-yy
-clear
-nvim
-matugen image ~/Yalix/assets/wallpapers/berries.jpg
-yy
-clear
-nvim
-clear
-yy
-matugen image ~/Yalix/assets/wallpapers/berries.jpg
-matugen image ~/Yalix/assets/wallpapers/3.png
-pkill -SIGUSR1 nvim
-killall -SIGUSR1 nvim
-killall -SIGUSR1 nvim 2>/dev/null
-ps | where name == "nvim" | get pid | each { kill -s SIGUSR1 $it }
-Yalix on main [✘!?] <\n>λ : ps | where name == "nvim" | get pid | each { kill -s SIGUSR1 $it }<\n>Error: nu::parser::parse_mismatch<\n><\n>  × Parse mismatch during operation.<\n>   ╭─[entry #19:1:54]<\n> 1 │ ps | where name == "nvim" | get pid | each { kill -s SIGUSR1 $it }<\n>   ·                                                      ───┬───<\n>   ·                                                         ╰── expected int<\n>   ╰────<\n><\n><\n>Yalix on main [✘!?] <\n>λ : <\n><\n><\n><\n><\n>]]]]]
+exit
+nvim tmux.conf
+exit
+t a
 clar
+ta
 clear
-ps | where name == "nvim" | get pid | each { kill -s SIGUSR1 ($it | str to-int) }
-ps | where name == "nvim" | get pid | each { kill SIGUSR1 $it }
-ps | where name == "nvim" | get pid | kill SIGUSR1
-ps | where name == "nvim" | get pid | into int | kill SIGUSR1
-ps | where name == "nvim" | get pid | each { ^kill -SIGUSR1 $it }
-ps | where name == "nvim" | get pid | each { ^kill -SIGUSR1 it }
-ps | where name == "nvim" | get pid | each { ^kill -SIGUSR1 $(it) }
-pkill -SIGUSR1 nvim
+t a
+cleatr
 clear
+ta
+exit
+t
+nvim tmux.conf
+rm ~/.tmux
 ls
+clear
+nvim tmux.conf
+exit
+t new -s TmuxConf -c ~/Yalix/homes/lousp/dotfiles/tmux
+exit
+pkill tmux
+clear
+exit
+t
+nvim tmux.conf
+exit
+t new -s TmuxConf -c ~/Yalix/homes/lousp/dotfiles/tmux
+tmux kill-server
+exit
+t
+t new -s TmuxConf -c ~/Yalix/homes/lousp/dotfiles/tmux
+tmux kill-server
+cd tmux
+ls
+nvim tmux.conf
+ls
+yy
+exit
+t
+t kill-server
+t
+t kill-server
+t
+cat ../hypr/hyprlock.conf
+exit
+nvim tmux.conf
+clear
+poweroff
+yy
+clear
+exit
+t
+clear
+nvim tmux.conf
+clear
+cd matugen
+matugen image ~/Yalix/assets/wallpapers/anime.png
+1
+matugen image ~/Yalix/assets/wallpapers/anime.png
+matugen --help
+matugen -j
+matugen -j {}
+matugen -j {"hex" = "a"}
+matugen -j {hex = "a"}
+matugen -j hex
+matugen -j hex image
+matugen color
+matugen color hex
+matugen color hex #00beff
+matugen color hex "#00beff"
+clear
+# modo dark, a partir de uma cor<\n>matugen color hex "#fe8019" -m "dark"
+clear
+matugen
+matugen -c ~/.config/matugen/config.toml
+matugen
+matugen --show-colors
+matugen color
+matugen color hex "#00beff"
+matugen color hex "#000000"
+matugen
+matugen color hex "#000000"
+matugen color hex "#fff"
+clear
+matugen
+matugen --config ~/.config/matugen/config.toml --dry-run
+matugen color hex "#000000" --config ~/.config/matugen/config.toml --dry-run
+matugen color hex "#000000" --config ~/.config/matugen/config.toml --prefix ~/.config/matugen
+matugen color hex "#000000" --config ~/.config/matugen/config.toml --prefix /
+ls ~/.config/matugen
+rm -rf ~/.config/matugen/home
+clear
+matugen color hex "#000000" --config ~/.config/matugen/config.toml --json hex
+clear
+matugen color hex "#000000" --config ~/.config/matugen/config.toml --json hex
 clear
 nvim
 clear
-nvim
+cd ..
+mkdir pywal
+cd ..
 clear
-nivm
-nvim
+cd dotfiles/
 clear
-yy
+pywal
+wal 
+wal --theme gruvbox
+wal --theme gruvbox_material_dark
+wal --theme gruvbox-material
+wal --theme gruvbox
 clear
-nvim
-nvim --remote
-nvim --help
-nvim --remote ":print hi"
-clearnvim --remote ":print hi"
-clear
-nvim --help
-nvim -s
-nvim -S
-nvim --remote-server
-nvim --remote-":hi"
-clear
-nvim --remote-send "<C-\><C-N>:n filename<CR>"
-nvim --remote-send ":print hi"
-nvim --server ~/.cache/nvim/server.pipe --remote file.txt
-nvim --server ~/.cache/nvim/server.pipe --remote "a"
-nvim --server ~/.cache/nvim/server.pipe "a"
-nvim --remote-send "a"
-nvim --server ~/.cache/nvim/server.pipe --remote-send "a"
-nvim --server ~/.cache/nvim/server.pipe --remote-send "hello world"
-nvim --server ~/.cache/nvim/server.pipe --remote-send "<Backspace>"
-nvim --server ~/.cache/nvim/server.pipe --remote-send ":print hi"
-nvim --server ~/.cache/nvim/server.pipe --remote-send "<esc>"
-nvim --server ~/.cache/nvim/server.pipe --remote-send ":print hi"
-nvim --server ~/.cache/nvim/server.pipe --remote-send "<CR>"
-nvim --server ~/.cache/nvim/server.pipe --remote-send ":print("hi")<CR>"
-nvim --server ~/.cache/nvim/server.pipe --remote-send ":print "hi"<CR>"
-nvim --server ~/.cache/nvim/server.pipe --remote-send ":source<CR>"
-clear
-nvim --server ~/.cache/nvim/server.pipe --remote-send ""
-nvim idk.lua
-ckear
-clear
-lua idk.lua
-clear
-yy
-clear
-nvim --listen ~/.cache/nvim/server.pipe
-lua idk.lua
-clear
-clear
-nvim --listen ~/.cache/nvim/server.pipe
-clear
-lua idk.lua
-nvim --server ~/.cache/nvim/server.pipe --remote-ui
-nvim --listen ~/.cache/nvim/server.pipe
-clear
+wal --theme gruvbox
 clear
 ls
-clear
-nvim --server 192.168.1.1 --remote-ui
-nvim --listen 192.168.1.1
-nvim --server localhost:2000 --remote-ui
-nvim --listen localhost:2000
+wal
 clear
 ls
-clear
 exit
-nvim --server localhost:2000 --remote-ui
-nvim --listen localhost:2000
+nix shell nixpkgs#pywal
 clear
-nvim --listen localhost:2001
-cldzf
+ls
+cd dotfiles
+wal -l dark
+wal --theme -l dark
+wal --theme -l
+wal --theme gruvbox-medium
+wal --theme base16-gruvbox-soft
 clear
-nvim --server localhost:2000 --remote-ui
-nvim --listen localhost:2000
-nvim --listen localhost:200
-nvim --server localhost:2000 --remote-ui
-nvim --server localhost:2001 --remote-ui
-nvim --listen localhost:2001
-nvim --listen localhost:2002
-clear
-nvim --remote
-clear
-nvim --server localhost:2000 --remote-ui
-nvim --listen localhost:2000
-clear
-nvim --server localhost:2000 --remote-send ":cd ~/Yalix/homes/lousp/dotfiles<CR>"
-nvim --server localhost:2000 --remote-send "<space>e"
-clear
-lua idk.lua
-clear
+ls
+cl
+ela
+l
+al
+sals
+la
+sl
+slss
+ss
+l
 exit
-nvim --server localhost:2000 --remote-ui
-nvim --server localhost:2000 --remote-ui
-nvim --server localhost:2000 --remote-ui
-clear
-nvim --server localhost:2000 --remote-ui
-nvim idk.lua
-while true {nvim --listen localhost:2000}
-yy
-nvim --listen localhost:2000 --servername main
-nvim --server localhost:2000 --remote-ui
-nvim --listen localhost:2000
-clear
-nvim --listen localhost:2000
-nvim --server localhost:2000 --remote-ui
-clear
-users
-clear
+nix shell nixpkgs#pywal
+wallust
+wallust theme
+wallust theme --help
+wallust theme Gruvbox-Material-Dark
 ls
-dls
-dl
-sldsld
-sld
-sd
-sld
-clear
-nvim --server localhost:2000 --remote-send ':lua require("base46").load_all_highlights()<CR>'
-nvim --listen localhost:2000
-clear
-clkear
-clear
-ls
-clsls
-ldsldslds
-ldsdlsdls
-dlsdls
-lds
-dlsdlsdls
-dls
-ldsld
-slds
-ld
-slds
-dls
-lds
-ldslds
-dlsdlsdlsds
-clear
-nvim
-clear
-vim
-yy
-clear
-vim
-clear
-yy
-cçear
-clear
-yy
+l
 clear
 ls
 clear
-nvim server.lua
-clear
-lua server.lua
-yy
-nvim server.lua
-clear
-try {nvim --listen localhost:2000} catch {echo no}
-try {nvim --listen localhost:2000 >> /dev/null} catch {echo no}
-try {nvim --listen localhost:2000 >> /dev/null} catch {nvim}
-try {nvim --listen localhost:2000} catch {nvim}
-try {nvim --listen localhost:2000} exceot {nvim}
-try {nvim --listen localhost:2000} except {nvim}
-try {nvim --listen localhost:2000} catch {nvim}
-try {nvim --listen localhost:2000} catch {;nvim}
-try {nvim --listen localhost:2000} catch {sleep 1sec; nvim}
-try {nvim --listen localhost:2000} catch {sleep 1; nvim}
-try {nvim --listen localhost:2000} catch {sleep 1se; nvim}
-try {nvim --listen localhost:2000} catch {sleep 1sec; nvim}
-try {nvim --listen localhost:2000} catch {sleep 0.1sec; nvim}
-try {nvim --listen localhost:2000} catch {sleep 0.0000001sec; nvim}
-nu -c "try {nvim --listen localhost:2000} catch {sleep 0.0000001sec; nvim}"
-bash
-lua server.lua
-yy
-clear
-yy
-clear
-yy
-clear
-yy
-clçear
-clear
-vim
-clear
-ee
-clear
-lua server.lua
-exit
-clear
-lua server.lua
-clear
-yy
-clear
-lua server.lua
-clear
-yy
-lua server.lua
-yy
-clear
-yy
-lua server.lua
-clear
-yy
-clear
-yy
-nvim server.lua
-lua server.lua
-nvim server.lua
-lua server.lua
-clear
-nvim server.lua
-clear
-lua server.lua
-clear
-nvim server.lua
-lua server.lua
-clear
-yy
-lua server.lua
-nvim server.lua
-cler
-cear
-clear
-lua server.lua
-clear
 ls
-yy
-cleaa
+wallust 
+wallust cs
+wallust run ~/Yalix/assets/wallpapers/berries.jpg
+nmtui
 clear
-yy
+nmtui
 clear
-yy
-clear
-yy
-chmod +x ./test.hs
-./test.hs
-clear
-yy
-./test.hs
-runghci
-runghc
-clear
-yy
-./test.hs
-yy
-./test.hs
-yy
-./test.hs I love Shebangs
-ln -sf ./test.hs ~/.local/bin/haskellscipt
-haskellscript
-ln -sf ~/test.hs ~/.local/bin/haskellscipt
-cat ~/.local/bin/haskellscipt
-haskellscript
-haskellscript a
-link
-?
-clear
-haskellscript a
-haskellscript
-haskellscipt
-haskellscipt I love shebangs
-alsamixer
-clear
-ls
-clear
-chmod +x ./bash.sh
-clear
-bash.sh Jhuan
-clear
-./bash.sh
-./bash.sh Lousp
-./bash.sh Jhuan
-clear
-exit
-clear
-./bash.sh Jhuan
-./bash.sh
-clear
-./bash.sh Lousp
-./bash.sh Jhuan
-clear
-./bash.sh
-clear
-./bash.sh
-clear
-read
-read --help
-clear
-bash
-clear
-./bash.sh
-matrix
-clear
-matrix
-clear
-clear; fastfetch
-clear
-exit
-yy
-clear
-yy
-clear
-nhs
-yy
-clear
-nhs
-yy
-clear
-ls
-yy
-:q
-yy
-cleat
-clear
+cd Yalix
+gd .
+rm -rf homes/lousp/dotfiles/tmux/plugins/

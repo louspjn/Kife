@@ -77,3 +77,4 @@ alias nos = nh os switch
 alias nosu = nh os switch -u
 alias pipes = pipes
 alias recorder = wf-recorder
+alias t = tmux

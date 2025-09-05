@@ -29,6 +29,8 @@
     eslint
     lua-language-server
     haskellPackages.haskell-language-server
+    zig
+    zls
     grimblast
 
     neovim
@@ -36,7 +38,6 @@
     starship
     fastfetch
     yazi
-    zellij
 
     swww
     waypaper
@@ -45,6 +46,7 @@
 
     bibata-cursors
     papirus-icon-theme
+    libadwaita
     nerd-fonts.jetbrains-mono
 
     bat
@@ -60,6 +62,7 @@
     waybar
     kitty
     rofi
+    tmux
     # alacritty
     # ghostty
   ];
@@ -79,7 +82,11 @@
     };
   };
 
-  services.hypridle.enable = true;
+  services = {
+    hypridle.enable = true;
+    dunst.enable = true;
+  };
+
   programs.git = {
     enable = true;
 

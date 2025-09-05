@@ -1,0 +1,9 @@
+rm ~/.config/nushell -rf; ./link.lua
+ls
+r
+r stow
+i stow
+ls
+clear
+yy
+clear

@@ -10,7 +10,7 @@
         name = "Aio";
         variables = {
           assets = {
-            wallpapers = ./assets/wallpapers;
+            wallpapers = ../assets/wallpapers;
           };
         };
         modules = [

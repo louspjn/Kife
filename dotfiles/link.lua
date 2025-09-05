@@ -1,9 +1,6 @@
-#! /usr/bin/env nix-shell
---[[
-#! nix-shell -i lua -p lua
-]]
+#! /usr/bin/env lua
 
-local dotfiles_dir = os.getenv("HOME") .. "/Yalix/homes/lousp/dotfiles"
+local dotfiles_dir = os.getenv("HOME") .. "/Linux/dotfiles"
 local config_dir = os.getenv("HOME") .. "/.config"
 
 local dotfiles = {}

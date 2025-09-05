@@ -1,0 +1,6 @@
+[base]
+pacdiff_warn = true
+aur_verification_prompt = false
+
+[bin]
+sudo = 'sudo'

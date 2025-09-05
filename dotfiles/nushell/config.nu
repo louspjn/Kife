@@ -78,3 +78,7 @@ alias nosu = nh os switch -u
 alias pipes = pipes
 alias recorder = wf-recorder
 alias t = tmux
+alias u = ame upgrade
+alias r = ame remove
+alias i = ame install
+alias s = ame search

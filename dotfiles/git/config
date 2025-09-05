@@ -1,0 +1,9 @@
+[user]
+  name = "louspjn"
+  email = "nycojn@gmail.com"
+
+[credential]
+  helper = "store"
+
+[init]
+  defaultBranch = "main";

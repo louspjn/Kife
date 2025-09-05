@@ -18,12 +18,12 @@
     "separator": "  "
   },
   "logo": {
-    "height": 10,
     "padding": {
-      "left": 1
+      "left": 1,
+      "top": 1
     },
-    "source": "~/Yalix/assets/imgs/Nix.txt",
-    "width": 24
+    "source": "arch_small",
+    "width": 6
   },
   "modules": [
     {
@@ -31,12 +31,8 @@
       "type": "custom"
     },
     {
-      "key": " ",
-      "type": "os"
-    },
-    {
       "key": " ",
-      "type": "kernel"
+      "type": "os"
     },
     {
       "key": " ",

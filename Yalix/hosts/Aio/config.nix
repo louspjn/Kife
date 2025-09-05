@@ -4,7 +4,7 @@
   ...
 }: {
   env = {
-    NH_FLAKE = "/home/lousp/Yalix";
+    NH_FLAKE = "/home/lousp/Linux/Yalix";
     NIXPKGS_ALLOW_UNFREE = "1";
     NIXOS_OZONE_WL = "1";
     EDITOR = "nvim";

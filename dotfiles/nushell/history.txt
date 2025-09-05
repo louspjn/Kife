@@ -17,3 +17,13 @@ cd ..
 rm -rf ~/.config/nushell/; ./link.lua
 clear
 yy
+gd .
+gc "Changing repo name"
+gp
+i waypaper
+i
+i waypaper
+i python-screeninfo
+i waypaper
+clear
+yy

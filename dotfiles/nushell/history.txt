@@ -262,3 +262,9 @@ cd Code
 cler
 clear
 yy
+gd .
+gc "idk"
+gp
+clear
+ls
+clear

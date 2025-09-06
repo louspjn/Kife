@@ -27,7 +27,7 @@ window#waybar #window {
 }
 
 #workspaces {
-  background-color: @surface_container_high;
+  background-color: @color8;
   border-radius: 6px;
 }
 
@@ -40,33 +40,28 @@ window#waybar #window {
 #workspaces button:hover {
   box-shadow: none;
   text-shadow: none;
-  background: @surface_container;
+  background: @background;
   border-radius: 5px;
-}
-
-#workspaces button.focused {
-  background-color: transparent;
-  color: @on_primary;
 }
 
 #clock {
   margin: 0px 8px;
-  background-color: @surface_container_high;
-  color: @on_surface;
+  background-color: @color8;
+  color: @foreground;
   padding: 0 10px;
   border-radius: 8px;
 }
 
 #custom-logo {
   margin-left: 10px;
-  color: @primary;
+  color: @color4;
 }
 
 #battery {
   margin-right: 10px;
-  color: @on_surface;
+  color: @foreground;
 }
 
 #battery.warning {
-  color: @error;
+  color: @color9;
 }

@@ -151,3 +151,45 @@ wallust theme Catppuccin-Macchiato
 cd do
 wallust theme Gruvbox-Material-Dark
 yy
+gd .
+gc "Adding wallust"
+gp
+poweroff
+cd dot
+yy
+clear
+wallust theme Gruvbox-Material-Dark
+wallust theme Gruvbox
+nvim
+wallust theme Gruvbox-Dark
+nvim
+wallust theme Gruvbox-Material-Dark
+cd waybar
+wallust theme list
+wallust theme Everforest-Dark-Soft
+wallust theme Everforest-Dark-Hard
+wallust theme Gruvbox-Material-Dark
+yy
+cd .chae
+cd .cache/
+ls
+cd wal
+ls
+wallust theme Gruvbox-Material-Dark
+i python-pywalfox
+pywalfox install
+chmox +x /usr/lib/python3.13/site-packages/pywalfox/bin/main.sh
+chmod +x /usr/lib/python3.13/site-packages/pywalfox/bin/main.sh
+sudo chmod +x /usr/lib/python3.13/site-packages/pywalfox/bin/main.sh
+pywalfox install
+sudo pywalfox install
+pywalfox
+pywalfox install -g
+pywalfox install
+/usr/lib/python3.13/site-packages/pywalfox/bin/main.sh
+pywalfox install
+wallust theme Gruvbox-Material-Dark
+wallust theme Gruvbox-Dark
+wallust theme Gruvbox-Material-Dark
+yy
+gd ,

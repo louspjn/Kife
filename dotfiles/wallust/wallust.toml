@@ -8,3 +8,4 @@ kitty = { template = 'kitty.conf', target = '~/.config/kitty/colors.conf' }
 waybar = { template = 'waybar.css', target = '~/.config/waybar/colors.css' }
 hypr = { template = 'hyprland.conf', target = '~/.config/hypr/colors.conf' }
 starship = { template = 'starship.toml', target = '~/.config/starship.toml'}
+pywalfox = { template = 'pywalfox.json', target = '~/.cache/wal/colors.json' }

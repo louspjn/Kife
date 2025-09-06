@@ -1,21 +1,21 @@
 palette = 'colors'
 
 [palettes.colors]
-color1 = '#ffb784'
-color2 = '#502500'
-color3 = '#d7c3b7'
-color4 = '#261e18'
-color5 = '#502500'
-color6 = '#19120d'
-color7 = '#19120d'
-color8 = '#ffb784'
-color9 = '#c8ca94'
+color1 = '#3C3836'
+color2 = '#EA6962'
+color3 = '#A9B665'
+color4 = '#D8A657'
+color5 = '#7DAEA3'
+color6 = '#D3869B'
+color7 = '#89B482'
+color8 = '#D4BE98'
+color9 = '#3C3836'
 
 format = "$directory$nix_shell$rust$lua$haskell$nodejs$git_branch$git_status\n$character"
 
 [character]
 error_symbol = "[λ](bold red)"
-success_symbol = "[λ](bold color1)"
+success_symbol = "[λ](bold color4)"
 
 [git_branch]
 style = "bold red"

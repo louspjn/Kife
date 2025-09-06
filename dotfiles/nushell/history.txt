@@ -33,3 +33,121 @@ gp
 yy
 clear
 yy
+gd .
+gc "Removing post_command from waypaper config"
+gp
+i wallust
+wallust
+ame -Q
+ame -Qs
+ame -h
+pacman -h
+pacman --help
+man pacman
+clear
+ame -Q
+clear
+i bibata-cursors
+i bibata
+i hyprcursor
+i hyprpm
+r hyprland
+i hyprland-git
+clear
+s hyprpm
+hyprpm
+hyprpm add https://github.com/hyprwm/hyprland-plugins
+hyprpm update
+i meson cpio cmake
+hyprpm update
+clear
+git -i
+clear
+ls
+clear
+hyprpm update --help
+hyprpm update
+cler
+clear
+hyprpm update
+clear
+hyprpm
+hyprpm add https://github.com/hyprwm/hyprland-plugins
+hyprpm update
+hyprpm update -s
+hyprpm update --no-shallow
+hyprland --version
+hyprpm update --hl-url /usr/bin/hyprland
+clear
+r hyprcursor
+r hyprcursor -f
+r hyprcursor -- -f
+r hyprcursor --forrce
+r hyprcursor --force
+r hyprcursor
+ame -Rns hyprcursor
+ame -- -Rns hyprcursor
+sudo pacman -Rns hyprcursor
+i hyprland-git
+pkill Hyprland
+i hyprland-git
+r hyprland hyprcursor
+r hyprland hyprcursor grimblast-git
+i hyprland-git grimblast-git
+r hyprlang
+r hyprlang libhyprlang
+r hyprlang hyprcursor hypridle hyprland hyprland-qt-support hyprlock
+i hyprland-git grimblast-git
+i hyprlang-git
+i hyprland-git grimblast-git
+ame -Q
+ame -Q | rg hypr
+r hyprcursor hyprgraphics hyprland hyprland-protocols-git hyprland-qt-support hyprland-qtutils hyprland-git hyprutils-git hyprwayland-scanner
+r hyprcursor hyprgraphics hyprland hyprland-protocols-git hyprland-qt-support hyprland-qtutils hyprlang-git hyprutils-git hyprwayland-scanner
+i hyprland-git grimblast-git
+nmtui
+ame -Q | rg hypr
+r hyprcursor hyprgraphics hyprland hyprland-protocols-git hyprland-qt-support hyprland-qtutils hyprlang-git hyprutils-git hyprwayland-scanner
+r hyprcursor hyprgraphics hyprland hyprland-qt-support hyprland-qtutils hyprwayland-scanner
+i hyprland-git grimblast-git
+i hyprland hyprlock hypridle grimblast-git
+exit
+wallust theme Gruvbox-Material-Dark
+ls
+yy
+nvim
+clear
+nvim
+wallust --help
+cd .config
+ls
+cd wallust/
+ls
+clear
+i bibata-cursor-theme
+clear
+wallust theme Gruvbox-Material-Dark
+wallust theme Gruvbox-Material-Dark --print
+wallust theme Gruvbox-Material-Dark --show-colors
+wallust theme Gruvbox-Material-Dark --help
+wallust theme Gruvbox-Material-Dark -p
+wallust theme Gruvbox-Material-Dark
+yy
+cd 
+cd dot
+./link.lua
+clear
+ls
+cd rust
+ls
+cd System/
+ls
+cd dotfiles/
+ls
+wallust theme Gruvbox-Material-Dark
+ls
+clear
+wallust theme Catppuccin-Macchiato
+cd do
+wallust theme Gruvbox-Material-Dark
+yy

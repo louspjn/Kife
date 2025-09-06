@@ -1,0 +1,10 @@
+backend = "fastresize"
+color_space = "lch"
+
+palette = "dark"
+
+[templates]
+kitty = { template = 'kitty.conf', target = '~/.config/kitty/colors.conf' }
+waybar = { template = 'waybar.css', target = '~/.config/waybar/colors.css' }
+hypr = { template = 'hyprland.conf', target = '~/.config/hypr/colors.conf' }
+starship = { template = 'starship.toml', target = '~/.config/starship.toml'}

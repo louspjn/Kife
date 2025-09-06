@@ -10,7 +10,7 @@
   padding: 2px 3px;
 
   font-weight: 600;
-  color: @on_surface;
+  color: @foreground;
 
   margin-top: 0px;
   margin-bottom: 1px;
@@ -18,8 +18,8 @@
 
 window#waybar {
   background-color: @background;
-  color: @on_surface;
-  border-bottom: 3px solid @primary;
+  color: @foreground;
+  border-bottom: 3px solid @color4;
 }
 
 window#waybar #window {

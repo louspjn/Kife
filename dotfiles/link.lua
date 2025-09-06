@@ -7,9 +7,14 @@ local dotfiles = {}
 do
   local p = io.popen("ls -A " .. dotfiles_dir)
   for file in p:lines() do
-    table.insert(dotfiles, file)
+    if file ~= "nolink" then
+      table.insert(dotfiles, file)
+    else
+      goto continue
+    end
   end
   p:close()
+    ::continue::
 end
 
 local function alreadylinked(path)

@@ -193,3 +193,24 @@ wallust theme Gruvbox-Dark
 wallust theme Gruvbox-Material-Dark
 yy
 gd ,
+gd .
+gc "Adding pywalfox"
+gp
+clear
+cd /etc
+ls
+yy
+mkdir nolink
+v nolink/pacman.conf
+sudo nvim pacman.conf
+cat ./pacman.conf
+nvim nolink/pacman.conf
+nvim link.lua
+yy
+clear
+./link
+./link.lua
+clear
+yy
+clear
+gd ,

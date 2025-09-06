@@ -272,3 +272,5 @@ gd .
 gc "idk"
 gp
 yy
+gd .
+gc "idk"

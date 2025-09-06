@@ -243,3 +243,22 @@ clear
 yy
 clear
 cd ...
+gd .
+gc "IDK"
+gp
+s nerd-font
+i ttf-nerd-fonts-symbols
+i nerd-fonts-fontconfig
+clear
+ame -Q | rg fonts
+ame -Q | rg font
+i noto-fonts-cjk
+i noto-fonts-cjk; notify-send "Ame" "Instalation finished"
+sudo fc-cache -fv 
+pkill Discord
+clear
+mkdir Code
+cd Code
+cler
+clear
+yy

@@ -15,7 +15,7 @@ return {
   	"nvim-treesitter/nvim-treesitter",
   	opts = {
   		ensure_installed = {
-  			"nix", "lua", "rust", "haskell", "zig", "c", "hyprlang", "bash", "cpp"
+  			"nix", "lua", "rust", "haskell", "zig", "c", "hyprlang", "bash", "cpp", "markdown"
   		},
   	},
   },

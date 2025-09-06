@@ -2,5 +2,7 @@
 
 <h1 align="center">Arch - NixOS</h1>
 
-<img src="./assets/showcase/Rice.png">
+<!-- # NixOS Rice -->
+<!-- <img src="./assets/showcase/RiceNixOS.png"> -->
+
 <!-- <img src="./assets/showcase/lockscreen.png"> -->

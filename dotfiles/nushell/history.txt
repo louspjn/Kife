@@ -1,1 +1,34 @@
-rm ./dotfiles/nushell/history.txt
+gd .; gc "idk"; gp; rm ./dotfiles/nushell/history.txt
+clear
+i niri
+niri
+clear
+ls
+fuzzen
+fuzzel
+clear
+firefox
+exit
+rofi -show drun
+rofi -show drun
+pkill Hyprland
+pkill Niri
+pkill niri
+niri
+pkill niri
+clar
+yy
+niri validate
+yy
+niri validate
+i xwayland-satellite
+yy
+cd dot
+./link.lua
+clear
+rofi -show drun
+swww init
+swww 
+swww restore
+swww
+yy

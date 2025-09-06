@@ -32,3 +32,8 @@ swww
 swww restore
 swww
 yy
+gd .; gc "NiriWM: Started, but not finished :)"; gp
+firefox
+pkill niri
+yy
+cd ...

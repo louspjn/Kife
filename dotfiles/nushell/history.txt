@@ -268,3 +268,7 @@ gp
 clear
 ls
 clear
+gd .
+gc "idk"
+gp
+yy

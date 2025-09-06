@@ -214,3 +214,32 @@ clear
 yy
 clear
 gd ,
+gd .
+gc "Adding pacman config"
+gp
+clear
+clear
+exit
+yy
+sudo yy
+sudo yazi
+clear
+yy
+u
+y
+yy
+cd
+sudo yazi
+clear
+yy
+sudo yazi
+sudo nvim /etc/pacman.conf
+u
+clear
+wallust theme Gruvbox-Material-Dark
+pkill waybar; hyprctl reload
+hyprctl reload
+clear
+yy
+clear
+cd ...

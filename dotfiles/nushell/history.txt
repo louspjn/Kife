@@ -1,1 +1,11 @@
 rm -rf ./dotfiles/nushell/history.txt
+gd .
+gc "idk"
+clear
+ls
+dls
+dsdlsdlsld
+sldsldssd
+sldkddfds wee
+{ 23  s  <\n>}
+yy

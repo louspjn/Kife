@@ -18,3 +18,11 @@ nmtui
 clear
 yy
 gd 
+gd .
+gc "idk"
+gp
+gs
+yy
+ls
+clear
+yy

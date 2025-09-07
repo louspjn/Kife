@@ -37,3 +37,48 @@ firefox
 pkill niri
 yy
 cd ...
+gd .; gc "idk"; gp
+reboot
+i walker
+i rebos
+rebos
+rebos setup
+rebos gen
+i walker-bin
+walker
+rg rbos
+rg rebos
+i papirus-icon-theme
+i fzf
+clear
+fzf
+cd /home/lousp/.local/state/rebos
+ls
+yy
+clear
+walker
+walker --gapplication-service
+walker
+clear
+r rofi
+yy
+i hyprcursor
+recorder
+recorder --help
+recorder -f recording.mp4
+wallust theme Gruvbox-Material-Dark
+i yt-dlp
+yt-dlp 
+yt-dlp --help
+yt-dlp https://youtube.com
+ls
+yy
+clear
+cd dot
+cd hypr/
+i chromium
+r chromium
+wallust theme Gruvbox-Material-Dark
+firefox
+poweroff
+yy

@@ -9,3 +9,12 @@ sldsldssd
 sldkddfds wee
 { 23  s  <\n>}
 yy
+gd .
+gc "idk"
+g
+gp
+clear
+nmtui
+clear
+yy
+gd 

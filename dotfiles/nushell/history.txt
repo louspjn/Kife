@@ -247,3 +247,25 @@ rebos gen diff 7 6
 clear
 ls
 clear
+gd .
+gc "adding rebos config"
+gp
+clear
+clear
+yy
+clear
+hx
+helix
+hyprctl keyword cursor:zoom_factor (awk "BEGIN {print (hyprctl getoption cursor:zoom_factor | grep 'float:' | awk '{print $2}') - 0.5}")
+hyprctl keyword cursor:zoom_factor (awk "BEGIN {print $(hyprctl getoption cursor:zoom_factor | grep 'float:' | awk '{print $2}') - 0.5}")
+hyprctl monitor eDP-1 scale 0.6
+hyprctl version
+invalid scale passed to monitor eDP-1, failed to find a clean divisor. Suggested nearest scale: 0.666667
+cleat
+clear
+pkill Hyprland
+btop
+clear
+:w
+clear
+yy

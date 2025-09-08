@@ -26,3 +26,224 @@ yy
 ls
 clear
 yy
+gd .
+gc "idk"
+gp
+ls
+gs
+git commit -a
+$env.EDITOR = nvim
+$env.EDITOR = "nvim"
+git commit -a
+cçear
+clear
+cd Downloads/
+clear
+ls
+clear
+cd Downloads/
+ls
+sudo dd if=./nixos-graphical-25.05.809451.fe83bbdde2cc-x86_64-linux.iso of=/dev/sda
+exit
+t
+i steam
+nmtui
+sudo dd if=./nixos-graphical-25.05.809451.fe83bbdde2cc-x86_64-linux.iso of=/dev/sda bs=8MB status=progress
+sudo yazi
+cd /etc
+sudo nvim pacman.conf
+clear
+i steam
+sudo pacman -S steam
+cd ,,
+cd ..
+clear
+sudo pacman -Syu
+clear
+u
+pkill Hyprland
+rebis
+rebos
+rebos init-config
+rebos config
+rebos config init
+clear
+rebos api
+rebos api echo
+rebos api echo hi
+rebos api echo "hi"
+rebos api echo success "hi"
+rebos
+rebos gen
+rebos
+rebos managers
+clear
+rebos gen
+rebos setup
+rebos 
+rebos config
+rebos gen current
+rebos gen current build
+rebos gen 
+rebos
+rebos gen
+rebos gen commit
+rebos gen commit "First?"
+rebos gen current build
+cowsay
+cowsay hi
+rebos gen commit "Remove cowsay"
+rebos gen current build
+clear
+rebos
+rebos gen
+rebos gen diff
+rebos gen diff 1 2
+rebos gen diff list
+rebos gen list
+rebos gen current set 1
+cowsay
+rebos gen current set 2
+rebos gen current set 1
+rebos gen current Code/
+rebos gen current 
+rebos gen current roolback 
+rebos gen current roollback 
+rebos gen current rollback 
+rebos gen current rollback 1
+rebos gen current rollback
+rebos gen current rollback 2
+rebos gen current rollback 1
+rebos gen current rollback 0
+cowsay
+rebos gen current rollback 1
+rebos gen current rollback 0
+rebos gen list
+cowsay
+rebos gen
+rebos gen current
+rebos gen current rollback
+rebos gen current rollback 1
+rebos gen current rollback 0
+rebos gen current rollback -1
+rebos gen current rollback 0
+rebos gen
+rebos gen list
+rebos gen current
+rebos gen current set 1
+rebos gen current build
+cowsay
+cowsay "I use Arch btw"
+cowsay --help
+cowsay -e
+cowsay -e "^^"
+cowsay -e "^^" hi
+cowsay -e "°°" hi
+cowsay -e "°°°" hi
+cowsay -e "" hi
+cowsay hi
+cowsay -e "^^" hi
+cowsay -e "" hi
+cowsay -e "~~" hi
+cowsay -e "~ ~" hi
+cowsay -e "==" hi
+cowsay -e "--" hi
+cowsay -e "f" hi
+cowsay -e "ff" hi
+cowsay -e "$$" hi
+cowsay -e "$$" "I love money"
+rebos gen current
+rebos gen current to-latest
+rebos gen current build
+clear
+ame -Q
+rebos gen commit "Adding some packages"
+git clone https://gitlab/oglo12/rebos
+nmtui
+git clone https://gitlab/oglo12/rebos
+git clone https://gitlab.com/oglo12/rebos
+cd rebos
+ls
+yy
+cd ..
+clear
+rebos gen current build
+ame remove hyprland walker wallust kitty helix
+ame remove hyprland walker wallust kitty
+walker
+ame -Q
+ame -Q | rg walker
+ame remove hyprland walker-bin wallust kitty
+ame remove walker-bin wallust kitty
+rebos gen current build
+rebos gen commit "commenting hyprland and changing from walker to walker-bin"
+rebos force-unlock
+rebos gen commit "commenting hyprland and changing from walker to walker-bin"
+rebos gen current build
+hx
+helix
+yy
+clear
+ame remove grimblast-git hyprland
+ame remove hyprlock waybar firefox
+ame remove nushell
+ame remove starship
+ame remove ttf-jetbrains-mono-nerd-fonts
+ame remove ttf-jetbrains-mono-nerd-font
+ame -Q
+ame -Q | rg jetbrains
+ame remove ttf-jetbrains-mono-nerd
+rebos gen commit "adding more packages"
+rebos gen current build
+exit
+nu
+ame remove fastfetch
+alias switchgen = rebos gen current build
+alias commitgen = rebos gen commit
+commitgen "Adding fastfetch"
+switchgen
+ame -Q
+clear
+commitgen "Adding a lot of packages"
+rebos gen diff 7 6
+ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf
+ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo cargo-watch rust-analyzer pipewire-audio pipewire-jack
+ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack
+ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio
+ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio walker-bin
+ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio walker-bin typescript-language-server
+alias commitgen = rebos gen commit
+alias switchgen = rebos gen current build
+commitgen "adding pipewire-jack and why I need nodejs?"
+clear
+pkill ame
+ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio walker-bin typescript-language-server firefox
+clear
+ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio walker-bin typescript-language-server firefox
+ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio walker-bin typescript-language-server
+alias switchgen = rebos gen current build
+switchgen
+alias commitgen = rebos gen commit
+commitgen "fix"
+switchgen
+firefox
+commitgen "test"
+switchgen
+ame install waybar firefox walker-bin
+switchgen
+commitgen "ok"
+ame remove discord
+switchgen
+commitgen "adding discord"
+switchgen
+yy
+./link.lua
+clear
+y
+clear
+cd ..
+rebos
+rebos gen diff 7 6
+clear
+ls
+clear

@@ -1,0 +1,11 @@
+add = "ame install #:?"
+remove = "ame remove #:?"
+sync = "ame sync"
+upgrade = "upgrade" 
+
+plural_name = "system packages"
+
+hook_name = "system_packages"
+
+[config]
+many_args = true

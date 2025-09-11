@@ -269,3 +269,195 @@ clear
 :w
 clear
 yy
+gd .
+gc "idk"
+gp
+poweroff
+cd Downloads/
+ls
+sudo dd if=./void-live-x86_64-20250202-base.iso of=/dev/sda bs=8MB status=progress
+cd /
+cd /dev
+ls
+nm
+nmtui-connect 
+cd -
+cd ..
+cd -
+cd - >> /dev/null
+pkill Discord
+clear
+qemu
+i qemu
+sudo pacman -S qemu
+clear
+i qemu
+clear
+qemu-system-x86_64 
+clear
+i sway
+sway
+clear
+mkdir VMs
+cd VMs/
+qemu-img create -f qcow2 void.qcow2 20G
+qemu-system-x86_64 \<\n>  -enable-kvm \<\n>  -m 2048 \<\n>  -cpu host \<\n>  -smp 2 \<\n>  -hda void.qcow2 \<\n>  -cdrom void-live-x86_64-<data>.iso \<\n>  -boot d
+nmtui-connect 
+clear
+for
+for c in 70..200 {echo $c}
+for c in 70200 {echo $c}
+for c in 70 200 {echo $c}
+for c in 70-200 {echo $c}
+for c in 70..200 {echo $c}
+70..200
+for c in 70..200 {print c}
+for c in 70..200 {print $c}
+for c in 200..400 {print $c}
+clear
+for c in 400..1000 {print $c}
+clear
+for c in 1001..2000 {print $c}
+2000 / 3
+2000 / 4
+2000 / 5
+for c in 1001..2000 {<\n>if (($c / 2) == 400.0) {<\n>print \n\n<\n>print $c<\n>}<\n>else {<\n>print $c<\n>}<\n>}
+for c in 1001..2000 {<\n>if (($c / 2) == 400.0) {<\n>print \n\n<\n>print $c<\n>}<\n>}
+for c in 1001..2000 {<\n>if (($c / 2) == 400.0) {<\n>print \n\n<\n>print $c<\n>}<\n>print $c<\n>}
+clear
+for c in 0.. {print $c}
+cleae
+clear
+helix
+yy
+clear
+hyprland
+clear
+i steam
+clear
+cd VMs
+ls
+qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom void-live-x86_64-<data>.iso -boot d
+clear
+qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom void-live-x86_64-<data>.iso -boot d
+cear
+clear
+qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
+qemu-img create -f qcow2 void.qcow2 20G
+qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
+sleep 1sec; hyprctl dispatch fullscreen
+qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
+clear
+clear
+qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
+clear
+poweroff
+waybar
+nmtui
+syse
+sys
+sudo nvim /etc/pacman.conf
+sudo pacman -Sy
+i vulkan
+s vulkan
+i vulkan-intel vulkan-tools
+btop
+powerof
+poweroff
+cd VMs/
+ls
+clear
+nmtui-connect 
+qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
+qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -boot d
+qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
+clear
+fastfetch --help
+fastfetch -c default
+fastfetch -c
+fastfetch --no-config
+i neofetch
+neofetch 
+lsblk
+clear
+qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -boot dd
+u
+clear
+cd hypr
+i virt-manager
+clear
+i libvirtd
+i libvird
+libvirtd 
+i libvirt
+systemctl enable libvirt
+systemctl enable libvirtd
+systemctl start libvirtd
+clear
+i flatpak
+s hypr
+i hyprpolkitagent
+i hyprdockl
+i hyprdock
+clear
+hyprland-dialog 
+hyprland-dialog "hi"
+hyprland-dialog --help
+hyprland-dialog -h
+hyprland-dialog
+hyprland-dialog 
+hyprland-dialog a
+i hyprpolkitagent
+hyprwayland-scanner 
+hyprwayland-scanner --help
+hyprwayland-scanner -h
+hyprcursor-util 
+hyprcursor-util a
+hyprpolkitagent &
+ame -Q hyprpolkitagent
+ame -Q hypr
+clear
+hyprpolkitagent &
+ame -Q | rg hyprpolkitagent
+systemctl --user start hyprpolkitagent
+yy
+i dnsmasp
+i dnsmasq
+s java
+i java-21-jdk
+i java-20-jdk
+i jdk
+s jdk
+i jdk23-openjdk
+i jdk24-openjdk
+java
+clear
+cd Downloads/
+ls
+java -jar ~/Downloads/SKlauncher-3.2.12.jar
+pkill java
+cd Amethyst
+mkdir Amethyst
+cd Amethyst/
+ls
+clear
+cargo new
+cargo new ayst
+yy
+clear
+helix
+yy
+./link.lua
+helix
+yy
+cd ..
+./link.lua
+ls ~/.config/helix/
+rmdir ~/.config/helix/
+./link.lua
+:w
+clear
+yy
+hx
+helix
+yy

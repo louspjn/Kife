@@ -82,3 +82,4 @@ alias u = ame upgrade
 alias r = ame remove
 alias i = ame install
 alias s = ame search
+alias hx = helix

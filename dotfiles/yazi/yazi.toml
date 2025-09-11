@@ -9,7 +9,7 @@ sort_by = "natural"
 [[opener.edit]]
 block = true
 desc = "$EDITOR"
-run = "nvim -- \"$@\""
+run = "helix -- \"$@\""
 
 [preview]
 max_height = 3600

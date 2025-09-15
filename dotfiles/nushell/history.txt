@@ -1,463 +1,313 @@
-rm -rf ./dotfiles/nushell/history.txt
-gd .
-gc "idk"
+rm ~/.config/nushell/history.txt
+yt-dlp --cookies-from-browser firefox
+yt-dlp --help
+yt --help
+i ytfzf
+ytfzf
+ytfzf --help
+ytfzf
+ytfzf https://github.com
+ytfzf a
 clear
+r ytfzf
+yt --help
+yt --help | less
+clear
+yt-dlp --help
+yt-dlp  --cookies-from-browser firefox:~/.config/mozilla
+ls ~/.mozilla/firefox/
+yt-dlp  --cookies-from-browser firefox:~/.mozilla/firefox
+yt-dlp  --cookies ~/Downloads/cookies.txt
+alsamixer 
+alsamixer 90
+alsamixer --help
+yy
+poweroff
+yy
+clear
+r pipewire-pulse
+r pulseaudio
+i pipewire-pulse
+i pulseaudio
+alsamixer
+clear
+pipewire
+pipewire --help
+pkill pipewire
 ls
+yy
+cargo add hematite-nbt
+cd schemgen
+ls
+cd Code/
+cd schemrs/
+ls
+cargo run
+cargo add hematite_nbt
+cargo run
+cat ./Cargo.toml
+cargo add fastnbt
+cargo run
+cargo add mc_schem
+cargo run
+cargo doc --open<\n>
+alsamixer
+:q
+yy
+cd
+clear
+yy
+ls
+clear
+pip
+python
+s python-mcschematic
+python3 -m venv venv
+ls
+./venv/bin/activate
+cat ./venv/bin/activate
+source ./venv/bin/activate
+clear
+alias pip = ./venv/bin/pip
+alias python = ./venv/bin/python
+pip install mcschematic
+python main.py
+mkdir myschems
+touch myschems/my_cool_schematic.schem
+python main.py
+cat myschems/my_cool_schematic.schem
+mkdir output
+touch output/output.schem
+rm -rf ./myschems/
+python main.py
+mkdir ~/.minecraft/schematics
+ln -sf ~/Code/schemgen/output/output.schem ~/.minecraft/schematics/output.schem
+mkdir .minecraft/config/worldedit/schematics/
+mkdir ~/.minecraft/config/worldedit/schematics/
+rm -rf .minecraft/
+mv ~/.minecraft/schematics/output.schem ~/.minecraft/config/worldedit/schematics/
+clear
+python main.py
+cat ./main.py
+python main.py
+clear
+python main.py
+cat ./main.py
+clear
+cat --help
+cat -u ./main.py
+cat ./main.py -p
+cat ./main.py -p --wrap never
+cat ./main.py -p -P never
+cat ./main.py -p -P
+clear
+cat ./main.py -p -P
+clear
+python main.py
+cat ./main.py -p -P
+cat ./main.py -p -P | wl-copy
+cat ./main.py -p -P
+cat ./main.py -p -P | wl-copy
+python main.py
+cat ./main.py -p -P | wl-copy
+python main.py
+clear
+python main.py
+clear
+python main.py
+clear
+python main.py
+def cf [file] {<\n>bat -pP $file | wl-copy<\n>}
+cf ./main.py
+cd schem
+alias python = ./venv/bin/python
+alias pip = ./venv/bin/pip
+clear
+alias pip = ./venv/bin/pip
+python main.py
+def cf [file] {<\n>bat -pP $file | wl-copy<\n>}
+cf ./main.py
+clear
+python main.py
+hx ./output/output.schem
+python main.py
+hx ./output/output.schem
+python main.py
+cf ./main.py
+python main.py
+cf ./main.py
+python main.py
+clear
+python main.py
+cf ./main.py
+python main.py
+cf ./main.py
+python main.py
+yy
+poweroff
+yy
+l
+unzip `ModPack do Nakas.zip`
+l
+yy
+clear
+hx
+ls
+yy
+java --version
+cd /home/lousp/.minecraft/libraries/com/mojang
+ls
+rm -rf ./jtracy/
+ls
+ls ~/Downloads/
+mv `~/Downloads/MattPack 1.18.zip` .
+mv ~/Downloads/worldedit-mod-7.2.10.jar .
+mv ~/Downloads/lrr-addition.zip
+mv ~/Downloads/lrr-addition.zip .
+ls
+clear
+yy
+mkdir lrr-addition
+unzip ./lrr-addition.zip ./lrr-addition/
+unzip ./lrr-addition.zip --help
+unzip --help
+unzip ./lrr-addition.zip -d lrr-addition/
+ls
+cd .minecraft/
+cd instances/Music/
+cd mods/
+ls
+poweroff
+btop
+pkill steam
+u
+clear
+i distrobox
+distrobox
+distrobox create
+distrobox create void
+i podman
+distrobox create void
+distrobox create
+distrobox create --help
+distrobox list
+distrobox create --list
+distrobox create void:latest
+distrobox create nixos:latest
+distrobox create arch:latest
+distrobox create ubuntu:latest
+distrobox create -i void:latest
+distrobox create -i nixos:latest
+distrobox create -i arch:latest
+distrobox create -i ubuntu:latest
+cat /etc/containers/registries.conf.d/00-shortnames.conf
+distrobox create -i gentoo
+distrobox enter gentoo
+clear
+lsdsld
+sld
+sldsldsld
+sld
+slds
+ld
+sld
+lds
+ld
+sldsld
+sld
+ld
+sld
+slds
 dls
-dsdlsdlsld
-sldsldssd
-sldkddfds wee
-{ 23  s  <\n>}
+ld
+sdls
+lds
+dls
+dlsdl
+ld
 yy
-gd .
-gc "idk"
-g
-gp
-clear
-nmtui
-clear
-yy
-gd 
-gd .
-gc "idk"
-gp
-gs
-yy
+cd Sagittarius/
 ls
-clear
+cargo run
+ayst profile drawing
 yy
-gd .
-gc "idk"
-gp
-ls
-gs
-git commit -a
-$env.EDITOR = nvim
-$env.EDITOR = "nvim"
-git commit -a
-cçear
+cd Sagittarius/
+cargo run
 clear
-cd Downloads/
+btop
+btop --theme
+btop --help
+btop
+htop
+cd Sagittarius/
+lçs
+clear
+rust-analyzer --help
 clear
 ls
+cd Sagittarius/
 clear
-cd Downloads/
-ls
-sudo dd if=./nixos-graphical-25.05.809451.fe83bbdde2cc-x86_64-linux.iso of=/dev/sda
-exit
-t
-i steam
-nmtui
-sudo dd if=./nixos-graphical-25.05.809451.fe83bbdde2cc-x86_64-linux.iso of=/dev/sda bs=8MB status=progress
-sudo yazi
-cd /etc
-sudo nvim pacman.conf
+cargo run
 clear
-i steam
-sudo pacman -S steam
-cd ,,
-cd ..
+cargo check
 clear
-sudo pacman -Syu
+cargo run
 clear
-u
-pkill Hyprland
-rebis
-rebos
-rebos init-config
-rebos config
-rebos config init
-clear
-rebos api
-rebos api echo
-rebos api echo hi
-rebos api echo "hi"
-rebos api echo success "hi"
-rebos
-rebos gen
-rebos
-rebos managers
-clear
-rebos gen
-rebos setup
-rebos 
-rebos config
-rebos gen current
-rebos gen current build
-rebos gen 
-rebos
-rebos gen
-rebos gen commit
-rebos gen commit "First?"
-rebos gen current build
-cowsay
-cowsay hi
-rebos gen commit "Remove cowsay"
-rebos gen current build
-clear
-rebos
-rebos gen
-rebos gen diff
-rebos gen diff 1 2
-rebos gen diff list
-rebos gen list
-rebos gen current set 1
-cowsay
-rebos gen current set 2
-rebos gen current set 1
-rebos gen current Code/
-rebos gen current 
-rebos gen current roolback 
-rebos gen current roollback 
-rebos gen current rollback 
-rebos gen current rollback 1
-rebos gen current rollback
-rebos gen current rollback 2
-rebos gen current rollback 1
-rebos gen current rollback 0
-cowsay
-rebos gen current rollback 1
-rebos gen current rollback 0
-rebos gen list
-cowsay
-rebos gen
-rebos gen current
-rebos gen current rollback
-rebos gen current rollback 1
-rebos gen current rollback 0
-rebos gen current rollback -1
-rebos gen current rollback 0
-rebos gen
-rebos gen list
-rebos gen current
-rebos gen current set 1
-rebos gen current build
-cowsay
-cowsay "I use Arch btw"
-cowsay --help
-cowsay -e
-cowsay -e "^^"
-cowsay -e "^^" hi
-cowsay -e "°°" hi
-cowsay -e "°°°" hi
-cowsay -e "" hi
-cowsay hi
-cowsay -e "^^" hi
-cowsay -e "" hi
-cowsay -e "~~" hi
-cowsay -e "~ ~" hi
-cowsay -e "==" hi
-cowsay -e "--" hi
-cowsay -e "f" hi
-cowsay -e "ff" hi
-cowsay -e "$$" hi
-cowsay -e "$$" "I love money"
-rebos gen current
-rebos gen current to-latest
-rebos gen current build
-clear
-ame -Q
-rebos gen commit "Adding some packages"
-git clone https://gitlab/oglo12/rebos
-nmtui
-git clone https://gitlab/oglo12/rebos
-git clone https://gitlab.com/oglo12/rebos
-cd rebos
-ls
-yy
-cd ..
-clear
-rebos gen current build
-ame remove hyprland walker wallust kitty helix
-ame remove hyprland walker wallust kitty
-walker
-ame -Q
-ame -Q | rg walker
-ame remove hyprland walker-bin wallust kitty
-ame remove walker-bin wallust kitty
-rebos gen current build
-rebos gen commit "commenting hyprland and changing from walker to walker-bin"
-rebos force-unlock
-rebos gen commit "commenting hyprland and changing from walker to walker-bin"
-rebos gen current build
-hx
-helix
-yy
-clear
-ame remove grimblast-git hyprland
-ame remove hyprlock waybar firefox
-ame remove nushell
-ame remove starship
-ame remove ttf-jetbrains-mono-nerd-fonts
-ame remove ttf-jetbrains-mono-nerd-font
-ame -Q
-ame -Q | rg jetbrains
-ame remove ttf-jetbrains-mono-nerd
-rebos gen commit "adding more packages"
-rebos gen current build
-exit
-nu
-ame remove fastfetch
-alias switchgen = rebos gen current build
-alias commitgen = rebos gen commit
-commitgen "Adding fastfetch"
-switchgen
-ame -Q
-clear
-commitgen "Adding a lot of packages"
-rebos gen diff 7 6
-ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf
-ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo cargo-watch rust-analyzer pipewire-audio pipewire-jack
-ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack
-ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio
-ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio walker-bin
-ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio walker-bin typescript-language-server
-alias commitgen = rebos gen commit
-alias switchgen = rebos gen current build
-commitgen "adding pipewire-jack and why I need nodejs?"
-clear
-pkill ame
-ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio walker-bin typescript-language-server firefox
-clear
-ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio walker-bin typescript-language-server firefox
-ame remove niri ghc haskell-language-server zoxide zls zig rustup waypaper wf-recorder swww nodejs npm pipewire hypridle dunst clang cmatrix cava btop bat bibata-cursor-theme blueman lua lua-language-server nautilus noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ripgrep fzf cargo-watch rust-analyzer pipewire-audio pipewire-jack waybar typescript ffmpeg portaudio walker-bin typescript-language-server
-alias switchgen = rebos gen current build
-switchgen
-alias commitgen = rebos gen commit
-commitgen "fix"
-switchgen
-firefox
-commitgen "test"
-switchgen
-ame install waybar firefox walker-bin
-switchgen
-commitgen "ok"
-ame remove discord
-switchgen
-commitgen "adding discord"
-switchgen
-yy
-./link.lua
-clear
-y
-clear
-cd ..
-rebos
-rebos gen diff 7 6
-clear
-ls
-clear
-gd .
-gc "adding rebos config"
-gp
-clear
-clear
-yy
-clear
-hx
-helix
-hyprctl keyword cursor:zoom_factor (awk "BEGIN {print (hyprctl getoption cursor:zoom_factor | grep 'float:' | awk '{print $2}') - 0.5}")
-hyprctl keyword cursor:zoom_factor (awk "BEGIN {print $(hyprctl getoption cursor:zoom_factor | grep 'float:' | awk '{print $2}') - 0.5}")
-hyprctl monitor eDP-1 scale 0.6
-hyprctl version
-invalid scale passed to monitor eDP-1, failed to find a clean divisor. Suggested nearest scale: 0.666667
-cleat
-clear
-pkill Hyprland
 btop
 clear
-:w
+rustfmt
+clear
+ame -Q | rg wl-clipboard
+cd dot
+ls
+nvim helix/config.toml
+r nvim
+r neovim
 clear
 yy
-gd .
-gc "idk"
-gp
-poweroff
-cd Downloads/
+hx ~/System/dotfiles/helix/config.toml
+clear
+hx ~/System/dotfiles/helix/config.toml
+cargo run
+clear
+cargo run
+clear
+hx ~/System/dotfiles/hypr/hyprland.conf
+clear
 ls
-sudo dd if=./void-live-x86_64-20250202-base.iso of=/dev/sda bs=8MB status=progress
-cd /
-cd /dev
+clear
+cargo check
+cargo run
+cargo build
+cargo run -p
+cargo run -p sagittarius
+cargo run
+cargo run -p sagittarius
+cargo run
+cd Sagittarius/
+swayfx
+r swauy
+r sway
+i swayfx
+i scenefx
+clear
+cargo doc --open
+cargo run
+cd ins
+cd instances
 ls
-nm
-nmtui-connect 
-cd -
+cd ~/.minecraft/
+ls
+cd instances/
+ls
 cd ..
-cd -
-cd - >> /dev/null
-pkill Discord
-clear
-qemu
-i qemu
-sudo pacman -S qemu
-clear
-i qemu
-clear
-qemu-system-x86_64 
-clear
-i sway
-sway
-clear
-mkdir VMs
-cd VMs/
-qemu-img create -f qcow2 void.qcow2 20G
-qemu-system-x86_64 \<\n>  -enable-kvm \<\n>  -m 2048 \<\n>  -cpu host \<\n>  -smp 2 \<\n>  -hda void.qcow2 \<\n>  -cdrom void-live-x86_64-<data>.iso \<\n>  -boot d
-nmtui-connect 
-clear
-for
-for c in 70..200 {echo $c}
-for c in 70200 {echo $c}
-for c in 70 200 {echo $c}
-for c in 70-200 {echo $c}
-for c in 70..200 {echo $c}
-70..200
-for c in 70..200 {print c}
-for c in 70..200 {print $c}
-for c in 200..400 {print $c}
-clear
-for c in 400..1000 {print $c}
-clear
-for c in 1001..2000 {print $c}
-2000 / 3
-2000 / 4
-2000 / 5
-for c in 1001..2000 {<\n>if (($c / 2) == 400.0) {<\n>print \n\n<\n>print $c<\n>}<\n>else {<\n>print $c<\n>}<\n>}
-for c in 1001..2000 {<\n>if (($c / 2) == 400.0) {<\n>print \n\n<\n>print $c<\n>}<\n>}
-for c in 1001..2000 {<\n>if (($c / 2) == 400.0) {<\n>print \n\n<\n>print $c<\n>}<\n>print $c<\n>}
-clear
-for c in 0.. {print $c}
-cleae
-clear
-helix
-yy
-clear
-hyprland
-clear
-i steam
-clear
-cd VMs
+cd saves/
 ls
-qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom void-live-x86_64-<data>.iso -boot d
-clear
-qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom void-live-x86_64-<data>.iso -boot d
-cear
-clear
-qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
-qemu-img create -f qcow2 void.qcow2 20G
-qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
-sleep 1sec; hyprctl dispatch fullscreen
-qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
-clear
-clear
-qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
-clear
-poweroff
-waybar
-nmtui
-syse
-sys
-sudo nvim /etc/pacman.conf
-sudo pacman -Sy
-i vulkan
-s vulkan
-i vulkan-intel vulkan-tools
-btop
-powerof
-poweroff
-cd VMs/
+rm -rf ./*
 ls
-clear
-nmtui-connect 
-qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
-qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -boot d
-qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -cdrom ~/Downloads/void-live-x86_64-20250202-base.iso -boot d
-clear
-fastfetch --help
-fastfetch -c default
-fastfetch -c
-fastfetch --no-config
-i neofetch
-neofetch 
-lsblk
-clear
-qemu-system-x86_64 -enable-kvm -m 2048 -cpu host -smp 2 -hda void.qcow2 -boot dd
-u
-clear
-cd hypr
-i virt-manager
-clear
-i libvirtd
-i libvird
-libvirtd 
-i libvirt
-systemctl enable libvirt
-systemctl enable libvirtd
-systemctl start libvirtd
-clear
-i flatpak
-s hypr
-i hyprpolkitagent
-i hyprdockl
-i hyprdock
-clear
-hyprland-dialog 
-hyprland-dialog "hi"
-hyprland-dialog --help
-hyprland-dialog -h
-hyprland-dialog
-hyprland-dialog 
-hyprland-dialog a
-i hyprpolkitagent
-hyprwayland-scanner 
-hyprwayland-scanner --help
-hyprwayland-scanner -h
-hyprcursor-util 
-hyprcursor-util a
-hyprpolkitagent &
-ame -Q hyprpolkitagent
-ame -Q hypr
-clear
-hyprpolkitagent &
-ame -Q | rg hyprpolkitagent
-systemctl --user start hyprpolkitagent
-yy
-i dnsmasp
-i dnsmasq
-s java
-i java-21-jdk
-i java-20-jdk
-i jdk
-s jdk
-i jdk23-openjdk
-i jdk24-openjdk
-java
-clear
-cd Downloads/
+cd `Hello, World/`
+s
 ls
-java -jar ~/Downloads/SKlauncher-3.2.12.jar
-pkill java
-cd Amethyst
-mkdir Amethyst
-cd Amethyst/
-ls
-clear
-cargo new
-cargo new ayst
-yy
-clear
-helix
-yy
-./link.lua
-helix
-yy
 cd ..
-./link.lua
-ls ~/.config/helix/
-rmdir ~/.config/helix/
-./link.lua
-:w
-clear
-yy
-hx
-helix
-yy
+rm -rf `./Hello, World/`
+cd System/

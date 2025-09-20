@@ -207,3 +207,14 @@ poweroff
 yy
 gd .
 yy
+gd .
+gc "Backup "
+gp
+clear
+ls
+clear
+cd ..
+ls
+cd Downloads/
+git clone https://github.com/louspjn/System
+yy

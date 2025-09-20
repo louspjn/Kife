@@ -1,0 +1,5 @@
+status-bar {
+	enabled true
+	height 1
+	position "bottom"
+}

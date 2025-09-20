@@ -1,3 +1,209 @@
 rm ./dotfiles/nushell/history.txt
 git rm
 git rm ./dotfiles/nushell/history.txt
+gd .
+gc "Backup 2"
+gp
+yy
+i ghostty
+ls
+asjalskajslajslasjalsjalsj
+yy
+cd
+poweroff
+cd Sagittarius/
+cargo run
+u
+cargo doc --open
+u
+cargo run
+cargo add bevy_proto
+cargo add web-sys
+cargo add bevy_proto
+cd .minecraft/
+ls
+cd saves/
+ls
+cd `Survival __D/`
+ls
+yy
+hx ./level.dat
+clear
+cargo run
+cat -pP ./src/main.rs | wl-copy
+cat ./Cargo.toml
+cargo run
+clear
+cargo run
+cat -pP ./src/main.rs | wl-copy
+cargo run
+cat -pP ./src/main.rs | wl-copy
+cargo run
+cat -pP ./src/main.rs | wl-copy
+cargo run
+cargo doc --open
+cargo run
+yy
+clear
+clear
+cargo run
+recorder
+recorder -f recording.mp4
+poweroff
+alasmixer
+pkill Hyprland
+cd Downloads/
+ls
+mkdir ModPack
+mv `ModPack do Nakas.zip` ModPack/
+zip ./ModPack/
+./ModPack | zip
+zip
+zip --help
+^zip
+^zip ./ModPack/
+cd ModPack/
+touch a
+cd ..
+cd ModPack/
+cd ..
+^zip ./ModPack/
+yy
+ls
+clear
+yy
+^zip ./ModPack/
+yy
+^zip ./ModPack/
+yy
+^zip ModPack
+yy
+^zip .
+cd ..
+^zip
+s file
+i file-roller
+file-roller
+clear
+tar
+tar --help
+clear
+cd ModPack
+ls
+cd ModPack/
+ls
+^zip modpack.zip ./
+^zip modpack.zip ./* -r
+cd ..
+^zip modpack.zip ./ModPack/ -r
+ls
+yy
+cd Sagittarius/
+ls
+cler
+clear
+yy
+cçear
+clear
+cargo run
+cler
+cargo run
+clear
+cat -pP ./src/main.rs | wl-copy
+cargo run
+./target/debug/sagittarius
+cargo run
+hx Cargo.toml
+alsamixer
+poweroff
+alsamixer
+cd Downloads/
+ls
+java -jar ./preview_OptiFine_1.21.8_HD_U_J6_pre16.jar
+rm -rf /home/lousp/.minecraft/libraries/
+java -jar ./preview_OptiFine_1.21.8_HD_U_J6_pre16.jar
+clear; fastfetch; echo obrigado
+clear; fastfetch; echo \nobrigado
+clear; fastfetch; echo; echo obrigado
+yy
+cargo clean
+yy
+git clone https://github.com/godot-rust/gdext
+cd gdext/
+ls
+i godot
+cd gdext/
+ls
+cd godot/
+ls
+cd src/
+ls
+cd ..
+ls
+cd ..
+yy
+clear
+cargo build
+yy
+r godot
+yy
+clear
+cargo run
+yy
+clear
+cargo run
+cargo run --feature "dynamic_linking"
+cargo run --features "dynamic_linking"
+cargo run
+cd Sagittarius/
+clear
+cargo run
+cargo check
+cd Sagittarius/
+clear
+ls
+clear
+mkfifo sagittarius
+tail -f sagittarius
+ls
+clear; tail -f sagittarius
+ls
+yy
+clear
+exit
+clear
+cd Sagittarius/
+clear
+clear; tail -f sagittarius
+clear
+ls
+yy
+mkfifo output
+clear
+hx Makefile
+clear
+make
+clear
+tail -f output
+clear.tail -f output
+yy
+exit
+clear; tail -f output
+clea
+clear
+yy
+hx output
+clear; tail -f output
+clear
+poweroff 
+cd Sagittarius/
+ls
+clear
+yy
+exuit
+exit
+clear; tail -f output
+poweroff
+yy
+gd .
+yy

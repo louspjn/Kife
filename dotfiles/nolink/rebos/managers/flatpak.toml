@@ -1,0 +1,9 @@
+add = ""
+remove = ""
+
+plural_name = ""
+
+hook_name = ""
+
+[config]
+many_args = true

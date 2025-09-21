@@ -218,3 +218,15 @@ ls
 cd Downloads/
 git clone https://github.com/louspjn/System
 yy
+gd .
+gc "Backup "
+gp
+yy
+ls Downloads/
+sudo dd if=./Fedora-Onyx-ostree-x86_64-42-1.1.iso of=/dev/sda bs=8M status=progress
+clear
+poweroff
+yy
+ls
+clear
+cd System/

@@ -1,0 +1,12 @@
+[Unit]
+Description=Manage system flatpaks
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/installextrapkgs
+Restart=on-failure
+RestartSec=30
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Enable Swap
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/swapon /var/swapfile
+Restart=on-failure
+RestartSec=30
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target

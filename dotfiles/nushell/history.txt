@@ -230,3 +230,12 @@ yy
 ls
 clear
 cd System/
+exit
+zoxide init nushell | save -f ~/.zoxide.nu
+exit
+ls
+yazi
+clear
+fastfetch
+yazi
+yy

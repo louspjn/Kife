@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+flatpak install --system -y flathub \
+  com.spotify.Client \
+  com.discordapp.Discord
+
+flatpak update

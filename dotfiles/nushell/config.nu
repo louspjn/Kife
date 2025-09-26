@@ -1,4 +1,4 @@
-$env.config.buffer_editor = "nvim"
+$env.config.buffer_editor = "hx"
 $env.config.edit_mode = "vi"
 $env.config.show_banner = false
 $env.config.table.mode = "rounded"
@@ -78,8 +78,8 @@ alias nosu = nh os switch -u
 alias pipes = pipes
 alias recorder = wf-recorder
 alias t = tmux
-alias u = ame upgrade
-alias r = ame remove
-alias i = ame install
-alias s = ame search
-alias hx = helix
+
+# alias u = ame upgrade
+# alias r = ame remove
+# alias i = ame install
+# alias s = ame search

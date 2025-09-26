@@ -9,7 +9,7 @@ sort_by = "natural"
 [[opener.edit]]
 block = true
 desc = "$EDITOR"
-run = "helix -- \"$@\""
+run = "hx -- \"$@\""
 
 [preview]
 max_height = 3600

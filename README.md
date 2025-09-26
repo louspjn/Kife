@@ -1,4 +1,4 @@
-<p align="center"><img src="./assets/imgs/Nix.png" width="200px"></p>
+<!-- <p align="center"><img src="./assets/imgs/Nix.png" width="200px"></p> -->
 
 <h1 align="center">My Systems Configurations</h1>
 

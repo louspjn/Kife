@@ -239,3 +239,112 @@ clear
 fastfetch
 yazi
 yy
+gd .
+gc "Backup"
+gp
+yy
+./link.lua
+ls
+yazi
+./link.lua
+poweroff
+yy
+chch
+chsh
+chsh -s nu
+chsh --help
+clear
+^chsh
+clear
+ls
+clear
+yy
+ls
+yy
+./link.lua
+yazi
+/usr/bin/ls
+rm link.lua
+def linktodotconf [folder] {<\n>ln -sf /var/home/lousp/System/dotfiles/$folder /var/home/lousp/.config/$folder<\n>}
+linktodotconf tmux
+linktodotconf waybar
+linktodotconf yazi
+yy
+ls ~/.config/$folder
+rm ~/.config/$folder
+def linktodotconf [folder] {<\n>ln -sf /var/home/lousp/System/dotfiles/($folder) /var/home/lousp/.config/($folder)<\n>}
+linktodotconf tmux
+linktodotconf waybar
+linktodotconf yazi
+ls ~/.config/yazi/
+yy
+helix
+hx yazi/yazi.toml
+ls
+bash
+exit
+fastfetch
+yy
+podman -t ghcr.io/louspjn/kife:latest
+podman build -t ghcr.io/louspjn/kife:latest .
+hx
+clear
+hx 
+cd ./system/usr; mkdir share; cd share; mkdir icons; cd icons; wget https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/Bibata-Original-Amber.tar.xz<\n>tar -xf Bibata-Original-Amber.tar.xz
+ls
+/usr/bin/ls
+rm Bibata-Original-Amber.tar.xz
+alias ls = /usr/bin/ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd .;
+cd ..
+cear
+clear
+x
+ls
+alias ls = /usr/bin/ls
+ls
+tar
+ls
+cd ..
+ls
+exit
+hx
+yy
+podman build -t ghcr.io/louspjn/kife:latest .
+yy
+podman build -t ghcr.io/louspjn/kife:latest .
+y
+yy
+clear
+podman build -t ghcr.io/louspjn/kife:latest .
+yy
+cd ..
+podman build -t ghcr.io/louspjn/kife:latest .
+yy
+podman build -t ghcr.io/louspjn/kife:latest .
+yy
+podman build -t ghcr.io/louspjn/kife:latest .
+podman push ghcr.io/louspjn/kife:latest
+rpm-ostree rebase ghcr.io/louspjn/kife:latest
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/louspjn/kife:latest
+podman push ghcr.io/louspjn/kife:latest
+podman build -t ghcr.io/louspjn/kife:3 .
+podman push ghcr.io/louspjn/kife:3
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/louspjn/kife:3
+reboot
+chsh
+exit
+ls
+exit
+poweroff
+ls
+clear
+yaliz
+clear
+ls
+yy

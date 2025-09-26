@@ -63,13 +63,13 @@ alias cat = bat --theme-dark base16
 alias cd = z
 alias hx = helix
 
-# alias gb = git branch
-# alias gc = git commit -m 
-# alias gck = git checkout
-# alias gd = git add
-# alias gm = git merge
-# alias gp = git push
-# alias gs = git status
+alias gb = git branch
+alias gc = git commit -m 
+alias gck = git checkout
+alias gd = git add
+alias gm = git merge
+alias gp = git push
+alias gs = git status
 
 alias l =  eza --tree --icons --git
 alias ls = eza --icons --git

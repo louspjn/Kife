@@ -919,3 +919,23 @@ cd ..
 ls
 yy
 gd .
+git add .
+git commit -m "Idk"
+gp
+git push
+clear
+cd assets/
+ls
+cd imgs/
+ls
+cd 
+yy
+clear
+yy
+gd .
+clear
+yy
+gd .
+gc "Backup"
+gp
+source ~/.config/nushell/config.nu

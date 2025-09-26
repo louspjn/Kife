@@ -52,7 +52,7 @@ def --env yy [...args] {
   rm -fp $tmp
 }
 
-zoxide init nushell | save -f ~/.zoxide.nu
+# zoxide init nushell | save -f ~/.zoxide.nu
 source ~/.zoxide.nu
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
@@ -60,24 +60,25 @@ starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.n
 
 alias bonsai = cbonsai -lip
 alias cat = bat --theme-dark base16
-alias cava = cava
 alias cd = z
-alias gb = git branch
-alias gc = git commit -m 
-alias gck = git checkout
-alias gd = git add
-alias gm = git merge
-alias gp = git push
-alias gs = git status
+alias hx = helix
+
+# alias gb = git branch
+# alias gc = git commit -m 
+# alias gck = git checkout
+# alias gd = git add
+# alias gm = git merge
+# alias gp = git push
+# alias gs = git status
+
 alias l =  eza --tree --icons --git
 alias ls = eza --icons --git
 alias matrix = cmatrix -C green -m
-alias nhs = nh home switch
-alias nos = nh os switch
-alias nosu = nh os switch -u
-alias pipes = pipes
 alias recorder = wf-recorder
-alias t = tmux
+
+# alias nhs = nh home switch
+# alias nos = nh os switch
+# alias nosu = nh os switch -u
 
 # alias u = ame upgrade
 # alias r = ame remove

@@ -348,3 +348,574 @@ yaliz
 clear
 ls
 yy
+bash
+ls
+clear
+source ~/.config/nushell/config.nu
+"sudo pacman -S hyprland waybar hyprcursor hyprlock helix git yazi tmux firefox ghostty fastfetch"
+ls ~/.config
+sudo pacman -S hyprland waybar hyprcursor hyprlock helix git yazi tmux firefox ghostty fastfetch starship rustup bibata-cursors papirus-icon-theme
+su
+sudo pacman -S hyprland waybar hyprcursor hyprlock helix git yazi tmux firefox ghostty fastfetch starship rustup bibata-cursors papirus-icon-theme
+sudo pacman -S hyprland waybar hyprcursor hyprlock helix git yazi tmux firefox ghostty fastfetch starship rustup
+sudo pacman -S swww
+rustup default stable
+rustup component add rust-analyzer
+ls
+cd nolink/
+ls
+rm /etc/pacman.conf; cp ./pacman.conf /etc/pacman.conf
+sudo rm /etc/pacman.conf; cp ./pacman.conf /etc/pacman.conf
+sudo rm /etc/pacman.conf; sudo cp ./pacman.conf /etc/pacman.conf
+sudo cp ./pacman.conf /etc/pacman.conf
+sudo pacman -Syu
+ls
+cd ..
+clear
+ls
+sudo pacman -S bat
+sudo pacman -S eza
+cat ./nolink/rebos/machines/Ario/gen.toml
+sudo pacman -S discord ripgrep fzf noto-fonts-emoji noto-fonts-extra noto-fonts-cjk lua cava btop cmatrix wf-recorder zoxide ttf-jetbrains-mono-nerd gnome-screenshot blueman bibata-cursor-theme clang dunst hypridle nautilus
+sudo pacman -S discord ripgrep fzf noto-fonts-emoji noto-fonts-extra noto-fonts-cjk lua cava btop cmatrix wf-recorder zoxide ttf-jetbrains-mono-nerd gnome-screenshot blueman clang dunst hypridle nautilus
+cat ./nolink/rebos/machines/Ario/gen.toml
+source ~/.config/nushell/config.nu
+zoxide init nushell | save -f ~/.zoxide.nu
+source ~/.config/nushell/config.nu
+clear
+ls
+helix
+fastfetch
+clear
+sudo pacman -S ly
+systemctl enable ly
+systemctl start ly
+ls
+pkill Hyprland
+pkill hyprland
+hyprland
+clear
+exit
+clear
+y
+yy
+helix config.nu
+yy
+hx
+yy
+hx yazi.toml
+clear
+yy
+git clone https://aur.archlinux.org/paru
+cd paru/
+ls
+cat PKGBUILD
+cargo
+systemctl enable dunst
+dunst
+notify-send "hi" "hi"
+clear
+ls
+clear
+ls
+yy
+fzf
+cçear
+cd .
+cd ...
+cd ..
+fzf
+fzf | hx
+hx (fzf)
+cd (fzf)
+fz
+fzf
+cd paru/src/paru-2.1.0/
+ls
+docker
+sudo pacman -S docker
+docker
+ls
+docker create
+docker create testparu .
+systemctl enable docker-daemon
+systemctl enable docker
+systemctl start docker
+docker create testparu .
+usermod
+usermod -a docker lousp
+usermod -a docker
+usermod -a lousp
+usermod -a lousp docker
+usermod lousp
+usermod lousp -a docker
+usermod -aG lousp docker
+usermod -aG docker lousp
+sudo usermod -aG docker lousp
+docker create testparu .
+firefox
+clear
+ly
+systemctl start ly
+clear
+ly
+ls
+makepkg -si
+yy
+paru
+paru --help
+paru --interactive
+paru --interactive s
+paru --interactive davinci
+paru --interactive grimblast-git
+cat ../.bashrc
+clear
+clear
+grimblast
+paru -Rns grimblast-git
+paru --help
+pacman --help
+pacman -Q --help
+pacman -Q 
+pacman -Q
+fzf -h
+gnome-screenshot
+gnome-screenshot --help
+gnome-screenshot -a
+gnome-screenshot --display=0
+gnome-screenshot --display=hyprland
+paru -Rns gnome-screenshot
+pkill hyprland
+pkill Hyprland
+swap
+swaplabel 
+swaplabel --help
+swap
+swapon
+ghostty --help
+ghostty +list-fonts
+ghostty +list-fonts | rg jetbrains
+ghostty +list-fonts | rg Jet
+ghostty +list-fonts | rg JetBrains
+ghostty +list-fonts | rg JetBrainsMono
+ghostty +list-fonts | rg JetBrainsMono 
+ghostty +list-fonts | rg JetBrainsMono Nerd
+ghostty +list-fonts | rg "JetBrainsMono Nerd"
+ghostty +list-fonts | rg "JetBrainsMono Nerd Font"
+ghostty
+ghostty --help
+hx (fzf)
+clear
+ls
+fastfetch 
+ls
+clear
+clear
+ls
+cl
+sld
+sdl
+sldsl
+ls
+clear
+yy
+docker create testparu .
+docker create testparu -i .
+docker create --help
+docker create .
+docker create 
+docker create Dockerfile
+docker run
+docker run .
+ls
+cat Dockerfile
+docker --help
+cat Dockerfile
+docker
+docker create .
+docker create
+docker container 
+docker container create .
+docker container create
+docker image
+docker image bu
+docker image build
+docker image build .
+paru -Ss "" | fzf | awk '{print $1}'
+paru -Ss ""
+paru -Si
+paru -SI
+paru -Sl
+paru -Sl aur
+(paru -Sl aur | awk '{print $2}' | fzf)
+sww
+swww
+swww img ../System/assets/wallpapers/gruvbox-solar-system.png
+clear
+yy
+cd
+yy
+docker image build .
+paru -S (paru -Sl aur | awk '{print $2}' | fzf)
+cd
+ls
+(paru -Sl aur | awk '{print $2}' | fzf)
+paru -S (paru -Sl aur | awk '{print $2}' | fzf)
+walker
+walker --help
+walker --dmenu
+walker 
+elephant
+systemctl start wlaker
+systemctl start walker
+walker
+clear
+l
+yy
+docker image build .
+walker
+walker --gapplication-service
+elephant
+elephant --help
+firefox
+paru -Rns walker
+paru -Rns walker-bin
+paru -S walker-bin
+walker
+docker image buildx .
+docker buildx .
+paru -S docker-buildx
+docker buildx .
+docker buildx build
+docker buildx build .
+ls
+./scripts/dist
+cat ./scripts/dist
+clear
+cd ..
+ls
+cd ..
+ls
+yy
+clear
+firefox
+docker create fedora
+docker start fedor
+docker start fedora
+docker 
+docker container
+docker container create 
+docker container create fedora
+docker attach (docker container create fedora)
+docker start (docker container create fedora)
+docker attach (!!)
+docker attach 76193e88e9070d480552844a5c4a78a1f2c6b42ff2c23e7c79797742d2d25c36
+docker start 76193e88e9070d480552844a5c4a78a1f2c6b42ff2c23e7c79797742d2d25c36
+docker attach 76193e88e9070d480552844a5c4a78a1f2c6b42ff2c23e7c79797742d2d25c36
+docker
+docker ps
+docker create fedora
+docker start 407cc5ee4d39ae4e876d3c04a4dd091822d1eb2a36f18333a748717da9912f45
+docker ps
+docker run 407cc5ee4d39ae4e876d3c04a4dd091822d1eb2a36f18333a748717da9912f45
+docker
+docker start
+docker start a
+docker start fedora
+docker create container
+docker container
+docker container create 
+paru -S elephant-providerlist elephant-desktopapplications elephant-archlinuxpkgs elephant-calc elephant-clipboard elephant-files elephant-menus elephant-runner elephant-unicode
+docker container create test
+docker container create --name test
+docker container create --name test fedora
+docker container list
+docker container start test
+docker ps
+firefox
+paru -S elephant-desktopapplications elephant-archlinuxpkgs elephant-calc elephant-clipboard elephant-files elephant-menus elephant-runner elephant-unicode
+docker run fedora
+docker ps
+docker run fedora --help
+docker run
+docker run feodra
+docker run fedora
+docker ps
+docker
+docker attach fedora
+docker run fedora
+docker run fedora bash
+docker run fedora /bin/bash
+docker run 
+docker run fedora "sh"
+docker run fedora "ls"
+docker run fedora "/bin/sh"
+docker run fedora "sh"
+docker ent
+docker entr
+docker enter
+docker enter fedora
+docker run fedora
+docker --help
+docker exec fedora bash
+docker exec fedora
+docker run fedora
+docker run fedora "echo $(sh)"
+docker run fedora "ls /bin"
+docker run fedora "ls"
+docker run fedora "ls bin"
+docker run fedora "bash"
+docker run fedora "sh -c \"ls /bin\""
+docker run fedora sh
+walker
+elephant
+elephant $
+elephant &
+walker --help
+walker --nosearch
+clear
+docker run fedora --name fedora
+docker run --name fedora fedora
+docker ps
+docker run --name fedora fedora:42
+docker run -it fedora
+clear
+docker run -it ghcr.io/louspjn/kife
+docker run -it ghcr.io/louspjn/kife nu
+docker run -it ghcr.io/louspjn/kife sh
+docker run -it ghcr.io/louspjn/kife bash
+clear
+ghostty --help
+ghostty +show-config
+ghostty +show-config | rg font
+ls
+hx
+rm w
+ls
+cd mine
+ls
+cd ..
+ls
+cd Sagittarius/
+ls
+./sagittarius
+ls
+cd Sagittarius/
+ls
+./sagittarius
+cargo build
+clear
+ls
+clear
+rm Makefile
+ls
+hx Dockerfile
+ls
+docker run
+docker run .
+docker build
+docker build .
+hx Dockerfile
+docker build .
+clear
+hx Dockerfile
+clear
+hx Dockerfile
+fc-cache 
+fc-cache -v
+ls /usr/share/fonts
+sudo pacman -S ttf-jetbrains-mono-nerd-font
+sudo pacman -S ttf-jetbrains-mono-nerd
+pkill Hyprland
+ls
+clear
+ls
+clear
+ls
+ghostty --font-size=12
+clear
+ls
+ghostty --font-size=12
+clear
+ls
+cd Sagittarius/
+ls
+docker build .
+clear
+sudo pacman -Syu -y
+pacman --help
+pacman -S
+pacman -S -h
+yes | pacman -Syu
+yes | sudo pacman -Syu
+yes | sudo pacman -S walker
+yes | sudo pacman -S podman
+yes | sudo pacman -Rns podman
+celar
+clear
+hx Dockerfile
+clear
+docker build .
+docker run .
+docker run
+docker run -it .
+docker run -it
+docker
+docker images
+docker run -it 29f2f32df1fb
+ls
+clear
+ls
+hx Dockerfile
+docker build -t sagittarius .
+clear
+hx Docker
+hx Dockerfile
+docker build -t sagittarius .
+clear
+hx (docker exec sagittarius)
+hx (docker exec sagittarius echo)
+docker create container --name sagittarius1 sagittarius
+docker create --name sagittarius1 sagittarius
+docker ps
+docker
+docker container
+docker container create --name sagittarius sagittarius
+docker ps
+docker container up sagittarius
+docker up
+docker
+docker containr
+docker container
+docker container start sagittarius
+docker ps
+docker list
+docker ls
+docker container ls
+hx (docker run)
+docker run
+docker run sagittarius
+docker run sagittarius find /sagittarius -name "Cargo.toml"
+hx (docker run sagittarius find /sagittarius -name "Cargo.toml")
+docker run -it sagittarius
+clear
+ls
+clear
+paru -S visual-studio-code-bin
+btop
+code
+clear
+ls
+clear
+ls
+clear
+exit
+poweroff
+yazi
+hyprctl reload
+pkill Hyprland
+yy
+clear
+ls
+clear
+hx
+paru -S devcontainer
+paru -S (paru -Sl aur | awk '{print $2}' | fzf)
+devcontainer
+devcontainer up
+devcontainer up .
+devcontainer 
+devcontainer build .
+devcontainer up
+devcontainer up ./.devcontainer/
+devcontainer
+xset 
+xset +local:
+devcontainer
+devcontainer build
+devcontainer build .
+devcontainer build --wokspace-folder .
+devcontainer build --wokspace-folder=.
+docker run -it sagittarius
+docker ps
+docker attach vsc-sagittarius-7431fc6bdf910e2f29cb1e9cd0eab5236b3eb3b1b2e276c4f8bd2108c9da1807
+docker
+docker attach vsc-sagittarius-7431fc6bdf910e2f29cb1e9cd0eab5236b3eb3b1b2e276c4f8bd2108c9da1807
+docker run -it sagittarius
+clear
+docker
+clear
+docker run -it sagittarius
+clear
+docker run -it sagittarius
+docker run -it nix
+docker run -it archlinux
+docker run -it nixos
+paru -S (paru -Sl aur | awk '{print $2}' | fzf)
+paru -Rns visual-studio-code-bin
+docker run -it archlinux
+clear
+yy
+docker build -t sagittarius .
+yy
+ls
+hx docker-compose.yml
+clear
+docker-compose
+docker compose
+paru -S (paru -Sl aur | awk '{print $2}' | fzf)
+docker compose
+docker-compose up
+docker-compose-cli
+docker-compose-cli up
+docker-compose-cli run
+docker-compose-cli up
+clear
+ls
+clear
+cd .
+git init
+clear
+ls
+clear
+git remote add origin https://github.com/louspjn/Sagittarius
+git add .
+ls
+hx .gitignore
+ls
+git add .
+ls
+git status
+git commit -m "First Commit"
+git push -u origin main
+git pull
+git pull origin main
+git pull origin main --rebase
+git push -u origin main
+git status
+git push -u origin main
+git status
+clear
+ls
+cl
+clear
+ls
+clear
+s
+l
+ls
+clear
+ls
+paru -S (paru -Sl aur | awk '{print $2}' | fzf)
+grimblast
+grimblast copy area
+date
+date now
+grimblast copy area
+clear
+ls
+clear
+cd ..
+ls
+yy
+gd .

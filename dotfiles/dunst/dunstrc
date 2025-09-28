@@ -1,0 +1,41 @@
+[global]
+    follow = mouse
+
+    origin = top-center
+
+    offset = (10, 30)
+
+    width = (200, 700)
+
+    notification_limit = 5
+
+    corner_radius = 8
+
+    font = "JetBrains Mono Nerd Font 12"
+
+    # %s = summary, %b = body, %a = appname
+    format = "<b><span text_transform="capitalize">%a</span> - %s</b>\n%b"
+	markup = full
+
+	icon_theme = "Papirus"
+	enable_recursive_icon_lookup = true
+    
+    frame_width = 2
+    frame_color = "#83a598"
+
+    gap_size = 2
+    
+    idle_threshold = 0
+
+    mouse_left_click = context
+    mouse_right_click = close_all
+
+[urgency-low]
+	background = "#282828"
+	foreground = "#ebdbb2"
+[urgency-normal]
+	background = "#282828"
+	foreground = "#ebdbb2"
+[urgency-critical]
+	background = "#282828"
+	foreground = "#ebdbb2"

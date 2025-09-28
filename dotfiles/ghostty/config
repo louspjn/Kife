@@ -1,2 +1,7 @@
 theme = Gruvbox Dark
 font-family = JetBrains Mono Nerd Font
+
+window-padding-x = 12
+window-padding-y = 15
+
+window-inherit-working-directory = false

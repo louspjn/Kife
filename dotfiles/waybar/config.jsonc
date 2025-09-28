@@ -1,14 +1,16 @@
 [
   {
     "reload_style_on_change": true,
-    "position": "top",
-    "height": 34,
-    "margin": 10,
+    "position": "left",
+
+    "margin-top": 15,
+    "margin-bottom": 15,
+    "margin-left": 10,
 
     "battery": {
-      "format": "{capacity}% {icon}",
+      "format": " {icon}",
       "format-alt": "{time} {icon}",
-      "format-charging": "{capacity}% 󰂄",
+      "format-charging": "󰂄",
       "format-icons": [
         "󰁻",
         "󰁼",
@@ -17,7 +19,7 @@
         "󰂂",
         "󰁹"
       ],
-      "format-plugged": "{capacity}% 󰂄",
+      "format-plugged": "󰂄",
       "interval": 30,
       "states": {
         "critical": 5,
@@ -60,8 +62,8 @@
       "hyprland/workspaces"
     ],
     "modules-left": [
-      "custom/logo",
-      "hyprland/window"
+      "custom/logo"
+      // "hyprland/window"
     ],
     "modules-right": [
       "network",
@@ -69,10 +71,9 @@
       "battery"
     ],
     "network": {
-      "format-disconnected": " You aren't Connected",
-      "format-wifi": "  You're Connected ({signalStrength}%)",
-      "tooltip-format-disconnected": "  What are you doing here?",
-      "tooltip-format-wifi": "  {ssid}"
+      "format-disconnected": " ",
+      "format-wifi": " ",
+      "tooltip-format-disconnected": "  ",
     }
   }
 ]

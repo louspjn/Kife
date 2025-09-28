@@ -939,3 +939,888 @@ gd .
 gc "Backup"
 gp
 source ~/.config/nushell/config.nu
+gd .
+gc "Backup"
+gp
+clear
+cd ..
+ls
+clear
+yy
+ls
+clear
+hx
+clear
+docker volume create fission
+cler
+clear
+ls
+hx Dockerfile
+docker run -it -v (pwd):/workspace -v ~/.config:/home/dev/.config:ro --name fission-dev fission
+clear
+cd ..
+yy
+clear
+docker build -t fission .
+hx Dockerfile
+docker build -t fission .
+hx Dockerfile
+docker build -t fission .
+clear
+yy
+btop
+clear
+ls
+dc Fission/
+ls
+cd Fission/
+ls
+clear
+cd fission/
+ls
+clear
+dockerdev fission-dev fission
+cd ..
+hx Dockerfile
+docker build -t fission .
+clear
+cat Dockerfile
+clear
+ls
+cd fission/
+dockerdev fission-dev fission
+docker remove fission-dev
+docker container remove fission-dev
+dockerdev fission-dev fission
+clear
+docker container remove fission-dev
+clear
+cd ..
+ls
+clear
+cat ../Sagittarius/Dockerfile
+yy
+docker build -t fission .
+clear
+cd fission/
+clear
+ls
+l
+sld
+l
+sld
+l
+clear
+dockerdev
+dockerdev fission-dev fission
+clear
+ls
+clear
+cd nushell
+yy
+cd Fission/
+yy
+docker build -t fission .
+cd fission/
+clear
+docker remove fission-dev
+docker container remove fission-dev
+dockerdev
+dockerdev fission-dev fission
+clear
+yy
+dockerdev fission-dev fission
+docker ps
+docker run fission-dev
+docker
+docker start fission-dev
+docker ps
+docker attach fission
+docker attach fission-dev
+clear
+docker remove fission-dev
+docker container remove fission-dev
+cd ..
+hx Dockerfile
+clear
+docker build -t fission .
+ls
+cd fission/
+clear
+ls
+zoxide init nushell | save -f ~/.zoxide.nu
+source ~/.config/nushell/config.nu
+sudo pacman -S fastfetch
+source ~/.config/nushell/config.nu
+clear
+ls
+sudo pacman -S exa
+source ~/.config/nushell/config.nu
+clear
+ls
+clear
+ls
+yy
+sudo pacman -S yazi
+clear
+yy
+hx
+ssh
+clear
+starship
+clear
+ls
+cat ../.config/starship.toml
+exit
+dockerdev fission-dev fission
+docker start fission-dev
+ls
+clear
+ls
+cd ..
+ls
+cd workspace/
+clear
+ls
+clear
+cargo run
+rust-analyzer
+clippy
+rustup component list
+clippy
+clear
+cargo
+cargo clippy
+clear
+ls
+clear
+hx
+exit
+docker attach fission-dev
+clear
+cd ..
+clear
+hx
+clear
+docker build -t fission .
+clear
+ls
+clear
+cd fission/
+ls
+clear
+dockerdev fission-dev fission
+docker container remove fission-dev
+exit
+dockerdev fission-dev fission
+docker start fission-dev
+ls
+ls -a
+ls (cd; pwd)
+ls -a
+exit
+docker attach fission-dev
+clear
+cd ..
+clear
+hx Dockerfile
+docker build -t fission .
+grimblast copy area
+clear
+ls
+cd fission/
+clear
+docker container remove fission-dev
+ls
+clear
+ls
+cargo run
+clear
+ls
+l
+sld
+s
+clear
+ls
+clear
+exit
+dockerdev fission-dev fission
+ls
+docker ps
+docker start fission-dev
+ls
+clear
+cd ..
+ls
+docker ps
+cd .
+cd ..
+ls
+clear
+ls -a
+docker container cp
+docker container cp .git-credentials /home/dev/.git-credentials
+docker container cp .git-credentials /home/dev/.git-credentials fission-dev
+docker container fission-dev cp .git-credentials /home/dev/.git-credentials
+docker container cp .git-credentials /home/dev/.git-credentials fission-dev
+docker container cp .git-credentials fission-dev:/home/dev/.git-credentials
+ls
+cler
+clear
+ls
+cat ../.git-credentials
+clear
+alsamixer
+paru -S (paru -Sl aur | awk '{print $2}' | fzf)
+paru -S alsa-utils
+alsamixer
+timedatectl status
+timedatectl set-timezone America/Sao_Paulo
+timedatectl status
+hwclock --systohc
+sudo hwclock --systohc
+date now
+sudo hx /etc/locale.conf
+sudo helix /etc/locale.conf
+locale-gen
+sudo locale-gen
+sudo timedatectl set-time "2025-09-27 19:16:00"
+date now
+sudo timedatectl set-time "2025-09-27 19:26:30"
+sudo timedatectl set-time "2025-09-27 19:27:00"
+date now
+hx
+cargo run
+target/debug/fission
+target/debug/fission hi
+target/debug/fission hi I like to play minecraft
+clear
+yy
+clear
+hx
+cargo run
+target/debug/fission hi I like to play minecraft
+clear
+hx
+clear
+cargo run
+hx
+cargo run
+cargo run -- hi I love Rust :D
+clear
+alsamixer
+paru -S obsidian
+sudo swapon /swapfile
+hx src/main.rs
+cargo add clap
+clear
+cargo run
+hx src/main.rs
+cargo add clap --features=["cargo"]
+cargo add clap --features=cargo
+cargo add clap --features=[cargo, unicode]
+cargo add clap --features=cargo unicode
+cargo add clap --features=cargo/unicode
+cargo add clap --features=cargo,unicode
+cargo add clap --features=cargo,unicode,derive
+cargo add clap --features=cargo,unicode,derive,string
+hx src/main.rs
+cargo run
+cargo run -- Lousp
+hx src/main.rs
+cargo run -- Lousp 12
+cargo run -- Lousp
+\cçear
+clear
+ghostt
+clear
+hx src/main.rs
+cargo check
+hx src/main.rs
+cargo run
+hx src/main.rs
+cargo build
+alias fission = ./target/debug/fission
+fission
+fission build
+fission build config
+fission build config config.yaml
+fission build --config config.yaml
+clear
+hx src/main.rs
+fission config
+fission config check
+fission config dit
+fission config edit
+clear
+hx src/main.rs
+yy
+cd ..
+clear
+cargo build
+fission config edit
+fission
+fission build
+fission build --config asasasa.yml
+clear
+alias edit = hx src/main.rs
+edit
+cargo build
+fission build --config asd.yml
+edit
+cargo build
+fission build --config asd.yml
+fission build --config
+fission build
+fission 
+fission config
+fission help
+fission --help
+fission config
+fission config check
+fission config edit
+clear
+edit
+ls
+hx args.yml
+mv args.yml args.json
+hx args.json
+rm args.json
+clear
+edit
+ls
+cd Fission/
+ls
+cd fission/
+ls
+echo "target" | save .gitignore
+cat .gitignore
+ls 0a
+ls -a
+rm .git -rf
+cd ..
+ls
+clear
+git init
+git remote add origin https://github.com/louspjn/Fission
+git add .
+git commit -m "First Commit"
+git pull origin main --rebase
+git push -u origin main
+cler
+clear
+ls
+clear
+ls
+clear
+ls
+cd .
+ls
+mkdir examples
+cd examples/
+touch config.yml
+cd ..
+clear
+ls
+clear
+edit
+dit
+alsamixer
+paru -S timr
+edit
+clear
+cd .
+eixt
+exit
+docker attach fission-dev
+clear
+ls
+clear
+docker ps
+cleqr
+clear
+poweroff
+hyprctl
+clear
+ls
+docker start fission-dev
+ls
+clear
+hx
+cargo run
+alias edit = hx src/main.rs
+alias fission = ./target/debug/fission
+clear
+fission build
+fission
+fission config
+fission config check
+fission config edit
+clear
+docker
+clear
+dockerdev
+clear
+exit
+docker attach fission-dev
+hx (fzf)
+fzf --help
+fzf --reverse
+fzf --reverse --style=minimal
+fzf --reverse --style=[rounded]
+fzf --reverse --border=rounded
+fzf --reverse --border=rounded style=minimal
+fzf --reverse --border=rounded --style=minimal
+fzf --reverse --border=rounded
+fzf --reverse --border=rounded --style=minimal
+fzf --reverse --border=rounded --style=minimal --preview=bat {}
+fzf --reverse --border=rounded --style=minimal --preview="bat {}"
+bat
+fzf --reverse --border=rounded --style=minimal --preview="bat {}"
+fzf --reverse --border=rounded --style=minimal --preview="cat {}"
+fzf --reverse --border=rounded --style=minimal --preview="nu -c \"cat {}\""
+fzf --reverse --border=rounded --style=minimal
+fzf --reverse --border=rounded --style=minimal --height=3000
+fzf --reverse --border=rounded --style=minimal --height=300
+fzf --reverse --border=rounded --style=minimal --height=30
+fzf --reverse --border=rounded --style=minimal --height=40
+fzf --reverse --border=rounded --style=minimal --height=35
+fzf --reverse --border=rounded --style=minimal --height=39
+fzf --reverse --border=rounded --style=minimal --height=38
+fzf --reverse --border=rounded --style=minimal --height=37
+fzf --reverse --border=rounded --style=minimal --height=39
+fzf --reverse --border=rounded --style=minimal --height=40
+fzf --reverse --border=rounded --style=minimal --height=41
+fzf --reverse --border=rounded --style=minimal --height=40
+fzf --reverse --border=rounded --style=minimal --height=40 --width=30
+fzf --reverse --border=rounded --style=minimal --height=40 --help
+fzf --reverse --border=rounded --style=minimal --height=40 --preview=bat {}
+fzf --reverse --border=rounded --style=minimal --height=40 --preview="bat {}"
+fzf --reverse --border=rounded --style=minimal --height=40 --preview="bat {}" --with-shell=nu
+fzf --reverse --border=rounded --style=minimal --height=40 --preview="bat {}" --with-shell="nu -c \"{}\""
+fzf --reverse --border=rounded --style=minimal --height=40 --preview="bat {}" --with-shell="nu -c "
+fzf --reverse --border=rounded --style=minimal --height=40 --preview="cat {}" --with-shell="nu -c "
+fzf --reverse --border=rounded --style=minimal --height=40 --preview="cat {}" --with-shell="nu -c " --color=yes
+fzf --reverse --border=rounded --style=minimal --height=40 --preview="cat {}" --with-shell="nu -c " --color=always
+fzf --reverse --border=rounded --style=minimal --height=40 --preview="bat {}"
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --style=numbers --color=always --line-range :500 {}'
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'cat'
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'cat {}'
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'nu -c "cat {}"'
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat {}'
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat {}' --ansi
+fzf --reverse --ansi --border=rounded --style=minimal --height=40 --preview='bat {}'
+bat
+bat .bash_history
+bat ./Fission/fission/src/main.rs
+clear
+cat ./.config/nushell/config.nu
+cat ./.config/nushell/config.nu --theme-dark base16
+bat ./Fission/fission/src/main.rs --theme-dark base16
+bat ./Fission/fission/src/main.rs --theme-dark gruvbox-material
+bat ./Fission/fission/src/main.rs --theme-dark gruvbox_material
+bat ./Fission/fission/src/main.rs --theme-dark gruvbox
+bat ./Fission/fission/src/main.rs --theme-dark
+bat --help
+bat --list-themes
+bat ./Fission/fission/src/main.rs --theme-dark gruvbox-dark
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat {} --theme-dark gruvbox-dark' --ansi
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat {} --theme-dark gruvbox-dark --color=always' --ansi
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat {} --theme-dark gruvbox-dark' --ansi
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat {} --theme-dark gruvbox-dark --color=always' --ansi
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color=always --style=numbers,changes --line-range=:500 {} --theme-dark=gruvbox-dark' --ansi
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color=always --style=numbers,changes --line-range=:500 {} --theme-dark gruvbox-dark' --ansi
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color=always --style=numbers,changes --line-range :500 {} --theme-dark gruvbox-dark' --ansi
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 {} --theme-dark gruvbox-dark' --ansi
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --line-range :500 {} --theme-dark gruvbox-dark' --ansi
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 {} --theme-dark gruvbox-dark' --ansi
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 --theme-dark gruvbox-dark {}' --ansi
+bat --color always --style numbers,changes --line-range :500 --theme-dark gruvbox-dark {}
+bat --color always --style numbers,changes --line-range :500 --theme-dark gruvbox-dark ./Fission/fission/src/main.rs
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 --theme-dark gruvbox-dark {}'
+fzf --help
+fzf --help | rg color
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 --theme-dark gruvbox-dark {}' --color=dark
+fzf --help | rg color
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 --theme-dark gruvbox-dark {}' --color=bw
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 --theme-dark gruvbox-dark {}' --color=16
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 --theme-dark base16 {}' --color=16
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 {}' --color=16
+$env.BAT_THEME="gruvbox-dark"
+$env.BAT_THEME = "gruvbox-dark"
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 --theme-dark base16 {}' --color=16
+fzf --reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 {}' --color=16
+hedit
+source ~/.config/nushell/config.nu
+hedit
+hx (fzf)
+clear
+hzf
+fzf
+hzf
+ckear
+clear
+hzf
+clear
+ls
+paru -S direnv
+paru -Rns direnv
+date now
+paru -S wl-clipboard
+date now | wl-copy
+date now
+# Set the timezone<\n>sudo timedatectl set-timezone America/Sao_Paulo<\n><\n># Check the status to confirm<\n>timedatectl status<\n>
+sudo timedatectl set-ntp true<\n>
+timedatectl
+date now
+sudo timedatectl set-local-rtc 0<\n>
+# Synchronize with NTP servers (the -q flag queries servers once, -g ignores large offset)<\n>sudo ntpd -qg<\n><\n># Write the system clock's UTC time to the hardware clock<\n>sudo hwclock --systohc<\n>
+paru -S ntpd
+# Restart the systemd-timesyncd service<\n>sudo systemctl restart systemd-timesyncd.service<\n><\n># Check the sync status<\n>timedatectl timesync-status<\n>
+sudo hwclock --systohc<\n>
+timedatectl
+clear
+ls
+clear
+ls
+clear
+yy
+clear
+fzf
+ls .config
+cat .config/user-dirs.dirs
+clear
+ls
+z
+z fission
+ls
+clear
+z
+clear
+docker start fission-dev
+ls
+clear
+hzf
+exit
+docker attach fission-dev
+clear
+docker ps
+clear
+paru -S zellij
+hx
+yy
+ln -sf ./zellij/ /home/lousp/.config/
+clear
+exit
+zellij
+clear
+ls
+cd
+clear
+hzf
+cd dotfiles
+ls
+mv tmux nolink/
+rm /home/lousp/.config/tmux
+clear
+cd
+clear
+hzf
+exit
+zellij
+exit
+ls ./.config/zellij
+rm ./.config/zellij
+ln -sf /home/lousp/System/dotfiles/zellij/ /home/lousp/.config/
+clear
+exit
+zellij
+exit
+zellij
+exit
+zellij
+exit
+ls
+clear
+exit
+docker start fission-dev
+exit
+hzf
+exit
+docker attach fission-dev
+docker attach fission-dev
+docker start fission-dev
+clear
+exit
+docker attach fission-dev
+clear
+clear
+docker attach fission-dev
+docker start fission-dev
+ls
+clear
+cargo run
+alias fission = ./target/debug/fission
+clear
+fission config
+fission
+exit
+hzf
+exit
+docker exec -it fission-dev nu
+docker attach fission-dev
+exit
+zellij
+clear
+exit
+zellij
+yy
+clear
+cd ..
+clear
+cd ..
+clear
+exit
+zellij
+exit
+zellij
+ls
+exit
+exit
+zellij
+exit
+zellij
+exit
+exit
+clear
+ls
+exit
+exit
+zellij
+exit
+exit
+zellij
+exit
+exit
+zellij
+exit
+zellij
+exit
+zellij
+ls
+exit
+exit
+clear
+exit
+hzf
+zj
+paru -S vivid
+vivid generate gruvbox-dark
+vivid
+vivid themes
+vivid generate gruvbox-dark
+clear
+ls
+clear
+ls
+tree
+l
+clear
+date now
+date asj as lajs lkajs
+clear
+paru -Rns vivid
+clear
+ls
+clear
+ls
+cat as as as as "as"
+clear
+hzf
+sudo hx /etc/hostname
+sudo helix /etc/hostname
+exit
+reboot
+exit
+zj
+clear
+yy
+clear
+hzf
+s
+ls
+hzf
+ls
+hzf
+ls
+jz
+hzf
+clear
+hzf
+yy
+cd (fzf)
+cd (fzf --dir)
+fzf --help | rg dir
+cd (fzf --walker=dir,follow,hidden)
+cd (fzf --walker=dir,follow,hidden --preview=)
+hzf 
+exit
+zj
+cd
+z
+zf
+ls
+paru -Rns yazi
+ls
+clear
+ls
+cd nolink/
+ls
+z nolink/
+ls
+cd ..
+z ..
+clear
+ls
+hzf
+hx
+cd hypr/
+z hypr/
+hx
+hx .
+ls
+rm colors.conf
+clear
+systemctl enable hypridle
+hypridle
+exit
+btop
+clear
+exit
+hx hyprlock.conf
+exit
+hzf
+clear
+hzf
+exit
+zj
+clear
+ls
+ls
+hzf
+exit
+t
+exit
+asljas
+hx
+exit
+zj
+hzf
+hx
+hzf
+exit
+zj
+clear
+hzf
+exit
+ls
+hzf
+exit
+zj
+hzf
+exit
+zj
+ls
+hzf
+exit
+hzf
+clear
+hzf
+ls
+clear
+exit
+hzf
+clear
+exit
+zj
+hzf
+exit
+exit
+zj
+mkdir -p Images/Screenshots
+mkdir  Images/Screenshots
+ls
+ls Images/
+ls Images/Screenshots/
+hzf
+clear
+zf
+mkdir dunst
+cd dunst/
+z dunst/
+ls
+clear
+notify-send "hi" "hi"
+clear
+notify-send "hi" "hi"
+ln -sf /home/lousp/System/dotfiles/dunst/ /home/lousp/.config/
+clear
+notify-send "hi" "hi"
+ls /etc/share/icons
+paru -S papirus-icon-theme
+ls /usr/share/icons/
+exit
+notify-send "hi" "hi"
+clear
+paru -S bibata-cursor-theme
+hyprctl reload
+hyprctl hyprcursr
+hyprctl hyprcursor
+hyprctl
+hyprctl systemifo
+hyprctl systeminfo
+exit
+clear
+exit
+notify-send "hi" "hi"
+dunst
+notify-send "hi" "hi"
+dunst
+notify-send "hi" "hi"
+dunst
+pkill dunst
+dunst
+dunst &
+clear
+notify-send "hi" "hi"
+pkill dunst
+notify-send "hi" "hi"
+pkill dunst
+notify-send "hi" "hi"
+pkill dunst; notify-send "hi" "hi"
+notify-send "hi" "hi"
+pkill dunst; notify-send "hi" "hi"
+notify-send "hi" "hi"
+clear
+notify-send "hi" "hi"
+pkill dunst; notify-send "hi" "hi"
+pkill dunst; notify-send "hi" "hi" --icon "discord"
+pkill dunst; notify-send "hi" "hi" --icon "firefox"
+pkill dunst; notify-send "hi" "hi" --icon "youtube"
+pkill dunst; notify-send "hi" "hi" --icon "github"
+pkill dunst; notify-send "hi" "hi" --icon "ghostty"
+pkill dunst; notify-send "hi" "hi" --icon "system"
+clear
+pkill dunst; notify-send "hi" "hi" --icon "pipewire"
+pkill dunst; notify-send "hi" "hi" --icon "volume"
+pkill dunst; notify-send "hi" "hi" --icon "sound"
+clear
+exit
+pkill dunst; notify-send "hi" "hi" --icon "spotify"
+exit
+hx dunstrc
+z ..
+ls
+clear
+z ..
+ls

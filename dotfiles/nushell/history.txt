@@ -1824,3 +1824,80 @@ ls
 clear
 z ..
 ls
+gd .
+gc "Rice done"
+gp
+clear
+jq
+jq a
+paru -Q 
+paru -Qq
+paru -Qq | save apps
+hx apps
+pkill Hyprland
+hzf
+notify-send "hi" "hi"
+clear
+hzf
+clear
+ls /usr/share/icons/
+hyprctl set
+hyprctl
+paru -S hyprcursor
+hyprcursor
+$env.HYPRCURSO_THEME
+$env.HYPRCURSOR_THEME
+hyprctl setcursor ($env.HYPRCURSOR_THEME) ($env.HYPRCURSOR_SIZE)
+$env.HYPRCURSOR_THEME = Bibata-Modern-Amber
+$env.HYPRCURSOR_THEME = "Bibata-Modern-Amber"
+hyprctl setcursor ($env.HYPRCURSOR_THEME) ($env.HYPRCURSOR_SIZE)
+$env.HYPRCURSOR_THEME = "Bibata-Modern-Ice"
+hyprctl setcursor ($env.HYPRCURSOR_THEME) ($env.HYPRCURSOR_SIZE)
+$env.HYPRCURSOR_THEME = "Bibata-Modern-Classic"
+hyprctl setcursor ($env.HYPRCURSOR_THEME) ($env.HYPRCURSOR_SIZE)
+$env.HYPRCURSOR_SIZE = 18
+hyprctl setcursor ($env.HYPRCURSOR_THEME) ($env.HYPRCURSOR_SIZE)
+$env.HYPRCURSOR_SIZE = 20
+hyprctl setcursor ($env.HYPRCURSOR_THEME) ($env.HYPRCURSOR_SIZE)
+$env.HYPRCURSOR_SIZE = 30
+hyprctl setcursor ($env.HYPRCURSOR_THEME) ($env.HYPRCURSOR_SIZE)
+$env.HYPRCURSOR_SIZE = 28
+hyprctl setcursor ($env.HYPRCURSOR_THEME) ($env.HYPRCURSOR_SIZE)
+hzf
+pkill Hyprland
+ls
+clear
+hzf
+z System
+ls
+hx apps
+paru -Rns tmux
+clear
+bluez
+blueman
+bluetooth
+systemctl enable bluetooth
+systemctl start bluetooth
+paru -S (paru -Sl aur | awk '{print $2}' | fzf)
+clear
+paru -Qq | rg gruvbox
+hx apps
+clear
+z ..
+clear
+hzf
+paru -S nwg-look
+paru -S gruvbox-material-gtk
+paru -S (paru -Sl aur | awk '{print $2}' | fzf)
+paru -S ((paru -Sl | awk '{print $2}'; paru -Sl aur | awk '{print $2}') | fzf)
+paru -S (paru -Sl | awk '{print $2}'; paru -Sl aur | awk '{print $2}' | fzf)
+paru -Rns gruvbox-dark-gtk
+paru -S (paru -Sl | awk '{print $2}' | fzf)
+clear
+hx apps
+paru -Qq | rg gruvbox
+clear
+hzf
+z System/
+ls
+clear

@@ -47,6 +47,11 @@ alias recorder = wf-recorder
 
 alias dockerdev = docker run -it -v (pwd):/home/dev/workspace -v ~/System/dotfiles:/home/dev/.config --name
 
+def deventer [name] {
+  docker start $name
+  docker attach $name
+}
+
 # alias nhs = nh home switch
 # alias nos = nh os switch
 # alias nosu = nh os switch -u

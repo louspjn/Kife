@@ -1901,3 +1901,69 @@ hzf
 z System/
 ls
 clear
+gd .
+gc "Adding apps list"
+gp
+clear
+paru -Rns ly
+clear
+paru -S gdm
+gdm
+reboot
+systemctl enable gdm
+clear
+ls
+clear
+ls
+hzf
+clear
+ls
+clear
+ls
+rm -rf ./go
+clear
+fzf
+clear
+ls
+clear
+docker start fission-dev
+pacman -Rns tmux
+sudo pacman -Rns tmux
+ls
+clear
+zellij
+clear
+ls
+sudo pacman -S zellij
+clear
+ping gogle.com
+clear
+docker start fission-dev
+docker ps
+docker stop fission-dev
+docker stop fission-dev -f
+docker attach fission-dev
+docker attach fission-dev
+docker stop fission-dev
+clear
+docker start fission-dev
+clear
+exit
+docker attach fission-dev
+docker start fission-dev
+clear
+hzf
+cd ..
+z ..
+hzf
+exit
+docker attach fission-dev
+exit
+zj
+clear
+ls
+clear
+hzf
+cd System/
+z System/
+clear

@@ -1967,3 +1967,85 @@ hzf
 cd System/
 z System/
 clear
+gd .
+gc "idk"
+gp
+clear
+notify-send "Discord" "That's not discord" --icon=discord
+notify-send "Discord" "That's not discord" --icon=System
+notify-send "Discord" "That's not discord" --icon=system
+notify-send "Discord" "Hello World :D" --icon=system
+notify-send "Discord" "Hello, World!" --icon=system
+notify-send "Discord" "Hello, World!" --icon=system; clear; fastfetch
+exit
+clear
+ls
+clear
+cargo build
+alias fission = ./target/debug/fission
+fission config
+clear
+hzf
+exit
+docker exec -it fission-dev nu
+deventer fission-dev
+ls
+clear
+ls
+cd Fission/
+z Fission/
+gs
+gd .
+gc "Backup"
+gp
+cd .
+ls
+z ..
+ls
+z System/
+ls
+gs
+z ..
+s
+l
+ls
+clear
+ls
+clear
+poweroff
+blueman-applet
+clear
+paru spotify
+alsamixer
+clear
+alsamixer
+bluetooth
+blue
+blueman-manager 
+alsa
+alsamixer
+pipewire
+alsa
+pulse
+paru pipewire-pulse
+paru pulseaudio
+clear
+paru -S pavucontrol
+ls
+mkdir CoffeShell
+z CoffeShell/
+ls
+clear
+ls
+bat
+cat
+ls
+clear
+touch CoffeShell/config.qml
+mv CoffeShell/config.qml CoffeShell/shell.qml
+clear
+ls
+zf
+ls
+mv Kife Fedora
+mv Yalix NixOS

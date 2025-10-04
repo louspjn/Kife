@@ -2049,3 +2049,1053 @@ zf
 ls
 mv Kife Fedora
 mv Yalix NixOS
+git add .
+git commit -m ""
+git commit -m " "
+git commit -m "."
+gp
+ls
+clear
+ls
+hx .git/config
+clear
+hx
+rm -rf /home/lousp/.config/nushell; ln -sf /home/lousp/Kife/dotfiles/* /home/lousp/.config/
+ls /home/lousp/.config
+ls /home/lousp/.config/nushell
+ls /home/lousp/.config/nushell/
+ln -sf /home/lousp/Kife/dotfiles/nushell /home/lousp/.config/
+ls /home/lousp/.config/nushell/
+ln -sf /home/lousp/Kife/dotfiles/dunst /home/lousp/.config/
+ln -sf /home/lousp/Kife/dotfiles/fastfetch /home/lousp/.config/
+ln -sf /home/lousp/Kife/dotfiles/ghostty /home/lousp/.config/
+ln -sf /home/lousp/Kife/dotfiles/git /home/lousp/.config/
+ln -sf /home/lousp/Kife/dotfiles/helix /home/lousp/.config/
+ln -sf /home/lousp/Kife/dotfiles/hypr /home/lousp/.config/
+ln -sf /home/lousp/Kife/dotfiles/starship.toml /home/lousp/.config/
+ln -sf /home/lousp/Kife/dotfiles/waybar /home/lousp/.config/
+ln -sf /home/lousp/Kife/dotfiles/zellij /home/lousp/.config/
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+rm -rf Fission
+ls
+rm Obsidian/Fission.md
+clear
+cd Sagittarius/
+ls
+z Sagittarius/
+ls
+clear
+paru -S quickshell
+clear
+qs
+l
+clear
+ls
+l
+clear
+ls
+cd CoffeShell/
+z CoffeShell/
+ls
+clear
+qs
+ls
+qs .
+qs -p .
+clear
+qs -p .
+clear
+qs -p .
+clear
+qs -p .
+hx 
+hzf ../
+fzf ../
+exit
+hzf
+z ..
+hx ../Kife/dotfiles/waybar/config.jsonc
+mv shell.qml Bar.qml
+hx shell.qml
+mkdir BarModules
+mv BarModules/ Bar
+mv Bar.qml Bar
+clear
+hx
+exit
+hzf
+exit
+zj
+ls
+clear
+cd ..
+z ../Kife/dotfiles/waybar/
+hx config.jsonc
+clear
+cd
+z
+clear
+paru -S davinci-resolve
+paru -S davinci-resolve-20.0-0
+paru -S davinci-resolve-20.0
+paru -S davinci-resolve
+cd /
+z /
+fd paru
+fd cache
+fd cache | rg paru
+fd cache | rg "paru"
+fd cache | rg p
+fd cache | rg aur
+fd cache | rg PKGBUILD
+fd PKGBUILD
+clear
+cd
+z
+clear
+paru -S davinci-resolve
+ls .cache/paru/
+ls .cache/paru/clone/
+z .cache/paru/
+cat packages.aur
+ls
+/bin/cat packages.aur | fzf
+ls
+cd clone/
+ls
+z clone/
+ls
+z davinci-resolve/
+ls
+clear
+ls
+hx
+mv /home/lousp/Downloads/DaVinci_Resolve_20.2.1_Linux.zip .
+clear
+cd ..
+paru -S davinci-resolve
+makepkg -si
+hx PKGBUILD
+makepkg -si
+hx PKGBUILD
+makepkg -si
+hx PKGBUILD
+makepkg -si
+hx PKGBUILD
+ls
+hx PKGBUILD
+makepkg -si
+cat PKGBUILD
+cat PKGBUILD | wl-copy
+updpkgsums<\n>
+pacman -S updpkgsums<\n>
+sudo pacman -S updpkgsums<\n>
+sudo pacman -S pacman-contrib<\n>
+updpkgsums
+makepkg -si
+ls
+hx PKGBUILD
+makepkg -si
+poweroff
+swww --restore
+swww img ./Kife/assets/wallpapers/gruvbox-solar-system.png
+clear
+swww
+swww --help
+swww img
+swww img --help
+swww img ./Kife/assets/wallpapers/anime.png -t center
+swww img ./Kife/assets/wallpapers/gruvbox-solar-system.png -t center
+hzf
+paru
+paru opencl
+paru -Ss opencl
+paru -Ss opencl | rg intel
+paru -S instel-opencl
+paru -S intel-opencl
+paru -S intel-opencl-icd opencl opencl-icd
+paru -S opencl-icd
+sudo pacman -S mesa opencl-mesa lib32-mesa<\n>
+sudo pacman -S mesa opencl-mesa
+sudo pacman -S clinfo<\n>clinfo | grep "Device Name"<\n>
+clinfo | grep "Device Name"
+export RUSTICL_ENABLE=iris<\n>clinfo | grep "Device Name"<\n>
+$env.RUSTICL_ENABLE = "iris"
+clinfo | grep "Device Name"
+davinci-resolve
+paru -S libva-intel-driver
+paru -S intel-media-driver
+z ~/.local/share/DaVinciResolve
+sudo chown -R $USER:$USER ./<\n>
+sudo chown -R $env.USER:$env.USER ./<\n>
+sudo chown -R lousp:lousp ./<\n>
+davinci-resolve
+ls
+cat crash_archive.txt
+cat crash_archive.txt | wl-copy
+yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh)"
+/usr/bin/sh
+/bin/sh
+yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh)"
+z Downloads/
+ls
+chmod +x ./install.sh
+./install.sh
+paru -Rns davinci-resolve
+ls
+autodavincibox.sh
+cat autodavincibox.sh
+clear
+ls
+rm linux*
+ls
+clear
+ls
+cd davincibox/
+ls
+z davincibox/
+ls
+cat setup.sh
+./setup.sh DaVinci_Resolve_18.5.1_Linux.run
+ls
+davinci-resolve
+DaVinci_Resolve_20.2.1_Linux.run
+./DaVinci_Resolve_20.2.1_Linux.run
+ls
+resolvectl 
+distrobox
+distrobox create --name Davinci-Resolve --image fedora
+ckear
+exit
+distrobox enter davincibox
+ls
+z
+ls
+clear
+ls
+ls lsw
+ls lsw/winboat-bin/
+rm -rf lsw
+rm txtbox
+rm -rf go
+sudo rm -rf go
+ls
+ls src
+rm -rf src
+ls
+rm -rf pkh
+rm -rf pkg
+ls
+clear
+ls
+clear
+ls
+clear
+cd .cache/paru/clone/davinci-resolve/
+ls
+mv DaVinci_Resolve_20.2.1_Linux.zip ...../
+cd ...../
+ls
+mv DaVinci_Resolve_20.2.1_Linux.zip Downloads/
+cd Documents/
+cd ../Downloads/
+ls
+clear
+rm install.sh
+clear
+unzip DaVinci_Resolve_20.2.1_Linux.zip
+ls
+mkdir Davinci-Resolve
+mv DaVinci_Resolve_20.2.1_Linux.run Davinci-Resolve/
+mv Linux_Installation_Instructions.html Davinci-Resolve/
+rm DaVinci_Resolve_20.2.1_Linux.zip
+s
+ls
+cd Davinci-Resolve/
+ls
+clear
+ls
+./DaVinci_Resolve_20.2.1_Linux.run -i
+sudo dnf install fuse-libds
+sudo dnf install fuse-libs
+./DaVinci_Resolve_20.2.1_Linux.run -i
+sudo dnf install alsa-lib apr apr-util fontconfig freetype libglvnd<\n>    libglvnd-egl libglvnd-glx libglvnd-opengl librsvg2<\n>    libXcursor libXfixes libXi libXinerama libxkbcommon-x11<\n>    libXrandr libXrender libXtst libXxf86vm mesa-libGLU mtdev<\n>    pulseaudio-libs xcb-util xcb-util-cursor xcb-util-image<\n>    xcb-util-keysyms xcb-util-renderutil xcb-util-wm zlib
+sudo dnf install alsa-lib apr apr-util fontconfig freetype libglvnd libglvnd-egl libglvnd-glx libglvnd-opengl librsvg2 libXfixes libXi libXinerama libxkbcommon-x11 libXrender libXtst libXxf86vm mesa-libGLU mtdev pulseaudio-libs xcb-util xcb-util-cursor xcb-util-image xcb-util-keysyms xcb-util-renderutil xcb-util-wm zlib
+./DaVinci_Resolve_20.2.1_Linux.run -i
+sudo dnf install libXcursor libXrandr zlib
+./DaVinci_Resolve_20.2.1_Linux.run -i
+sudo dnf install zlib
+./DaVinci_Resolve_20.2.1_Linux.run -i
+sudo dnf install zlib-devel
+./DaVinci_Resolve_20.2.1_Linux.run -i
+exit
+distrobox enter Davinci-Resolve
+distrobox
+distrobox rm Davinci-Resolve
+distrobox create --name Davinci-Resolve --image ubuntu
+distrobox enter Davinci-Resolve
+distrobox rm Davinci-Resolve
+distrobox create --name Davinci-Resolve --image debian:12
+xhost +SI:localuser:$USER<\n>
+sudo pacman -S x11-xserver-utils
+sudo pacman -S xorg-xhost<\n>
+xhost +SI:localuser:$USER<\n>
+xhost +local:
+/opt/resolve/bin/resolve<\n>
+sudo pacman -S intel-compute-runtime
+clinfo<\n>
+clear
+distrobox enter Davinci-Resolve
+distrobox rm Davinci-Resolve
+sudo pamcan -Rns distrobox podman docker
+sudo pacman -Rns distrobox podman docker
+sudo pacman -Rns distrobox podman winboat-bin
+ls
+clear
+npm init @motion-canvas@latest
+cd tesa
+z testanimation/
+npm install
+npm start
+hzf
+hx
+ls
+hx DockerFile
+hx Dockerfile
+clear
+npm start
+clear
+docker build -t motion-canvas .
+ls
+clear
+hx Dockerfile
+docker build -t motion-canvas .
+ls
+clear
+docker run -it --rm -p 9000:9000 -v (pwd):/app motion-canvas
+docker build -t motion-canvas .
+docker run -it --rm -p 9000:9000 -v (pwd):/app motion-canvas
+docker build -t motion-canvas .
+docker run -it --rm -p 9000:9000 -v (pwd):/app motion-canvas
+docker build -t motion-canvas .
+docker run -it --rm -p 9000:9000 -v (pwd):/app motion-canvas
+clear
+hzf
+ls
+hzf
+mv ./src/scenes/example.tsx ./src/scenes/main.tsx
+rm ./src/scenes/example.meta
+clear
+z ..
+zf
+ls
+cat colors.css
+exit
+cp .../assets/imgs/Nix.png ..../testanimation/assets/Nix.png
+mkdir ..../testanimation/assets
+cp .../assets/imgs/Nix.png ..../testanimation/assets/Nix.png
+z ..
+clear
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv init manimations<\n>cd manimations<\n>uv add manim
+alias uv = ./.local/bin/uv
+uv init manimations<\n>cd manimations<\n>uv add manim
+uv init manimations<\n>z manimations<\n>uv add manim
+z manimations/
+uv add manim
+alias uv = /home/lousp/.local/bin/uv
+uv add manim
+clear
+ls
+hx main.py
+uv run manim
+uv run manim render
+uv run manim render .
+uv run manim render ./main.py
+uv run manim render ./main.py | wl-copy
+hx main.py
+uv run manim render ./main.py
+uv run manim render -t ./main.py
+clear
+esxit
+exit
+hzf
+exit
+exit
+zj
+clear
+ls
+docker ps
+docker stop motion-canvas
+docker ps
+docker stop 821f1d41e90c
+clear
+docker ps
+clear
+zj --help
+clear
+exit
+poweroff
+random 
+random int 0..1
+clear
+ls
+zf
+clear
+l
+clear
+paru -S direnv
+ls
+clear
+let lastdir = pwd; z ../; hzf; z lastdir
+ls
+direnv
+ls
+cd testanimation/
+ls
+z testanimation/
+ls
+clear
+hx .envrc
+direnv allow
+cd ..
+z ..
+z testanimation/
+z ..
+clear
+ls
+hzf
+zf
+ls
+z ..
+zf
+ls
+z layouts/
+ls
+touch motioncanvas.kdl
+docker run --rm -p 9000:9000 -v (pwd):/app motion-canvas
+ls
+z testanimation/
+docker run --rm -p 9000:9000 -v (pwd):/app motion-canvas
+hx motioncanvas.kdl
+clear
+cd ..
+z ....
+z ..
+hx testanimation/.envrc
+z testanimation/
+direnv allow
+mv ../.config/zellij/layouts/motioncanvas.kdl .
+hx .envrc
+hx testanimation/.envrc
+hx testanimation/motioncanvas.kdl
+z testanimation/
+clear
+ls
+hx motioncanvas.kdl
+z .
+z ../; z testanimation
+z ..
+ls
+z testanimation/
+hx motioncanvas.kdl
+z ../
+z testanimation/
+hx motioncanvas.kdl
+z ..
+clear
+ls
+clear
+ls
+docker ps
+docker stop faa3699e9a49
+exit
+z testanimation/
+clear
+z ../
+ls
+clear
+z testanimation
+ls
+rm motioncanvas.kdl
+ls
+clear
+hx .envrc
+docker ps
+docker stop 514f447fb8bb
+hx .envrc
+hx ./testanimation/.envrc
+z testanimation
+btop
+killall zellij
+btop
+killall zellij
+btop
+pkill zellij
+while true {pkill zellij}
+btop
+clear
+hx ./testanimation/.envrc
+z testanimation
+direnv allow
+while true {pkill zellij}
+ps
+ps | rg zellij
+ls
+clear
+while true {pkill zellij}
+ls
+mv testanimation/ Videos
+ls
+cd Videos/
+ls
+z Videos/
+ls
+mv testanimation/.envrc .
+ls
+hx .envrc
+ls
+mv testanimation/ code
+mkdir test
+mv .envrc test
+mv code/ test
+cat test/.envrc
+direnv allow ./test
+while true {pkill zellij}
+ls
+cd Videos/
+ls
+z Videos/
+ls
+rm ./test/.envrc
+cd test
+ls
+z test
+ls
+mv code/* .
+rmdir code
+ls
+clear
+cd code
+ls
+z code
+ls
+ls -a
+mv .vite ../
+sudo mv .vite ../
+ls
+cd ..
+ls
+z ..
+ls
+rmdir code
+ls
+clear
+ls
+clear
+docker run --rm -p 9000:9000 -v (pwd):/app motion-canvas --name motioncanvas
+docker ps
+docker stop motioncanvasvite
+docker run --rm -p 9000:9000 -v (pwd):/app motion-canvas --name motioncanvas
+docker run --name motioncanvas --rm -p 9000:9000 -v (pwd):/app motion-canvas
+docker stop motioncanvas
+exit
+exit
+zj
+clear
+hx .envrc
+direnv alolw
+direnv allow
+ls
+clear
+motionrun
+exit
+exit
+zj
+ls
+rm .envrc
+clear
+docker run --name motioncanvas --rm -p 9000:9000 -v (pwd):/app motion-canvas
+docker stop motioncanvas
+docker run --name motioncanvas -it --rm -p 9000:9000 -v (pwd):/app motion-canvas
+clear
+pwd
+whoami
+clear
+ls
+clear
+ls
+z .../
+ls
+z manimations/
+ls
+alias uv = /home/lousp/.local/bin/uv
+hx
+ls
+rm NixOS_logo.svg
+clear
+alias uv = /home/lousp/.local/bin/uv
+uv run manim render -t ./main.py
+uv run manim render ./main.py
+uv run manim render -t ./main.py
+clear
+ls
+mv ../../manimations/media/videos/main/1080p60/DigitarSVG.mov ./assets/Nix.mov
+exit
+ls
+ffmpeg -i ./assets/Nix.mov -c:v libx264 -preset medium -crf 23 -c:a aac -b:a 128k ./assets/Nix_converted.mp4
+clear
+cd assets/
+z assets/
+ffmpeg -i Nix.mov -c:v qtrle -pix_fmt argb output.mov
+ls
+rm -rf Nix*
+rm output.mov
+ls
+clear
+ln -sf /home/lousp/manimations/media/videos/main/1080p60/DigitarSVG.mp4 ./Nix.mp4
+ls
+clear
+exit
+uv run manim render ./main.py
+ls
+z assets/
+ls
+rm Nix.mp4
+mv ../../manimations/media/videos/main/1080p60/DigitarSVG.mov ./assets/Nix.mov
+z ..
+mv ../../manimations/media/videos/main/1080p60/DigitarSVG.mov ./assets/Nix.mov
+mv ../../manimations/media/videos/main/1080p60/DigitarSVG.mp4 ./assets/Nix.mp4
+uv run manim render -q 1280x720 ./main.py
+uv run manim render -qm ./main.py
+mv ../../manimations/media/videos/main/720p30/DigitarSVG.mp4 ./assets/Nix.mp4
+cp .../Downloads/NixOS.svg ./assets/
+recorder -f recording.mp4
+wf-recorder --help
+recorder -f recording.mp4 --resolution 1280x720
+recorder -f recording.mp4 -g "0,0,1280,720"
+recorder -f recording.mp4 -g "1280,720"
+recorder -f recording.mp4 -g "0,0 1280x720"
+recorder -f recording.mp4 -g (slurp)
+recorder -f recording.mp4 -g (slurp) -y
+clear
+ls
+clear
+hx
+exit
+exit
+ls
+ls output/
+ls /
+ls / -l
+docker run --name motioncanvas -it --rm -p 9000:9000 -v (pwd):/app motion-canvas
+docker ps
+hx
+exit
+exit
+exit
+hx
+docker ps
+docker stop motion-canvas
+docker stop motioncanvas
+ls
+clear
+cd ..
+ls
+z ..
+ls
+rm package-lock.json
+clear
+exit
+zj
+exit
+poweroff
+z test
+ls /
+ls / -l
+ls / -l | save test
+hx test
+cat test
+rm test
+ls / -l | save test
+ls / -l
+rm test
+ls --help
+ls / -1
+z
+ls / -1
+cat .config/hypr/hyprland.conf | rg grimblast
+grimblast copysave area ~/Images/Screenshots/(^date +%Y-%m-%d_%H-%M-%S).svg --freeze
+rm /home/lousp/Images/Screenshots/2025-10-01_18-37-00.svg
+z test
+ls
+clear
+ls
+clear
+mv .../Images/Screenshots/2025-10-01_18-32-16.png ./assets/Rootfilesystem.png
+z 
+grimblast copysave area ~/Images/Screenshots/(^date +%Y-%m-%d_%H-%M-%S).jpg --freeze
+ls / -1
+exit
+clear
+ls / -1
+grimblast copysave area ~/Images/Screenshots/(^date +%Y-%m-%d_%H-%M-%S).jpg --freeze
+z test
+mv .../Images/Screenshots/2025-10-01_18-32-16.jpg ./assets/Rootfilesystem.jpg
+mv .../Images/Screenshots/2025-10-01_18-47-36.jpg ./assets/Rootfilesystem.jpg
+rm ./assets/Rootfilesystem.png
+rm ./assets/Rootfilesystem.jpg
+grimblast copysave area ~/Images/Screenshots/(^date +%Y-%m-%d_%H-%M-%S).jpg --freeze
+grimblast copysave area ~/Images/Screenshots/(^date +%Y-%m-%d_%H-%M-%S).jpeg --freeze
+mv .../Images/Screenshots/2025-10-01_18-49-19.jpg ./assets/Rootfilesystem.jpg
+mv .../Images/Screenshots/2025-10-01_18-49-19.jpeg ./assets/Rootfilesystem.jpeg
+grimblast copysave area ~/Images/Screenshots/(^date +%Y-%m-%d_%H-%M-%S).svg --freeze
+grimblast copysave area ./assets/Rootfs.svg --freeze
+clear
+ls
+ls assets/
+rm assets/Root*
+mv .../Downloads/disk-utility-app-symbolic.svg ./assets/Disk.svg
+mv .../Downloads/chevron-direction-right-icon.svg ./assets/Arrow.svg
+exit
+docker run --name motioncanvas -it --rm -p 9000:9000 -v (pwd):/app motion-canvas
+mv .../Downloads/documents-app-symbolic.svg ./assets/File.svg
+exit
+hx
+exit
+exit
+zj
+ls
+clear
+cd ..
+ls
+z ..
+ls
+z .
+z ..
+hzf
+ls
+cd Videos/
+ls
+mv ../manimations/ .
+ls
+cd manimations/
+ls
+cear
+clear
+ls -1
+l
+rm -rf __pycache__
+rm -rf media
+ls
+cat uv.lock
+rm uv.lock
+ls
+clear
+ls
+uv
+paru -S uv
+uv
+uv add manim
+ls
+clear
+ls
+uv run manim render -qm ./main.py
+uv add manim
+manim
+uv
+ls -a
+uv run
+uv run manim
+./.venv/bin/manim
+cd ../; rm -rf manimations
+ls
+uv init manimations<\n>z manimations<\n>uv add manim
+ls
+uv run manim
+uv run manim render -qm ./main.py
+clear
+hx
+uv add manim_fonts
+hx
+clear
+uv run manim render -qm ./main.py
+uv run manim render -qmp ./main.py
+uv run manim render -pqm ./main.py
+paru -S entr
+echo "main.py" | entr "uv run manim render -pqm ./main.py"
+ntr
+entr
+entr "uv run manim render -pqm ./main.py" "main.py"
+entr "uv run manim render -pqm ./main.py"
+echo "./main.py" | entr "uv run manim render -pqm ./main.py"
+echo "./main.py" | entr bash -c "uv run manim render -pqm ./main.py"
+echo "./main.py" | entr bash -c "uv run manim render -qm ./main.py"
+echo "./main.py" | entr bash -c "uv run manim render -q ./main.py"
+cd ..
+ls
+cd test
+ls
+cp -r ./assets/ ../manimations/
+cd src
+ls
+cat scenes/main.tsx
+ls
+cd assets/
+ls
+rm Nix.mp4
+clear
+ls
+echo "./main.py" | entr bash -c "uv run manim render -qh ./main.py"
+echo "./main.py" | entr bash -c "uv run manim render -qp ./main.py"
+echo "./main.py" | entr bash -c "uv run manim render -q ./main.py"
+echo "./main.py" | entr bash -c "uv run manim render -qk ./main.py"
+cd ..
+ls
+cd test
+hx
+exit
+clear
+exit
+exit
+zj
+clear
+poweroff
+paru -S mpv
+clear
+ls
+cd Videos/
+ls
+cd manimations/
+ls
+clear
+ls
+clear
+uv run manim render -pqp --render=opengl ./main.py
+clear
+uv run manim render -pqp ./main.py
+exit
+uv run manim render -pqp ./main.py
+uv run manim render -qp -p ./main.py
+uv run manim render -qp -p --render=cairo ./main.py
+uv run manim -pqp ./main.py
+manim -pqp ./main.py
+s
+ls
+alias manim = ./.venv/bin/manim
+manim -pqp main.py MainScene
+exit
+uv venv
+uv add manim
+uv add manim_fonts
+ls
+./.venv/bin/activate.nu
+source ./.venv/bin/activate.nu
+use ./.venv/bin/activate.nu
+manim
+manim -pqp main.py MainScene
+manim cfg
+manim cfg write
+manim cfg 
+manim cfg write -o
+ls
+clear
+ls
+clear
+manim -pqp main.py MainScene
+hx manim.cfg
+manim -pqp main.py MainScene
+l
+hx manim.cfg
+manim -pqp main.py MainScene --render=opengl
+manim -pqp main.py MainScene --renderer=opengl
+manim -pqp main.py MainScene --renderer=opengl | wl-copy
+manim -pqp main.py MainScene --renderer=opengl
+hx manim.cfg
+clear
+manim -pqp main.py MainScene
+exit
+hx
+exit
+zj
+exit
+poweroff
+exit
+zj
+ls
+cd manimations
+cd manim
+clear
+exit
+ls
+clear
+use ./.venv/bin/activate.nu
+paru -S direnv
+echo "use ./.venv/bin/activate.nu" | save .envrc
+direnv allow
+hx .envrc
+direnv allow
+cd ..
+ls
+cd manimations/
+hx
+hx .envrc
+rm .envrc
+clear
+manim -pqp main.py MainScene
+hx manim.cfg
+manim -pqp main.py MainScene
+hx manim.cfg
+manim -pqp main.py MainScene
+echo "main.py" | entr "manim -pqp main.py MainScene"
+exit
+echo "main.py" | entr bash -c "manim -pqp main.py MainScene"
+zellij -h
+zellij ac
+zellij ac go-to-next-tab
+echo "main.py" | entr bash -c "zellij ac go-to-next-tab; hyprctl dispatch workspace 9; manim -pqp main.py MainScene; hyprctl dispatch workspace 1; zellij ac go-to-next-tab"
+exit
+cat main.py | wl-copy
+exit
+ls assets/
+exit
+cat main.py | wl-copy
+exit
+python ./main.py
+clear
+use ./.venv/bin/activate.nu
+python ./main.py
+exit
+cat main.py | wl-copy
+exit
+cat main.py | wl-copy
+xit
+exit
+hx
+exit
+zj
+echo "main.py" | entr bash -c "zellij ac go-to-next-tab; hyprctl dispatch workspace 9; manim -pqp main.py MainScene; hyprctl dispatch workspace 1; zellij ac go-to-next-tab"
+use ./.venv/bin/activate.nu
+cat main.py | wl-copy
+exit
+echo "main.py" | entr bash -c "zellij ac go-to-next-tab; hyprctl dispatch workspace 9; manim -pqp main.py MainScene; hyprctl dispatch workspace 1; zellij ac go-to-next-tab"
+eixt
+exit
+hx
+exit
+cat main.py | wl-copy
+cd ma
+cat main.py | wl-copy
+use ./.venv/bin/activate.nu
+ls
+ls media
+rm -rf media
+cat main.py | wl-copy
+echo "main.py" | entr bash -c "zellij ac go-to-next-tab; hyprctl dispatch workspace 9; manim -pqp main.py MainScene; hyprctl dispatch workspace 1; zellij ac go-to-next-tab"
+hx main.py
+exit
+exit
+zj
+clear
+poweroff
+ls
+mkdir Ral
+cd Ral
+clear
+ls
+clear
+cargo init . ral
+cargo init --hel
+cargo init --help
+cargo init
+ls
+hx Cargo.toml
+clear
+paru -S niri
+paru -S xwayland-satellite
+clear
+cd .config
+ls
+mkdir ../Kife/dotfiles/
+mkdir ../Kife/dotfiles/niri/
+ln -sf ../Kife/dotfiles/niri .
+ls
+cd niri
+ls
+clear
+hx config.kdl
+ls
+niri
+ls
+clear
+hx config.kdl
+clear
+pkill Hyprland
+swww --restore
+cat .config/hypr/hyprland.conf | rg swww
+swww-daemon
+clear
+ls
+clear
+cd .conig
+cd niriw
+cd niri
+ls
+clear
+hx config.kdl
+clear
+ls
+cd ..
+cd .
+ls
+cd ..
+ls
+cd mine
+ls
+clear
+firefox
+clear
+cd Downloads/
+ls
+clear
+java
+paru -S jdk-openjdk
+java -v
+java --versoin
+java
+java -version
+ls
+java -jar ./SKlauncher-3.2.12.jar
+clear
+niri
+pkill niri
+hzf
+clear
+hz
+hzf
+clear
+ls
+clear
+pkill waybar
+clear
+ls
+hzf
+ls
+cd ral
+ls
+clear
+cd ral
+cargo run
+cargo add clap --features=cargo,unicode,derive,string
+cargo add opengl
+clear
+cargo add serde-yaml
+hzf
+cd Kife
+ls

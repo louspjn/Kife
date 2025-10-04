@@ -5,3 +5,4 @@ window-padding-x = 12
 window-padding-y = 15
 
 window-inherit-working-directory = false
+window-decoration = none

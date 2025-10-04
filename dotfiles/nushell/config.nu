@@ -1,7 +1,24 @@
-$env.config.buffer_editor = "hx"
-$env.config.edit_mode = "vi"
-$env.config.show_banner = false
-$env.config.table.mode = "rounded"
+$env.config = {
+  buffer_editor: "hx"
+  edit_mode: "vi"
+  show_banner: false
+  table: {
+    mode: "rounded"
+  }
+
+  hooks: {
+    pre_prompt: [{ ||
+      if (which direnv | is-empty) {
+        return
+      }
+
+      direnv export json | from json | default {} | load-env
+      if 'ENV_CONVERSIONS' in $env and 'PATH' in $env.ENV_CONVERSIONS {
+        $env.PATH = do $env.ENV_CONVERSIONS.PATH.from_string $env.PATH
+      }
+    }]
+  }
+}
 
 $env.BAT_THEME = "gruvbox-dark"
 $env.FZF_DEFAULT_OPTS = "--reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 {}' --color=16"
@@ -26,7 +43,7 @@ starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.n
 
 alias bonsai = cbonsai -lip
 alias cat = bat --theme-dark base16
-alias cd = echo "Use z instead"
+alias cd = z
 alias hx = helix
 alias hzf = hx (fzf)
 alias zj = zellij
@@ -45,7 +62,7 @@ alias ls = eza --icons --git
 alias matrix = cmatrix -C green -m
 alias recorder = wf-recorder
 
-alias dockerdev = docker run -it -v (pwd):/home/dev/workspace -v ~/System/dotfiles:/home/dev/.config --name
+alias dockerdev = docker run -it -v (pwd):/home/dev/workspace -v ~/Kife/dotfiles:/home/dev/.config --name
 
 def deventer [name] {
   docker start $name

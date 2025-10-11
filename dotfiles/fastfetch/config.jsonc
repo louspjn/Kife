@@ -51,11 +51,6 @@
       "type": "disk"
     },
     {
-      "key": " ",
-      "text": "hyprctl splash",
-      "type": "command"
-    },
-    {
       "key": " ",
       "symbol": "circle",
       "type": "colors"

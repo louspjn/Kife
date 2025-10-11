@@ -3099,3 +3099,891 @@ cargo add serde-yaml
 hzf
 cd Kife
 ls
+gd .
+gc "I use Niri Btw"
+gp
+pkill waybar
+clear
+ls
+clear
+hx .git/config
+clear
+ls
+clear
+hx
+clear
+ls
+clear
+cear
+clear
+cd Downloads/
+ls
+java -jar ./SKlauncher-3.2.12.jar
+clear
+ls
+java -jar ./bta.v7.3_04.client.jar
+paru -S jdk8-openjdk
+java
+java -version
+bash
+sudo archlinux-java set java-8-openjdk
+java -version
+clear
+cd Downloads/
+ls
+clear
+java -jar ./bta.v7.3_04.client.jar
+paru -S polymc
+ls
+clear
+ls
+paru -Rns jdk8-openjdk
+clear
+java
+sudo archlinux-java set java-8-openjdk
+sudo archlinux-java set java-openjdk
+sudo archlinux-java set java25--openjdk
+sudo archlinux-java set java-25-openjdk
+clear
+java
+clear
+ls
+clear
+qs
+clear
+ls
+cd CoffeShell
+ls
+clear
+hx
+rm -rf Bar
+ls
+clear
+qs -p .
+clear
+ls
+cd ..
+fd .rs
+clear
+rd ".rs"
+fd ".rs"
+fd "\.rs"
+fd \.rs
+cat Sagittarius/drafts/seedgen/seedgen.rs
+cat Sagittarius/src/main.rs
+hx Sagittarius/src/main.rs
+cat Sagittarius/src/main.rs | wl-copy
+hx Sagittarius/src/main.rs
+clear
+exit
+exit
+hx
+paru -Rns quickshell
+..
+rm -rf CoffeShell
+ls
+clear
+mkdir CoffeShel
+cd CoffeShel/
+ls
+clear
+cargo init
+gtk4-layer-demo 
+clear
+ls
+clear
+niri msg
+niri msg pick-window
+niri msg pick-color
+clear
+niri msg
+niri msg action
+niri msg action spawn "ghostty"; niri msg action maximize-column
+niri msg action spawn ; niri msg action maximize-column
+niri msg action spawn ghostty; niri msg action maximize-column
+niri msg action spawn -- ghostty; niri msg action maximize-column
+niri msg action spawn -- ghostty; sleep 1sec; niri msg action maximize-column
+cear
+clear
+exit
+hx Cargo.toml
+cd ..
+rm -rf CoffeShel/
+cargo init kifecenter
+cd kifecenter/
+ls
+clear
+cd ..
+mv kifecenter/ Kife
+cd Kife
+ls
+clear
+cd kifecenter/
+ls
+clear
+rm -rf .git
+ls
+clear
+ls -a
+clear
+hx
+ls
+clear
+ls
+clear
+hx .
+cd src
+hx
+cd ..
+hx
+clear
+hx 
+cd ..
+ls
+mkdir OSs
+ls
+mv Fedora/ NixOS/ OSs/
+ls
+clear
+ls
+cd dotfiles/
+ls
+cd ..
+ls
+cd assets/
+ls
+ls a
+ls -a
+rm `.Sagittarius Logo Beta.png`
+ls roadmaps/
+rm -rf roadmaps/
+ls showcase/
+rm -rf showcase/
+ls imgs/
+ls
+clear
+ls
+cd ..
+ls
+clear
+cd kifecenter/
+ls
+clear
+hx
+mkdir -p a/b/c/d/e/f/g/h
+bash -c "mkdir -p a/b/c/d/e/f/g/h"
+ls
+cd a
+ls
+cd b/c/d/e/f/g/h/
+ls
+hx
+cd .......
+cd ..
+rm -rf a
+ls
+clear
+h
+clear
+cd ..
+ln -sf /home/lousp/Kife/kifecenter/ /home/lousp
+cd ..
+ls
+cd kifecenter
+ls
+clear
+cargo add iced
+cargo add iced --features=svg
+cargo add iced --features=svg,image,canvas
+exit
+cargo build
+cargo run
+clear
+cargo run
+clear
+exit
+hx
+exit
+zj
+exit
+poweroff
+pkill waybar
+clear
+ls
+rm ./.config/waybar
+paru -Rns waybar
+clear
+ls
+cd Kife/
+ls
+cd dotfiles/
+ls
+cd niri/
+ls
+hx config.kdl
+clear
+mkdir Chess
+cd Chess/
+hx EvansGambit.md
+cear
+clear
+exit
+ls
+clear
+ls
+lc
+elar
+ls
+clear
+ls
+clar
+ls
+clear
+ls
+cd kifecenter
+ls
+clear
+hx
+clear
+hx
+cd ..
+cd kifecenter
+ls
+clear
+rustup
+rustup component rust-analyzer
+rustup component add rust-analyzer
+rust-analyzer
+rustup default stable
+rust-analyzer
+rustup component add rust-analyzer
+paru -S rust-analyzer
+rust-analyzer
+exit
+hx
+x
+btop
+clear
+btop
+free -h
+clear
+ls
+clear
+exit
+paru -Rns rust-analyzer
+clear
+exit
+hx
+x
+math product 
+x | math product
+20 | math product
+x = 20 | math product
+let x = 20 | math product
+exit
+cçear
+clear
+cargo run
+cat Cargo.toml
+clear
+cargo run
+cargo add iced_layershell
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+eix
+exit
+clear
+cargo run
+cat src/main.rs
+clear
+cat src/main.rs
+clear
+cargo run
+clear
+cargo run
+clear
+exit
+hx
+cler
+exit
+zj
+exit
+ls
+cd Downloads/
+java -jar ./SKlauncher-3.2.12.jar
+clear
+paru -S glfw-wayland-minecraft
+sudo pacman -S glfw-wayland<\n>
+clear
+java -jar ./SKlauncher-3.2.12.jar
+clear
+ls
+java -jar ./preview_OptiFine_1.21.9_HD_U_J7_pre2.jar
+clear
+java -jar ./SKlauncher-3.2.12.jar
+clear
+poweroff
+gx
+clear
+h
+hx
+hz
+hzf
+clear
+hx
+ls
+cd kifecenter
+ls
+clear
+hx
+clear
+cd Downloads/
+ls
+clear
+java -jar ./SKlauncher-3.2.12.jar
+cear
+clear
+poweroff
+cd Downloads/
+poweroff
+xdg-desktop-menu 
+xdg-desktop-icon 
+xdg-desktop-icon firefox
+xdg-desktop-icon -- firefox
+xdg-desktop-menu 
+xdg-open 
+xdg-open firefox
+clear
+hx
+l
+clear
+ls
+cd kifecenter
+ls
+clear
+cargo build
+cargo clean
+clear
+cargo build
+clear
+cargo add winit smithay-client-toolkit wayland-client pixels
+clear
+cargo build
+cargo run
+clear
+cargo run | wl-copy
+clear
+ls
+clear
+lsl
+l
+ls
+l
+clear
+ls
+clear
+l
+kifecenter
+./target/debug/kifecenter
+clear
+cargo build
+exit
+hx
+exot
+clear
+cd ..
+ls
+cd kifecenter
+ls
+clear
+rm -rf ./*
+çs
+ls
+clear
+zig init
+zig
+paru -S zig zls
+zig init
+clear
+zig run
+zig
+zig run
+zig run --help
+zig run .
+ls
+clea
+clear
+zig run build.zig
+exit
+hx
+rm -rf ./*
+zig init-exe
+zig init
+clear
+l
+zig build run
+zig build test
+clear
+zls
+zig build test
+zig build run
+clear
+zig build run
+cat build.zig.zon
+cat build.zig.zon | wl-copy
+zig build run
+cler
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+exit
+zig build run
+exit
+zig build run
+exi
+exit
+clear
+zig build run
+exit
+hx
+:q
+exit
+exiit
+clear
+exit
+zj
+hx
+cd kifecenter
+zig build run
+exit
+zig build run
+exit
+paru -S gtk4 gtk4-layer-shell pkg-config
+exit
+zig build run
+ls /usr/include/gtk-layer-shell-0/gtk-layer-shell/<\n>
+ls /usr/include/gtk-layer-shell
+ls /usr/include/gtk4-layer-shell/
+ls /usr/include/gtk-4.0/gtk/gtk.h
+zig build run
+./zig-out/bin/kifecenter
+btop
+clear
+zig build run
+clear
+zig build run
+hx
+clear
+exit
+exit
+poweroff
+cd kifecenter
+zig build run
+clear
+zig build run
+hx
+clear
+poweroff
+cd kifecenter
+clear
+zig build run
+clear
+ls
+clea
+ls
+clear
+zig build run -lluajit
+clear
+zig build run
+clear
+zig build run
+zig fetch --save=luajit git+https://github.com/sackosoft/zig-luajit
+clear
+zig build run
+clear
+zig build run
+zig run
+zig
+clear
+./zig-out/bin/kifecenter
+hx
+exit
+zj
+cd kifecenter
+ls
+clear
+./zig-out/bin/kifecenter
+clear
+./zig-out/bin/kifecenter
+clear
+zig
+zig zen
+netcat
+ntcat
+ncursers
+ncurses
+ncursesw6-config 
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+rm src/main.lua
+clear
+rm src/main.lua
+touch src/main.lua
+zig build run
+clear
+zig
+zig ast-check
+zig build run
+clear
+zig build run
+cd ..
+./kifecenter/zig-out/bin/kifecenter
+cd ..
+./kifecenter/zig-out/bin/kifecenter
+cd kifecenter
+zig build run
+10 * 299
+10 / 299
+clear
+cat build.zig.zon
+clea
+lclea
+rclear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+lls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+lslc
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+celar
+ls
+clear
+zig build run
+hx
+poweroff
+ls
+clear
+ls
+clear
+cd kifecentern
+cd kifecenter
+ls
+clear
+hx
+cler
+hx
+clear
+cd .../kifecenter
+clear
+zig build run
+clear
+zig build run
+exit
+zig build run
+EXIT
+exir
+exit
+clear
+exit
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+rm src/main.lua
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+ls
+clear
+zig build run
+clear
+zig build run
+cat /usr/lib/zig/std/fmt.zig
+cçear
+clea
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+hx
+clear
+exit
+exit
+zj
+exit
+cd Downloads/
+java -jar ./SKlauncher-3.2.12.jar
+clear
+cd ..
+clear
+cear
+clear
+ls
+mkdir zig
+cd zig
+ls
+clear
+zig init
+clear
+h
+rm -rf ./*
+cp -r ../kifecenter .
+cp -r ../kifecenter/ .
+ls
+clear
+cd kifecenter/
+ls
+mv ./* ../
+cd ..
+rmdir kifecenter/
+ls
+clear
+ls
+l
+clear
+hx
+ls
+exit
+zj
+l
+rm src/config.json
+rm -rf zig-out/
+ls
+clear
+zig build run
+clear
+zig build run
+bash
+zig build run
+cat src/main.zig | wl-copy
+clear
+zig build run
+cat src/main.zig | wl-copy
+zig build run
+clear
+zig build run
+clear
+btop
+clear
+exit
+zig build run
+clear
+zig build run
+clear
+zig build run
+hx
+cd ../kifecenter/
+cd ../kifecenter/
+clçear
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+paru -S zed
+recorder -f recording.mp4 -g (slurp) -y
+clear
+clear
+exit
+exit
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+hx
+h
+hx
+jx
+clear
+hx
+hx .helix/languages.toml
+hx
+cat src/main.zig
+cat ../../zig/src/main.zig
+clear
+hx
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+poweroff
+cd kifecenter
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+rm src/main.zig
+mv src/mainbkp.zig src/main.zig
+clear
+zig build run
+clear
+hx
+clear
+cçear
+clear
+exit
+zj
+exit
+ls
+clear
+ls
+cd kife
+ls
+cd ..

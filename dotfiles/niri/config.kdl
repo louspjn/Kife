@@ -1,4 +1,3 @@
-spawn-at-startup "waybar"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "elephant"
 spawn-at-startup "swww-daemon"

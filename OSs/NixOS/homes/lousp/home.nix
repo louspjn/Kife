@@ -34,6 +34,7 @@
     grimblast
 
     neovim
+    helix
     zoxide
     starship
     fastfetch
@@ -60,11 +61,11 @@
     btop
 
     waybar
-    kitty
+    # kitty
     rofi
     tmux
     # alacritty
-    # ghostty
+    ghostty
   ];
 
   nixpkgs.config.allowUnfree = true;

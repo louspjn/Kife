@@ -4048,3 +4048,10 @@ ls
 hx
 cd ..
 hx
+gd .
+gc "Bruh"
+p
+gpp
+gp
+clear
+hx

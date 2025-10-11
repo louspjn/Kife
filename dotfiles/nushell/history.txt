@@ -3987,3 +3987,25 @@ ls
 cd kife
 ls
 cd ..
+ls
+cd ral
+ls
+cd ..
+ls
+clear
+ls
+gd .
+cd kife
+l
+cd ..
+l
+clear
+cd ..
+ls
+cd Sagittarius/
+ls
+cd ..
+slc
+gc "Bruh"
+gp
+rm -rf ./kifecenter/.zig-cache/

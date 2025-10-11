@@ -39,7 +39,7 @@
   };
 
   desktop = {
-    windowManager.hyprland.enable = true;
+    windowManager.niri.enable = true;
     displayManager.sddm = {
       enable = true;
       theme = "${pkgs.sddm-astronaut}/share/sddm/theme";

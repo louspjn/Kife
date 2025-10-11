@@ -4009,3 +4009,42 @@ slc
 gc "Bruh"
 gp
 rm -rf ./kifecenter/.zig-cache/
+gd .
+gc "Bruh"
+gp
+git
+git commit
+gd p
+git
+git fetch
+cler
+gp
+gs
+clear
+cd ..
+ls
+l
+rm -rf Videos/
+sudo rm -rf Videos/
+clear
+l
+rm -rf Sagittarius/
+sudo rm -rf Sagittarius/
+ls
+l
+rm -rf Ral
+ls
+l
+clear
+l
+cd dow
+ls
+sudo dd if=./Downloads/nixos-graphical-25.05.810995.5da4a26309e7-x86_64-linux.iso
+clear
+sudo dd if=./Downloads/nixos-graphical-25.05.810995.5da4a26309e7-x86_64-linux.iso of=/dev/sda bs=8MB status=progress
+ls
+cd kife
+ls
+hx
+cd ..
+hx

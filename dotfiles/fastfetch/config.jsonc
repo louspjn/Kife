@@ -22,10 +22,14 @@
       "left": 1,
       "top": 1
     },
-    "source": "arch_small",
+    "source": "/home/lousp/Kife/assets/imgs/Nix.txt",
     "width": 6
   },
   "modules": [
+    {
+      "text": "echo",
+      "type": "custom"
+    },
     {
       "text": "echo",
       "type": "custom"

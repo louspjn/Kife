@@ -44,7 +44,7 @@ starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.n
 alias bonsai = cbonsai -lip
 alias cat = bat --theme-dark base16
 alias cd = z
-alias hx = helix
+# alias hx = helix
 alias hzf = hx (fzf)
 alias zj = zellij
 alias zf = z (fzf --walker=dir,follow,hidden --preview=)

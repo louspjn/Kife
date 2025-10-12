@@ -4055,3 +4055,360 @@ gpp
 gp
 clear
 hx
+rm -rf ./.config/nushell/; ln -sf /home/lousp/Kife/dotfiles/nushell /home/lousp/.config/
+exit
+nu
+zoxide init nushell | save -f ~/.zoxide.nu
+exit
+nu
+clear
+niri validate
+hx
+niri validate
+exit
+pkill niri
+ghostty +list-themes
+hx
+./.nix-profile/bin/hx
+exit
+ls
+clear
+rofi
+clear
+rofi -show drun
+clear
+hx
+./.nix-profile/bin/hx
+hx
+ls
+zj
+clear
+zellij
+hx
+cd Kife
+hx
+yazi
+cat apps | wl-copy
+clear
+nh home switch
+nixos-rebuild switch --flake ./Kife/OSs/NixOS/
+sudo nixos-rebuild switch --flake ./Kife/OSs/NixOS/
+hx 
+hx
+home-manager switch --flake ./Kife/OSs/NixOS
+fastfetch 
+yazi
+fastfetch 
+clear
+hx
+walker
+walker -C
+walker --nosearch
+walker --help
+walker -h
+walker
+mkdir ./.config/walker
+walker
+clear
+nh home switch
+home-manager switch --flake ./Kife/OSs/NixOS
+reboot
+ls
+clear
+ls
+clear
+ls
+clear
+pkill discord
+discord
+btop
+discord
+clear
+nix run nixpkgs#discord
+nix run nixpkgs#discord --impure
+xwayland-satellite 
+clear
+xwayland-satellite 
+xwayland-satellite 
+clear
+pkill discord
+btop
+clear
+ls .config
+rm -rf ./.config/discord
+btop
+clear
+nix run nixpkgs#spotify
+discord
+clear
+nix run nixpkgs#spotify --impure
+clear
+sudo nix run nixpkgs#discord --imure
+sudo nix run nixpkgs#discord --impure
+cear
+clear
+flatpak
+clear
+nh home swithc
+nh home switch
+cd /; fd icon; cd ~
+clear
+cd /; fd icon; cd ~
+clear
+cd /; fd icon; cd ~
+clear
+nh home switch
+cat ./.config/dconf/user
+clear
+nh home switch
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub com.discordapp.Discord
+clear
+flatpak run com.discordapp.Discord
+nh home switch
+DISPLAY=0 flatpak run com.discordapp.Discord
+DISPLAY=:0 flatpak run com.discordapp.Discord
+$env.NIXOS_OZONE_WL
+clear
+cear
+clear
+xwayland-satellite 
+clear
+discord
+flatpak uninstall com.discordapp.Discord
+clear
+flatpak uninstall com.discordapp.Discord
+nh home switch
+home-manager switch --flake ./Kife/OSs/NixOS
+home-manager news --flake ./Kife/OSs/NixOS
+clear
+pkill niri
+clear
+btop
+ghostty
+$env.GTK_PATH
+$env."GTK_A11Y"
+clear
+ls
+clear
+nix run nixpkgs#nwg-look
+clear
+nix run nixpkgs#nwg-look
+pkill niri
+niri version
+niri --version
+clear
+nix run nixpkgs#nwg-look
+cat ./Kife/dotfiles/niri/config.kdl
+cat ./Kife/dotfiles/niri/config.kdl | wl-copy
+clear
+hx
+clear
+ls
+cd Kife
+ls
+clear
+hx
+ls
+yazi
+nix run nixpkgs#yazi
+clear
+hx
+ls
+cd OSs
+ls
+cd nixos
+hx
+nix run github:vimjoyer/nixconf#environment
+clear
+exit
+hx .
+exit
+exit
+zj
+clear
+ls
+cd OS
+btop
+l
+clear
+a
+l
+clar
+clear
+ls
+clear
+l
+clear
+ls
+cd Kife
+ls
+l
+rm -rf kifecenter/zig-out/
+l
+clear
+ls .git
+ls .git/objects/
+clear
+ls
+cd OSs
+ls
+cd NixOS
+clear
+hx flake.nix
+poweroff
+ls
+cd NixOS
+clear
+cd NixOS
+nix repl
+nix flake update
+clear
+nix repl
+cd .../; gd .; cd ./OSs/NixOS
+nix repl
+clear
+nh os switch
+nix repl
+clear
+nh os switch
+clear
+nh os switch
+cd NixOS; cd NixOS
+ln -sf /home/lousp/Kife/dotfiles/hypr /home/lousp/.config/
+cler
+clear
+exit
+nh os switch
+sudo nixos-rebuild switch --flake ./Kife/OSs/NixOS/
+cd NixOS; cd NixOS
+cd NixOS
+hx
+sudo nixos-rebuild switch --flake ./Kife/OSs/NixOS/
+cd ....
+sudo nixos-rebuild switch --flake ./Kife/OSs/NixOS/
+ckear
+clear
+cd NixOS
+hx
+ls
+nix run github:vimjoyer/nixconf#environment -- lf
+nix run github:vimjoyer/nixconf#environment -- -c "lf"
+hx
+ls
+cd ..
+ls
+rm -rf nixos
+clear
+ls
+cd NixOS
+ls
+clear
+hx flake.nix
+gd .
+clear
+nh os switch
+hx
+nh os switch
+clear
+home-manager
+clear
+nh os switch
+hx
+clear
+nh os switch
+clear
+hx
+clear
+nh os switch
+notify-send "Discord" "Hello, World!" --icon=system; clear; fastfetch
+ls
+clear
+hx
+git
+home-manager 
+home-manager uninstall
+clear
+starship
+exit
+zj
+exit
+ls
+clear
+nix
+nix --help
+nix-env
+nix-env -Qa
+nix-env --help
+nix-env -q
+nix-env -qA
+nix-env -qa
+nix-env -qi
+nix profile list
+ix-env --query --installed
+nix-env --query --installed
+nix-store -q --references /run/current-system/sw
+starship
+clear
+ls
+cd .config
+ls
+ghostty +list-themes
+hx ghostty/config
+exit
+zj
+git
+cd NixOS
+hx
+ln -sf /home/lousp/Kife/dotfiles/git /home/lousp/.config/
+clear
+nix-store -q --references /run/current-system/sw
+ls
+cat list
+rm list
+cat list
+nix-store -q --references /run/current-system/sw | rg
+nh os switch
+hx
+clear
+nh os switch
+nix-store -q --references /run/current-system/sw | rg jetbrains
+nix-store -q --references /run/current-system/sw | rg je
+nix-store -q --references /run/current-system/sw | rg j
+nix-store -q --references /run/current-system/sw | rg je
+nix-store -q --references /run/current-system/sw | rg jet
+clear
+nix-store -q --references /run/current-system/sw | rg font
+nix-store -q --references /run/current-system/sw | rg pkg
+discrd
+discord
+clear
+nh os switch
+walker
+hx
+clear
+ls
+cd Kife
+ls
+cd OSs
+ls
+clear
+cd NixOS
+clear
+nh os switch
+nix repl
+clear
+nh os switch
+clear
+nh os switch
+cd Kife
+l -d
+tree
+nix run nixpkgs#tree
+nix run nixpkgs#tree -- -d
+nix run nixpkgs#tree -- -d | wl-copy
+clear
+ls
+clear
+ls
+clear

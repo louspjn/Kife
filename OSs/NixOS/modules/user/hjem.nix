@@ -1,5 +1,5 @@
 { pkgs, inputs, ... }: let
-  selfpkgs = inputs.self.packages.x86_64-linux;
+  wrappedpkgs = inputs.self.packages.x86_64-linux;
 in {
   hjem.users.lousp = {
     imports = [./dotfiles.nix];
@@ -8,9 +8,7 @@ in {
       nh
 
       discord
-      hypridle
       nwg-look
-      hyprlock
       walker
 
       gcc
@@ -50,13 +48,11 @@ in {
       ghostty
       git
 
-    ] ++ (with selfpkgs; [
-      zellij-wrapped
+    ] ++ (with wrappedpkgs; [
+      zellij
+      dunst
+      hyprlock
+      hypridle
     ]);
-
-    systemd.services = {
-      dunst.enable = true;
-      hypridle.enable = true;
-    };
   };
 }

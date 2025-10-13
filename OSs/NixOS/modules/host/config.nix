@@ -1,11 +1,14 @@
 {
   pkgs,
+  inputs,
   ...
 }: let
   root = {
     absolute = "/home/lousp/Kife/";
     relative = "../../../../";
   };
+
+  wrappedpkgs = inputs.self.packages.x86_64-linux;
 in {
   imports = [./hardware.nix];
 
@@ -27,6 +30,8 @@ in {
       blueman
       alsa-utils
       pavucontrol
+    ] ++ [
+      wrappedpkgs.niri
     ];
 
     localBinInPath = true;
@@ -62,7 +67,6 @@ in {
   };
 
   security.pam.services.hyprlock = {};
-  programs.niri.enable = true;
 
   services = {
     flatpak.enable = true;

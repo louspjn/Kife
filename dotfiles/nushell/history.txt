@@ -4596,3 +4596,79 @@ gp
 clear
 cat .config/git/config
 kife switch
+gd .
+gc "Hjem: Ghostty Helix and Git done"
+gp
+clear
+ls
+clear
+ls ../../dotfiles/
+mv ../../dotfiles/ghostty/ ../../dotfiles/nolink/
+mv ../../dotfiles/helix/ ../../dotfiles/nolink/
+mv ../../dotfiles/git/ ../../dotfiles/nolink/
+ls ../../dotfiles/
+mv ../../dotfiles/waybar/ ../../dotfiles/nolink/
+mv ../../dotfiles/hypr/hyprland.conf ../../dotfiles/nolink/
+clear
+ls ../../dotfiles/
+cat ../../dotfiles/starship.toml
+cat ../../dotfiles/starship.toml | wl-copy
+lx
+ls
+l
+mkdir modules/user/dotfiles
+hx
+clear
+ls
+rm -rf modules/user/dotfiles/
+lear
+ls
+clear
+l
+clear
+ls ../../dotfiles/
+rm ~/.config/starship.toml
+clear
+cat ~/.config/starship.toml
+clear
+notify-send "Discord" "Hello, World!" --icon=system; clear; fastfetch
+notify-send "Discord" "Hello, World!" --icon=system 
+dunst
+hypridle 
+systemctl
+systemctl status
+systemctl status hypriudle
+systemctl status hypridle
+systemctl status
+clear
+hypridle
+clear
+dunst --hep
+nix run nixpkgs#dunst -- --help
+nix run nixpkgs#dunst -- -conf Kife/dotfiles/dunst/
+nix run nixpkgs#dunst -- -conf Kife/dotfiles/dunst/dunstrc
+clear
+hx
+ls ../../dotfiles/
+hypridle --help
+hypridle -c
+hyprlock --help
+clear
+nh os switch
+rm .config/niri
+niri
+clear
+ls .config
+rm .config/dunst
+ls .config
+rm .config/hypr
+ls .config
+clear
+nh os switch
+hyprlock
+clear
+rm .config/fastfetch
+clear
+kife switch
+clear
+cd Kife

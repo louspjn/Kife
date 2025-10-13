@@ -1,5 +1,6 @@
 spawn-at-startup "xwayland-satellite"
-spawn-at-startup "elephant"
+spawn-at-startup "dunst"
+spawn-at-startup "hypridle"
 spawn-at-startup "swww-daemon"
 
 hotkey-overlay { skip-at-startup; }

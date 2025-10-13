@@ -30,13 +30,14 @@ in {
       blueman
       alsa-utils
       pavucontrol
-      gdm
     ] ++ [
       wrappedpkgs.niri
     ];
 
     localBinInPath = true;
   };
+
+  fonts.packages = [ pkgs.nerd-fonts.jetbrains-mono ];
 
   users.users.lousp = {
     isNormalUser = true;
@@ -78,7 +79,7 @@ in {
       pulse.enable = true;
     };
 
-    displayManager.gdm.enable = true;
+    displayManager.sddm.enable = true;
   };
 
   xdg.portal = {

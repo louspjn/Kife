@@ -29,7 +29,6 @@ in {
       papirus-icon-theme
       gruvbox-material-gtk-theme
       libadwaita
-      nerd-fonts.jetbrains-mono
 
       bat
       cava
@@ -54,6 +53,6 @@ in {
       dunst
       hyprlock
       # hypridle
-    ]) ++ [inputs.elephant.packages.x86_64-linux.elephant-with-providers];
+    ]);
   };
 }

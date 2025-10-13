@@ -4756,3 +4756,91 @@ elephant
 exit
 walker --gapplication-service
 clear
+gd .
+gc "Walker: It said: \"I don't want to work\""
+gp
+clear
+exit
+firefox
+ckear
+clear
+exit
+zj
+clear
+poweroff
+clear
+ls
+clear
+gdm
+sudo gdm
+systemctl enable gdm
+cat /etc/systemd/system/gdm.service
+clear
+cd Kife
+kife switch
+clear
+kife switch -u
+hx
+clear
+kife switch -u
+nmtui
+clear
+ls
+clear
+ls
+clear
+cler
+clear
+cd ..
+ls
+clear
+cd Kife
+cd dotfiles/
+ls
+cd hypr/
+hx hyprlock.conf
+clear
+kife switch
+niri
+fontconfig
+fc
+fc-cache -v
+fc
+fc-query 
+fc-query JetBrains
+fc-list 
+fc-list | rg
+fc-list | rg Jet
+clear
+ls
+clear
+hx
+kife switch
+clear
+h
+hx
+clear
+clear
+nwg-look
+clear
+kife switch
+sudo nixos-rebuild switch --flake ~/Kife/OSs/NixOS/
+fc-list | rg Jet
+fc-list
+clear
+reboot
+fc-list
+fc-list | rg Jet
+clear
+hx
+kife switch
+clear
+nil
+alejandra
+clear
+hx
+kife switch
+clear
+ls
+clear
+cd Kife

@@ -27,6 +27,7 @@ in {
 
       bibata-cursors
       papirus-icon-theme
+      gruvbox-material-gtk-theme
       libadwaita
       nerd-fonts.jetbrains-mono
 

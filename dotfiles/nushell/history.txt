@@ -4672,3 +4672,49 @@ clear
 kife switch
 clear
 cd Kife
+git add .
+gc "Done :D"
+gp
+clear
+fastfetch 
+clear
+hx
+clear
+cd ..
+ls
+clear
+cd dotfiles/
+ls
+mv fastfetch/ nolink/
+ls
+clear
+ls
+clear
+reboot
+gdm
+sudo gdm
+ghostty
+pkill niri
+niri
+niri
+exit
+exit
+ghostty
+clear
+nwg-look
+clear
+exit
+cd Kife
+cd NixOS
+hx
+kife switch
+hx
+kife switch
+hx
+kife switch
+cd .
+clear
+cd ..
+cd .
+cd ..
+clear

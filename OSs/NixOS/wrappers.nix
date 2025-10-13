@@ -13,7 +13,7 @@ in {
       dunst = mkConfigWrapper "dunst" "-conf" "dunst/dunstrc";
       niri = mkConfigWrapper "niri" "-c" "niri/config.kdl";
       hyprlock = mkConfigWrapper "hyprlock" "-c" "hypr/hyprlock.conf";
-      hypridle = mkConfigWrapper "hypridle" "-c" "hypr/hypridle.conf";
+      # hypridle = mkConfigWrapper "hypridle" "-c" "hypr/hypridle.conf";
     };
   };
 }

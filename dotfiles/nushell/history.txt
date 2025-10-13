@@ -4718,3 +4718,41 @@ cd ..
 cd .
 cd ..
 clear
+gd .
+gc "GDM: I think it's fixed"
+gp
+clear
+walker
+hx
+clear
+btop
+clear
+hypridle
+clear
+exit
+hypridle --help
+hypridle -c /home/lousp/Kife/dotfiles/hypr/hypridle.conf
+exit
+hypridl
+hypridle
+clear
+hyprlock
+clear
+nwg-look
+exit
+hx
+exit
+kife switch
+clear
+elephant
+elephant --help
+elephant l
+elephant listproviders
+hx
+clear
+kife switch
+walker
+elephant
+exit
+walker --gapplication-service
+clear

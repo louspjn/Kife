@@ -53,7 +53,7 @@ in {
       zellij
       dunst
       hyprlock
-      hypridle
-    ]);
+      # hypridle
+    ]) ++ [inputs.elephant.packages.x86_64-linux.elephant-with-providers];
   };
 }

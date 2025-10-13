@@ -2,6 +2,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     parts.url = "github:hercules-ci/flake-parts";
+    elephant.url = "github:abenz1267/elephant";
     wrappers.url = "github:lassulus/wrappers";
     hjem.url = "github:feel-co/hjem";
   };

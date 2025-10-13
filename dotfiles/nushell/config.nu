@@ -72,6 +72,7 @@ def deventer [name] {
 # alias nhs = nh home switch
 # alias nos = nh os switch
 # alias nosu = nh os switch -u
+alias kife = nh os
 
 # alias u = ame upgrade
 # alias r = ame remove

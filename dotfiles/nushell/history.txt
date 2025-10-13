@@ -4412,3 +4412,187 @@ ls
 clear
 ls
 clear
+gd .
+gc "Backup"
+gp
+cd NixOS
+ls
+clear
+hx
+nh os switch
+nu --help
+a
+exit
+nu --config /home/lousp/Kife/dotfiles/nushell/
+clear
+clear
+ls
+cd NixOS
+nh os switch
+rm .config/helix
+gd .
+clear
+nh os switch
+clear
+nh os switch
+clear
+nh os switch
+clear
+nh os switch
+clear
+nh os switch
+clear
+nh os switch
+clear
+nh os switch
+clear
+nh os switch
+hx
+helix
+hx --help
+ls Kife/dotfiles/helix/
+clear
+nh os switch
+hx
+clear
+hx
+hyprland
+clear
+hx
+hyprland
+cear
+clear
+hx wrappers.nix
+clear
+exit
+zellij --help
+cat ../../dotfiles/helix/config.toml
+clear
+nh os switch
+clear
+nh os switch
+clear
+nh os switch
+clear
+nh os switch
+clear
+nh os switch
+clear
+nh os switch
+walker
+hx
+ls
+clear
+cat ./.config/helix/config.toml
+clear
+cd NixOS
+clear
+swww img ./Kife/assets/wallpapers/gruvbox-solar-system.png -t center
+nh os switch
+cear
+clear
+walker
+walker --gapplication-service
+clear
+nh os switch
+walker
+xwayland-satellite 
+clear
+firefox
+nh os switch
+clear
+nh os switch
+ls
+cd .config
+ls
+rm lazygit
+rm lazygit -r
+cd ghostty
+ls
+cat config
+cd ..
+ls
+rm ghostty
+clear
+ls
+rm zellij
+exit
+zellij
+ls
+clear
+ls
+exit
+zellij
+clear
+ls
+cat ghostty/config
+rm -rf ghostty/
+ls
+nh os switch
+cat starship.toml
+ls
+cat ghostty/config
+git add ,
+git add .
+clear
+gd .
+cd Kife
+gd .
+clear
+ghostty +list-fonts
+ghostty +list-fonts | rg "JetBrainsMono Nerd Font"
+ghostty +list-fonts | rg "JetBrainsMono Nerd"
+ghostty +list-fonts | rg "JetBrainsMono"
+ghostty +list-fonts | rg "JetBrains"
+ghostty +list-fonts | rg "Jet"
+ghostty +list-fonts | rg ""
+ghostty +list-fonts | rg "J"
+clear
+nh os switch
+hx
+cd 
+clear
+cat .config/ghostty/config
+ls .config/ghostty/
+ls .config
+clear
+ls -l ./ghostty/
+cat .config/ghostty/config
+cat /ghostty/config
+cat ghostty/config
+rm -rf ./ghostty/
+cle\r
+clear
+nh os switch
+juife
+kife
+source ~/.config/nushell/config.nu
+clear
+kife
+kife switch
+cat ghostty/config
+niri --help
+niri -c /home/lousp/Kife/dotfiles/niri/
+niri -c /home/lousp/Kife/dotfiles/niri/config.kdl
+clear
+ls .config
+ls .config/git
+cat .config/git/config
+clear
+git
+ks
+cd .cofnig
+cd .config
+ls
+rm git
+ls
+clear
+git
+gi
+t 
+cd Kife
+git add .
+gp
+clear
+cat .config/git/config
+kife switch

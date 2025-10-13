@@ -1,5 +1,9 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, ... }: let
+  selfpkgs = inputs.self.packages.x86_64-linux;
+in {
   hjem.users.lousp = {
+    imports = [./dotfiles.nix];
+    
     packages = with pkgs; [
       nh
 
@@ -16,7 +20,6 @@
       zig
       zls
 
-      helix
       zoxide
       starship
       fastfetch
@@ -40,10 +43,16 @@
       wf-recorder
       btop
 
-      zellij
+      xwayland-satellite
+      firefox
+
+      helix
       ghostty
       git
-    ];
+
+    ] ++ (with selfpkgs; [
+      zellij-wrapped
+    ]);
 
     systemd.services = {
       dunst.enable = true;

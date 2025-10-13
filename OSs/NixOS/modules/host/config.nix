@@ -62,7 +62,7 @@ in {
   };
 
   security.pam.services.hyprlock = {};
-  programs.hyprland.enable = true;
+  programs.niri.enable = true;
 
   services = {
     flatpak.enable = true;

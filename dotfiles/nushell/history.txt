@@ -4844,3 +4844,660 @@ clear
 ls
 clear
 cd Kife
+gd .
+gc "Font: Finally :D"
+gp
+cd .
+cd ..
+clear
+git clone https://codeberg.org/ziglings/exercises.git ziglings<\n>cd ziglings
+clear
+z
+clear
+cd ziglings/
+clear
+zig build
+zig version
+zig
+zig build
+nmtui
+clear
+zig build -Dn=1
+exit
+nix shell 'github:mitchellh/zig-overlay#master'
+exit
+hx
+exit
+zj
+clear
+cd ..
+ls
+cd Kife
+gs
+poweroff
+clear
+nir
+clear
+cd ziglings/
+clear
+cd ziglings/
+clear
+zig version
+zig build
+clear
+zig build watch
+clear
+zig build -h
+clear
+zig build -h
+clear
+zig build
+zj --help
+zj r
+zj r zig build
+zj run --help
+zj action
+zj action write-chars
+zj action write-chars --help
+zj action write-chars a
+zj action write-chars "<\n>s"
+"s"
+zj action write-chars clear; zig build\n
+zj action write-chars clear\nzig build\n
+zj action write-chars clear\n zig build\n
+zj action write-chars clear\n
+clear
+zj action write-chars clear
+zj --help
+zj run
+zj run --help
+zj run -i zig build
+zj run -i "zig build"
+zj run -i
+zj run -i zig
+zj run -i -- zig build
+clear
+exit
+hx
+clear
+hx
+clear
+hx
+clear
+exit
+zj
+exit
+nix shell 'github:mitchellh/zig-overlay#master'
+exit
+i386
+sh
+i386
+clear
+ls
+mkdir Cal
+cd Cal
+cp -r ../Kife/kifecenter/* .
+clear
+hx
+l
+rm src/config.json
+clear
+hx
+zb
+zv
+clear
+hx ../Kife/OSs/NixOS/modules/user/hjem.nix
+nh os switch
+zv
+zvm
+zvm i zi
+zvm 
+zvm i
+zvm upgrade
+zig
+zvm install 0.16.0-dev
+zvm install 0.16.0
+zvm install 0.15.1
+zls
+zvm install zls
+zvm
+zvm ls
+zig
+hx ../Kife/OSs/NixOS/modules/user/hjem.nix
+clear
+nh os switch
+clear
+zig fetch --save git+https://github.com/castholm/zigglgen.git
+clear
+zig build run
+clear
+zig build run
+zig fetch --save git+https://github.com/zig-gamedev/zglfw
+clear
+zig build run
+nix shell nixpkgs#libGL nixpkgs#libX11 nixpkgs#libXrandr libXi.so, libXcursor.so, libXinerama
+clear
+nix develop .
+clear
+zig build rn
+clear
+zig build run
+clear
+zig build run
+clear
+exit
+nix develop
+exit
+hx
+clear
+zellij --help
+zellij deatach
+clear
+zellij
+zellij --help
+zellij deatach
+clear
+exit
+nix develop
+exit
+zj
+exit
+clear
+cd NixOS
+hx
+flatpak install flathub 
+flatpak search
+flatpak search flathub
+flatpak search minecrafty
+flatpak search minecraft
+flatpak install flathub io.mrarm.mcpelauncher
+clear
+cd cal
+cçear
+clear
+ls
+clear
+zig build run
+exi
+exit
+nix develop
+clear
+hx flake.nix
+clear
+nix develop
+hx flake.nix
+clear
+nix develop
+clear
+z
+clear
+cd cal
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+head -n 100 .zig-cache/o/d67555a066024d99d33d194d86e72538/gl.zig | grep -A 20 "ProcTable"
+head -n 100 .zig-cache/o/d67555a066024d99d33d194d86e72538/gl.zig | grep -A 20 "ProcTable" | wl-copy
+clear
+head -n 100 .zig-cache/o/d67555a066024d99d33d194d86e72538/gl.zig | grep -A 20 "ProcTable" | wl-copy
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+cat ../Kife/OSs/NixOS/modules/host/config.nix
+cat ../Kife/OSs/NixOS/modules/host/config.nix | wl-copy
+clear
+zig build run
+clear
+zig build run
+hx
+ls
+rm src/main.zig
+clear
+hx flake.nix
+zig fetch --save git+https://github.com/raylib-zig/raylib-zig#devel
+clear
+clar
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+fc-match", "-f", "%{file}\n
+fc-match -f JetBrains
+fc-match -f
+fc-match
+clear
+:w
+clear
+mv ../Downloads/Jet* .
+ls
+mkdir fonts/
+mv ./Jet* /fonts
+mv ./Jet* fonts
+ls
+l
+rm zig-out/bin/kifecenter
+clear
+ls
+clear
+hx
+clear
+mv 'fonts/JetBrainsMono-Italic[wght].ttf' fonts/JetBrainsMono-Italic.ttf
+mv 'fonts/JetBrainsMono[wght].ttf' fonts/JetBRainsMono.ttf
+l
+clear
+mv fonts/JetBRainsMono.ttf fonts/JetBrainsMono.ttf
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+hx
+clear
+hx
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+fd
+nix run nixpkgs#fd -- / JetBrainsMono
+nix run nixpkgs#fd -- JetBrainsMono
+cd /
+nix run nixpkgs#fd -- JetBrainsMono
+cd
+clear
+ls
+nix run github:vimjoyer/nixconf#environment -- -c "lf"
+clear
+cd Cal
+ls
+l
+rm fonts/JetBrainsMono-Italic.ttf
+rm fonts/JetBrainsMono.ttf
+mv fonts/JetBrainsMonoNLNerdFontMono-Regular.ttf fonts/JetBrainsMono.ttf
+clear
+zig build run
+unzip ../Downloads/JetBrains_Mono.zip
+ls
+rm fonts/JetBrainsMono.ttf
+mv ./static/JetBrainsMono-Regular.ttf fonts/JetBrainsMono.ttf
+rm JetBrainsMono-Italic-VariableFont_wght.ttf
+rm JetBrainsMono-VariableFont_wght.ttf
+rm OFL.txt
+rm -rf stativc
+rm -rf static
+ls
+clear
+l
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+exit
+zj
+clear
+lsl
+ll
+e
+all
+isk
+s
+all
+all --help
+clear
+sddm --help
+sddm --test-mode
+clear
+ls
+clear
+nix run github:vimjoyer/nixconf#environment -- -c "lf"
+cd host
+x
+hx
+clear
+cd ..
+cd .
+cd ..
+cd ...
+ls
+cd dotfiles/
+ls
+l
+clear
+l hypr/
+mv nolink/hyprland.conf hypr/
+clear
+nix run nixpkgs#hyprland -- -c ./hypr/hyprland.conf
+clear
+nh os switch
+clear
+hyprland
+clear
+nh os switch
+clear
+fastfetch 
+rm ../../../../../.config/fastfetch/config.jsonc
+nh os switch
+fastfetch 
+clear
+exit
+hx
+pkill niri
+niri
+clear
+exit
+clear
+ls
+clear
+ls
+cd Kife
+ls
+clear
+hx
+nh os switch
+waybar
+btop
+clear
+dunst
+clear
+hypridle
+clear
+ls
+clear
+waybar -c
+waybar -c dotfiles/nolink/waybar/config.jsonc
+waybar -c dotfiles/nolink/waybar
+waybar --help
+waybar -c dotfiles/nolink/waybar/config.jsonc -s dotfiles/nolink/waybar/style.css
+clear
+mv dotfiles/nolink/waybar/ dotfiles/
+lcear
+clear
+nh os switch
+waybar
+clear
+hyprctl reload
+clear
+hyprctl reload
+clear
+btop
+clear
+btop
+hyprland
+clear
+dunst
+dunst &
+sh
+bto
+btop
+clear
+exit
+btop
+clear
+notify-send "Discord" "Hello, World!" --icon=system 
+clear
+swww img ~/Kife/assets/wallpapers/voyager-1 -t center
+swww img ~/Kife/assets/wallpapers/voyager-1.png -t center
+swww img ~/Kife/assets/wallpapers/voyager-1.jpg -t center
+clear
+nh os switch
+rm ../.config/helix/config.toml
+nh os switch
+hx
+ghostty +list-themes
+clear
+rm ../.config/ghostty/
+rm ../.config/ghostty/config
+nh os switch
+clear
+exit
+clear
+cat kifecenter/src/main.zig
+nh os switch
+clear
+$env.BAT_THEME
+source ~/.config/nushell/config.nu
+$env.BAT_THEME
+cat kifecenter/src/main.zig
+bat --help
+clear
+exit
+bat --help
+bat --list-themes
+cat kifecenter/src/main.zig
+cat Kife/kifecenter/src/main.zig
+clear
+fzf
+nh os switch
+fzf
+hzf
+clear
+exit
+zj
+clear
+z
+exit
+exit
+zj
+clear
+zh
+exit
+zj --help
+exit
+zj --help
+exit
+ls
+cd /
+fd zellijlog
+fd zellij
+nix run nixpkgs#fd -- zellij
+cd /tmp/zellij-1000/zellij-log
+ls
+cat zellij-18.log
+cat zellij.log
+clar
+clear
+cd
+clear
+exit
+zj
+clear
+hx
+exit
+zj
+clear
+ls
+cler
+clear
+cd Kifw
+cd Kife
+clear
+xh
+clear
+rm ../.config/starship.toml
+clear
+nh os switch
+clear
+rm ../.config/starship.toml
+clear
+ls
+cd dotfiles/
+ls
+hx starship.toml
+mv niri nolink/
+clear
+ls
+clear
+exit
+nh os switch
+starship --help
+starship -c
+starship config
+ln -sf /home/lousp/Kife/dotfiles/starship.toml /home/lousp/.config/
+clear
+C Λ Γ L O S
+Κ Α Ρ Ο Λ Ο Σ :: D E V
+clear
+ls
+clear
+ls
+exit
+exit
+hx
+exit
+zj
+exit
+zj
+clear
+matrix
+cd Kife
+cd nu
+cd Nushell
+cd nushell
+cd dotfiles/
+cd nushell/
+ls
+clear
+hx
+clear
+matrix
+cava
+clear
+cd Kife
+ls
+cd ..
+ls
+cd cal
+ls
+clear
+hx
+cd ..
+cd Kife
+hx
+exit
+zj
+clear
+cd dunst
+cd dotfiles
+ls
+cd dunst/
+ls
+clear
+hx dunstrc
+exit
+zj
+exit
+cd Kife

@@ -5,21 +5,21 @@
   font-size: 10pt;
 
   border: none;
-  border-radius: 18px;
+  border-radius: 50px;
 
-  padding: 4px 2px;
+  padding: 3px 4px;
 
   font-weight: 600;
-  color: @foreground;
+  color: @text;
 
   margin-top: 0px;
   margin-bottom: 1px;
 }
 
 window#waybar {
-  background-color: @background;
-  color: @foreground;
-  border: 2px solid @color4;
+  background-color: @base;
+  color: @text;
+  border: 2px solid @blue;
 }
 
 window#waybar #window {
@@ -27,9 +27,11 @@ window#waybar #window {
 }
 
 #workspaces {
-  background-color: @color8;
-  border-radius: 6px;
-  margin: 4px;
+  background-color: @surface0;
+  border-radius: 50px;
+  margin-top: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 #workspaces button {
@@ -41,32 +43,32 @@ window#waybar #window {
 #workspaces button:hover {
   box-shadow: none;
   text-shadow: none;
-  background: @background;
-  border-radius: 5px;
+  background: @base;
+  border-radius: 50px;
 }
 
 #clock {
-  margin: 0px 8px;
-  background-color: @color8;
-  color: @foreground;
+  margin: 8px 8px;
+  background-color: @surface0;
+  color: @text;
   padding: 0 10px;
-  border-radius: 8px;
+  border-radius: 50px;
 }
 
 #custom-logo {
   margin-top: 2px;
   margin-left: 5px;
-  color: @color4;
+  color: @blue;
   font-size: 20px;
 }
 
 #battery {
   margin-right: 10px;
-  color: @foreground;
+  color: @text;
 }
 
 #battery.warning {
-  color: @color9;
+  color: @yellow;
 }
 
 #network, #battery {

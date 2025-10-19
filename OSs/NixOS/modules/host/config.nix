@@ -30,11 +30,14 @@ in {
       blueman
       alsa-utils
       pavucontrol
-    ] ++ [
-      wrappedpkgs.niri
     ];
 
     localBinInPath = true;
+  };
+
+  programs.hyprland = {
+    package = wrappedpkgs.hyprland;
+    enable = true;
   };
 
   fonts.packages = [ pkgs.nerd-fonts.jetbrains-mono ];

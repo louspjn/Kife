@@ -20,7 +20,7 @@ $env.config = {
   }
 }
 
-$env.BAT_THEME = "gruvbox-dark"
+$env.BAT_THEME = "base16"
 $env.FZF_DEFAULT_OPTS = "--reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 {}' --color=16"
 
 fastfetch
@@ -42,7 +42,7 @@ mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
 alias bonsai = cbonsai -lip
-alias cat = bat --theme-dark base16
+alias cat = bat
 alias cd = z
 # alias hx = helix
 alias hzf = hx (fzf)
@@ -59,7 +59,7 @@ alias gs = git status
 
 alias l =  eza --tree --icons --git
 alias ls = eza --icons --git
-alias matrix = cmatrix -C green -m
+alias matrix = cmatrix -C blue -m
 alias recorder = wf-recorder
 
 alias dockerdev = docker run -it -v (pwd):/home/dev/workspace -v ~/Kife/dotfiles:/home/dev/.config --name

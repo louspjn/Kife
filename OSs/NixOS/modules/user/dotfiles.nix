@@ -3,7 +3,7 @@
     ".config/helix/config.toml" = {
       generator = (pkgs.formats.toml {}).generate "helixconfig";
       value = {
-        theme = "gruvbox-material";
+        theme = "catppuccin_mocha";
 
         editor = {
           line-number = "relative";
@@ -21,7 +21,7 @@
     ".config/ghostty/config" = {
       generator = lib.generators.toKeyValue {};
       value = {
-        theme = "Gruvbox Dark";
+        theme = "Catppuccin Mocha";
 
         window-padding-x = 12;
         window-padding-y = 15;
@@ -41,55 +41,6 @@
 
         credential.helper = "store";
         init.defaultBranch = "main";
-      };
-    };
-
-    ".config/starship.toml" = {
-      generator = (pkgs.formats.toml {}).generate "starshipconfig";
-      value = {
-        palette = "colors";
-        palettes.colors = {
-          color1 = "#3C3836";
-          color2 = "#EA6962";
-          color3 = "#A9B665";
-          color4 = "#D8A657";
-          color5 = "#7DAEA3";
-          color6 = "#D3869B";
-          color7 = "#89B482";
-          color8 = "#D4BE98";
-          color9 = "#3C3836";
-        };
-
-        format = "$directory$nix_shell$rust$lua$haskell$nodejs$git_branch$git_status\n$character";
-
-        character = {
-          error_symbol = "[λ](bold red)";
-          success_symbol = "[λ](bold color4)";
-        };
-
-        git_branch = {
-          style = "bold red";
-          symbol = "";
-        };
-
-        git_status.disabled = false;
-
-        lua.format = "via [󰢱 $version](bold blue) ";
-
-        nix_shell = {
-          disabled = false;
-          format = "via [ $name](bold blue) ";
-          impure_msg = "";
-          pure_msg = "";
-          unknown_msg = "";
-        };
-
-        rust = {
-          detect_extensions = ["rs"];
-          detect_files = ["Cargo.toml"];
-          format = "via [ $version](bold orange) ";
-          version_format = "v$raw";
-        };
       };
     };
 
@@ -127,12 +78,13 @@
 
         modules = [
           { text = "echo"; type = "custom"; }
-          { text = "echo"; type = "custom"; }
+          # { text = "echo"; type = "custom"; }
           { key = " "; type = "os"; }
           { key = " "; type = "shell"; }
           { key = " "; type = "wm"; }
           { key = " "; type = "memory"; }
           { key = "󱥎 "; type = "disk"; }
+          { key = " "; text = "hyprctl splash"; type = "command"; }
           { key = " "; symbol = "circle"; type = "colors"; }
         ];
       };

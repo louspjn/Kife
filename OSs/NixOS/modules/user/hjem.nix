@@ -27,7 +27,7 @@ in {
 
       bibata-cursors
       papirus-icon-theme
-      gruvbox-material-gtk-theme
+      catppuccin-gtk
       libadwaita
 
       bat
@@ -40,19 +40,23 @@ in {
       pipes
       wf-recorder
       btop
+      fzf
 
-      xwayland-satellite
       firefox
 
       helix
       ghostty
       git
+      hypridle
+
+      grimblast
 
     ] ++ (with wrappedpkgs; [
       zellij
       dunst
       hyprlock
       # hypridle
+      waybar
     ]);
   };
 }

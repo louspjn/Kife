@@ -31,11 +31,11 @@
     mouse_right_click = close_all
 
 [urgency-low]
-	background = "#282828"
-	foreground = "#ebdbb2"
+	background = "#1e1e2e"
+	foreground = "#cdd6f4"
 [urgency-normal]
-	background = "#282828"
-	foreground = "#ebdbb2"
+	background = "#1e1e2e"
+	foreground = "#cdd6f4"
 [urgency-critical]
-	background = "#282828"
-	foreground = "#ebdbb2"
+	background = "#1e1e2e"
+	foreground = "#cdd6f4"

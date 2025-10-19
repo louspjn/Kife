@@ -12,8 +12,17 @@ in {
       zellij = mkConfigWrapper "zellij" "--config-dir" "zellij";
       dunst = mkConfigWrapper "dunst" "-conf" "dunst/dunstrc";
       niri = mkConfigWrapper "niri" "-c" "niri/config.kdl";
+      hyprland = mkConfigWrapper "hyprland" "-c" "hypr/hyprland.conf";
       hyprlock = mkConfigWrapper "hyprlock" "-c" "hypr/hyprlock.conf";
-      # hypridle = mkConfigWrapper "hypridle" "-c" "hypr/hypridle.conf";
+      hypridle = mkConfigWrapper "hypridle" "-c" "hypr/hypridle.conf";
+      waybar = inputs.wrappers.lib.wrapPackage {
+        inherit pkgs;
+        package = pkgs.waybar;
+        flags = {
+          "-c" = "${dotfiles}/waybar/config.jsonc";
+          "-s" = "${dotfiles}/waybar/style.css";
+        };
+      };
     };
   };
 }

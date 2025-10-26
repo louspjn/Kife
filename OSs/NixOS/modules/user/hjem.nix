@@ -7,7 +7,7 @@ in {
     packages = with pkgs; [
       nh
 
-      discord
+      vesktop
       nwg-look
       walker
 

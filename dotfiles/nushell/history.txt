@@ -6126,3 +6126,33 @@ cd dotfiles/
 ls
 clear
 cd ..
+git add .
+git commit -m "New wallpaper"
+git push
+clear
+cd ../louspvercel/
+clear
+hx
+clear
+btop
+exit
+nix run nixpkgs#betterdiscord-installer
+clear
+nix run nixpkgs#vesktop
+clear
+exot
+exit
+hx ../
+cd Kife
+clear
+cd Downloads/
+ls
+cd ..
+ls
+cat import.json
+mv import.json stylus.json
+mv stylus.json ~/Kife/dotfiles/
+clear
+exit
+nh os switch
+clear

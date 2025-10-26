@@ -25,12 +25,6 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
-require("base46").load_all_highlights()
-
--- load theme
-dofile(vim.g.base46_cache .. "defaults")
-dofile(vim.g.base46_cache .. "statusline")
-
 require "options"
 require "autocmds"
 

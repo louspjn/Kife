@@ -5501,3 +5501,628 @@ exit
 zj
 exit
 cd Kife
+gd .
+gc "Rice done :D"
+gp
+clear
+pkill Hyprland
+cd cal
+clear
+ls
+matrix
+clear
+matrix
+clear
+notify-send "Discord" "Hello, World!" --icon=system 
+clear
+exit
+ls
+clear
+cd ..
+cd Kife
+cd dotfiles/
+cd dunst/
+hx
+notify-send "Discord" "Hello, World!" --icon=system 
+cd ..
+ls
+cd waybar/
+cat colors.css
+clear
+exit
+pkill dunst
+clear
+notify-send "Discord" "Hello, World!" --icon=system 
+dunst
+sh
+notify-send "Discord" "Hello, World!" --icon=system 
+notify-send "Discord" "Yep, that's not discord" --icon=Discord 
+notify-send "Discord" "Yep, that's not discord" --icon=discord 
+clear
+hx dunstrc
+exit
+notify-send "Discord" "Yep, that's not discord" --icon=discord 
+matrix
+clear
+cat ../Kife/dotfiles/hypr/hyprland.conf
+mkdir ~/Images/Screenshots/
+clear
+notify-send "Discord" "Yep, that's not discord" --icon=discord 
+pkill discord
+clear
+pkill Discord
+exit
+zig build run
+clear
+zig build run
+clear
+zig build run
+hx
+cd ..
+rm -rf Cal
+clear
+mkdir Videos
+cd Videos
+ls
+clear
+ls
+lce
+ar
+clear
+l
+s
+ar
+a
+asm
+nasm
+clear
+ls
+clear
+node
+npm
+node
+npm
+clear
+npm init @motion-canvas@latest
+cd firstvideo/
+npm install
+npm start
+clear
+exit
+nix develop
+cd .
+cd 
+clear
+cd Videos/firstvideo/
+clear
+npm start
+clear
+hx
+exit
+nix shell nixpkgs#nodejs
+exit
+npm start
+zj
+exit
+poweroff
+cd Videos
+ls
+clear
+ls
+uv
+clear
+uv
+clear
+uv add manim
+ls
+uv init manimations<\n>z manimations<\n>uv add manim
+ls
+uv init manimations
+uv
+uv init
+steam-run uv
+clear
+steam-run uv init manimations
+ls
+cd manimations/
+steam-run uv add manim
+clear
+exit
+nix shell nixpkgs#pkg-config
+exit
+nix shell nixpkgs#steam-run --impure
+ls
+rm -rf manimations/
+clear
+ls
+mkdir manimations
+cd manimations/
+clear
+cp ~/Kife/OSs/NixOS/flake.nix .
+hx flake.nix
+nix run github:nix-community/pip2nix -- generate manim_fonts
+,
+ls
+clear
+nix run github:nix-community/pip2nix -- generate manim_fonts
+exit
+nix shell nixpkgs#ninja
+nix run github:nix-community/pip2nix -- generate manim_fonts
+exit
+nix shell nixpkgs#ninja nixpkgs#pkg-config nixpkgs#cairo nixpkgs#cmake
+nix shell nixpkgs#ninja nixpkgs#pkg-config nixpkgs#cairo nixpkgs#cmakecle
+cd ..
+cd Videos
+ls
+rm -rf manimations/
+clear
+ls
+l /
+clear
+ls /
+ls /usr/share
+ls /usr
+ls /usr/bin/
+ls /bin
+clear
+ls
+cd firstvideo/
+ls
+clear
+pavucontrol
+hx
+clear
+cd firstvideo/
+cd firstvideo
+cçea
+clear
+hx
+exit
+zj
+exit
+nix shell nixpkgs#nodejs
+exit
+cd firstvideo
+exit
+nix shell nixpkgs#nodejs
+nix shell nixpkgs#nodejs --run npm start
+nix run nixpkgs#nodejs -- npm start
+nix shell nixpkgs#nodejs --help
+nix shell nixpkgs#nodejs -c npm start
+npm add shiki
+npm start
+npm i @lezer/rust
+npm i @lezer/nix
+clear
+hx
+npm start
+exit
+nix shell nixpkgs#nodejs
+exit
+exit
+zj
+clear
+poweroff
+cd firstvideo
+clear
+hx
+ls
+l
+clear
+l src
+ls
+mkdir src/helpers
+mv Plot.tsx src/helpers/
+mv shiki.ts src/helpers/
+clear
+ls
+clear
+l src
+clear
+ls
+clear
+npm start
+npm add fs
+clear
+ls
+mv ../../Downloads/NixOS.svg ./public/
+clear
+exit
+cd firs
+clear
+npm start
+cp ~/Kife/assets/wallpapers/voyager-1.jpg ./public/background
+mv ./public/background ./public/background.jpg
+exit
+cd firs
+clear
+ls
+clear
+l
+clear
+ls
+cd src
+ls
+clear
+l
+mv scenes/nixoslogo.tsx scenes/intro.tsx
+ls
+cd scenes/
+ls
+rm cartesianplane.*
+ls
+rm motioncode.*
+ls
+rm example.meta
+rm nixoslogo.meta
+ls
+clear
+ls
+clear
+exit
+mv ~/Downloads/Pitex.ts ./src/helpers/
+clear
+exit
+npm start
+hx
+ls
+cp node_modules/@motion-canvas/ui/ -r ./editor/
+mkdir editor
+cp node_modules/@motion-canvas/ui/ -r ./editor/
+ls
+clear
+ls
+cd editor
+ls
+cd ui/
+ls
+mv ./* ../
+cd ..
+ls
+rmdir ui
+clear
+l
+clear
+ls
+rm LICENSE
+l
+clear
+hx
+ls
+cd ..
+rm -rfeditor
+rm -rf editor
+clear
+hx
+ls
+clear
+ls
+l
+clear
+ls
+mv node_modules/ .node_modules
+l
+mv .node_modules/ node_modules
+rm src/CustomTabConfig.tsx
+rm src/plugin.ts
+clear
+ls
+mv public/ ../
+mv src ../
+ls
+l
+clear
+cd ..
+ls
+rm -rf firstvideo/
+rm -rf ./firstvideo
+l
+clear
+npm init @motion-canvas@latest
+cd snowmotion/
+ls
+l
+rm public/ src -rf
+ls
+mv ../public/ .
+mv ../src .
+clear
+l
+l ../
+clear
+ls
+clear
+l
+clear
+$env.PWD = ~/Videos/snowmotion
+cd ..
+cd 
+cd Videos/
+cd snowmotion/
+ls
+clear
+$env.PWD = /home/lousp/
+npm i
+$env.PWD = "/home/lousp/"
+clear
+clear
+npm start
+npm i shiki
+hx
+l
+clear
+ls
+l public/
+l src/
+l --hepl
+l --help
+l --git-ignor
+l --git-ignore
+cat .gitignore
+l --help
+l --git-ignore
+cat .gitignore
+ls --tree --git-ignore
+ls --git-ignore
+l --help
+l --git
+git init
+ls
+git add .
+git commit -m "Init"
+git origin add 
+git add origin
+git 
+git remote add origin https://github.com/louspjn/snowmotion
+git push -u origin main
+clear
+ls
+clear
+mv ~/Downloads/package-svgrepo-com.svg ./public/
+clear
+exit
+hx
+npm start
+exit
+exit
+zj
+clear
+exit
+nix shell nixpkgs#nodejs
+clear
+exit
+ls
+clear
+ls
+cd Videos/
+ls
+cd snowmotion/
+ls
+clear
+recorder -f recording.mp4 -g (slurp) -y
+recorder -f recording.mp4 -y
+mv ~/Downloads/os-linux-arch-svgrepo-com.svg ./public/
+clear
+exit
+rm public/background.jpg
+cp /home/lousp/Kife/assets/wallpapers/cat-in-clouds.png ./public/background.png
+exit
+mv ~/Downloads/no-svgrepo-com.svg ./public/
+exit
+hyprctl dispatch fullscreen
+sleep 1sec; hyprctl dispatch fullscreen
+matrix
+clear
+clear
+exit
+hx
+clear
+exit
+npm start
+zj
+exit
+gleam
+gleam hex
+gleam shell
+gleam new
+gleam new 
+gleam new test
+ls
+cd test
+gleam test
+ls
+l
+clear
+ls
+cd test
+ls
+cd ..
+cd src
+ls
+cd ..
+clear
+gleam shell
+nix shell nixpkgs#escript
+clear
+gleam shell
+gleam run
+clear
+gleam run
+gleam hex
+gleam hex 
+clear
+exit
+nix shell nixpkgs#erlang
+clear
+gleam run
+gleam --help
+gleam run
+gleam add paint
+gleam run
+clear
+gleam run
+nix shell nixpkgs#node
+gleam run
+clear
+npx http-server .<\n>
+gleam build
+hx
+exit
+nix shell nixpkgs#nodejs
+exit
+nix shell nixpkgs#nodejs
+exit
+zj
+exit
+nix shell nixpkgs#gleam
+exit
+cd snowmotion
+hx
+clear
+cd snowmotiom
+cd snowmotion
+clear
+hx
+clear
+exit
+nix shell nixpkgs#typescript-language-server
+exit
+npm start
+zj
+exit
+nix shell nixpkgs#typescript-language-server nixpkgs#nodejs nixpkgs#bun
+clear
+nix shell nixpkgs#typescript-language-server nixpkgs#nodejs nixpkgs#bun
+clear
+bun create next-app@latest
+bun
+node
+typescript-language-server 
+bun
+exit
+zj
+clear
+exit
+cd Downloads/
+ls
+unzip bun-linux-x64.zip
+ls
+cd bun-linux-x64/
+./bun
+nix run nixpkgs#steam-run -- ./bun
+nix run nixpkgs#steam-run --impure -- ./bun
+nix run nixpkgs#steam-run --impure -- ./bun --help
+nix run nixpkgs#steam-run --impure -- ./bun install
+clear
+exit
+nix shell nixpkgs#typescript-language-server nixpkgs#nodejs
+exit
+exiyt
+exit
+nix shell nixpkgs#typescript-language-server nixpkgs#nodejs
+clear
+yarn create next-app@latest
+ls
+yarn create next-app@latest lousp
+yarn create next-app@latest lousp --yes
+ls
+cd lousp
+ls
+exit
+yarn create next-app lousp --yes
+nix-collect-garbage
+clear
+yarn create next-app lousp --yes
+rm -rf lousp
+yarn create next-app lousp --yes
+cd lousp/
+git
+git remote add origin https://github.com/louspjn/louspvercel
+git add .
+l
+fd .gitignore
+ls
+ls -a
+cat .gitignore
+git add .
+git commit -m "Init"
+git push -u origin main
+ls
+clear
+yarn run
+yarn run dev
+yarn add @catppuccin/ui
+clear
+yarn run dev
+yarn a
+clar
+yarn remove 
+yarn remove @catppuccin/ui
+yarn add -D @catppuccin/tailwindcss
+ls
+rm tailwind.config.js
+clear
+ls
+ls public/
+exit
+hx
+ls
+cd ..
+rm -rf lousp
+rm -rf lousp/
+ls
+clear
+yarn run dev
+yarn create astro
+ls
+cd portifolio/
+ls
+hx
+cd ..
+rm -rf portifolio/
+yarn create next-app lousp --yes
+yarn create next-app portifolio --yes
+git clone https://github.com/louspjn/louspvercel
+cd louspvercel/
+ls
+clear
+cd 
+cd louspvercel/
+clear
+yarn run dev
+ls
+yarn install
+yarn dev run
+celar
+jx
+hx
+ls
+cd ..
+ls
+cd Kife
+gd
+gs
+clear
+ls
+cd dotfiles/
+ls
+cd nolink/
+ls
+mv nvim ~/.config
+cd ..
+clear
+nix run nixpkgs#nvim
+cd dotfiles
+ls
+mv mtab.json mtabconfig
+clear
+nix run nixpkgs#neovim
+swww img ~/Kife/assets/wallpapers/space.png -t center
+clear
+exit
+hx
+mv ~/.config/nvim ./dotfiles/
+cd dotfiles/
+ls
+clear
+cd ..

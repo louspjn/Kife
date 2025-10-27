@@ -6270,3 +6270,6 @@ ls
 cd ..
 ls
 hx README.md
+gd .
+gc "Showcase"
+gp

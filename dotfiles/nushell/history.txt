@@ -6278,3 +6278,153 @@ ls
 rm -rf kifecenter/
 mv apps apps.archlinux
 ls
+git add .
+git commit -m "Repo: removing ununsed directories"
+gp
+cd ..
+clear
+cd Videos/
+cd snowmotion/
+gs
+git add .
+git commit -m "Backup"
+gp
+clear
+poweroff
+eww
+cd .config
+ls
+mkdir eww
+cd eww
+ls
+clear
+hx eww.yuck
+hx style.css
+l
+clear
+mkdir scripts; hx scripts/osd_volume.sh; chmod +x ./scripts/osd_volume.sh
+clear
+hx ~/Kife/dotfiles/hypr/hyprland.conf
+ls
+rm -rf scripts/
+rm style.css
+clear
+hx eww.yuck
+eww
+eww daemon
+eww
+eww open
+eww open example
+eww
+clear
+ls
+clear
+eww
+eww active-windows
+eww list-windows
+eww kill
+eww list-windows
+eww open example
+eww daemon
+eww list-windows
+pkill waybar
+eww close example
+eww open example --monitor 1
+eww open example --screen 1
+eww open example --screen 0
+eww open example --screen 1
+clear
+hx
+ls
+cd ..
+rm -rf eww
+cd ..
+exit
+zj
+cd
+eww kill
+eww close example
+exit
+nix shell nixpkgs#eww
+pkill eww
+clear
+exit
+cd Kife
+ls
+cd dotfiles/
+ls
+mkdir ags
+cd ags/
+nix flake init --template github:aylur/ags
+clear
+ls
+cat flake.nix
+hx flake.nix
+nix develpo
+clear
+jz
+hx
+exit
+zj
+clear
+exit
+nix shell nixpkgs#typescript-language-server nixpkgs#nodejs
+nix flake init --template github:aylur/ags
+nix develop
+git add .
+clear
+nix flake init --template github:aylur/ags
+ags init -d . -f 
+ls
+mv style.scss style.css
+clear
+exi
+exit
+ags run .
+date
+^date
+^date --help
+^date %I:%M
+^date "%I:%M"
+^date I:M
+^date --IM
+^date --I --M
+^date +%I:%M
+^date +%I:%M %P
+^date +%I:%M %p
+^date +%I:%M-%p
+^date +%I:%M%p
+^date +%I:%M +%p
+^date +%I:%M %p
+^date +"%I:%M %p"
+^date +"%I:%M \%p"
+^date +"%I:%M %p"
+^date +"%I:%M %P"
+^date +"%I:%M %p"
+^date +"%I:%M %p %a"
+^date +"%I:%M %p"
+^date +"%H:%M"
+^date +"%A %H:%M"
+^date +"%a %H:%M"
+^date +"%a %b %H:%M"
+^date +"%a %d %b %H:%M"
+bash
+exit
+ags run 
+ags run .
+clear
+exit
+nix develop
+exit
+hx
+exit
+zj
+xit
+exit
+nix shell nixpkgs#typescript-language-server
+exit
+cd waybar
+ls
+hx style.css
+clear
+cd ..

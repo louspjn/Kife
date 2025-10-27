@@ -6273,3 +6273,8 @@ hx README.md
 gd .
 gc "Showcase"
 gp
+hx README.md
+ls
+rm -rf kifecenter/
+mv apps apps.archlinux
+ls

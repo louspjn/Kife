@@ -6236,3 +6236,37 @@ cd
 clear
 hx Kife/dotfiles/mtabconfig
 cd Kife
+gd .
+gc "Update mtab config"
+gp
+gd
+gs
+cava
+clear
+matrix
+clear
+matrix
+ls
+cd Images/Screenshots/
+ls
+cp 2025-10-26_22-10-* ../../Kife/assets/
+cd ~/Kife/assets/
+ls
+mkdir showcase
+mv 2025-10-26_22-10-* showcase/
+clear
+ls
+cd showcase/
+clear
+ls
+mv 2025-10-26_22-10-37.png desktop.ppng
+mv desktop.ppng desktop.png
+mv 2025-10-26_22-10-44.png firefox.png
+mv 2025-10-26_22-10-50.png discord.png
+ls
+clear
+cd ..
+ls
+cd ..
+ls
+hx README.md

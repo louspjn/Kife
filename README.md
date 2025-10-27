@@ -1,8 +1,6 @@
-<!-- <p align="center"><img src="./assets/imgs/Nix.png" width="200px"></p> -->
-
 <h1 align="center">My Systems Configurations</h1>
 
-<!-- # NixOS Rice -->
-<!-- <img src="./assets/showcase/RiceNixOS.png"> -->
-
-<!-- <img src="./assets/showcase/lockscreen.png"> -->
+# NixOS
+<img src="./assets/showcase/desktop.png" alt="A hyprland dekstop with a open terminal, everything in catppuccin theme">
+<img src="./assets/showcase/firefox.png" alt="Firefox with catppuccin theme">
+<img src="./assets/showcase/discord.png" alt="Vesktop (Discord + Vencord) with Catppuccin Theme">

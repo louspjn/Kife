@@ -6156,3 +6156,83 @@ clear
 exit
 nh os switch
 clear
+git add .
+git commit -m "Idk"
+gp
+clear
+cd port
+clear
+hx
+ls
+cd ..
+ls
+rmdir portifolio/
+cd louspvercel/
+clear
+ls
+clear
+yarn dev
+@catppuccin/tailwindcss
+yarn add -D @catppuccin/tailwindcss
+clear
+nix run nixpkgs#inkscape
+ls
+cd
+clear
+ls
+mkdir logo
+mv bitmap.* logo/
+ls logo/
+ls
+clear
+exit
+cp ~/logo/* ./public/
+cd public/
+ls
+rm file.svg next.svg window.svg vercel.svg globe.svg
+ls
+mv bitmap.png mylogo.png
+mv bitmap.svg mylogo.svg
+clear
+exit
+clear
+ls
+clear
+ls
+clear
+\n
+\ns
+clear
+ls
+clear
+ls
+clear
+mv ~/Downloads/discord-svgrepo-com.svg ./public/
+mv ~/Downloads/youtube-168-svgrepo-com.svg ./public/
+mv ~/Downloads/github-142-svgrepo-com.svg ./public/
+cd public/
+ls
+clear
+ls
+mv discord-svgrepo-com.svg discord.svg
+mv github-142-svgrepo-com.svg github.svg
+mv youtube-168-svgrepo-com.svg youtube.svg
+ls
+clear
+exit
+hx
+git add .
+git commit -m "Home: Links and about me done"
+clear
+gp
+clear
+yarn dev
+cear
+clear
+exit
+zj
+clear
+cd
+clear
+hx Kife/dotfiles/mtabconfig
+cd Kife

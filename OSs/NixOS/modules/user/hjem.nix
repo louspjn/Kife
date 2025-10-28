@@ -6,6 +6,12 @@ in {
     
     packages = with pkgs; [
       nh
+      typescript-language-server
+      nodejs
+      yarn
+
+      lua
+      lua-language-server
 
       vesktop
       nwg-look

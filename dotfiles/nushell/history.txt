@@ -6612,3 +6612,26 @@ clear
 ls
 nvim
 hx ~/Kife/OSs/NixOS/modules/user/hjem.nix
+cd ~/Kife; git add .; git commit -m "Forgot to install neovim :|"; git push; cd ~/ziglings
+ls
+clear
+nvim
+nh os switch
+clear
+nvim
+zls
+cd nvim
+nvim
+cd ziglings
+nvim
+nix shell 'github:mitchellh/zig-overlay#master'
+clear
+cd ..
+ls
+cd Kife
+cd OSs/
+cd NixOS/
+nvim
+nh os switch
+clear
+cd ..

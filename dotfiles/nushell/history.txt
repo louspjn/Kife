@@ -6635,3 +6635,119 @@ nvim
 nh os switch
 clear
 cd ..
+git add .
+git commit -m "Adding lua and js LSPs"
+gp
+clear
+cd ..
+cd Videos/snowmotion/
+clear
+nvim
+nvim ~/.config/nvim
+nvim
+ckear
+clear
+cd nvim
+ls
+clear
+alsamixer
+exit
+nvim
+cd ~
+ls
+cd Videos/snowmotion/
+nvim
+c
+cd
+git clone https://github.com/louspjn/Sagittarius
+cd Sagittarius/
+ls
+clear
+ls
+rm -rf ./*
+ls
+clear
+zig init
+clear
+nvim
+zig build run
+rm src/root.zig
+nvim
+ls
+cd ..
+ls
+cd louspvercel/
+cd ..
+ls
+clear
+ls
+cd ziglings/
+ls
+cd ..
+ls
+cd Sagittarius/
+clear
+zig fetch --save git+https://github.com/IridescenceTech/zglfw
+zig build run
+clear
+zig build run
+nix shell nixpkgs#glfwm
+zig build run
+exit
+nix shell nixpkgs#glfw
+clear
+exit
+nix shell nixpkgs#glfw
+clear
+zig build run
+clear
+zig build run
+exit
+nix shell nixpkgs#glfw
+exit
+clear
+zig build run
+clear
+nvim
+clear
+exit
+zj
+exit
+nix shell nixpkgs#lua nixpkgs#lua-language-server
+clear
+exit
+ls
+pkill Discord
+pkill vesktop
+pkill Vesktop
+btop
+clear
+mine
+clear
+ls
+mkdir compiler
+cd compiler/
+clear
+zig init-exe
+clear
+ls
+clear
+nix shell nixpkgs#ghc nixpkgs#haskell-language-server nixpkgs#stack
+zig init
+clear
+mv ~/Downloads/985300.jpg ~/Kife/assets/wallpapers/hollow-knight.jpg
+swww img ~/Kife/assets/wallpapers/hollow-knight.jpg -t center
+swww img ~/Kife/assets/wallpapers/space.png -t center
+clear
+nvim
+cd nvim
+nvim
+clear
+nvim
+cd ..
+nvim
+cd nvim
+ls
+clear
+nvim
+cd ~/Kife

@@ -21,4 +21,3 @@ vim.g.mapleader = " "
 require("lazy").setup("plugins")
 
 require "config.keymaps"
-require "config.lsp"

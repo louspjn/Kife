@@ -6428,3 +6428,174 @@ ls
 hx style.css
 clear
 cd ..
+gd .
+gc "bkp"
+gp
+cd ..
+cd do
+ls
+cd Down
+ls
+clear
+ls
+rm -rf ./*
+ls
+clear
+ls
+cd ..
+ls
+clear
+ls
+clear
+nix shell nixpkgs#jdk nixpkgs#steam-run
+clear
+cd Downloads/
+ls
+clear
+ls
+alias mine = steam-run java -jar
+mine ./SKlauncher-3.2.12.jar
+mine ./preview_OptiFine_1.21.10_HD_U_J7_pre2.jar
+alias mine = steam-run java -jar ~/Downloads/SKlauncher-3.2.12.jar
+alias mine = nix shell nixpkgs#steam-run nixpkgs#jdk --impure --command "steam-run java -jar ~/Downloads/SKlauncher-3.2.12.jar"
+exit
+nix shell nixpkgs#jdk nixpkgs#steam-run --impure
+cd nushell
+hx config.nu
+min
+clear
+mine
+hx ~/.config/nushell/config.nu
+cd .minecraft/
+ls
+cd saves/
+ls
+clear
+ls -ah
+clear
+ls --help
+ls -lha
+clear
+ls -lha
+clear
+mine
+clear
+hx
+ls
+cd louspvercel/
+ls
+exit
+ls
+clear
+ls
+cd louspvercel/
+ls
+cd ..
+ls
+cd test/
+ls
+cd ..
+ls
+clear
+ls
+cd Videos/
+ls
+cd snowmotion/
+ls
+clear
+cd ..
+ls
+clar
+clear
+cd ..
+ls
+clear
+ls
+clear
+alsamixer
+clear
+cd .config
+ls
+cd nvim
+mv ~/Kife/dotfiles/nvim/ ./
+clear
+cd nvim
+ls
+clear
+nix run nixpkgs#nvim
+clear
+nix run nixpkgs#neovim
+clear
+nix run nixpkgs#neovim
+ls
+cd lua/
+ls
+mkdir plugins
+cd plugins/
+ls
+nix run nixpkgs#neovim
+mv lua/plugins/init.lua lua/plugins/catppuccin.lua
+clear
+mv lua/plugins/catppuccin.lua lua/plugins/init.lua
+nix run nixpkgs#neovim
+rm -rf lua/configs/
+cd lua
+ls
+clear
+cd plugins/
+nix run nixpkgs#neovim
+nix run nixpkgs#neovim -- lualine.lua
+ls
+clear
+ls
+cd ..
+ls
+mkdir config
+cd config/
+clear
+ls
+nix run nixpkgs#neovim -- lsp.lua
+cd ..
+nix run nixpkgs#neovim -- lsp.lua
+nix run nixpkgs#neovim
+lua
+nix run nixpkgs#neovim
+recorder -f recording.mp4 -y
+clear
+rm recording.mp4
+ls
+clear
+ls
+mv lua/config/lsp.lua lua/plugins/lualine.lua
+cat lua/plugins/lualine.lua
+mv lua/plugins/lualine.lua lua/plugins/lsp.lua
+mv lua/plugins/lsp.lua lua/plugins/completion.lua
+clear
+nix run nixpkgs#neovim
+clear
+nix run nixpkgs#neovim
+rm lua/plugins/telescope.lua
+clear
+nix run nixpkgs#neovim
+poweroff
+clear
+cd nvim
+nix run nixpkgs#neovim
+cd ..
+mv nvim ~/Kife/dotfiles/
+cd ~
+cd Kife/
+ls
+clear
+ls
+cd OSs/
+ls
+cd NixOS/
+ls
+clear
+nix run nixpkgs#neovim -- --config ~/Kife/dotfiles/nvim/
+nix run nixpkgs#neovim -- --help
+nix run nixpkgs#neovim -- -u ~/Kife/dotfiles/nvim/
+nix run nixpkgs#neovim -- -u ~/Kife/dotfiles/nvim/init.lua
+hx
+cd ..

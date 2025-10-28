@@ -63,6 +63,7 @@ alias matrix = cmatrix -C blue -m
 alias recorder = wf-recorder
 
 alias dockerdev = docker run -it -v (pwd):/home/dev/workspace -v ~/Kife/dotfiles:/home/dev/.config --name
+alias mine = nix run nixpkgs#steam-run --impure -- nix run nixpkgs#jdk -- -jar ~/Downloads/SKlauncher-3.2.12.jar
 
 def deventer [name] {
   docker start $name

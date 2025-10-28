@@ -45,6 +45,7 @@ in {
       firefox
 
       helix
+      neovim
       ghostty
       git
       hypridle

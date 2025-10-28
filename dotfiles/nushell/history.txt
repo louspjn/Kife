@@ -6599,3 +6599,16 @@ nix run nixpkgs#neovim -- -u ~/Kife/dotfiles/nvim/
 nix run nixpkgs#neovim -- -u ~/Kife/dotfiles/nvim/init.lua
 hx
 cd ..
+git add .
+git commit -m "Neovim Config done"
+gp
+ln -sf ./dotfiles/nvim ~/.config/nvim
+rm ~/.config/nvim
+ln -sf /home/lousp/Kife/dotfiles/nvim /home/lousp/.config/
+cd ..
+cd ziglings/
+ls
+clear
+ls
+nvim
+hx ~/Kife/OSs/NixOS/modules/user/hjem.nix

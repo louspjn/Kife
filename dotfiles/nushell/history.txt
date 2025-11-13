@@ -1,7 +1,0 @@
-rm -rf ~/.config/nushell/history.txt
-cd dotfiles/nushell/
-hx .gitignore
-rm .gitignore
-cd ..
-hx .git/
-hx .gitignore

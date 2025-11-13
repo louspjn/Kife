@@ -10,10 +10,24 @@ in {
       nodejs
       yarn
 
+      clang
+      clang-tools
+
+      steam-run
+      jdk
+
       lua
       lua-language-server
 
+      go
+
       vesktop
+      spotify
+
+      blender
+      audacity
+      obs-studio
+
       nwg-look
       walker
 

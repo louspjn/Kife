@@ -6751,3 +6751,720 @@ ls
 clear
 nvim
 cd ~/Kife
+git add .
+git commit -m "Adding oil.nvim and alpha-nvim"
+gp
+clear
+nvim
+clear
+poweroff
+mine
+clear
+mine
+clear
+mine
+clear
+mine
+clear
+mine
+pkill nix
+mine
+clear
+clear
+pkill nix
+while true {mine}
+pkill nix
+while true {mine}; while true {mine}
+pkill nix
+while true {try {mine} catch {mine}}
+def fn [] {try {mine} catch {fn}}
+while true {try {mine} catch {mine}}
+pkill nix
+fn
+while true {sleep 1sec; pkill nix}
+clear
+def fn [] {fn}
+fn
+def fn [] {try {fn} catch {fn}}
+cd compiler/
+clear
+cd ..
+clear
+mine
+clear
+def fn [] {try {fn} catch {fn}}
+def fn [] {try {mine} catch {fn}}
+fn
+while true {sleep 1sec; pkill nix}
+clear
+clear
+cd Kife
+ls
+cd OSs/
+ls
+cd NixOS/
+ls
+cd modules/
+ls
+clear
+cd user/
+nvim
+clear
+nh os switch
+clear
+mine
+clear
+dc compiler/
+cd compiler/
+ls
+clear
+cd ..
+mkdir C
+cd C
+nix shell nixpkgs#clang nixpkgs#clangd
+clagn
+clang
+clangd
+cd user
+nvim
+nh os switch
+nvim
+nh os switch
+clear
+ls
+cd 
+clear
+ls
+cd C
+ls
+nvim main.c
+clang 
+clang main.c
+main
+rm a.out
+clang main.c -o main; ./main
+ls
+clear
+clang main.c -o main; ./main
+nvim
+clang main.c -o main; ./main
+cd .
+cd ..
+cd compiler/
+ls
+clear
+cd ../compiler/
+clear
+zig build run
+ckear
+clear
+nvim
+exit
+zj
+exit
+ls
+cd compiler/
+ls
+clear
+hx
+nvim
+zig build run
+cler
+clear
+cler
+zig build run
+clear
+zig build run
+clear
+lcear
+eclear
+clear
+exit
+zj
+clea
+mine
+cçear
+clear
+alasmixer
+alsamixer
+nix run nixpkgs#zed
+nix run nixpkgs#zeditor
+nix run nixpkgs#zedditor
+nix run nixpkgs#zed-editor
+clear
+ls
+cd compiler/
+ls
+clear
+nvim
+clear
+ls
+clear
+zig build run
+exit
+clear
+exit
+clear
+exit
+clear
+hx
+nvim
+hx
+cd ..
+ls
+cd Sagittarius/
+ls
+clear
+cd ../Sagittarius/
+clear
+zig build run
+clear
+zig build run
+nix flake init -t github:akirak/flake-templates#flake-parts
+clear
+zig build run
+rm ~/.config/helix/config.toml
+nh os switch
+hx
+rm ~/.config/helix/config.toml
+hx
+clear
+hx
+rm ~/.config/helix/config.toml
+clear
+nh os switch
+rm ~/.config/helix/config.toml
+hx
+clear
+nh os switch
+clear
+ls
+clear
+zig build run
+clear
+zig build run
+clear
+alsamixer
+clear
+zig build run
+hx
+exit
+zj
+poweroff
+arecord
+arecord idk.mp4
+ls
+rm idk.mp4
+arecord idk.mp3
+ls
+play
+apay
+aplay
+aplay idk.mp3
+alsamixer
+aplay idk.mp3
+alsamixer
+aplay idk.mp3
+clear
+paplay
+nix run nixpkgs#paplay -- idk.mp3
+clear
+nix run nixpkgs#play -- idk.mp3
+clear
+nh os switch -u
+ls
+cd compiler/
+ls
+clear
+hx
+zig
+zig version
+clear
+ls
+clear
+cd ../
+cd ziglings/
+ls
+zig build run
+zig build
+exit
+nix develop github:Cloudef/zig2nix#master
+clear
+ls
+clear
+aplay ~/idk.mp3
+arecord idk.mp3
+aplay idk.mp3
+rm ~/idk.mp3
+rm idk.mp3
+aplay idk.wav
+arecord idk.wav
+aplay idk.wav
+arecord idk.wav
+aplay idk.wav
+arecord idk.wav
+aplay idk.wav
+clear
+rm idk.wav
+ls
+clear
+ls
+clear
+nix develop github:Cloudef/zig2nix#master
+hx
+cd ..
+cd Sagittarius/
+ls
+clear
+hx flake.nix
+mkdir test
+cd test
+nix flake init -t github:Cloudef/zig2nix
+ls
+clear
+ls
+l
+rm -rf src
+rm build.zig
+rm build.zig.zon
+cat flake.nix
+hx flake.nix
+cd ..
+rm -rf test
+ls
+clear
+exit
+zj
+clear
+nix develop
+cd ../
+cd Sagittarius/
+clear
+zig versionm
+zig version
+clear
+ls
+clear
+zig build run
+zls --version
+exit
+hx
+exit
+zj
+exit
+nix develop
+exit
+nix develop github:Cloudef/zig2nix#master
+exit
+cd Sagittarius/
+ls
+clear
+z
+clear
+hx
+clear
+cd Sagittarius/
+clear
+cd Sagittarius/
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+cler
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+cçear
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+lear
+clear
+zig build run
+hx
+rm .helix/config.toml
+hx
+zig build run
+clear
+zig build run
+clear
+zig build run
+exit
+zj
+exit
+nix develop
+clear
+exit
+cd Sagittarius/
+clear
+zig build run
+clear
+zig build run
+clear
+zig build run
+rm -rf ./zig-out/
+zig build run
+ls
+rm -rf zig-out/
+ls
+zig build run
+ls
+clear
+ls
+ls zig-out/
+ls zig-out/bin/
+clear
+ls
+clear
+s
+ls
+clear
+ls
+zig build
+clear
+zig build
+zig build run
+clear
+zig build run
+clear
+:w
+clear
+exit
+hx
+exit
+zj
+exit
+nix develop
+exit
+nh os switch -u
+clear
+s
+ls
+clear
+ls
+cd Kife/OSs/NixOS
+hx
+nh os switch
+clear
+go install github.com/zerootoad/discord-rpc-lsp@latest
+hx
+nh os switch
+go install github.com/zerootoad/discord-rpc-lsp@latest
+discord
+go --help
+go run
+clearr
+clear
+ls
+clea
+clear
+cd
+clçear
+clear
+mine
+clear
+mine
+clear
+mine
+clear
+stack new animacao simple<\n>cd animacao<\n>stack add gloss<\n>
+hx
+ls
+stack add
+clear
+ghc
+clear
+stack build
+clear
+stack build
+clear
+stack build
+clear
+ls
+rm animacao.cabal
+stack build
+rm animacao.cabal<\n>
+clear
+rm animacao.cabal<\n>
+stack build
+nix shell nixpkgs#gl
+gl
+stack build
+clear
+exit
+nix shell nixpkgs#cgl
+exit
+hx
+exit
+zj
+exit
+nix shell nixpkgs#haskellPackages.haskell-language-server nixpkgs#haskellPackages.ghc nixpkgs#haskellPackages.stack
+exit
+cd animacao/
+cler
+clear
+hx shell.nix
+clear
+stack build<\n>stack run<\n>
+clear
+stack build
+stack
+cat shell.nix
+cler
+clear
+exit
+nix-shell
+hx shell.nix
+clear
+nix shell nixpkgs#haskellPackages.haskell-language-server nixpkgs#haskellPackages.ghc nixpkgs#haskellPackages.stack
+clear
+stack build
+cat shell.nix
+ls /run/opengl-driver/lib | grep libGL<\n>
+clear
+hx shell.nix
+clear
+hx shell.nix
+nix-shell
+exit
+nix-shell
+clear
+hx shell.nix
+stack build
+$env.LD_LIBRARY_PATH
+clear
+exit
+nix-shell
+hx shell.nix
+stack build
+$env.LD_LIBRARY_PATH
+cat shell.nix
+clear
+exit
+nix-shell
+clear
+hx
+hx shell.nix
+clear
+nix-shell
+ge
+hx
+clear
+exit
+cd animacao/
+clear
+stack build
+clear
+exit
+nix-shell
+clear
+hx
+clear
+nix-shell
+rm shell.nix
+stack
+clear
+hx flake.nix
+nix develop
+hx
+nix develop
+cat flake.nix
+cear
+clear
+hx flake.nix
+hx
+clear
+nix develop
+cat Kife/OSs/NixOS/flake.nix
+hx flake.nix
+clear
+nix develop
+clear
+rm flake
+rm flake*
+kls
+ls
+clear
+hx
+exit
+cd animacao/
+clear
+stack build
+clear
+stack build
+stack run
+clar
+clear
+stack run
+haskell-language-server 
+hls
+clear
+hx
+clear
+haskell-language-server --lsp
+clear
+hx
+stack run
+clear
+exit
+exiut
+exit
+zj
+exit
+nix shell nixpkgs#haskellPackages.haskell-language-server nixpkgs#haskellPackages.ghc nixpkgs#haskellPackages.stack
+exit
+rm -rf animacao/
+clear
+cd Sagittarius/
+ls
+clear
+cd ..
+mkdir Sa
+cd Sa
+zig init
+clear
+hx
+z
+clear
+cd Sa
+clear
+ckear
+clkear
+clear
+zig fetch --save git+https://github.com/hexops/mach
+zig build run
+cçear
+clear
+zig fetch --save git+https://github.com/raylib-zig/raylib-zig#devel
+zig build run
+clear
+hx
+exit
+zj
+clear
+zig build run
+clear
+zig build run
+cçear
+clear
+cçear
+clear
+zig build run
+clear
+zig build run
+cler
+clear
+zig build run
+clear
+zig build run
+git clone https://github.com/clear-code-projects/raylib_intro
+mv raylib_intro/start/basics/assets/ .
+clear
+mv raylib_intro/start/basics/assets/ .
+clear
+zig build run
+l
+clear
+ls
+mv raylib_intro/ .raylib_intro
+l
+clear
+l
+zig build run
+clear
+zig build run
+ls zig-out/
+l zig-out/
+clear
+zig build run
+clear
+ls
+clear
+ls
+cd Sagittarius/
+ls
+clear
+exit
+zj
+ls
+clear
+nix develop
+nmtui
+clear
+hx
+exit
+nix develop
+cd ..
+cd Sa
+ls
+clear
+zig build run
+alsamixer
+clear
+exit
+clear
+alsamixer
+clear
+exigt
+exit
+hx
+exit
+cd NixOS
+ls
+clear
+hx
+clear
+nh os switch
+clear
+steam
+pkill steam
+steam
+clear
+cd NixOS
+hx
+nh os switch
+clear
+poweroff
+alsamixer
+clear
+hx
+nh os switch
+mine
+clear
+btop
+exot
+exit
+mine
+clear
+hx
+cd OS
+clear
+hx
+nh os switcj
+ls
+cd Kife
+gs
+git commit
+git commit -a
+nh os switch
+git commit --help
+git commit -C
+git commit -c
+git commit 
+git commit -e
